@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLB Division Dashboard</title>
+  <meta name="description" content="Follow your favorite Major League Baseball Division">
+  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link id="faviconLink" rel="shortcut icon" href="/assets/images/favicon.ico">
+  <!-- Tailwind for layout/typography utilities only -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#f8fafc;--text:#111827;--muted:#6b7280;--card-bg:#ffffff;--border:#e5e7eb;
+      --chip-bg:#ffffff;--chip-border:#d1d5db;--chip-text:#374151;--ring:#e5e7eb;
+      --pad-card:1rem;--gap-grid:1rem;
+    }
+    html.dark{
+      --bg:#0b0b0f;--text:#e5e7eb;--muted:#a1a1aa;--card-bg:#121218;--border:#27272a;
+      --chip-bg:#18181b;--chip-border:#3f3f46;--chip-text:#e4e4e7;--ring:#3f3f46;
+    }
+    html.compact{--pad-card:.5rem;--gap-grid:.5rem}
+    body.theme-bg{background-color:var(--bg);color:var(--text);font-size:16px}
+    .theme-card{background-color:var(--card-bg);border:1px solid var(--border);border-radius:1rem}
+    .theme-border{border-color:var(--border)} .theme-muted{color:var(--muted)}
+    .chip{font-size:11px;line-height:1;padding:6px 8px;border-radius:9999px;border:1px solid var(--chip-border);background:var(--chip-bg);color:var(--chip-text)}
+    .chip-sm{font-size:10px;padding:4px 6px}
+    .logo-ring{border:1px solid var(--ring);border-radius:9999px}
+    .card:hover{box-shadow:0 4px 18px rgba(0,0,0,.06)}
+    .pad{padding:var(--pad-card)} .grid-gap{gap:var(--gap-grid)}
+
+    /* Dense + auto-collapsing header */
+    #topbar{padding:.38rem .75rem;transition:padding .18s ease,box-shadow .18s ease,transform .18s ease}
+    #topbar.collapsed{padding:.15rem .6rem;box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px)}
+    .header-title{font-size:.95rem;font-weight:600;letter-spacing:.1px}
+    .toolbar{display:inline-flex;align-items:center;gap:.4rem}
+    .icon-btn{font-size:12px;padding:.3rem .5rem;line-height:1;border-radius:.6rem;border:1px solid var(--border);background:var(--card-bg)}
+    .icon-btn:hover{opacity:.9}
+    .divider{width:1px;height:18px;background:var(--border);margin:0 .25rem}
+    @media (max-width:640px){.hide-xs{display:none!important}}
+    #topbar.collapsed .chip{display:none}
+
+    /* Foldable sections */
+    details.theme-card{overflow:hidden}
+    details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:var(--pad-card)}
+    summary::-webkit-details-marker{display:none}
+    details[open]>summary .chev{transform:rotate(90deg)}
+    .chev{transition:transform .15s ease;display:inline-block;width:1rem;height:1rem}
+    .summary-title{font-weight:600;font-size:1.05rem}
+    .summary-right{display:inline-flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.75rem}
+    .fold-content{padding:0 var(--pad-card) var(--pad-card)}
+  </style>
+  <script>
+    // Apply saved theme/compact ASAP
+    (function(){
+      try{
+        const darkSaved=localStorage.getItem('mlbDarkMode');
+        const prefers=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const enableDark=darkSaved==='true'||(darkSaved===null&&prefers);
+        if(enableDark)document.documentElement.classList.add('dark');
+        const compactSaved=localStorage.getItem('mlbCompact')==='true';
+        if(compactSaved)document.documentElement.classList.add('compact');
+      }catch(e){}
+    })();
+  </script>
+</head>
+<body class="theme-bg">
+  <header id="topbar" class="sticky top-0 z-10 backdrop-blur theme-card card">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="min-w-0"><h1 class="header-title">MLB Division Dashboard</h1></div>
+      <div class="toolbar">
+        <span id="theme-chip" class="chip chip-sm hide-xs">—</span>
+        <button id="theme-toggle" class="icon-btn" title="Toggle Dark/Light">🌗</button>
+        <div class="divider hide-xs"></div>
+        <span id="compact-chip" class="chip chip-sm hide-xs">—</span>
+        <button id="compact-toggle" class="icon-btn" title="Toggle Compact layout">▭</button>
+        <div class="divider"></div>
+        <a class="text-[11px] text-blue-600 hover:underline" href="https://statsapi.mlb.com/" target="_blank" rel="noreferrer" title="MLB Stats API">Data</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-4 space-y-4">
+    <!-- Choose Division -->
+    <section class="theme-card card pad">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-base font-semibold tracking-tight">Choose Division</h2>
+        <button id="reset-btn" class="text-xs icon-btn">Reset</button>
+      </div>
+
+      <div id="divisions-loading" class="flex items-center grid-gap text-sm theme-muted">
+        <span class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent rounded-full"></span>
+        Loading divisions…
+      </div>
+      <div id="divisions-error" class="hidden p-3 rounded-xl theme-card"></div>
+
+      <div id="division-picker" class="hidden flex flex-col sm:flex-row grid-gap sm:items-center">
+        <label class="text-sm" for="division-select">Division</label>
+        <select id="division-select" class="w-full sm:w-auto px-3 py-2 rounded-xl theme-card"></select>
+        <div class="text-xs theme-muted">Saved locally</div>
+      </div>
+    </section>
+
+    <!-- TODAY schedule -->
+    <section class="theme-card card pad">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-base font-semibold tracking-tight">Today's Games</h2>
+        <div class="flex items-center grid-gap">
+          <span id="today-badge" class="text-xs theme-muted"></span>
+          <button id="refresh-games" class="text-xs icon-btn">Refresh</button>
+        </div>
+      </div>
+      <div id="games-loading" class="hidden flex items-center grid-gap text-xs theme-muted">
+        <span class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent rounded-full"></span>
+        Updating…
+      </div>
+      <div id="games-error" class="hidden p-3 rounded-xl theme-card text-red-600 text-xs"></div>
+      <div id="today-wrap" class="grid grid-cols-1 md:grid-cols-3 grid-gap">
+        <div><h3 class="text-xs font-semibold mb-2">In-Progress</h3><div id="today-live"></div></div>
+        <div><h3 class="text-xs font-semibold mb-2">Final</h3><div id="today-final"></div></div>
+        <div><h3 class="text-xs font-semibold mb-2">Upcoming</h3><div id="today-upcoming"></div></div>
+      </div>
+    </section>
+
+    <!-- YESTERDAY (foldable) -->
+    <details id="yday-sec" class="theme-card card">
+      <summary>
+        <span class="flex items-center gap-2"><span class="chev">▶</span><span id="yday-title" class="summary-title">Yesterday's Finals</span></span>
+        <span class="summary-right"><span id="yesterday-badge"></span></span>
+      </summary>
+      <div class="fold-content">
+        <div id="yday-wrap" class="grid grid-cols-1 grid-gap">
+          <div id="yday-final"></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- TOMORROW (foldable) -->
+    <details id="tmr-sec" class="theme-card card">
+      <summary>
+        <span class="flex items-center gap-2"><span class="chev">▶</span><span id="tmr-title" class="summary-title">Tomorrow</span></span>
+        <span class="summary-right"><span id="tomorrow-badge"></span></span>
+      </summary>
+      <div class="fold-content">
+        <div id="tmr-wrap" class="grid grid-cols-1 grid-gap">
+          <div><h3 class="text-xs font-semibold mb-2">Upcoming</h3><div id="tmr-upcoming"></div></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Standings + Wild Card -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 grid-gap">
+      <div class="theme-card card pad lg:col-span-2">
+        <h2 class="text-base font-semibold tracking-tight mb-2">Division Standings</h2>
+        <div id="division-standings"></div>
+      </div>
+      <div class="theme-card card pad">
+        <h2 class="text-base font-semibold tracking-tight mb-2">League Wild Card</h2>
+        <div id="wc-loading" class="hidden flex items-center grid-gap text-xs theme-muted">
+          <span class="animate-spin inline-block w-4 h-4 border-[3px] border-current border-t-transparent rounded-full"></span>
+          Loading…
+        </div>
+        <div id="wc-error" class="hidden p-3 rounded-xl theme-card text-red-600 text-xs"></div>
+        <div id="wildcard-standings"></div>
+      </div>
+    </section>
+
+    <footer class="text-[11px] theme-muted text-center py-4">Season <span id="season-text"></span> · Auto-refresh 30s</footer>
+  </main>
+
+  <script>
+    const MLB_STATS_API="https://statsapi.mlb.com/api/v1";
+    const SPORT_ID=1;
+    const LEAGUE_IDS={AL:103,NL:104};
+    const LS_KEY="mlbDivisionPrefs:v1";
+    const POLL_MS=30000;
+
+    const state={
+      season:new Date().getFullYear(),
+      recordsByDivision:[], divisions:[],
+      teamsById:{}, selectedDivisionId:null, selectedLeagueId:null,
+      divisionRows:[], wildcardRows:[],
+      yday:{finals:[]}, today:{live:[],finals:[],upcoming:[]}, tmr:{upcoming:[]},
+      pollHandle:null
+    };
+
+    const $=(id)=>document.getElementById(id);
+    const isDark=()=>document.documentElement.classList.contains("dark");
+    const isCompact=()=>document.documentElement.classList.contains("compact");
+
+    function ymdLocal(date=new Date()){const y=date.getFullYear();const m=String(date.getMonth()+1).padStart(2,"0");const d=String(date.getDate()).padStart(2,"0");return `${y}-${m}-${d}`;}
+    function addDays(date,n){const d=new Date(date);d.setDate(d.getDate()+n);return d;}
+    function pctToDisplay(pct){if(pct==null)return "—";const n=typeof pct==="string"?parseFloat(pct):pct;return Number.isFinite(n)?(n*100).toFixed(1)+"%":String(pct);}
+    function loadPrefs(){try{return JSON.parse(localStorage.getItem(LS_KEY))||{}}catch{return {}}}
+    function savePrefs(obj){try{localStorage.setItem(LS_KEY,JSON.stringify(obj))}catch{}}
+    function logoForTeamId(id){return `https://www.mlbstatic.com/team-logos/${id}.svg`}
+
+    function tzAbbr(date=new Date()){try{const parts=new Intl.DateTimeFormat([], {timeZoneName:'short'}).formatToParts(date);const p=parts.find(x=>x.type==='timeZoneName');return p?p.value:'local'}catch{return 'local'}}
+    function setDateBadges(){
+      const now=new Date();const y=addDays(now,-1);const t=now;const n=addDays(now,1);
+      $("yesterday-badge").textContent=`${ymdLocal(y)} • ${tzAbbr(y)}`;
+      $("today-badge").textContent=`${ymdLocal(t)} • ${tzAbbr(t)}`;
+      $("tomorrow-badge").textContent=`${ymdLocal(n)} • ${tzAbbr(n)}`;
+    }
+    function updateSummaryCounts(){
+      const yCount=state.yday.finals.length||0;
+      const tCount=state.tmr.upcoming.length||0;
+      const yEl=$("yday-title"), tEl=$("tmr-title");
+      if(yEl) yEl.textContent=`Yesterday's Finals (${yCount})`;
+      if(tEl) tEl.textContent=`Tomorrow (${tCount})`;
+    }
+
+    async function fetchStandingsByDivision(season){
+      const url=`${MLB_STATS_API}/standings?leagueId=${LEAGUE_IDS.AL},${LEAGUE_IDS.NL}&season=${season}&standingsTypes=byDivision`;
+      const res=await fetch(url); if(!res.ok) throw new Error("Failed to fetch division standings"); const data=await res.json(); return data?.records??[];
+    }
+    async function fetchWildCard(leagueId,season){
+      const url=`${MLB_STATS_API}/standings?leagueId=${leagueId}&season=${season}&standingsTypes=wildCard`;
+      const res=await fetch(url); if(!res.ok) throw new Error("Failed to fetch wildcard standings"); const data=await res.json(); return data?.records?.[0]?.teamRecords??[];
+    }
+    async function fetchSchedule(dateYMD){
+      const params=new URLSearchParams({sportId:String(SPORT_ID),date:dateYMD,hydrate:"linescore,team"});
+      const url=`${MLB_STATS_API}/schedule?${params.toString()}`;
+      const res=await fetch(url); if(!res.ok) throw new Error("Failed to fetch schedule"); const data=await res.json(); return data?.dates?.[0]?.games??[];
+    }
+    async function fetchDivisionsMap(){
+      const url=`${MLB_STATS_API}/divisions`; const res=await fetch(url); if(!res.ok) throw new Error("Failed to fetch divisions list"); const data=await res.json(); const map={};
+      (data?.divisions||[]).forEach(d=>{
+        const sportOk=(d?.sport?.id===1); const lg=d?.league?.id; if(!sportOk||!(lg===103||lg===104)) return;
+        let label=(d?.name||d?.nameShort||"").trim();
+        label=label.replace(/American League/gi,"AL").replace(/National League/gi,"NL").replace(/\s+Division$/i,"").trim();
+        map[d?.id]=label;
+      });
+      return map;
+    }
+    async function fetchTeamsMap(season){
+      const url=`${MLB_STATS_API}/teams?sportId=${SPORT_ID}&season=${season}`;
+      const res=await fetch(url); if(!res.ok) throw new Error("Failed to fetch teams"); const data=await res.json(); const map={};
+      (data?.teams||[]).forEach(t=>{ map[t.id]={abbr:t?.abbreviation||t?.teamCode||t?.fileCode||"", name:t?.name||t?.clubName||t?.teamName||"", logo:logoForTeamId(t.id)}; });
+      return map;
+    }
+
+    function renderThemeChip(){ $("theme-chip").textContent=isDark()?"Dark":"Light"; }
+    function renderCompactChip(){ $("compact-chip").textContent=isCompact()?"Compact On":"Compact Off"; }
+    function setDarkEnabled(enable){ document.documentElement.classList.toggle("dark",!!enable); try{localStorage.setItem('mlbDarkMode',String(!!enable))}catch{} renderThemeChip(); }
+    function setCompactEnabled(enable){ document.documentElement.classList.toggle("compact",!!enable); try{localStorage.setItem('mlbCompact',String(!!enable))}catch{} renderCompactChip(); }
+
+    function standingsTable(rows,type){
+      const headerRank=type==="division"?"#":"WC";
+      const theadExtra=type==="wildcard"?'<th class="py-2 pr-2 text-right">WCGB</th>':"";
+      const body=rows.map((r,i)=>{
+        const rank=type==="division"?r?.divisionRank:(r?.wildCardRank??(i+1));
+        const t=r?.team||{}; const teamInfo=state.teamsById[t.id]||{abbr:"",name:t?.name||"",logo:""};
+        return `
+          <tr class="border-t" style="border-color:var(--border)">
+            <td class="py-2 pr-2">${rank??""}</td>
+            <td class="py-2 pr-2">
+              <div class="flex items-center gap-2">
+                ${teamInfo.logo?`<img src="${teamInfo.logo}" alt="${teamInfo.abbr} logo" class="w-5 h-5 logo-ring bg-white" onerror="this.onerror=null;this.style.display='none';">`:""}
+                <div class="font-medium">${teamInfo.name||""}</div>
+                <span class="text-xs" style="color:var(--muted)">${teamInfo.abbr}</span>
+              </div>
+            </td>
+            <td class="py-2 pr-2 text-right">${r?.wins??""}</td>
+            <td class="py-2 pr-2 text-right">${r?.losses??""}</td>
+            <td class="py-2 pr-2 text-right">${pctToDisplay(r?.pct)}</td>
+            <td class="py-2 pr-2 text-right">${r?.gamesBack??"—"}</td>
+            ${type==="wildcard"?`<td class="py-2 pr-2 text-right">${r?.wildCardGamesBack??"—"}</td>`:""}
+            <td class="py-2 pr-2 text-right hidden md:table-cell">${r?.runsScored??"—"}</td>
+            <td class="py-2 pr-2 text-right hidden md:table-cell">${r?.runsAllowed??"—"}</td>
+          </tr>`;
+      }).join("");
+      return `
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr style="color:var(--muted)">
+                <th class="py-2 pr-2 w-10">${headerRank}</th>
+                <th class="py-2 pr-2">Team</th>
+                <th class="py-2 pr-2 text-right">W</th>
+                <th class="py-2 pr-2 text-right">L</th>
+                <th class="py-2 pr-2 text-right">PCT</th>
+                <th class="py-2 pr-2 text-right">GB</th>
+                ${theadExtra}
+                <th class="py-2 pr-2 text-right hidden md:table-cell">RS</th>
+                <th class="py-2 pr-2 text-right hidden md:table-cell">RA</th>
+              </tr>
+            </thead>
+            <tbody>${body}</tbody>
+          </table>
+        </div>`;
+    }
+
+    function renderDivisionStandings(){
+      const wrap=$("division-standings");
+      if(!state.divisionRows||state.divisionRows.length===0){
+        wrap.innerHTML='<div class="text-sm" style="color:var(--muted);text-align:center;padding:1rem 0;">Pick a division to view standings.</div>'; return;
+      }
+      wrap.innerHTML=standingsTable(state.divisionRows,"division");
+    }
+
+    function renderWildcardStandingsLoading(b){ $("wc-loading").classList.toggle("hidden",!b) }
+    function renderWildcardStandingsError(msg){ const el=$("wc-error"); if(msg){el.textContent=msg;el.classList.remove("hidden")}else{el.classList.add("hidden")} }
+    function renderWildcardStandings(){
+      const wrap=$("wildcard-standings");
+      if(!state.wildcardRows||state.wildcardRows.length===0){
+        wrap.innerHTML='<div class="text-sm" style="color:var(--muted);text-align:center;padding:1rem 0;">Wild card standings unavailable.</div>';return;
+      }
+      wrap.innerHTML=standingsTable(state.wildcardRows,"wildcard");
+    }
+
+    function fmtLocalTime(iso){try{const d=new Date(iso);return d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}catch{return ""}}
+    function gameRow(g){
+      const away=g?.teams?.away?.team||{}; const home=g?.teams?.home?.team||{};
+      const awayInfo=state.teamsById[away.id]||{abbr:"",logo:""}; const homeInfo=state.teamsById[home.id]||{abbr:"",logo:""};
+      const ags=g?.status?.abstractGameState; const ls=g?.linescore||{};
+      const inning=ls?.currentInningOrdinal?`${ls.currentInningOrdinal} ${ls?.isTopInning?"▲":"▼"}`:"";
+      const time=fmtLocalTime(g?.gameDate);
+      const right=ags==="Live"?(inning||(g?.status?.detailedState||"Live")):ags==="Final"?"Final":time;
+      return `
+        <div class="theme-card pad">
+          <div class="flex items-center justify-between">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                ${awayInfo.logo?`<img src="${awayInfo.logo}" alt="${awayInfo.abbr}" class="w-5 h-5 logo-ring bg-white" onerror="this.onerror=null;this.style.display='none';">`:""}
+                <span class="text-sm font-medium">${awayInfo.abbr}</span>
+                <span class="text-sm">${g?.teams?.away?.score??0}</span>
+              </div>
+              <div class="flex items-center gap-2">
+                ${homeInfo.logo?`<img src="${homeInfo.logo}" alt="${homeInfo.abbr}" class="w-5 h-5 logo-ring bg-white" onerror="this.onerror=null;this.style.display='none';">`:""}
+                <span class="text-sm font-medium">${homeInfo.abbr}</span>
+                <span class="text-sm">${g?.teams?.home?.score??0}</span>
+              </div>
+            </div>
+            <div class="text-xs text-right" style="color:var(--muted);min-width:64px;">${right}</div>
+          </div>
+        </div>`;
+    }
+    function renderToday(){
+      $("today-live").innerHTML = state.today.live.length?state.today.live.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No live games.</div>';
+      $("today-final").innerHTML= state.today.finals.length?state.today.finals.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No finals.</div>';
+      $("today-upcoming").innerHTML= state.today.upcoming.length?state.today.upcoming.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No upcoming games.</div>';
+    }
+    function renderYesterday(){ $("yday-final").innerHTML = state.yday.finals.length?state.yday.finals.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No finals yesterday.</div>'; }
+    function renderTomorrow(){ $("tmr-upcoming").innerHTML = state.tmr.upcoming.length?state.tmr.upcoming.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No upcoming games.</div>'; }
+    function renderGamesLoading(b){ $("games-loading").classList.toggle("hidden",!b) }
+    function renderGamesError(msg){ const el=$("games-error"); if(msg){el.textContent=msg;el.classList.remove("hidden")}else{el.classList.add("hidden")} }
+
+    function onDivisionChange(newId){
+      state.selectedDivisionId=Number(newId);
+      savePrefs({divisionId:state.selectedDivisionId});
+      const rec=state.recordsByDivision.find(r=>r?.division?.id===state.selectedDivisionId);
+      const leagueId=rec?.league?.id; if(leagueId) state.selectedLeagueId=leagueId;
+      state.divisionRows=(rec?.teamRecords||[]).slice().sort((a,b)=>Number(a?.divisionRank)-Number(b?.divisionRank));
+      renderDivisionStandings(); refreshWildcard(); refreshSchedules();
+    }
+
+    async function refreshWildcard(){
+      if(!state.selectedLeagueId) return;
+      renderWildcardStandingsLoading(true); renderWildcardStandingsError("");
+      try{
+        const rows=await fetchWildCard(state.selectedLeagueId,state.season);
+        state.wildcardRows=rows.slice().sort((a,b)=>Number(a?.wildCardRank||999)-Number(b?.wildCardRank||999));
+        renderWildcardStandings();
+      }catch(err){ renderWildcardStandingsError(err?.message||String(err)); }
+      finally{ renderWildcardStandingsLoading(false); }
+    }
+
+    function catByTeam(allGames,teamIds){
+      const out={live:[],finals:[],upcoming:[]};
+      allGames.forEach(g=>{
+        const involves=teamIds.has(g?.teams?.away?.team?.id)||teamIds.has(g?.teams?.home?.team?.id);
+        if(!involves) return;
+        const ags=g?.status?.abstractGameState;
+        if(ags==="Live") out.live.push(g);
+        else if(ags==="Final") out.finals.push(g);
+        else out.upcoming.push(g);
+      });
+      out.upcoming.sort((a,b)=>new Date(a.gameDate)-new Date(b.gameDate));
+      return out;
+    }
+
+    async function refreshSchedules(){
+      const teamIds=new Set((state.divisionRows||[]).map(r=>r?.team?.id));
+      if(teamIds.size===0) return;
+      renderGamesLoading(true); renderGamesError("");
+      try{
+        const now=new Date();
+        const [gY,gT,gN]=await Promise.all([
+          fetchSchedule(ymdLocal(addDays(now,-1))),
+          fetchSchedule(ymdLocal(now)),
+          fetchSchedule(ymdLocal(addDays(now,1)))
+        ]);
+        setDateBadges();
+        const yCat=catByTeam(gY,teamIds), tCat=catByTeam(gT,teamIds), nCat=catByTeam(gN,teamIds);
+        state.yday.finals=yCat.finals;
+        state.today=tCat;
+        state.tmr.upcoming=nCat.upcoming;
+        renderYesterday(); renderToday(); renderTomorrow(); updateSummaryCounts();
+      }catch(err){ renderGamesError(err?.message||String(err)); }
+      finally{ renderGamesLoading(false); }
+    }
+
+    function startPolling(){ if(state.pollHandle) clearInterval(state.pollHandle); state.pollHandle=setInterval(refreshSchedules,POLL_MS); }
+    function initFolding(){
+      const ySec=$("yday-sec"), tSec=$("tmr-sec");
+      try{
+        const yOpen=localStorage.getItem('mlbFoldYesterday');
+        const tOpen=localStorage.getItem('mlbFoldTomorrow');
+        if(yOpen==='true') ySec.open=true;
+        if(tOpen==='true') tSec.open=true;
+      }catch{}
+      ySec.addEventListener('toggle',()=>{ try{localStorage.setItem('mlbFoldYesterday',String(ySec.open))}catch{} });
+      tSec.addEventListener('toggle',()=>{ try{localStorage.setItem('mlbFoldTomorrow',String(tSec.open))}catch{} });
+    }
+    function initAutoCollapseHeader(){
+      const bar=$("topbar"); let lastY=window.scrollY||0; let collapsed=false; let ticking=false;
+      function update(){
+        const y=window.scrollY||0; const delta=y-lastY; const down=delta>6; const up=delta<-6;
+        if(y<16||up){ if(collapsed){ bar.classList.remove("collapsed"); collapsed=false; } }
+        else if(down&&y>48){ if(!collapsed){ bar.classList.add("collapsed"); collapsed=true; } }
+        lastY=y; ticking=false;
+      }
+      window.addEventListener("scroll",()=>{
+        if(!ticking){ window.requestAnimationFrame(update); ticking=true; }
+      },{passive:true});
+    }
+
+    document.addEventListener('DOMContentLoaded',()=>{
+      $("season-text").textContent=state.season;
+      $("theme-chip")&&($("theme-chip").textContent=isDark()?"Dark":"Light");
+      $("compact-chip")&&($("compact-chip").textContent=isCompact()?"Compact On":"Compact Off");
+      $("theme-toggle").addEventListener("click",()=>{document.documentElement.classList.toggle("dark"); localStorage.setItem('mlbDarkMode',String(isDark())); $("theme-chip").textContent=isDark()?"Dark":"Light";});
+      $("compact-toggle").addEventListener("click",()=>{document.documentElement.classList.toggle("compact"); localStorage.setItem('mlbCompact',String(isCompact())); $("compact-chip").textContent=isCompact()?"Compact On":"Compact Off";});
+      $("division-select").addEventListener("change",(e)=>onDivisionChange(e.target.value));
+      $("reset-btn").addEventListener("click",()=>{ localStorage.removeItem(LS_KEY); location.reload(); });
+      $("refresh-games").addEventListener("click",refreshSchedules);
+      initFolding(); initAutoCollapseHeader(); updateSummaryCounts(); // initial zeros
+    });
+
+    async function init(){
+      try{
+        const [divMap,teamsMap]=await Promise.all([fetchDivisionsMap(),fetchTeamsMap(state.season)]);
+        state.teamsById=teamsMap;
+        const records=await fetchStandingsByDivision(state.season);
+        state.recordsByDivision=records;
+        state.divisions=records.map(r=>({id:r?.division?.id,label:(divMap[r?.division?.id]||r?.division?.name||r?.division?.nameShort||"Division"),leagueId:r?.league?.id})).filter(x=>x?.id);
+        const saved=loadPrefs().divisionId; const initial=state.divisions.find(d=>d.id===Number(saved))||state.divisions[0]||null;
+        if(initial){ state.selectedDivisionId=initial.id; state.selectedLeagueId=initial.leagueId; }
+        const picker=$("division-picker"); const select=$("division-select");
+        select.innerHTML=state.divisions.map(d=>`<option value="${d.id}">${d.label}</option>`).join("");
+        $("divisions-loading").classList.add("hidden"); $("divisions-error").classList.add("hidden"); picker.classList.remove("hidden");
+        if(state.selectedDivisionId){ select.value=String(state.selectedDivisionId); onDivisionChange(state.selectedDivisionId); } else { renderDivisionStandings(); }
+      }catch(err){
+        $("divisions-loading").classList.add("hidden");
+        const el=$("divisions-error"); el.textContent=err?.message||String(err); el.classList.remove("hidden");
+      }
+      setDateBadges(); startPolling();
+    }
+    init();
+  </script>
+</body>
+</html>

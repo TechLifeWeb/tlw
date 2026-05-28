@@ -1,0 +1,482 @@
+:root {
+    --darkeLevel4: #000000;
+    /* Darkest */
+    --darkLevel3: #202020;
+    --darkLevel2: #404040;
+    --darkLevel1: #555555;
+    --darkLevel0: #F0F0F0;
+    /* Ligetest */
+    --accent1: #00009b;
+    --accent2: lime;
+    --accent3: #a32d77;
+}
+
+/*use the above like this color: var(--pageBackground); */
+body {
+    background-color: var(--darkeLevel4);
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contentsection img {
+    max-width: 60% !important;
+    height: auto !important;
+    cursor: pointer !important;
+}
+
+.contentsection img:active {
+    background: var(--darkeLevel4);
+    cursor: zoom-out;
+    display: block;
+    z-index: 200;
+    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    line-height: 1.0;
+    letter-spacing: 0;
+}
+
+.flexcolumn {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.flexrow img {
+    max-width: 100% !important;
+    height: auto !important;
+    cursor: pointer !important;
+    vertical-align: middle !important;
+}
+
+figure {
+    margin: 0px;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .2rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4.0rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    line-height: 1.0;
+    letter-spacing: -.1rem;
+}
+
+h3 {
+    font-size: 3.0rem;
+    line-height: 1.0;
+    letter-spacing: -.1rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+    line-height: 1.0;
+    letter-spacing: -.08rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    line-height: 1.0;
+    letter-spacing: -.05rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.0;
+    letter-spacing: 0;
+}
+
+.top {
+    background: var(--darkLevel3);
+    ;
+    color: var(--darkLevel0);
+    ;
+    padding: .5em;
+}
+
+.top h2 {
+    font-size: 5.0rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem;
+}
+
+.top h1 {
+    font-size: 5.0rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem;
+}
+
+.middle {
+    background: var(--darkLevel2);
+}
+
+.middle h1 {
+    display: inline;
+}
+
+.middle h2 {
+    display: inline;
+    font-size: 3.0rem;
+}
+
+.middle h3 {
+    display: inline;
+    font-size: 3.0rem;
+}
+
+.middle small {
+    display: inline-flex;
+}
+
+.middle .socialbuttons svg {
+    fill: var(--darkLevel2);
+    ;
+    text-decoration: none;
+}
+
+.middle svg:hover {
+    fill: var(--accent1);
+    text-decoration: none;
+}
+
+.middle a:hover {
+    color: var(--accent1);
+}
+
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav {
+    background: var(--darkLevel2);
+    color: var(--darkLevel0);
+}
+
+.navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--darkLevel0);
+}
+
+.left {
+    background: var(--darkLevel2);
+    color: var(--darkLevel0);
+    padding: .5em;
+    list-style: none;
+    line-height: 1.2;
+}
+
+.left a {
+    color: var(--darkLevel0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left a:hover {
+    color: var(--accent2);
+}
+
+.left .u-featured {
+    display: none;
+}
+
+.left .header {
+    display: none;
+}
+
+.contentsection {
+    background: var(--darkLevel0);
+    padding: 0.5em;
+    color: var(--darkeLevel4);
+}
+
+.contentsection h1 {
+    font-size: 2.5rem;
+    line-height: 0.9;
+    letter-spacing: -.05rem;
+}
+
+.contentsection h4 {
+    font-size: 2.5rem;
+    line-height: 0.9;
+    letter-spacing: -.05rem;
+}
+
+.contentsection a {
+    color: var(--accent1);
+    text-decoration: none;
+}
+
+.contentsection a:hover {
+    color: var(--darkLevel0);
+    background: var(--accent3);
+    text-decoration: none;
+}
+
+.contentsection svg:hover {
+    background: var(--darkLevel0);
+}
+
+.contentsection h2 a {
+    color: var(--darkeLevel4);
+    text-decoration: none;
+}
+
+.contentsection img {
+    max-width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+
+.phototext {
+    display: none;
+}
+
+.contentsection ul {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 100%;
+    list-style-type: "➢ ";
+}
+
+.bottom {
+    background: var(--darkLevel3);
+    color: var(--darkLevel0);
+    padding: .5em;
+}
+
+blockquote {
+    border-left: 5px solid var(--accent3);
+    margin-left: 25px;
+    padding-left: 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.socialbuttons svg {
+    fill: var(--darkLevel1);
+    text-decoration: none;
+}
+
+.head-social {
+    float: right;
+}
+
+.head-social .socialbuttons svg {
+    fill: var(--darkLevel0);
+    text-decoration: none;
+}
+
+.head-social .socialbuttons svg:hover {
+    fill: var(--accent2);
+    text-decoration: none;
+}
+
+.left .socialbuttons svg {
+    fill: var(--darkLevel0);
+    text-decoration: none;
+}
+
+.left .socialbuttons svg:hover {
+    fill: var(--accent2);
+    text-decoration: none;
+}
+
+.postlist {
+    box-shadow: 2px 2px 5px 1px var(--darkLevel3);
+    padding: 8px;
+}
+
+.h-entry {
+    box-shadow: 2px 2px 5px 1px var(--darkLevel3);
+    padding: 8px;
+}
+
+.feed-entry {
+    box-shadow: 2px 2px 5px 1px var(--darkLevel3);
+    padding: 8px;
+}
+
+.feed-entry p {
+    display: inline;
+}
+
+.feed-entry br {
+    display: inline-block;
+}
+
+summary {
+    display: list-item;
+    font-size: 2.4rem;
+    letter-spacing: -.08rem;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--darkLevel3);
+    color: var(--darkLevel1);
+}
+
+button:hover {
+    color: var(--darkLevel3);
+    background-color: var(--darkLevel1);
+}
+
+input {
+    color: var(--darkLevel3);
+}
+
+pre {
+    box-shadow: 2px 2px 5px 1px var(--darkLevel3);
+    padding: 8px;
+    background: var(--darkLevel2);
+    color: var(--darkLevel0);
+    border: 1px solid var(--darkLevel3);
+    border-left: 3px solid var(--darkLevel2);
+    page-break-inside: avoid;
+    font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+strong {
+    color: var(--accent3);
+}
+
+#syndication ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+}
+
+#syndication li {
+    text-indent: -1em;
+    padding-left: 1em;
+    display: inline;
+}
+
+.styled-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+}
+
+.styled-table td,
+.styled-table th {
+    border: 1px solid var(--darkLevel4);
+    padding: 8px;
+}
+
+.styled-table tr:nth-child(odd) {
+    background-color: var(--darkLevel1);
+    color: var(--darkLevel0);
+}
+
+.styled-table tr:nth-child(odd) a {
+    background-color: var(--darkLevel1);
+    color: var(--darkLevel0);
+}
+
+.styled-table tr:nth-child(odd) a {
+    background-color: var(--darkLevel1);
+    color: var(--darkLevel0);
+}
+
+.styled-table tr:nth-child(odd) a:hover {
+    color: var(--darkLevel0);
+    background: var(--accent3);
+    text-decoration: none;
+}
+
+.styled-table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: var(--darkLevel3);
+    color: var(--darkLevel0);
+}
+
+/* Styles for small devices (phones) */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+
+        .mobile-hide {
+            display: none !important;
+        }
+    }
+
+    /* Styles for tablets and larger devices */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    }
+
+    /* Styles for desktops and larger devices */
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    /* Styles for large desktops */
+    @media (min-width: 1280px) {
+        .container {
+            max-width: 1280px;
+        }
+    }

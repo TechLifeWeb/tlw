@@ -1,0 +1,131 @@
+nav svg {
+    fill: white;
+    text-decoration: none;
+}
+
+nav svg:hover {
+    fill: var(--pico-primary);
+    text-decoration: none;
+}
+
+#syndication svg {
+    fill: white;
+    text-decoration: none;
+}
+
+#syndication svg:hover {
+    fill: var(--pico-primary);
+    text-decoration: none;
+}
+
+.h-card svg {
+    fill: white;
+    text-decoration: none;
+}
+
+.h-card svg:hover {
+    fill: var(--pico-primary);
+    text-decoration: none;
+}
+
+article h1 {
+    --pico-font-size: 1.75rem;
+    --pico-line-height: 1.15;
+    --pico-typography-spacing-top: 2.625rem;
+    text-transform: capitalize;
+}
+
+article h2 {
+    text-transform: capitalize;
+}
+
+article small {
+    display: inline-flex;
+}
+
+.e-content img {
+    max-height: 500px;
+    width: auto;
+    background-size: contain;
+    border-radius: var(--pico-border-radius);
+    cursor: pointer;
+}
+
+.e-content img:active {
+    background: var(--pico-background-color);
+    cursor: zoom-out;
+    display: block;
+    z-index: 200;
+    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.entry-title {
+    display: inline-flex;
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    line-height: 1.0;
+    letter-spacing: 0;
+}
+
+.flexcolumn {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.flexrow img {
+    max-width: 100% !important;
+    height: auto !important;
+    cursor: pointer !important;
+    vertical-align: middle !important;
+}
+
+.flexnav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .mobile-hide {
+        display: none !important;
+    }
+}
+
+.comments img {
+    width: 25px;
+}
+
+.reacts img {
+    width: 25px;
+}
+
+.headimg img {
+    width: 1500px;
+    height: auto;
+}
+
+.authorphoto img {
+    width: 200px;
+    height: auto;
+}
+
+.mermaid {
+    background: #cccccc;
+}
+
+.language-dataviewjs {
+    display: none;
+}

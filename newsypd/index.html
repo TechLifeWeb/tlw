@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Productive Day — Dashboard (Single Headlines)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --rss-default-width:280px;
+    --rss-min-width:160px;
+    --rss-gap:10px;
+    --box-bg: rgba(0,0,0,0.65);
+    --accent: #0073e6;
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:#000;
+    color:#fff;
+  }
+
+  /* Centered main content (calendar + message) */
+  .parent {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100%;
+    position:relative;
+    z-index:1;
+    pointer-events:auto;
+  }
+  .child {
+    text-align:center;
+    z-index:1;
+    pointer-events:auto;
+    padding:1rem;
+    max-width:90%;
+  }
+
+  /* Calendar icon (keeps same sizes) */
+time.icon {
+  font-size: 1em;
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+time.icon * { display:block; width:100%; text-align:center; font-weight:bold; }
+time.icon strong { position:absolute; top:0; padding:0.4em 0; color:#fff; background:#0099cc; border-bottom:1px dashed #f37302; }
+time.icon em { position:absolute; bottom:0.3em; color:#0099cc; }
+time.icon span { font-size:2.6em; padding-top:0.8em; color:#2f2f2f; }
+
+  /* RSS container (top-right) */
+  #rssContainer {
+    position:fixed;
+    top:10px;
+    right:10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--rss-gap);
+    align-items:flex-start;
+    max-width:calc(100% - 20px);
+    z-index:1000;
+    pointer-events:none;        /* container won't intercept clicks */
+    box-sizing:border-box;
+    justify-content:flex-start; /* left-aligned wrap */
+  }
+
+  .rssBox a{
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .rssBox {
+    background:var(--box-bg);
+    color:#fff;
+    padding:10px;
+    border-radius:8px;
+    font-size:0.95rem; /* same font sizing as prior version */
+    width:var(--rss-default-width);
+    min-width:var(--rss-min-width);
+    flex:1 1 var(--rss-default-width);
+    box-sizing:border-box;
+    pointer-events:auto;        /* boxes remain clickable */
+    z-index:1001;
+    overflow:hidden;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+    max-height:8rem;
+  }
+  .rssBox:focus { outline:3px solid rgba(255,213,79,0.9); }
+  .rssBox:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,0.45); }
+
+  .rssTitle {
+    display:block;
+    line-height:1.15;
+    white-space:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+  }
+
+  .rssBox.expanded .rssTitle,
+  .rssBox:hover .rssTitle {
+    -webkit-line-clamp:unset;
+  }
+
+  /* Settings button */
+  #settingsBtn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    font-size:20px;
+    padding:10px 14px;
+    border-radius:8px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    z-index:11000;              /* ensure it's above everything */
+    pointer-events:auto;
+    box-shadow:0 6px 18px rgba(0,0,0,0.35);
+  }
+
+  /* Settings overlay */
+  #settingsPanel {
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.55);
+    z-index:10999;
+    overflow:auto;
+  }
+  #settingsPanel .inner {
+    background:#fff;
+    color:#000;
+    width:92%;
+    max-width:900px;
+    margin:40px auto;
+    padding:18px;
+    border-radius:8px;
+    box-sizing:border-box;
+  }
+
+  .eventRow {
+    border:1px solid #ddd;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:6px;
+    background:#fafafa;
+  }
+
+  #timeline ul { list-style:none; padding-left:0; margin:0; }
+  #timeline li { margin-bottom:6px; color:#333; }
+
+  @media (max-width:900px){
+    .rssBox { max-width:calc((100% - (var(--rss-gap)*2)) / 3); }
+  }
+  @media (max-width:720px){
+    .rssBox { max-width:calc((100% - var(--rss-gap)) / 2); }
+  }
+  @media (max-width:520px){
+    .rssBox { max-width:100%; width:100%; flex-basis:100%; }
+  }
+
+  #settingsBtn:focus { outline:3px solid #ffd54f; }
+</style>
+</head>
+<body>
+
+<!-- Top-right single-headline boxes -->
+<div id="rssContainer" aria-hidden="false">
+  <div id="rssBox0" class="rssBox" tabindex="0">Loading…</div>
+  <div id="rssBox1" class="rssBox" tabindex="0">Loading…</div>
+  <div id="rssBox2" class="rssBox" tabindex="0">Loading…</div>
+</div>
+
+<!-- Centered calendar + message -->
+<div class="parent" role="main" aria-live="polite">
+  <div class="child" id="centerContent">
+    <time class="icon" aria-hidden="true">
+      <em id="weekday">Day</em>
+      <strong id="month">Month</strong>
+      <span id="date">0</span>
+    </time>
+
+    <div id="mainMessage" style="font-size:2rem; margin-top:0.6rem; font-weight:600;"></div>
+  </div>
+</div>
+
+<!-- Settings -->
+<button id="settingsBtn" aria-haspopup="dialog" aria-controls="settingsPanel" title="Open settings">⚙️</button>
+
+<div id="settingsPanel" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="inner" role="document">
+    <h2 style="margin-top:0;">Settings</h2>
+
+    <h3>Edit Events</h3>
+    <div id="eventList" style="margin-bottom:8px;"></div>
+    <button id="addEvent">Add Event</button>
+    <button id="exportConfig">Export</button>
+    <input type="file" id="importFile" style="display:none;">
+    <button id="importConfig">Import</button>
+
+    <hr>
+
+    <h3>RSS Feeds</h3>
+    <div id="feedSettings" style="margin-bottom:12px;">
+      <label style="display:block; margin-bottom:8px;">Feed 1: <input type="text" data-feed="0" style="width:86%"></label>
+      <label style="display:block; margin-bottom:8px;">Feed 2: <input type="text" data-feed="1" style="width:86%"></label>
+      <label style="display:block; margin-bottom:8px;">Feed 3: <input type="text" data-feed="2" style="width:86%"></label>
+    </div>
+
+    <hr>
+
+    <h3>Test Time & Preview</h3>
+    <label style="display:block; margin-bottom:8px;">
+      Hour:
+      <input type="range" id="testTime" min="0" max="23" value="12" style="vertical-align:middle;">
+      <span id="testTimeLabel">12:00</span>
+    </label>
+    <div id="testPreview" style="margin-top:8px; font-weight:bold;"></div>
+
+    <div id="timeline" style="margin-top:12px;">
+      <h3>Today’s Timeline</h3>
+      <ul id="timelineList"></ul>
+    </div>
+
+    <div style="text-align:right; margin-top:12px;">
+      <button id="closeSettings">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Helpers */
+function $(id){ return document.getElementById(id); }
+function timeToMinutes(t){ const [h,m] = (t||"00:00").split(":").map(Number); return h*60 + (m||0); }
+function safeText(s){ return (s||"").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+/* Defaults (user-changeable) */
+const DEFAULT_FEEDS = [
+  "https://feeds.bbci.co.uk/news/rss.xml",
+  "https://feeds.reuters.com/reuters/topNews",
+  "https://rss.apnews.com/apf-topnews"
+];
+
+const DEFAULT_EVENTS = [
+  { days:[0,1,2,3,4,5,6], start:"08:00", end:"15:00", emoji:"📈", message:"Make it a productive day" },
+  { days:[0,1,2,3,4,5,6], start:"14:00", end:"18:00", emoji:"☕", message:"Take a break" },
+  { days:[0,1,2,3,4,5,6], start:"16:00", end:"16:00", emoji:"🕓", message:"End-of-day capture" },
+  { days:[0,1,2,3,4,5,6], start:"18:00", end:"23:00", emoji:"🌙", message:"Good evening" },
+  { days:[0,1,2,3,4,5,6], start:"05:00", end:"10:00", emoji:"☑️", message:"Check your todo list" },
+  { days:[5], start:"16:00", end:"23:00", emoji:"📅", message:"Weekly review?" }
+];
+
+function loadFeeds(){ return JSON.parse(localStorage.getItem("feeds") || JSON.stringify(DEFAULT_FEEDS)); }
+function saveFeeds(f){ localStorage.setItem("feeds", JSON.stringify(f)); }
+function loadEvents(){ return JSON.parse(localStorage.getItem("events") || JSON.stringify(DEFAULT_EVENTS)); }
+function saveEvents(e){ localStorage.setItem("events", JSON.stringify(e)); }
+
+/* Date + background (keeps same sizes) */
+function renderDateAndBg(){
+  const now = new Date();
+  const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][now.getDay()];
+  const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  $("weekday").textContent = weekday;
+  $("month").textContent = monthNames[now.getMonth()];
+  $("date").textContent = now.getDate();
+
+  const hourly = [
+    "#000000","#000001","#000002","#000003","#000004","#003366","#004080","#004d99",
+    "#0059b3","#bf80ff","#0073e6","#0080ff","#8000ff","#3399ff","#53c653","#400080",
+    "#39ac39","#339933","#000018","#267326","#206020","#000021","#000022","#000023"
+  ];
+  document.body.style.background = hourly[now.getHours()] || "#000";
+}
+
+/* Event engine */
+function findCurrentEvent(opts = {}){
+  const now = opts.now || new Date();
+  const day = now.getDay();
+  const hour = (opts.hourOverride != null) ? opts.hourOverride : now.getHours();
+  const minute = (opts.minuteOverride != null) ? opts.minuteOverride : now.getMinutes();
+  const minutes = hour*60 + minute;
+  const events = loadEvents();
+
+  const matches = events.filter(ev => {
+    if (!ev.days || !ev.days.includes(day)) return false;
+    const start = timeToMinutes(ev.start);
+    const end = timeToMinutes(ev.end);
+    if (start <= end) return minutes >= start && minutes <= end;
+    return minutes >= start || minutes <= end;
+  });
+
+  if (matches.length === 0) return null;
+
+  matches.sort((a,b) => {
+    const durA = (timeToMinutes(a.end) - timeToMinutes(a.start) + 1440) % 1440;
+    const durB = (timeToMinutes(b.end) - timeToMinutes(b.start) + 1440) % 1440;
+    return durA - durB;
+  });
+
+  return matches[0];
+}
+
+function renderMainMessage(){
+  const ev = findCurrentEvent();
+  const el = $("mainMessage");
+  if (ev) el.textContent = `${ev.emoji} ${ev.message}`;
+  else el.textContent = "";
+}
+
+/* Robust single-headline RSS loader (tries proxies, supports RSS+Atom) */
+const RSS_PROXIES = [
+  url => "https://api.allorigins.win/raw?url=" + encodeURIComponent(url),
+  url => "https://r.jina.ai/http://r.jina.ai/" + encodeURIComponent(url)
+];
+
+async function fetchXmlWithProxies(feedUrl){
+  let lastErr = null;
+  for (const makeProxy of RSS_PROXIES){
+    const proxyUrl = makeProxy(feedUrl);
+    try {
+      const res = await fetch(proxyUrl, {cache: "no-store"});
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const text = await res.text();
+      if (!text || (!text.includes("<") || !text.match(/<\s*(rss|feed|item|entry|channel)\b/i))) {
+        throw new Error("Invalid XML from proxy");
+      }
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "text/xml");
+      if (xml.querySelector("parsererror")) throw new Error("XML parse error");
+      return xml;
+    } catch (err) {
+      lastErr = err;
+      console.warn("Proxy failed:", err);
+    }
+  }
+  throw lastErr || new Error("All proxies failed");
+}
+
+function extractLatestItem(xml, feedUrl){
+  const first = xml.querySelector("item, entry");
+  if (!first) {
+    const feedTitle = xml.querySelector("channel > title, feed > title")?.textContent || null;
+    return feedTitle ? { title: feedTitle, link: feedUrl } : null;
+  }
+  const title = first.querySelector("title")?.textContent?.trim() || "Untitled";
+  let link = first.querySelector("link[rel='alternate']")?.getAttribute("href")
+          || first.querySelector("link[href]")?.getAttribute("href")
+          || first.querySelector("link")?.textContent
+          || first.querySelector("guid")?.textContent
+          || feedUrl;
+  return { title, link };
+}
+
+async function loadLatestIntoBox(feedUrl, boxId){
+  const box = $(boxId);
+  if (!box) return;
+  if (!feedUrl || feedUrl.trim() === ""){
+    box.style.display = "none";
+    return;
+  }
+  box.style.display = "block";
+  box.innerHTML = '<div class="rssTitle">Loading…</div>';
+  try {
+    const xml = await fetchXmlWithProxies(feedUrl);
+    const item = extractLatestItem(xml, feedUrl);
+    if (!item) {
+      box.innerHTML = `<div class="rssTitle">No items found</div>`;
+      return;
+    }
+    const safe = safeText(item.title);
+    box.innerHTML = `<a href="${item.link}" target="_blank" rel="noopener"><div class="rssTitle">${safe}</div></a>`;
+    box.setAttribute("title", item.title || "");
+    box.classList.remove("expanded");
+    box.onclick = function(e){
+      if (e.target.closest("a")) return;
+      this.classList.toggle("expanded");
+    };
+    box.onkeydown = function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); this.classList.toggle("expanded"); }
+    };
+  } catch (err) {
+    console.error("Feed load failed for", feedUrl, err);
+    box.innerHTML = `<div class="rssTitle">Unable to load feed</div>`;
+  }
+}
+
+async function loadAllRSS(){
+  const feeds = loadFeeds();
+  await Promise.all(feeds.map((f, idx) => loadLatestIntoBox(f, "rssBox" + idx)));
+}
+
+/* Settings UI wiring */
+function renderEventForm(){
+  const events = loadEvents();
+  const container = $("eventList");
+  container.innerHTML = "";
+  events.forEach((ev, idx) => {
+    const div = document.createElement("div");
+    div.className = "eventRow";
+    div.innerHTML = `
+      <div style="font-weight:600; margin-bottom:6px;">Event ${idx+1}</div>
+      <div style="margin-bottom:6px;">
+        ${["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map((d,i)=>`
+          <label style="margin-right:6px;"><input type="checkbox" data-day="${i}" ${ev.days.includes(i)?"checked":""}> ${d}</label>
+        `).join("")}
+      </div>
+      <div style="margin-bottom:6px;">
+        Start: <input type="time" data-field="start" value="${ev.start}"> &nbsp;
+        End: <input type="time" data-field="end" value="${ev.end}">
+      </div>
+      <div style="margin-bottom:6px;">
+        Emoji: <input type="text" data-field="emoji" value="${ev.emoji}" style="width:60px;"> &nbsp;
+        Message: <input type="text" data-field="message" value="${ev.message}" style="width:60%;">
+      </div>
+      <div style="text-align:right;">
+        <button data-delete="${idx}">Delete</button>
+      </div>
+    `;
+    container.appendChild(div);
+
+    div.querySelectorAll("input[data-field]").forEach(inp => {
+      inp.addEventListener("input", () => {
+        ev[inp.dataset.field] = inp.value;
+        saveEvents(events);
+        updateTimeline();
+        renderMainMessage();
+      });
+    });
+    div.querySelectorAll("input[data-day]").forEach(cb => {
+      cb.addEventListener("change", () => {
+        const day = Number(cb.dataset.day);
+        if (cb.checked && !ev.days.includes(day)) ev.days.push(day);
+        if (!cb.checked) ev.days = ev.days.filter(d => d !== day);
+        saveEvents(events);
+        updateTimeline();
+        renderMainMessage();
+      });
+    });
+    div.querySelector("button[data-delete]").addEventListener("click", () => {
+      events.splice(idx,1);
+      saveEvents(events);
+      renderEventForm();
+      updateTimeline();
+      renderMainMessage();
+    });
+  });
+}
+
+function wireFeedInputs(){
+  const feeds = loadFeeds();
+  document.querySelectorAll("#feedSettings input[data-feed]").forEach(input => {
+    const idx = Number(input.dataset.feed);
+    input.value = feeds[idx] || "";
+    input.addEventListener("input", () => {
+      feeds[idx] = input.value.trim();
+      saveFeeds(feeds);
+      loadAllRSS();
+    });
+  });
+}
+
+/* Timeline & test preview */
+function updateTimeline(){
+  const events = loadEvents();
+  const today = new Date().getDay();
+  const todays = events.filter(ev => ev.days.includes(today)).slice().sort((a,b)=>timeToMinutes(a.start)-timeToMinutes(b.start));
+  const list = $("timelineList");
+  list.innerHTML = "";
+  if (todays.length === 0) {
+    list.innerHTML = "<li>No events for today.</li>";
+    return;
+  }
+  todays.forEach(ev => {
+    const li = document.createElement("li");
+    li.textContent = `${ev.start}–${ev.end} ${ev.emoji} ${ev.message}`;
+    list.appendChild(li);
+  });
+}
+
+function updateTestPreview(){
+  const h = parseInt($("testTime").value,10);
+  $("testTimeLabel").textContent = (h<10?"0"+h:h) + ":00";
+  const ev = findCurrentEvent({ hourOverride:h, minuteOverride:0 });
+  $("testPreview").textContent = ev ? `${ev.emoji} ${ev.message}` : "No event at this time.";
+}
+
+/* Export / Import */
+function exportConfig(){
+  const data = JSON.stringify({ events: loadEvents(), feeds: loadFeeds() }, null, 2);
+  const blob = new Blob([data], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "dashboard-config.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+function importConfigFile(file){
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      if (parsed.events) saveEvents(parsed.events);
+      if (parsed.feeds) saveFeeds(parsed.feeds);
+      renderEventForm();
+      updateTimeline();
+      updateTestPreview();
+      loadAllRSS();
+      alert("Imported successfully.");
+    } catch (e) {
+      alert("Invalid JSON file.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+/* Settings open/close */
+const settingsBtn = $("settingsBtn");
+const settingsPanel = $("settingsPanel");
+settingsBtn.addEventListener("click", function(e){
+  e.stopPropagation();
+  const open = settingsPanel.style.display === "block";
+  if (!open){
+    settingsPanel.style.display = "block";
+    settingsPanel.setAttribute("aria-hidden","false");
+    renderEventForm();
+    wireFeedInputs();
+    updateTimeline();
+    updateTestPreview();
+  } else {
+    settingsPanel.style.display = "none";
+    settingsPanel.setAttribute("aria-hidden","true");
+  }
+});
+document.addEventListener("click", function(e){
+  if (settingsPanel.style.display !== "block") return;
+  const inner = settingsPanel.querySelector(".inner");
+  if (inner && !inner.contains(e.target) && e.target !== settingsBtn){
+    settingsPanel.style.display = "none";
+    settingsPanel.setAttribute("aria-hidden","true");
+  }
+});
+$("closeSettings").addEventListener("click", function(){
+  settingsPanel.style.display = "none";
+  settingsPanel.setAttribute("aria-hidden","true");
+});
+
+/* Other controls */
+$("addEvent").addEventListener("click", function(){
+  const events = loadEvents();
+  events.push({ days:[0], start:"09:00", end:"10:00", emoji:"✨", message:"New event" });
+  saveEvents(events);
+  renderEventForm();
+  updateTimeline();
+  updateTestPreview();
+});
+$("exportConfig").addEventListener("click", exportConfig);
+$("importConfig").addEventListener("click", function(){ $("importFile").click(); });
+$("importFile").addEventListener("change", function(){ if (this.files[0]) importConfigFile(this.files[0]); });
+$("testTime").addEventListener("input", updateTestPreview);
+
+/* Auto-refresh: reload RSS periodically (10 minutes) */
+setInterval(() => { try { loadAllRSS(); } catch(e){} }, 10 * 60 * 1000);
+
+/* Initial render */
+renderDateAndBg();
+renderMainMessage();
+loadAllRSS();
+renderEventForm();
+updateTimeline();
+updateTestPreview();
+
+/* Keyboard: Escape closes settings */
+document.addEventListener("keydown", function(e){
+  if (e.key === "Escape" && settingsPanel.style.display === "block"){
+    settingsPanel.style.display = "none";
+    settingsPanel.setAttribute("aria-hidden","true");
+  }
+});
+</script>
+
+</body>
+</html>
