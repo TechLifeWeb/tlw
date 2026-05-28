@@ -7,11 +7,27 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Mon, 25 May 2026 22:33:24 PDT</pubDate>
-      <lastBuildDate>Mon, 25 May 2026 22:33:24 PDT</lastBuildDate>
+      <pubDate>Thu, 28 May 2026 11:28:36 PDT</pubDate>
+      <lastBuildDate>Thu, 28 May 2026 11:28:36 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-05-28T11:28:36.000-07:00</title><link>https://techlifeweb.com/blog/2026/05/post-2026-05-28T102836/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;tl;dr : How do you feel about rehosting a web page for a domain that has gone dark?&lt;br&gt;
+The issue: You&#39;ve done some research in the past and found a wonderful page about your topic that helped you. A long time later you have the same issue or want to do a write up about the fix and link to the site. The only problem is, the site is no longer on-line. Despite all efforts to find any replacement by the author, the only one you can find is on archive.org. My question to you: can I, with proper attribution, rehost the now missing content? Or, just link to where I found it on archive.org?&lt;br&gt;
+#ethics #indieweb&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Thu, 28 May 2026 11:28:36 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/05/post-2026-05-28T102836/</guid>
+    </item>
     <item>
       <title>Note 2026-05-28T07:18:49.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116652633567940593/</link>
       <description>
