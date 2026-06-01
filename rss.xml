@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 28 May 2026 11:28:36 PDT</pubDate>
-    <lastBuildDate>Thu, 28 May 2026 11:28:36 PDT</lastBuildDate>
+    <pubDate>Mon, 01 Jun 2026 00:21:14 PDT</pubDate>
+    <lastBuildDate>Mon, 01 Jun 2026 00:21:14 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-01T00:21:14.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Windows-Super-God-Mode: Creates shortcuts to virtually every special location or action built into Windows <a href="https://github.com/ThioJoe/Windows-Super-God-Mode">https://github.com/ThioJoe/Windows-Super-God-Mode</a> 'This PowerShell script creates shortcuts to all special shell folders, named folders, task links, system settings, deep links, and URL protocols in Windows, providing easy access to a wide range of system settings and features.'<br />
+#windows</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Windows-Super-God-Mode: Creates shortcuts to virtually every special location or action built into Windows <a href="https://github.com/ThioJoe/Windows-Super-God-Mode">https://github.com/ThioJoe/Windows-Super-God-Mode</a> 'This PowerShell script creates shortcuts to all special shell folders, named folders, task links, system settings, deep links, and URL protocols in Windows, providing easy access to a wide range of system settings and features.'<br />
+#windows</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Mon, 01 Jun 2026 00:21:14 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-05-28T11:28:36.000-07:00</title>

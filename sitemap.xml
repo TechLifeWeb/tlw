@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</loc>
+            <lastmod>2026-06-01T07:21:14.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116671037134248192/</loc>
             <lastmod>2026-05-31T20:19:05.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -754,24 +760,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116511649250834480/</loc>
             <lastmod>2026-05-03T16:44:39.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116508466719559644/</loc>
-            <lastmod>2026-05-03T03:15:17.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116506784280690674/</loc>
-            <lastmod>2026-05-02T20:07:25.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116506776044710766/</loc>
-            <lastmod>2026-05-02T20:05:20.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

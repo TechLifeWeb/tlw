@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Thu, 28 May 2026 11:28:36 PDT</pubDate>
-      <lastBuildDate>Thu, 28 May 2026 11:28:36 PDT</lastBuildDate>
+      <pubDate>Mon, 01 Jun 2026 00:21:14 PDT</pubDate>
+      <lastBuildDate>Mon, 01 Jun 2026 00:21:14 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-01T00:21:14.000-07:00</title><link>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Windows-Super-God-Mode: Creates shortcuts to virtually every special location or action built into Windows &lt;a href=&#39;https://github.com/ThioJoe/Windows-Super-God-Mode&#39;&gt;https://github.com/ThioJoe/Windows-Super-God-Mode&lt;/a&gt; &#39;This PowerShell script creates shortcuts to all special shell folders, named folders, task links, system settings, deep links, and URL protocols in Windows, providing easy access to a wide range of system settings and features.&#39;&lt;br&gt;
+#windows&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 01 Jun 2026 00:21:14 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</guid>
+    </item>
     <item>
       <title>Note 2026-05-31T13:19:05.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116671037134248192/</link>
       <description>
@@ -1518,45 +1533,6 @@ It looks like there&#39;s a photodump from the Artemis II mission.
       <pubDate>Sun, 03 May 2026 09:44:39 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116511649250834480/</guid>
-    </item>
-    <item>
-      <title>Note 2026-05-02T20:15:17.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116508466719559644/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Padres would like to stop laying teams from Chicago. Drop game 2 to the White Sox. All the NL west lost again today. Game 3 to avoid the sweep tomorrow at 1:10pm PDT.&lt;br&gt;&lt;a href=&quot;https://techlifeweb.com/mlb-dashboard/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;&quot;&gt;techlifeweb.com/mlb-dashboard/&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/Padres&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Padres&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Sat, 02 May 2026 20:15:17 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116508466719559644/</guid>
-    </item>
-    <item>
-      <title>Note 2026-05-02T13:07:25.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116506784280690674/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Not surprising | Spirit Airlines says it’s going out of business after 34 years and is ending operations immediately &lt;a href=&quot;https://fox5sandiego.com/news/spirit-airlines-says-its-going-out-of-business-after-34-years-and-is-ending-operations-immediately/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;fox5sandiego.com/news/spirit-a&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;irlines-says-its-going-out-of-business-after-34-years-and-is-ending-operations-immediately/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Sat, 02 May 2026 13:07:25 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116506784280690674/</guid>
-    </item>
-    <item>
-      <title>Note 2026-05-02T13:05:20.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116506776044710766/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;NorCal is killing it! Highest Gas Prices in California &lt;a href=&quot;https://fox5sandiego.com/news/california-news/highest-gas-prices-california/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;fox5sandiego.com/news/californ&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;ia-news/highest-gas-prices-california/&lt;/span&gt;&lt;/a&gt;  &lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/California&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;California&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Sat, 02 May 2026 13:05:20 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116506776044710766/</guid>
     </item>
     <item>
       <title>Photo 2026-04-25T22:39:19.000-07:00</title><link>https://techlifeweb.com/p/TechLifeWeb/953890257789841396/</link>
