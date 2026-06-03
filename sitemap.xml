@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116687539392309193/</loc>
+            <lastmod>2026-06-03T18:15:49.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116682656178658820/</loc>
             <lastmod>2026-06-02T21:33:57.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -728,38 +734,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116520370042349408/</loc>
-            <lastmod>2026-05-05T05:42:27.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116520058488739855/</loc>
-            <lastmod>2026-05-05T04:23:14.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/05/post-2026-05-04T182728/</loc>
             <lastmod>2026-05-05T02:27:29.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116519531132842998/</loc>
-            <lastmod>2026-05-05T02:09:07.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116517758001029564/</loc>
-            <lastmod>2026-05-04T18:38:11.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116517172186202500/</loc>
-            <lastmod>2026-05-04T16:09:12.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
