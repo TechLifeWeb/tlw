@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116694368717182324/</loc>
+            <lastmod>2026-06-04T23:12:37.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
+            <lastmod>2026-06-04T06:33:14.274Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/productivity/</loc>
+            <lastmod>2026-06-04T06:30:14.272Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/SanDiego/</loc>
+            <lastmod>2026-06-04T06:10:44.144Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/United%20Kingdom/</loc>
+            <lastmod>2026-06-04T05:36:12.288Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/obsidiannotes/Templater%20code%20for%20daily%20note%20navigation/</loc>
+            <lastmod>2026-06-04T00:10:51.938Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116687539392309193/</loc>
             <lastmod>2026-06-03T18:15:49.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -82,12 +118,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/California/</loc>
             <lastmod>2026-05-27T05:23:31.517Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/SanDiego/</loc>
-            <lastmod>2026-05-27T05:13:01.435Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -212,12 +242,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
-            <lastmod>2026-05-23T05:07:26.816Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116621936664334721/</loc>
             <lastmod>2026-05-23T04:12:11.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -316,12 +340,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/catholic/Devotions/</loc>
             <lastmod>2026-05-19T06:11:25.803Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/obsidiannotes/Templater%20code%20for%20daily%20note%20navigation/</loc>
-            <lastmod>2026-05-19T05:23:25.666Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -716,24 +734,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116525781488304412/</loc>
-            <lastmod>2026-05-06T04:38:40.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116525708371197366/</loc>
-            <lastmod>2026-05-06T04:20:04.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116523885513750389/</loc>
-            <lastmod>2026-05-05T20:36:29.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/05/post-2026-05-04T182728/</loc>
             <lastmod>2026-05-05T02:27:29.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -742,12 +742,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/05/repost-2026-05-03T235508/</loc>
             <lastmod>2026-05-04T07:55:08.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/productivity/</loc>
-            <lastmod>2026-05-01T00:04:43.828Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -1138,12 +1132,6 @@
         <url>
             <loc>https://techlifeweb.com/p/TechLifeWeb/935944867894961791/</loc>
             <lastmod>2026-03-07T17:10:45.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/United%20Kingdom/</loc>
-            <lastmod>2026-03-06T19:33:51.654Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
