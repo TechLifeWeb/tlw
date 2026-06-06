@@ -2685,7 +2685,7 @@ main {
 .pico [data-tooltip][data-placement=bottom]::before, .pico [data-tooltip][data-placement=bottom]::after {
   top: 100%;
   bottom: auto;
-  transform: translate(-50%, 0.25rem-;
+  transform: translate(-50%, 0.25rem);
 }
 .pico [data-tooltip][data-placement=bottom]:after {
   transform: translate(-50%, -0.3rem);
