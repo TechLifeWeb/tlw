@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116710031093920217/</loc>
+            <lastmod>2026-06-07T17:35:45.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116709732759642702/</loc>
+            <lastmod>2026-06-07T16:19:53.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/USA/</loc>
+            <lastmod>2026-06-07T06:00:46.966Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116706632491681319/</loc>
             <lastmod>2026-06-07T03:11:27.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -704,30 +722,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116541682074063510/</loc>
-            <lastmod>2026-05-09T00:02:23.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116541670692664060/</loc>
-            <lastmod>2026-05-08T23:59:30.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116541243575574600/</loc>
-            <lastmod>2026-05-08T22:10:52.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116540514243931872/</loc>
-            <lastmod>2026-05-08T19:05:24.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/05/post-2026-05-06T231702/</loc>
             <lastmod>2026-05-07T07:22:20.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1018,12 +1012,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/03/repost-2026-03-12T185543/</loc>
             <lastmod>2026-03-13T02:55:44.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/USA/</loc>
-            <lastmod>2026-03-12T04:59:06.321Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
