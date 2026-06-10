@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 01 Jun 2026 00:21:14 PDT</pubDate>
-    <lastBuildDate>Mon, 01 Jun 2026 00:21:14 PDT</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2026 21:13:00 PDT</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2026 21:13:00 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-09T21:13:00.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/post-2026-06-09T201300/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>My Obsidian vault was getting slow to load. It only has about 4300 notes. I'm now doing a test where I turned Restricted Mode back on (Settings -&gt; Community Plugins -&gt; Restricted Mode turn on and reload). This disables all your Community Plugins and reloads Obsidian. For good measure I  restarted Obsidian a couple of times. Then I turned Community Plugins back on. So far, so good and loading is much faster. Maybe there was something corrupt that the Restricted Mode cleared out? It was a simple fix so definitely worth a try if you vault is behaving similarly.<br />
+#Obsidian</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>My Obsidian vault was getting slow to load. It only has about 4300 notes. I'm now doing a test where I turned Restricted Mode back on (Settings -&gt; Community Plugins -&gt; Restricted Mode turn on and reload). This disables all your Community Plugins and reloads Obsidian. For good measure I  restarted Obsidian a couple of times. Then I turned Community Plugins back on. So far, so good and loading is much faster. Maybe there was something corrupt that the Restricted Mode cleared out? It was a simple fix so definitely worth a try if you vault is behaving similarly.<br />
+#Obsidian</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 09 Jun 2026 21:13:00 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-09T201300/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-01T00:21:14.000-07:00</title>
