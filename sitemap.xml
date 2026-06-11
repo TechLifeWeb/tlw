@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116728589514757570/</loc>
+            <lastmod>2026-06-11T00:15:24.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/productivity-SyncServ/</loc>
             <lastmod>2026-06-10T22:33:14.262Z</lastmod>
             <changefreq>daily</changefreq>
@@ -688,12 +694,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/California50/</loc>
             <lastmod>2026-05-12T04:10:35.368Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116553695124848508/</loc>
-            <lastmod>2026-05-11T02:57:28.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
