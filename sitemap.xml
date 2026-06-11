@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/USA-SyncServ/</loc>
+            <lastmod>2026-06-11T06:22:37.671Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/productivity-SyncServ/</loc>
+            <lastmod>2026-06-11T06:22:37.668Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Health-SyncServ/</loc>
+            <lastmod>2026-06-11T06:22:37.658Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Movie%20Log-SyncServ/</loc>
+            <lastmod>2026-06-11T06:22:37.646Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116728815017829048/</loc>
             <lastmod>2026-06-11T01:12:45.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -22,30 +46,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/Quotes-SyncServ/</loc>
             <lastmod>2026-06-11T00:54:06.954Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/productivity-SyncServ/</loc>
-            <lastmod>2026-06-11T00:49:39.456Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Movie%20Log-SyncServ/</loc>
-            <lastmod>2026-06-11T00:49:39.431Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Health-SyncServ/</loc>
-            <lastmod>2026-06-11T00:49:39.426Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/USA-SyncServ/</loc>
-            <lastmod>2026-06-11T00:49:39.403Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
