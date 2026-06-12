@@ -21,7 +21,12 @@
 
 #webmentions .reacts img {
     margin: 3px -1ex 1px 0;
-	display: inline;
+    display: inline;
+}
+
+#webmentions picture {
+    margin: 3px -1ex 1px 0;
+    display: inline;
 }
 
 #webmentions img.missing {
@@ -78,3 +83,14 @@
     color: #111;
 }
 
+.wm-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wm-avatar-small {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}

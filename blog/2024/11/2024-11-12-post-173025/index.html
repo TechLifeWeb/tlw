@@ -29,7 +29,7 @@
     <link rel="stylesheet" href=" /css/11typico.css?version=6">
     <!--<link rel="stylesheet" href=" /css/normalize.css">
     <link rel="stylesheet" href=" /css/skeleton.css">
-    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15">
+    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15"> -->
     <link rel="stylesheet" href=" /css/webmention.css">
 
     <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +40,7 @@
     <link rel="alternate" type="text/mf2+html" title="H-Feed" href="/h-feed">
 
     <!-- JS to display Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!--<script src="/webmention.min.js" async></script> -->
+    <script src="/webmention.min.js" async=""></script>
     <script src="/js/mermaid.min.js" async=""></script>
 
 
@@ -1210,12 +1210,91 @@ Then, Jorge Sanz took Ellane's and added more! Explore that here:<a href="https:
 
                 </div>
         </article>
-        <div id="syndication">
+        
+
+<div id="syndication">
   <ul>
   </ul>
 </div>
 <div class="gosehere">
+
   
+
+  
+  
+  
+
+  <div class="webmentions">
+
+    
+    <h4>Replies</h4>
+    <ul>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-12-post-173025/SW2NpM9llP-96.webp 96w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-12-post-173025/SW2NpM9llP-96.jpeg" alt="Scott Kingery" width="96" height="96"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-bluesky">🦋</span>
+
+  
+  
+:
+        Sometimes when planning I like to look at a calendar for the year. I&#39;ve created a simple 2025 calendar for #Obsidian in markdown if you like to do the same: Markdown Calendar (https://techlifeweb.com/blog/2024/11/2024-11-12-post-183344/)
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-12-post-173025/zWrMczeQ0P-256.webp 256w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-12-post-173025/zWrMczeQ0P-256.jpeg" alt="Liam Bigelow" width="256" height="256"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-generic">🌐</span>
+  
+:
+        @techlifeweb Ah cool — yes so this is because your &quot;Article&quot; layout has `data-pagefind-body` around its content but your &quot;Note&quot; layout does not. When `data-pagefind-body` is present anywhere on your site, Pagefind goes into an &quot;allow-list&quot; mode where it ignores any pages that do not specify a `data-pagefind-body`. You should see something about this in the CLI output — &quot;Found a data-pagefind-body element on the site. / Ignoring pages without this tag.&quot;
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-12-post-173025/4uIdN2O_sR-96.webp 96w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-12-post-173025/4uIdN2O_sR-96.jpeg" alt="Scott Kingery" width="96" height="96"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-mastodon">🐘</span>
+
+  
+  
+:
+        @bglw except they do. Somewhere aroud line 140 if you view source on a page like the note just mentioned it shows data-pagefind-body 
+https://techlifeweb.com/blog/2024/11/2024-11-12-post-173025/ . I guess I could try taking it off of all pages and see what happens.
+Markdown Calendar
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-12-post-173025/zWrMczeQ0P-256.webp 256w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-12-post-173025/zWrMczeQ0P-256.jpeg" alt="Liam Bigelow" width="256" height="256"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-generic">🌐</span>
+  
+:
+        @techlifeweb Oh, that has updated since I opened it at the time of my reply — the view-source I still have open has no match for `pagefind` anywhere. As-is, both of these pages should be indexing correctly as far as I can see... What is the CLI output?
+      </li>
+      
+    </ul>
+    
+
+    
+
+    
+
+  </div>
+
+  
+
 </div>
 
 <script type="module">

@@ -29,7 +29,7 @@
     <link rel="stylesheet" href=" /css/11typico.css?version=6">
     <!--<link rel="stylesheet" href=" /css/normalize.css">
     <link rel="stylesheet" href=" /css/skeleton.css">
-    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15">
+    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15"> -->
     <link rel="stylesheet" href=" /css/webmention.css">
 
     <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +40,7 @@
     <link rel="alternate" type="text/mf2+html" title="H-Feed" href="/h-feed">
 
     <!-- JS to display Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!--<script src="/webmention.min.js" async></script> -->
+    <script src="/webmention.min.js" async=""></script>
     <script src="/js/mermaid.min.js" async=""></script>
 
 
@@ -117,12 +117,93 @@
 
                 </div>
         </article>
-        <div id="syndication">
+        
+
+<div id="syndication">
   <ul>
   </ul>
 </div>
 <div class="gosehere">
+
   
+
+  
+  
+  
+
+  <div class="webmentions">
+
+    
+    <h4>Replies</h4>
+    <ul>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2025/01/post-2025-01-22T223557/dUjvqi0ur5-200.webp 200w"><img class="wm-avatar-small" src="/blog/2025/01/post-2025-01-22T223557/dUjvqi0ur5-200.jpeg" alt="Bob Monsour" width="200" height="200"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-mastodon">🐘</span>
+
+  
+  
+:
+        @techlifeweb If you&#39;re using the image transform, and you&#39;re adding the images in markdown, you can use the markdown-it-attrs plugin. There&#39;s a post about it: https://www.aleksandrhovhannisyan.com/blog/eleventy-image-transform/#custom-image-attributes
+Eleventy Images Just Got Better | Aleksandr Hovhannisyan
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2025/01/post-2025-01-22T223557/3Mv3UmEVUN-256.webp 256w"><img class="wm-avatar-small" src="/blog/2025/01/post-2025-01-22T223557/3Mv3UmEVUN-256.jpeg" alt="John Brooks" width="256" height="256"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-mastodon">🐘</span>
+
+  
+  
+:
+        @techlifeweb You could add a transform that does a search-and-replace on the content. https://www.11ty.dev/docs/transforms/ A simple string search for `&lt;img src=` might work, but it might miss some too. A more robust method might incorporate a library like cheerio so you could parse and manipulate the content like a dom tree. https://www.npmjs.com/package/cheerio
+Transforms
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2025/01/post-2025-01-22T223557/4uIdN2O_sR-96.webp 96w"><img class="wm-avatar-small" src="/blog/2025/01/post-2025-01-22T223557/4uIdN2O_sR-96.jpeg" alt="Scott Kingery" width="96" height="96"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-mastodon">🐘</span>
+
+  
+  
+:
+        @pupismyname Thanks. I actually figured it out last night using #11ty image plugin. I Hadn&#39;t been using plugin yet but once I figured it out (I&#39;m teaching myself as I go)  it was a simple add of u-photo to the imgAttributes section. https://www.11ty.dev/docs/plugins/image/#more-configuration-options
+11ty
+Image
+      </li>
+      
+    </ul>
+    
+
+    
+
+    
+    <h4>Reposts</h4>
+    <ul>
+      
+
+      <picture><source type="image/webp" srcset="/blog/2025/01/post-2025-01-22T223557/dUjvqi0ur5-200.webp 200w"><img class="wm-avatar-small" src="/blog/2025/01/post-2025-01-22T223557/dUjvqi0ur5-200.jpeg" alt="Bob Monsour" width="200" height="200"></picture>
+
+      
+      
+    </ul>
+    
+
+  </div>
+
+  
+
 </div>
 
 <script type="module">

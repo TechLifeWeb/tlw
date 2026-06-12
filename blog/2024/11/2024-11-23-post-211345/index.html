@@ -29,7 +29,7 @@
     <link rel="stylesheet" href=" /css/11typico.css?version=6">
     <!--<link rel="stylesheet" href=" /css/normalize.css">
     <link rel="stylesheet" href=" /css/skeleton.css">
-    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15">
+    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15"> -->
     <link rel="stylesheet" href=" /css/webmention.css">
 
     <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,7 +40,7 @@
     <link rel="alternate" type="text/mf2+html" title="H-Feed" href="/h-feed">
 
     <!-- JS to display Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!--<script src="/webmention.min.js" async></script> -->
+    <script src="/webmention.min.js" async=""></script>
     <script src="/js/mermaid.min.js" async=""></script>
 
 
@@ -118,12 +118,63 @@ Trying out Pagefind to implement search on my 11ty site and it sort of works. If
 
                 </div>
         </article>
-        <div id="syndication">
+        
+
+<div id="syndication">
   <ul>
   </ul>
 </div>
 <div class="gosehere">
+
   
+
+  
+  
+  
+
+  <div class="webmentions">
+
+    
+    <h4>Replies</h4>
+    <ul>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-23-post-211345/SW2NpM9llP-96.webp 96w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-23-post-211345/SW2NpM9llP-96.jpeg" alt="Scott Kingery" width="96" height="96"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-bluesky">🦋</span>
+
+  
+  
+:
+        note (https://techlifeweb.com/blog/2024/11/2024-11-23-post-211345/)
+      </li>
+      
+      <li>
+        <picture><source type="image/webp" srcset="/blog/2024/11/2024-11-23-post-211345/zWrMczeQ0P-256.webp 256w"><img class="wm-avatar-small" src="/blog/2024/11/2024-11-23-post-211345/zWrMczeQ0P-256.jpeg" alt="Liam Bigelow" width="256" height="256"></picture> on 
+  
+
+  
+  
+    <span class="wm-service wm-generic">🌐</span>
+  
+:
+        @techlifeweb Hmm, looking at those pages I can see two issues. One is that all of your notes have an h1 of &quot;note&quot; rather than the title, which Pagefind will be picking up as the title for every note. The other is having data-pagefind-body on notes but not on articles — though I would expect this to behave opposite to what you&#39;re saying (notes would be in, articles would be out). I can look more if you&#39;re happy to share an example search, and the output from the running the Pagefind CLI :)
+      </li>
+      
+    </ul>
+    
+
+    
+
+    
+
+  </div>
+
+  
+
 </div>
 
 <script type="module">
