@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Fish%20Espionage,%20US%20World%20Cup%20Debut,%20and%20the%20Best%20Burgers/</loc>
+            <lastmod>2026-06-13T19:48:39.592Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116744509620728200/</loc>
+            <lastmod>2026-06-13T19:44:06.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116744262449406948/</loc>
             <lastmod>2026-06-13T18:41:14.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -10,12 +22,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116744197108474572/</loc>
             <lastmod>2026-06-13T18:24:37.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Fish%20Espionage,%20US%20World%20Cup%20Debut,%20and%20the%20Best%20Burgers/</loc>
-            <lastmod>2026-06-13T09:23:36.802Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
