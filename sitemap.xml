@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116751294630415708/</loc>
+            <lastmod>2026-06-15T00:29:37.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20World%20Cup,%20Initial%20Public%20Offerings,%20and%20Ancient%20Roman%20Insults/</loc>
+            <lastmod>2026-06-14T17:29:45.590Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116749561310274955/</loc>
             <lastmod>2026-06-14T17:08:49.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -10,18 +22,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116749468895931130/</loc>
             <lastmod>2026-06-14T16:45:19.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20World%20Cup,%20Initial%20Public%20Offerings,%20and%20Ancient%20Roman%20Insults/</loc>
-            <lastmod>2026-06-14T10:23:36.022Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Help%20Us%20Get%20to%20Know%20You%20Better!/</loc>
-            <lastmod>2026-06-14T07:23:37.064Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
