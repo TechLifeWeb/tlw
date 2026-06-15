@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 09 Jun 2026 21:13:00 PDT</pubDate>
-      <lastBuildDate>Tue, 09 Jun 2026 21:13:00 PDT</lastBuildDate>
+      <pubDate>Mon, 15 Jun 2026 15:49:52 PDT</pubDate>
+      <lastBuildDate>Mon, 15 Jun 2026 15:49:52 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-15T15:49:52.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-15T144952/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Fox strikes a $22B deal to buy Roku, aiming to supercharge its streaming reach | AP News https://apnews.com/article/fox-roku-tubi-streaming-824089dbe16631fade634becdb164c94 &#39;Roku will continue to be run as an open, partner-friendly platform, the companies said Monday, and there appears to be no immediate changes that customers will see.&#39;&lt;br&gt;
+#tv #streaming&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 15 Jun 2026 15:49:52 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-15T144952/</guid>
+    </item>
     <item>
       <title>Note 2026-06-15T11:01:58.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116755432631286708/</link>
       <description>
