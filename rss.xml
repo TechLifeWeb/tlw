@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 15 Jun 2026 15:49:52 PDT</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2026 15:49:52 PDT</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2026 19:04:10 PDT</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2026 19:04:10 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-15T19:04:10.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/post-2026-06-15T180410/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>TIL about &quot;Brushing&quot; Scams. Got a package you didn’t order? It’s probably a scam | Consumer Advice https://consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam  'Scammers or sellers of knock-off merchandise find your address or other personal information online. They send you goods you never ordered and use your information to write fake online reviews about their products in your name — which helps them boost sales.'<br />
+#Privacy</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>TIL about &quot;Brushing&quot; Scams. Got a package you didn’t order? It’s probably a scam | Consumer Advice https://consumer.ftc.gov/consumer-alerts/2025/01/got-package-you-didnt-order-its-probably-scam  'Scammers or sellers of knock-off merchandise find your address or other personal information online. They send you goods you never ordered and use your information to write fake online reviews about their products in your name — which helps them boost sales.'<br />
+#Privacy</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Mon, 15 Jun 2026 19:04:10 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-15T180410/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-15T15:49:52.000-07:00</title>
