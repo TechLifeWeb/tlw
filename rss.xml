@@ -14,10 +14,37 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 15 Jun 2026 19:04:10 PDT</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2026 19:04:10 PDT</lastBuildDate>
+    <pubDate>Tue, 16 Jun 2026 10:24:26 PDT</pubDate>
+    <lastBuildDate>Tue, 16 Jun 2026 10:24:26 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-16T10:24:26.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/post-2026-06-16T092426/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>I found an interesting Obsidian plugin called Tray. Tray lets you start the app automatically when your system boots up and run it in the background. It adds global hotkeys and a tray menu so you can easily hide/show the window and jot down quick notes from anywhere on your computer.<br />
+You can find it on the Community Plugins page <a href="obsidian://show-plugin?id=tray">obsidian://show-plugin?id=tray</a>. Here is the GitHub link for more information as well. GitHub <a href="https://github.com/dragonwocky/obsidian-tray">https://github.com/dragonwocky/obsidian-tray</a><br />
+#Obsidian</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>I found an interesting Obsidian plugin called Tray. Tray lets you start the app automatically when your system boots up and run it in the background. It adds global hotkeys and a tray menu so you can easily hide/show the window and jot down quick notes from anywhere on your computer.<br />
+You can find it on the Community Plugins page <a href="obsidian://show-plugin?id=tray">obsidian://show-plugin?id=tray</a>. Here is the GitHub link for more information as well. GitHub <a href="https://github.com/dragonwocky/obsidian-tray">https://github.com/dragonwocky/obsidian-tray</a><br />
+#Obsidian</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 16 Jun 2026 10:24:26 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-16T092426/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-15T19:04:10.000-07:00</title>
