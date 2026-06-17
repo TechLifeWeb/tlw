@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116763801143089133/</loc>
-            <lastmod>2026-06-17T05:30:11.000Z</lastmod>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116767820624481870/</loc>
+            <lastmod>2026-06-17T22:32:24.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20212%20%C2%B7%20How%20to%20Not%20Be%20Like%20Me%20and%20Lose%20an%20Entire%20Plain%20Text%20List%20Overnight/</loc>
-            <lastmod>2026-06-17T05:02:38.363Z</lastmod>
+            <loc>https://techlifeweb.com/garden/Obsidian/</loc>
+            <lastmod>2026-06-17T15:47:50.990Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Max%20Levchin,%20PayPal%20and%20Affirm%20%E2%80%94%20The%20Path%20from%20The%20Soviet%20Union%20to%20Building%20Multi-Billion%20Dollar%20Companies-.sync-conflict-20260616-194003-IBFIJD3/</loc>
+            <lastmod>2026-06-17T15:40:01.156Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116763801143089133/</loc>
+            <lastmod>2026-06-17T05:30:11.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -22,30 +34,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116763507565201475/</loc>
             <lastmod>2026-06-17T04:15:32.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Max%20Levchin,%20PayPal%20and%20Affirm%20%E2%80%94%20The%20Path%20from%20The%20Soviet%20Union%20to%20Building%20Multi-Billion%20Dollar%20Companies-.sync-conflict-20260616-194010-IBFIJD3/</loc>
-            <lastmod>2026-06-17T02:40:13.486Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Max%20Levchin,%20PayPal%20and%20Affirm%20%E2%80%94%20The%20Path%20from%20The%20Soviet%20Union%20to%20Building%20Multi-Billion%20Dollar%20Companies-.sync-conflict-20260616-194006-IBFIJD3/</loc>
-            <lastmod>2026-06-17T02:40:05.336Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Max%20Levchin,%20PayPal%20and%20Affirm%20%E2%80%94%20The%20Path%20from%20The%20Soviet%20Union%20to%20Building%20Multi-Billion%20Dollar%20Companies-.sync-conflict-20260616-194003-IBFIJD3/</loc>
-            <lastmod>2026-06-17T02:40:05.335Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Max%20Levchin,%20PayPal%20and%20Affirm%20%E2%80%94%20The%20Path%20from%20The%20Soviet%20Union%20to%20Building%20Multi-Billion%20Dollar%20Companies-.sync-conflict-20260616-194001-IBFIJD3/</loc>
-            <lastmod>2026-06-16T19:07:58.109Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -370,12 +358,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116706590871974454/</loc>
             <lastmod>2026-06-07T03:00:52.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Obsidian/</loc>
-            <lastmod>2026-06-06T23:36:43.762Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -748,24 +730,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/obsidiannotes/List%20Everything%20Dataview%20Can%20See%20on%20a%20Page/</loc>
             <lastmod>2026-05-19T05:11:25.963Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116599248771615010/</loc>
-            <lastmod>2026-05-19T04:02:21.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116598694035467717/</loc>
-            <lastmod>2026-05-19T01:41:17.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116596147003193870/</loc>
-            <lastmod>2026-05-18T14:53:32.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
