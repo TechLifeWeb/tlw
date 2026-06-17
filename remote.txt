@@ -1,2 +1,0 @@
-origin	https://github.com/techlifeweb/tlw.git (fetch)
-origin	https://github.com/techlifeweb/tlw.git (push)
