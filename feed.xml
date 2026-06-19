@@ -7,11 +7,42 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 16 Jun 2026 10:24:26 PDT</pubDate>
-      <lastBuildDate>Tue, 16 Jun 2026 10:24:26 PDT</lastBuildDate>
+      <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
+      <lastBuildDate>Thu, 18 Jun 2026 19:17:16 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-19T09:45:34.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116777781473257753/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Happy 5th Birthday Wordle 🎂&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/Wordle&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Wordle&lt;/span&gt;&lt;/a&gt; 1,826 4/6&lt;/p&gt;&lt;p&gt;⬛⬛⬛🟨⬛&lt;br&gt;⬛⬛🟩⬛🟨&lt;br&gt;🟩🟩🟩⬛⬛&lt;br&gt;🟩🟩🟩🟩🟩&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Fri, 19 Jun 2026 09:45:34 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116777781473257753/</guid>
+    </item>
+    <item>
+      <title>Note 2026-06-18T19:17:16.000-07:00</title>
+      <title>Repost 2026-06-18T19:17:16.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/repost-2026-06-18T181716/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://hachyderm.io/@shanselman/116773512374842591&quot;&gt;Scott Hanselman 👸🏽🐝🌮 (@shanselman@hachyderm.io)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+I have a $30 stationary bike that I got at Goodwill and I have an old Android tablet stuck to it, but I don&#39;t have a Peloton membership. Nor do I have the interest to ride 80 miles to the beach. So I made  &lt;a href=&#39;https://pedalscape.com/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;PedalScape&lt;/a&gt; It&#39;s a local PWA, no backend at all, no tracking, just 4k bike rides.
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/repost-2026-06-18T181716/</guid>
+    </item>
     <item>
       <title>Note 2026-06-18T17:05:32.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116773849148393156/</link>
       <description>
@@ -1243,19 +1274,6 @@ This map auto-generates a 5-bar pub crawl based on your location. &lt;a href=&#3
       <pubDate>Wed, 20 May 2026 20:33:37 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116610460370673322/</guid>
-    </item>
-    <item>
-      <title>Note 2026-05-20T09:07:32.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116607762591007712/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Every single article about Outlook settings should just get deleted. Ctl+a del. The software has changed so much that all settings mentioned don&amp;#39;t exist any longer.&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/Outlook&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Outlook&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/email&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;email&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 20 May 2026 09:07:32 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116607762591007712/</guid>
     </item>
     <item>
       <title>Photo 2026-05-16T21:37:17.000-07:00</title><link>https://techlifeweb.com/p/TechLifeWeb/961484788460973452/</link>

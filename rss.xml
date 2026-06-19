@@ -14,10 +14,40 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Tue, 16 Jun 2026 10:24:26 PDT</pubDate>
-    <lastBuildDate>Tue, 16 Jun 2026 10:24:26 PDT</lastBuildDate>
+    <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
+    <lastBuildDate>Thu, 18 Jun 2026 19:17:16 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-18T19:17:16.000-07:00</title>
+      <title>Repost 2026-06-18T19:17:16.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/repost-2026-06-18T181716/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://hachyderm.io/@shanselman/116773512374842591">Scott Hanselman 👸🏽🐝🌮 (@shanselman@hachyderm.io)</a> on Mastodon:<br /></p>
+<blockquote>
+I have a $30 stationary bike that I got at Goodwill and I have an old Android tablet stuck to it, but I don't have a Peloton membership. Nor do I have the interest to ride 80 miles to the beach. So I made  <a href="https://pedalscape.com/" target="_blank" rel="noopener noreferrer">PedalScape</a> It's a local PWA, no backend at all, no tracking, just 4k bike rides.
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://hachyderm.io/@shanselman/116773512374842591">Scott Hanselman 👸🏽🐝🌮 (@shanselman@hachyderm.io)</a> on Mastodon:<br /></p>
+<blockquote>
+I have a $30 stationary bike that I got at Goodwill and I have an old Android tablet stuck to it, but I don't have a Peloton membership. Nor do I have the interest to ride 80 miles to the beach. So I made  <a href="https://pedalscape.com/" target="_blank" rel="noopener noreferrer">PedalScape</a> It's a local PWA, no backend at all, no tracking, just 4k bike rides.
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/repost-2026-06-18T181716/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-16T10:24:26.000-07:00</title>
