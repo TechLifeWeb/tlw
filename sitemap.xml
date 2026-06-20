@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Go%20on%20until%20you%20fall%20over/</loc>
+            <lastmod>2026-06-20T23:05:56.379Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116784767301733973/</loc>
             <lastmod>2026-06-20T22:22:09.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -46,12 +52,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116777781473257753/</loc>
             <lastmod>2026-06-19T16:45:34.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Go%20on%20until%20you%20fall%20over/</loc>
-            <lastmod>2026-06-19T13:02:44.991Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
