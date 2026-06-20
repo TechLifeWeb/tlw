@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
-      <lastBuildDate>Thu, 18 Jun 2026 19:17:16 PDT</lastBuildDate>
+      <pubDate>Sat, 20 Jun 2026 12:52:02 PDT</pubDate>
+      <lastBuildDate>Sat, 20 Jun 2026 12:52:02 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-20T12:52:02.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-20T115202/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Interesting article about using AI to help solve health related problems | Solved My Mystery Fatigue with AI - by Amy Deng https://metalearn.substack.com/p/i-solved-my-mystery-fatigue-with-ai&lt;br&gt;
+#ai #health&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sat, 20 Jun 2026 12:52:02 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-20T115202/</guid>
+    </item>
     <item>
       <title>Note 2026-06-20T09:47:55.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116783453032597290/</link>
       <description>

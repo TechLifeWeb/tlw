@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 18 Jun 2026 19:17:16 PDT</pubDate>
-    <lastBuildDate>Thu, 18 Jun 2026 19:17:16 PDT</lastBuildDate>
+    <pubDate>Sat, 20 Jun 2026 12:52:02 PDT</pubDate>
+    <lastBuildDate>Sat, 20 Jun 2026 12:52:02 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-20T12:52:02.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/post-2026-06-20T115202/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Interesting article about using AI to help solve health related problems | Solved My Mystery Fatigue with AI - by Amy Deng https://metalearn.substack.com/p/i-solved-my-mystery-fatigue-with-ai<br />
+#ai #health</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Interesting article about using AI to help solve health related problems | Solved My Mystery Fatigue with AI - by Amy Deng https://metalearn.substack.com/p/i-solved-my-mystery-fatigue-with-ai<br />
+#ai #health</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Sat, 20 Jun 2026 12:52:02 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-20T115202/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-18T19:17:16.000-07:00</title>
