@@ -14,10 +14,46 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sat, 20 Jun 2026 12:52:02 PDT</pubDate>
-    <lastBuildDate>Sat, 20 Jun 2026 12:52:02 PDT</lastBuildDate>
+    <pubDate>Sun, 21 Jun 2026 17:48:26 PDT</pubDate>
+    <lastBuildDate>Sun, 21 Jun 2026 17:48:26 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-21T17:48:26.000-07:00</title>
+      <title>Repost 2026-06-21T17:48:26.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/repost-2026-06-21T164821/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mapstodon.space/@adventure_tense/116786541872732167">AdventureTense (@adventure_tense@mapstodon.space)</a> on Mastodon:<br /></p>
+<blockquote>
+Below is a screenshot of Tangent Notes.  It reads and saves documents into markdown.  Happens to read Obsidian folders natively, which is a great way to work.  
+<p>I've found it particularly useful for writing, editing, and organizing my research documents &amp; notes. Tagging makes this even more powerful.</p>
+<p>I REALLY like where this open source project is heading, so I want to bring a bit of visibility to it.  Try it out! 🙂</p>
+<p>https://www.tangentnotes.com/</p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mapstodon.space/@adventure_tense/116786541872732167">AdventureTense (@adventure_tense@mapstodon.space)</a> on Mastodon:<br /></p>
+<blockquote>
+Below is a screenshot of Tangent Notes.  It reads and saves documents into markdown.  Happens to read Obsidian folders natively, which is a great way to work.  
+<p>I've found it particularly useful for writing, editing, and organizing my research documents &amp; notes. Tagging makes this even more powerful.</p>
+<p>I REALLY like where this open source project is heading, so I want to bring a bit of visibility to it.  Try it out! 🙂</p>
+<p>https://www.tangentnotes.com/</p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 21 Jun 2026 17:48:26 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/repost-2026-06-21T164821/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-20T12:52:02.000-07:00</title>
