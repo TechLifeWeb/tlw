@@ -13,6 +13,19 @@
       <generator>11ty</generator>
     
     <item>
+      <title>Note 2026-06-27T11:01:00.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116823376555865393/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;&lt;a href=&quot;https://indieweb.social/tags/Wordle&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Wordle&lt;/span&gt;&lt;/a&gt; 1,834 4/6&lt;/p&gt;&lt;p&gt;🟨⬛⬛⬛⬛&lt;br&gt;⬛⬛⬛⬛🟩&lt;br&gt;🟨⬛🟩⬛🟩&lt;br&gt;🟩🟩🟩🟩🟩&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Sat, 27 Jun 2026 11:01:00 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116823376555865393/</guid>
+    </item>
+    <item>
       <title>Note 2026-06-26T21:29:44.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116820186553601916/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
@@ -1042,19 +1055,6 @@ You can find it on the Community Plugins page &lt;a href=&quot;obsidian://show-p
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116670503316890712/</guid>
     </item>
     <item>
-      <title>Note 2026-05-28T16:41:23.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116654845681785335/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;tl;dr : How do you feel about rehosting a web page for a domain that has gone dark?&lt;br&gt;The issue: You&amp;#39;ve done some research in the past and found a wonderful page about your topic that helped you. A long time later you have the same issue or want to do a write up about the fix and link to the site. The only problem is, the site is no longer on-line. Despite all efforts to find any replacement by the author, the only one you can find is on archive.org. My… &lt;a href=&quot;https://techlifeweb.com/blog/2026/05/post-2026-05-28T102836/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;techlifeweb.com/blog/2026/05/p&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;ost-2026-05-28T102836/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Thu, 28 May 2026 16:41:23 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116654845681785335/</guid>
-    </item>
-    <item>
       <title>Note 2026-05-28T11:28:36.000-07:00</title><link>https://techlifeweb.com/blog/2026/05/post-2026-05-28T102836/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
@@ -1069,19 +1069,6 @@ The issue: You&#39;ve done some research in the past and found a wonderful page 
       <pubDate>Thu, 28 May 2026 11:28:36 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/blog/2026/05/post-2026-05-28T102836/</guid>
-    </item>
-    <item>
-      <title>Note 2026-05-28T07:18:49.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116652633567940593/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Testing Github Pages. Took me a minute to figure out https because I don&amp;#39;t do much domain configuration. Turns out reading the docs is actually a good idea.&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/indieweb&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;indieweb&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/rtfm&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;rtfm&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Thu, 28 May 2026 07:18:49 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116652633567940593/</guid>
     </item>
     <item>
       <title>Note 2026-05-25T22:33:24.000-07:00</title>
