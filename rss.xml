@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 21 Jun 2026 17:48:26 PDT</pubDate>
-    <lastBuildDate>Sun, 21 Jun 2026 17:48:26 PDT</lastBuildDate>
+    <pubDate>Sun, 28 Jun 2026 18:23:55 PDT</pubDate>
+    <lastBuildDate>Sun, 28 Jun 2026 18:23:55 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Photo 2026-06-28T18:23:55.000-07:00</title>
+
+      <link>https://techlifeweb.com/p/TechLifeWeb/977018807193499419/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p><img src="https://techlifeweb.com/assets/spIukNHZL4isGo6Nk5WqVk1J8HGhrW-fR89QHwAGlOe.jpg" alt="A sprawling, wind-swept tree with a twisted trunk leans low over a bright green lawn beside a curving paved path under a partly cloudy blue sky." /></p>
+<p>Saw this tree today that basically sent death the middle finger.</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p><img src="https://techlifeweb.com/assets/spIukNHZL4isGo6Nk5WqVk1J8HGhrW-fR89QHwAGlOe.jpg" alt="A sprawling, wind-swept tree with a twisted trunk leans low over a bright green lawn beside a curving paved path under a partly cloudy blue sky." /></p>
+<p>Saw this tree today that basically sent death the middle finger.</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 28 Jun 2026 18:23:55 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/p/TechLifeWeb/977018807193499419/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-21T17:48:26.000-07:00</title>
