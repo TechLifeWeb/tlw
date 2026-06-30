@@ -14,10 +14,42 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 28 Jun 2026 18:23:55 PDT</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2026 18:23:55 PDT</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2026 11:53:40 PDT</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2026 11:53:40 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-06-30T11:53:40.000-07:00</title>
+      <title>Repost 2026-06-30T11:53:40.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/06/repost-2026-06-30T105316/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://techhub.social/@Techmeme/116840052354038943">Techmeme (@Techmeme@techhub.social)</a> on Mastodon:<br /></p>
+<blockquote>
+Visa, Mastercard, Stripe, BlackRock, Coinbase, and 140+ companies join Open Standard to launch Open USD, a stablecoin that shares earnings from its reserves (Kyle Baird/The Block)
+ <a href="https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue" target="_blank" rel="noopener noreferrer">Visa, Stripe, Coinbase and more join Open USD stablecoin that shares reserve revenue | The Block</a>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://techhub.social/@Techmeme/116840052354038943">Techmeme (@Techmeme@techhub.social)</a> on Mastodon:<br /></p>
+<blockquote>
+Visa, Mastercard, Stripe, BlackRock, Coinbase, and 140+ companies join Open Standard to launch Open USD, a stablecoin that shares earnings from its reserves (Kyle Baird/The Block)
+ <a href="https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue" target="_blank" rel="noopener noreferrer">Visa, Stripe, Coinbase and more join Open USD stablecoin that shares reserve revenue | The Block</a>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 30 Jun 2026 11:53:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/repost-2026-06-30T105316/</guid>
+
+    </item>
 
     <item>
       <title>Photo 2026-06-28T18:23:55.000-07:00</title>

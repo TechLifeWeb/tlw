@@ -7,11 +7,30 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sun, 28 Jun 2026 18:23:55 PDT</pubDate>
-      <lastBuildDate>Sun, 28 Jun 2026 18:23:55 PDT</lastBuildDate>
+      <pubDate>Tue, 30 Jun 2026 11:53:40 PDT</pubDate>
+      <lastBuildDate>Tue, 30 Jun 2026 11:53:40 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-30T11:53:40.000-07:00</title>
+      <title>Repost 2026-06-30T11:53:40.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/repost-2026-06-30T105316/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://techhub.social/@Techmeme/116840052354038943&quot;&gt;Techmeme (@Techmeme@techhub.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+Visa, Mastercard, Stripe, BlackRock, Coinbase, and 140+ companies join Open Standard to launch Open USD, a stablecoin that shares earnings from its reserves (Kyle Baird/The Block)
+ &lt;a href=&#39;https://www.theblock.co/post/406736/visa-stripe-coinbase-join-open-usd-stablecoin-shares-reserve-revenue&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;Visa, Stripe, Coinbase and more join Open USD stablecoin that shares reserve revenue | The Block&lt;/a&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 30 Jun 2026 11:53:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/repost-2026-06-30T105316/</guid>
+    </item>
     <item>
       <title>Note 2026-06-30T06:58:43.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116839410768825893/</link>
       <description>
