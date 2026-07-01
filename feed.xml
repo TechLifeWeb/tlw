@@ -7,11 +7,98 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 30 Jun 2026 11:53:40 PDT</pubDate>
-      <lastBuildDate>Tue, 30 Jun 2026 11:53:40 PDT</lastBuildDate>
+      <pubDate>Tue, 30 Jun 2026 23:49:08 PDT</pubDate>
+      <lastBuildDate>Tue, 30 Jun 2026 23:49:08 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-06-30T23:49:08.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-30T224908/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;TIL about Cooklang – Recipe Markup Language https://cooklang.org/  &#39;Cooklang is a simple, human-readable text format for writing recipes that can be understood by both cooks and computers.&#39;&lt;br&gt;
+#markup #cooking&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 30 Jun 2026 23:49:08 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-30T224908/</guid>
+    </item>
+    <item>
+      <title>Note 2026-06-30T23:32:18.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-30T223217/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Trump drops restrictions on Anthropic&#39;s Mythos and Fable models:&lt;/p&gt;
+&lt;blockquote&gt;
+&quot;with Asian AI companies beginning to release their own AI models approaching Mythos-level capabilities — among them Fugu and Tulonfeng — the US government was under pressure to ease its restrictions on Anthropic to ensure that American AI could compete globally.&quot;
+&lt;/blockquote&gt;
+via: &lt;a href=&#39;https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/&lt;/a&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 30 Jun 2026 23:32:18 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-30T223217/</guid>
+    </item>
+    <item><link>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</link>
+      <description>   
+        <div class="e-content" >              
+            &lt;h1 id=&quot;latest-daily-notes&quot; tabindex=&quot;-1&quot;&gt;Latest Daily Notes &lt;a class=&quot;external-link&quot; href=&quot;#latest-daily-notes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-base&quot;&gt;views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains(&amp;quot;daily&amp;quot;)
+        - &#39;!file.path.startsWith(&amp;quot;Support&amp;quot;)&#39;
+    sort:
+      - property: file.name
+        direction: DESC
+    limit: 7
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;recent-notes&quot; tabindex=&quot;-1&quot;&gt;Recent Notes &lt;a class=&quot;external-link&quot; href=&quot;#recent-notes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-base&quot;&gt;views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - &#39;!file.tags.contains(&amp;quot;daily&amp;quot;)&#39;
+        - &#39;!file.path.startsWith(&amp;quot;Support&amp;quot;)&#39;
+    order:
+      - file.name
+      - file.ctime
+      - title
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 10
+    columnSize:
+      file.name: 419
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;tasks-due&quot; tabindex=&quot;-1&quot;&gt;Tasks Due &lt;a class=&quot;external-link&quot; href=&quot;#tasks-due&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-tasks&quot;&gt;(due on or before today)
+path does not include Packing
+not done
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;tasks-no-date&quot; tabindex=&quot;-1&quot;&gt;Tasks no Date &lt;a class=&quot;external-link&quot; href=&quot;#tasks-no-date&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;pre&gt;&lt;code class=&quot;language-tasks&quot;&gt;(no due date)
+path does not include Packing
+not done
+&lt;/code&gt;&lt;/pre&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 30 Jun 2026 23:11:03 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</guid>
+    </item>
     <item>
       <title>Note 2026-06-30T21:41:21.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116842881471685869/</link>
       <description>
