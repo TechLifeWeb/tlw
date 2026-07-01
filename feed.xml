@@ -13,6 +13,19 @@
       <generator>11ty</generator>
     
     <item>
+      <title>Note 2026-07-01T07:29:08.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116845192721406800/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;rabbit rabbit&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Wed, 01 Jul 2026 07:29:08 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116845192721406800/</guid>
+    </item>
+    <item>
       <title>Note 2026-06-30T23:49:08.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-30T224908/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
@@ -1368,19 +1381,6 @@ You can find it on the Community Plugins page &lt;a href=&quot;obsidian://show-p
       <pubDate>Tue, 02 Jun 2026 14:33:57 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116682656178658820/</guid>
-    </item>
-    <item>
-      <title>Note 2026-06-01T07:44:11.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116675382549776854/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Windows-Super-God-Mode: Creates shortcuts to virtually every special location or action built into Windows &lt;a href=&quot;https://github.com/ThioJoe/Windows-Super-God-Mode&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;github.com/ThioJoe/Windows-Sup&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;er-God-Mode&lt;/span&gt;&lt;/a&gt; &amp;#39;This PowerShell script creates shortcuts to all special shell folders, named folders, task links, system settings, deep links, and URL protocols in Windows, providing easy access to a wide range of system settings and features.&amp;#39;&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/windows&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;windows&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Mon, 01 Jun 2026 07:44:11 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116675382549776854/</guid>
     </item>
     <item>
       <title>Note 2026-06-01T00:21:14.000-07:00</title><link>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</link>

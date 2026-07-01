@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116845192721406800/</loc>
+            <lastmod>2026-07-01T14:29:08.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/GLP-1%20Coverage,%20Egg%20Collusion,%20and%20an%20Antarctic%20Dinosaur/</loc>
+            <lastmod>2026-07-01T09:02:44.771Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/blog/2026/06/post-2026-06-30T224908/</loc>
             <lastmod>2026-07-01T06:49:08.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -292,12 +304,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/Travel/</loc>
             <lastmod>2026-06-24T21:05:30.955Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Healthcare%20Fraud,%20Everest%20Mission,%20and%20Cancer-Detecting%20Pigeons/</loc>
-            <lastmod>2026-06-24T21:05:30.929Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -784,12 +790,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Red%20Bluff/</loc>
             <lastmod>2026-06-01T23:36:43.080Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116675382549776854/</loc>
-            <lastmod>2026-06-01T14:44:11.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
