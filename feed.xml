@@ -7,11 +7,29 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 30 Jun 2026 23:49:08 PDT</pubDate>
-      <lastBuildDate>Tue, 30 Jun 2026 23:49:08 PDT</lastBuildDate>
+      <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
+      <lastBuildDate>Fri, 03 Jul 2026 22:44:08 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-03T22:44:08.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Rare copy of US Declaration of Independence found by volunteer in UK archives:&lt;/p&gt;
+&lt;blockquote&gt;
+&quot;The document was seized by the Royal Navy on Christmas Eve 1776 when the HMS Raisonable captured an American ship, the Dalton, off the coast of Portugal following a seven-hour pursuit.&quot;
+&lt;/blockquote&gt;
+via: &lt;a href=&#39;https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&amp;at_format=link&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&amp;at_format=link&lt;/a&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</guid>
+    </item>
     <item>
       <title>Note 2026-07-02T22:22:23.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116854367393634849/</link>
       <description>
@@ -161,60 +179,6 @@ via: &lt;a href=&#39;https://techcrunch.com/2026/06/30/trump-drops-restrictions-
       <pubDate>Tue, 30 Jun 2026 23:32:18 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-30T223217/</guid>
-    </item>
-    <item><link>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</link>
-      <description>   
-        <div class="e-content" >              
-            &lt;h1 id=&quot;latest-daily-notes&quot; tabindex=&quot;-1&quot;&gt;Latest Daily Notes &lt;a class=&quot;external-link&quot; href=&quot;#latest-daily-notes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&quot;language-base&quot;&gt;views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - file.tags.contains(&amp;quot;daily&amp;quot;)
-        - &#39;!file.path.startsWith(&amp;quot;Support&amp;quot;)&#39;
-    sort:
-      - property: file.name
-        direction: DESC
-    limit: 7
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;recent-notes&quot; tabindex=&quot;-1&quot;&gt;Recent Notes &lt;a class=&quot;external-link&quot; href=&quot;#recent-notes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&quot;language-base&quot;&gt;views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - &#39;!file.tags.contains(&amp;quot;daily&amp;quot;)&#39;
-        - &#39;!file.path.startsWith(&amp;quot;Support&amp;quot;)&#39;
-    order:
-      - file.name
-      - file.ctime
-      - title
-    sort:
-      - property: file.mtime
-        direction: DESC
-    limit: 10
-    columnSize:
-      file.name: 419
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;tasks-due&quot; tabindex=&quot;-1&quot;&gt;Tasks Due &lt;a class=&quot;external-link&quot; href=&quot;#tasks-due&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&quot;language-tasks&quot;&gt;(due on or before today)
-path does not include Packing
-not done
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;tasks-no-date&quot; tabindex=&quot;-1&quot;&gt;Tasks no Date &lt;a class=&quot;external-link&quot; href=&quot;#tasks-no-date&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&quot;language-tasks&quot;&gt;(no due date)
-path does not include Packing
-not done
-&lt;/code&gt;&lt;/pre&gt;
-
-        </div>
-</description>
-      <pubDate>Tue, 30 Jun 2026 23:11:03 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</guid>
     </item>
     <item>
       <title>Note 2026-06-30T21:41:21.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116842881471685869/</link>
@@ -1458,20 +1422,6 @@ You can find it on the Community Plugins page &lt;a href=&quot;obsidian://show-p
       <pubDate>Thu, 04 Jun 2026 16:12:37 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116694368717182324/</guid>
-    </item>
-    <item>
-      <title>Note 2026-06-03T11:15:49.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116687539392309193/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;How is this helpful, Google?? A Windows computer logged on to my account? That could be anyone. Security theater.&lt;/p&gt;
-&lt;img src=&quot;/assets/ec1f05a0a2ac42ad-y9iSyDOTBUle.png&quot; alt=&quot;Ridiculous alert from Google that a Windows computer logged on to my account.&quot;&gt;
-        </div>
-</description>
-      <pubDate>Wed, 03 Jun 2026 11:15:49 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116687539392309193/</guid>
     </item>
     <item>
       <title>Note 2026-06-01T00:21:14.000-07:00</title><link>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</link>

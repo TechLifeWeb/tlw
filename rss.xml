@@ -14,10 +14,41 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Tue, 30 Jun 2026 23:49:08 PDT</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2026 23:49:08 PDT</lastBuildDate>
+    <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
+    <lastBuildDate>Fri, 03 Jul 2026 22:44:08 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-03T22:44:08.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Rare copy of US Declaration of Independence found by volunteer in UK archives:</p>
+<blockquote>
+"The document was seized by the Royal Navy on Christmas Eve 1776 when the HMS Raisonable captured an American ship, the Dalton, off the coast of Portugal following a seven-hour pursuit."
+</blockquote>
+via: <a href="https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&at_format=link" target="_blank" rel="noopener noreferrer">https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&at_format=link</a>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Rare copy of US Declaration of Independence found by volunteer in UK archives:</p>
+<blockquote>
+"The document was seized by the Royal Navy on Christmas Eve 1776 when the HMS Raisonable captured an American ship, the Dalton, off the coast of Portugal following a seven-hour pursuit."
+</blockquote>
+via: <a href="https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&at_format=link" target="_blank" rel="noopener noreferrer">https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=editorial&at_format=link</a>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-06-30T23:49:08.000-07:00</title>
@@ -72,114 +103,6 @@ via: <a href="https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anth
       <pubDate>Tue, 30 Jun 2026 23:32:18 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/blog/2026/06/post-2026-06-30T223217/</guid>
-
-    </item>
-
-    <item>
-
-      <link>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</link>
-
-      <!-- Summary / fallback -->
-      <description ><![CDATA[
-        <h1 id="latest-daily-notes" tabindex="-1">Latest Daily Notes <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#latest-daily-notes" aria-hidden="true">#</a></h1>
-<pre><code class="language-base">views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - file.tags.contains(&quot;daily&quot;)
-        - '!file.path.startsWith(&quot;Support&quot;)'
-    sort:
-      - property: file.name
-        direction: DESC
-    limit: 7
-
-</code></pre>
-<h1 id="recent-notes" tabindex="-1">Recent Notes <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#recent-notes" aria-hidden="true">#</a></h1>
-<pre><code class="language-base">views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - '!file.tags.contains(&quot;daily&quot;)'
-        - '!file.path.startsWith(&quot;Support&quot;)'
-    order:
-      - file.name
-      - file.ctime
-      - title
-    sort:
-      - property: file.mtime
-        direction: DESC
-    limit: 10
-    columnSize:
-      file.name: 419
-
-</code></pre>
-<h1 id="tasks-due" tabindex="-1">Tasks Due <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#tasks-due" aria-hidden="true">#</a></h1>
-<pre><code class="language-tasks">(due on or before today)
-path does not include Packing
-not done
-</code></pre>
-<h1 id="tasks-no-date" tabindex="-1">Tasks no Date <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#tasks-no-date" aria-hidden="true">#</a></h1>
-<pre><code class="language-tasks">(no due date)
-path does not include Packing
-not done
-</code></pre>
-
-      ]]></description>
-
-      <!-- Full HTML content -->
-      <content:encoded><![CDATA[
-        <h1 id="latest-daily-notes" tabindex="-1">Latest Daily Notes <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#latest-daily-notes" aria-hidden="true">#</a></h1>
-<pre><code class="language-base">views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - file.tags.contains(&quot;daily&quot;)
-        - '!file.path.startsWith(&quot;Support&quot;)'
-    sort:
-      - property: file.name
-        direction: DESC
-    limit: 7
-
-</code></pre>
-<h1 id="recent-notes" tabindex="-1">Recent Notes <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#recent-notes" aria-hidden="true">#</a></h1>
-<pre><code class="language-base">views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - '!file.tags.contains(&quot;daily&quot;)'
-        - '!file.path.startsWith(&quot;Support&quot;)'
-    order:
-      - file.name
-      - file.ctime
-      - title
-    sort:
-      - property: file.mtime
-        direction: DESC
-    limit: 10
-    columnSize:
-      file.name: 419
-
-</code></pre>
-<h1 id="tasks-due" tabindex="-1">Tasks Due <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#tasks-due" aria-hidden="true">#</a></h1>
-<pre><code class="language-tasks">(due on or before today)
-path does not include Packing
-not done
-</code></pre>
-<h1 id="tasks-no-date" tabindex="-1">Tasks no Date <a class="external-link" href="https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/#tasks-no-date" aria-hidden="true">#</a></h1>
-<pre><code class="language-tasks">(no due date)
-path does not include Packing
-not done
-</code></pre>
-
-      ]]></content:encoded>
-
-      <pubDate>Tue, 30 Jun 2026 23:11:03 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/blog/2026/06/%F0%9F%8F%A0Home/</guid>
 
     </item>
 

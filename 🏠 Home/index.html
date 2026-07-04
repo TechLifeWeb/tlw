@@ -1,0 +1,44 @@
+<h1 id="latest-daily-notes" tabindex="-1">Latest Daily Notes <a class="external-link" href="#latest-daily-notes" aria-hidden="true">#</a></h1>
+<pre><code class="language-base">views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains(&quot;daily&quot;)
+        - '!file.path.startsWith(&quot;Support&quot;)'
+    sort:
+      - property: file.name
+        direction: DESC
+    limit: 7
+
+</code></pre>
+<h1 id="recent-notes" tabindex="-1">Recent Notes <a class="external-link" href="#recent-notes" aria-hidden="true">#</a></h1>
+<pre><code class="language-base">views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - '!file.tags.contains(&quot;daily&quot;)'
+        - '!file.path.startsWith(&quot;Support&quot;)'
+    order:
+      - file.name
+      - file.ctime
+      - title
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 10
+    columnSize:
+      file.name: 419
+
+</code></pre>
+<h1 id="tasks-due" tabindex="-1">Tasks Due <a class="external-link" href="#tasks-due" aria-hidden="true">#</a></h1>
+<pre><code class="language-tasks">(due on or before today)
+path does not include Packing
+not done
+</code></pre>
+<h1 id="tasks-no-date" tabindex="-1">Tasks no Date <a class="external-link" href="#tasks-no-date" aria-hidden="true">#</a></h1>
+<pre><code class="language-tasks">(no due date)
+path does not include Packing
+not done
+</code></pre>
