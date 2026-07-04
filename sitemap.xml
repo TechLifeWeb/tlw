@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116862731468811665/</loc>
+            <lastmod>2026-07-04T16:49:28.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</loc>
             <lastmod>2026-07-04T05:44:08.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -802,12 +808,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/Health/</loc>
             <lastmod>2026-06-05T04:51:36.914Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116694368717182324/</loc>
-            <lastmod>2026-06-04T23:12:37.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
