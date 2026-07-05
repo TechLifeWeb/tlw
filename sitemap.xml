@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116868217537227303/</loc>
+            <lastmod>2026-07-05T16:04:39.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Declaration%20of%20Independence,%20Barbecue%20History,%20and%20Peter%20the%20Bald%20Eagle/</loc>
+            <lastmod>2026-07-05T11:02:53.989Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116865197744206295/</loc>
             <lastmod>2026-07-05T03:16:41.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -298,18 +310,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116828699266654725/</loc>
             <lastmod>2026-06-28T16:34:38.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Coral%20Reefs,%20Wimbledon,%20and%20Clever%20Hans/</loc>
-            <lastmod>2026-06-28T10:02:48.578Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/X%20Games%20Revamp,%20Palisades%20Mistrial,%20and%20Tourist%20Faux%20Pas/</loc>
-            <lastmod>2026-06-28T08:40:59.030Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -802,12 +802,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116703527452401583/</loc>
             <lastmod>2026-06-06T14:01:48.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116700299234834360/</loc>
-            <lastmod>2026-06-06T00:20:49.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
