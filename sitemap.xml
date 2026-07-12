@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116907888602047347/</loc>
+            <lastmod>2026-07-12T16:13:31.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Major%20League%20Baseball,%20Emmy%20Nominations,%20and%20Hoover%20the%20Talking%20Seal/</loc>
+            <lastmod>2026-07-12T11:10:40.374Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116902308328861605/</loc>
             <lastmod>2026-07-11T16:34:23.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -136,12 +148,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116868217537227303/</loc>
             <lastmod>2026-07-05T16:04:39.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Declaration%20of%20Independence,%20Barbecue%20History,%20and%20Peter%20the%20Bald%20Eagle/</loc>
-            <lastmod>2026-07-05T11:02:53.989Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -664,18 +670,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116744197108474572/</loc>
             <lastmod>2026-06-13T18:24:37.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116740834594695412/</loc>
-            <lastmod>2026-06-13T04:09:30.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116740303385447840/</loc>
-            <lastmod>2026-06-13T01:54:24.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
