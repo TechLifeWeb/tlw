@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116910089198720249/</loc>
+            <lastmod>2026-07-13T01:33:10.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Cutting%20Your%20Puppet%20Strings,%20Mind-Bending%20Songs,%20and%20Great%20Audiobooks/</loc>
+            <lastmod>2026-07-12T19:03:24.503Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116907888602047347/</loc>
             <lastmod>2026-07-12T16:13:31.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -22,12 +34,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Medieval%20Marvel,%20Parliament%20Murder,%20and%20Robot%20Surgeons/</loc>
             <lastmod>2026-07-11T09:04:14.957Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Cutting%20Your%20Puppet%20Strings,%20Mind-Bending%20Songs,%20and%20Great%20Audiobooks/</loc>
-            <lastmod>2026-07-10T23:04:44.519Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
