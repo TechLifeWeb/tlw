@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/Excel/</loc>
+            <lastmod>2026-07-16T23:10:09.395Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/Miscellanea/</loc>
             <lastmod>2026-07-16T22:50:37.973Z</lastmod>
             <changefreq>daily</changefreq>
@@ -674,12 +680,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/Quotes-SyncServ/</loc>
-            <lastmod>2026-06-11T00:54:06.954Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/06/post-2026-06-09T201300/</loc>
             <lastmod>2026-06-10T04:13:00.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1306,12 +1306,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/Newsletters%20I%20Enjoy/</loc>
             <lastmod>2026-02-27T03:15:44.895Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Excel/</loc>
-            <lastmod>2026-02-27T03:14:14.541Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

@@ -15,7 +15,7 @@
 
     <meta property="og:url" content="https://techlifeweb.com/garden/Excel/">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Tips and Tricks for Excel">
+    <meta property="og:title" content="Excel Tips and Tricks">
     <meta property="og:description" content="This I&#39;ve found that help with Excel">
     <meta property="og:site_name" content="techlifeweb.com">
 
@@ -102,18 +102,66 @@
     </hgroup></hgroup></header>
     <main class="container">
             <article class="h-entry" data-pagefind-body="">
-                <hgroup><h1 class="p-name entry-title">&#127793;Tips and Tricks for Excel</h1>
+                <hgroup><h1 class="p-name entry-title">&#127793;Excel Tips and Tricks</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-02-26T19:14:14.541-08:00">Feb 26, 2026, 7:14 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-16T16:10:09.395-07:00">Jul 16, 2026, 4:10 PM</time>
                     <a href="/garden/Excel/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
                 <!-- social POSSE -->
                 <!-- End social POSSE -->
-                    <p>
-</p><h4 id="youtube-videos" tabindex="-1">YouTube Videos <a class="external-link" href="#youtube-videos" aria-hidden="true">#</a></h4>
+                    <h2 id="general-tips" tabindex="-1">General Tips <a class="external-link" href="#general-tips" aria-hidden="true">#</a></h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=325GKIXPsSI" target="_blank" rel="noopener noreferrer">Excel - Merge Data from Multiple Sheets Based on Key Column - YouTube</a> ''</li>
+<li>If showing formulas instead of results, check if the field is formatted as Text and change it to General</li>
+<li>Copying all the way down
+<ul>
+<li>Another way to accomplish this is to use a combination of the fill-down shortcut and the select all in range. After you enter the data in the cell, press <kbd>Ctrl+Shift+End</kbd> to select from the current cell to the end of the range that would be auto-filled. Then, press <kbd>Ctrl+D</kbd> to &quot;fill down&quot; into the entire range from the top cell.</li>
+</ul>
+</li>
+</ul>
+<h2 id="getting-the-file-name-and-extension-from-a-path" tabindex="-1">Getting the file name and extension from a path <a class="external-link" href="#getting-the-file-name-and-extension-from-a-path" aria-hidden="true">#</a></h2>
+<pre><code>Given a path in A2 like: &quot;C:\My\SuperLongPath\to the file\facts and figures.xlsx&quot;
+
+In B2, get just the file name with: =MID(A2,FIND(&quot;*&quot;,SUBSTITUTE(A2,&quot;\&quot;,&quot;*&quot;,LEN(A2)-LEN(SUBSTITUTE(A2,&quot;\&quot;,&quot;&quot;))))+1,LEN(A2))
+
+In C2, get the extension from B2 with: =MID(B2,FIND(&quot;*&quot;,SUBSTITUTE(B2,&quot;.&quot;,&quot;*&quot;,LEN(B2)-LEN(SUBSTITUTE(B2,&quot;.&quot;,&quot;&quot;))))+1,LEN(B2))
+</code></pre>
+<h2 id="remove-spaces-after-commas" tabindex="-1">Remove spaces after commas <a class="external-link" href="#remove-spaces-after-commas" aria-hidden="true">#</a></h2>
+<pre><code>=SUBSTITUTE(A1, &quot;, &quot;, &quot;,&quot;)
+</code></pre>
+<h2 id="see-if-value-in-one-column-is-in-the-other" tabindex="-1">See if value in one column is in the other <a class="external-link" href="#see-if-value-in-one-column-is-in-the-other" aria-hidden="true">#</a></h2>
+<ul>
+<li>This looks through column C to find the value in A38</li>
+</ul>
+<pre><code>=IF(COUNTIF(C:C,A38)&gt; 0,&quot;Exists&quot;,&quot;Not Found&quot;)
+</code></pre>
+<ul>
+<li>This looks up the value of A2 in the C column (starting at C2)</li>
+<li>If there is a match it returns Y, else N</li>
+</ul>
+<pre><code>=IF(ISERROR(MATCH(A2,$C$2:$C$201,0)),&quot;N&quot;,&quot;Y&quot;)
+</code></pre>
+<h2 id="find-a-string-in-a-sting" tabindex="-1">Find a string in a sting <a class="external-link" href="#find-a-string-in-a-sting" aria-hidden="true">#</a></h2>
+<ul>
+<li>to find the word &quot;trend&quot; in B2</li>
+</ul>
+<pre><code>=IF(ISNUMBER(SEARCH(&quot;trend&quot;,B2)), &quot;Yes&quot;, &quot;No&quot;)
+</code></pre>
+<h2 id="find-last-instance-of-a-string" tabindex="-1">Find last instance of a string <a class="external-link" href="#find-last-instance-of-a-string" aria-hidden="true">#</a></h2>
+<ul>
+<li>This finds the last / and returns everything to the right</li>
+</ul>
+<pre><code>=RIGHT(R2,LEN(R2)-FIND(&quot;@&quot;,SUBSTITUTE(R2,&quot;/&quot;,&quot;@&quot;,LEN(R2)-LEN(SUBSTITUTE(R2,&quot;/&quot;,&quot;&quot;)))))
+</code></pre>
+<h2 id="look-up-a-value-in-a-column-and-return-adjacent-value" tabindex="-1">Look up a value in a column and return adjacent value <a class="external-link" href="#look-up-a-value-in-a-column-and-return-adjacent-value" aria-hidden="true">#</a></h2>
+<ul>
+<li>This looks up V2 in the X range and returns a value from the W range</li>
+</ul>
+<pre><code>=IFERROR(INDEX(W$2:W$25000,MATCH(V2,X$2:X$25000,0)),&quot;&quot;)
+</code></pre>
+<h2 id="youtube-videos" tabindex="-1">YouTube Videos <a class="external-link" href="#youtube-videos" aria-hidden="true">#</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=325GKIXPsSI" target="_blank" rel="noopener noreferrer">Excel - Merge Data from Multiple Sheets Based on Key Column - YouTube</a></li>
 </ul>
 
                 </div>
