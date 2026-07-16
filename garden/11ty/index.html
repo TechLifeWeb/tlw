@@ -104,15 +104,15 @@
             <article class="h-entry" data-pagefind-body="">
                 <hgroup><h1 class="p-name entry-title">&#127793;Eleventy (11ty) a simpler static site generator</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-03-31T15:07:22.597-07:00">Mar 31, 2026, 3:07 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-15T22:36:42.588-07:00">Jul 15, 2026, 10:36 PM</time>
                     <a href="/garden/11ty/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
                 <!-- social POSSE -->
                 <!-- End social POSSE -->
-                    <h4 id="official-site" tabindex="-1">Official Site <a class="external-link" href="#official-site" aria-hidden="true">#</a></h4>
+                    <h2 id="official-site" tabindex="-1">Official Site <a class="external-link" href="#official-site" aria-hidden="true">#</a></h2>
 <p><a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">Eleventy, a simpler static site generator</a></p>
-<h4 id="getting-started" tabindex="-1">Getting Started <a class="external-link" href="#getting-started" aria-hidden="true">#</a></h4>
+<h2 id="getting-started" tabindex="-1">Getting Started <a class="external-link" href="#getting-started" aria-hidden="true">#</a></h2>
 <ul>
 <li><a href="https://www.11ty.dev/docs/" target="_blank" rel="noopener noreferrer">Getting Started — Eleventy</a></li>
 <li><a href="https://www.htmlcenter.com/blog/how-to-build-static-website-with-11ty/" target="_blank" rel="noopener noreferrer">How to build static website with 11ty</a></li>
@@ -124,7 +124,7 @@
 <li>YouTube - A nice series that was very helpful for me to get me started with 11ty. <a href="https://www.youtube.com/watch?v=uzM5lETc6Sg&list=PLtLXFsdHI8JTwScHvB924dY3PNwNJjjuW" target="_blank" rel="noopener noreferrer">Eleventy Crash Course</a></li>
 <li>YouTube - <a href="https://www.youtube.com/watch?v=BKdQEXqfFA0" target="_blank" rel="noopener noreferrer">Build an 11ty Site in 3 Minutes</a></li>
 </ul>
-<h4 id="how-tos" tabindex="-1">How Tos <a class="external-link" href="#how-tos" aria-hidden="true">#</a></h4>
+<h2 id="how-tos" tabindex="-1">How Tos <a class="external-link" href="#how-tos" aria-hidden="true">#</a></h2>
 <ul>
 <li>Backlinks
 <ul>
@@ -210,6 +210,8 @@
 <ul>
 <li><a href="https://darthmall.net/2024/11ty-photo-gallery/" target="_blank" rel="noopener noreferrer">Eleventy Photo Gallery - Evan Sheehan</a></li>
 <li><a href="https://darekkay.com/blog/photography-website/" target="_blank" rel="noopener noreferrer">Building a photography website</a></li>
+<li><a href="https://www.aleksandrhovhannisyan.com/blog/eleventy-image-plugin/" target="_blank" rel="noopener noreferrer">Optimizing Images with the 11ty Image Plugin | Aleksandr Hovhannisyan</a></li>
+<li><a href="https://www.11ty.dev/docs/plugins/image/" target="_blank" rel="noopener noreferrer">Image — Eleventy</a></li>
 </ul>
 </li>
 <li>Search
@@ -250,11 +252,11 @@
 </ul>
 </li>
 </ul>
-<h4 id="others" tabindex="-1">Others <a class="external-link" href="#others" aria-hidden="true">#</a></h4>
+<h2 id="others" tabindex="-1">Others <a class="external-link" href="#others" aria-hidden="true">#</a></h2>
 <ul>
 <li>Follow 11ty on Mastodon <a href="https://mstdn.social/@eleventy@fosstodon.org" target="_blank" rel="noopener noreferrer">@eleventy@fosstodon.org</a></li>
 </ul>
-<h4 id="notes-on-getting-things-set-up" tabindex="-1">Notes on Getting Things Set up <a class="external-link" href="#notes-on-getting-things-set-up" aria-hidden="true">#</a></h4>
+<h2 id="notes-on-getting-things-set-up" tabindex="-1">Notes on Getting Things Set up <a class="external-link" href="#notes-on-getting-things-set-up" aria-hidden="true">#</a></h2>
 <p>node <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Node.js — Download</a></p>
 <p>Run the following commands. This installs 11ty, the luxon date formatter and the rss plugin</p>
 <pre><code>npm init -y
@@ -298,6 +300,18 @@ md _site
   };
 };
 </code></pre>
+<ul>
+<li>edit package.json and add these 2 lines to th Scripts section</li>
+</ul>
+<pre><code class="language-json">&quot;start&quot;: &quot;npx eleventy --serve --incremental&quot;,
+&quot;build&quot;: &quot;npx @11ty/eleventy&quot;,
+</code></pre>
+<h1 id="collections" tabindex="-1">Collections <a class="external-link" href="#collections" aria-hidden="true">#</a></h1>
+<ul>
+<li>Looping and limiting collection in reverse order</li>
+<li>This will return the latest 2</li>
+</ul>
+<pre><code class="language-nunjucks"></code></pre>
 <h4 id="other-tools-that-help" tabindex="-1">Other Tools that Help <a class="external-link" href="#other-tools-that-help" aria-hidden="true">#</a></h4>
 <p><a href="https://www.hygen.io/docs/quick-start/" target="_blank" rel="noopener noreferrer">Quick Start | Hygen</a> - Hygen is a tool that lets you use templates to build posts</p>
 
