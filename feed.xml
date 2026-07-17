@@ -7,11 +7,24 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
-      <lastBuildDate>Fri, 03 Jul 2026 22:44:08 PDT</lastBuildDate>
+      <pubDate>Wed, 15 Jul 2026 17:00:00 PDT</pubDate>
+      <lastBuildDate>Wed, 15 Jul 2026 17:00:00 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-16T21:25:06.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116933414537359622/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Canada wildfires turn Toronto’s skies orange as smoke threatens World Cup final &lt;a href=&quot;https://www.ynetnews.com/environment/article/s1qmmuivfx&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://www.&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;ynetnews.com/environment/artic&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;le/s1qmmuivfx&lt;/span&gt;&lt;/a&gt;  &amp;#39;More than 850 fires are burning across Canada, briefly making Toronto the world’s most polluted major city; smoke has reached Michigan, Minnesota and New York, raising concern ahead of Sunday’s Spain-Argentina final in New Jersey&amp;#39;&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/WorldCup&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;WorldCup&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Thu, 16 Jul 2026 21:25:06 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116933414537359622/</guid>
+    </item>
     <item>
       <title>Note 2026-07-16T16:46:31.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116932319054741968/</link>
       <description>
@@ -63,6 +76,19 @@
       <pubDate>Wed, 15 Jul 2026 21:49:14 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116927847080312844/</guid>
+    </item>
+    <item>
+      <title>Note 2026-07-15T17:00:00.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-16T190352/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            
+        </div>
+</description>
+      <pubDate>Wed, 15 Jul 2026 17:00:00 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-16T190352/</guid>
     </item>
     <item>
       <title>Note 2026-07-15T11:55:20.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116925511787313537/</link>
