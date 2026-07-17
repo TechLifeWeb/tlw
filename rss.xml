@@ -14,31 +14,10 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 15 Jul 2026 17:00:00 PDT</pubDate>
-    <lastBuildDate>Wed, 15 Jul 2026 17:00:00 PDT</lastBuildDate>
+    <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
+    <lastBuildDate>Fri, 03 Jul 2026 22:44:08 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
-
-    <item>
-      <title>Note 2026-07-15T17:00:00.000-07:00</title>
-
-      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-16T190352/</link>
-
-      <!-- Summary / fallback -->
-      <description ><![CDATA[
-        
-      ]]></description>
-
-      <!-- Full HTML content -->
-      <content:encoded><![CDATA[
-        
-      ]]></content:encoded>
-
-      <pubDate>Wed, 15 Jul 2026 17:00:00 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-16T190352/</guid>
-
-    </item>
 
     <item>
       <title>Note 2026-07-03T22:44:08.000-07:00</title>
