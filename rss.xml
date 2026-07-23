@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 03 Jul 2026 22:44:08 PDT</pubDate>
-    <lastBuildDate>Fri, 03 Jul 2026 22:44:08 PDT</lastBuildDate>
+    <pubDate>Thu, 23 Jul 2026 00:20:58 PDT</pubDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:20:58 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-23T00:20:58.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-22T232058/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>I'm testing using Vivaldi as my email client again. I figured out that I can go to the Vivaldi settings and under Appearance I can check &quot;Force a dark theme on all web sites.&quot; This has the desired effect of rendering HTML email as dark mode. It also alters all the sites you visit appear to have a dark mode. So far, so good with that. I don't think you can turn it off site by site though. We'll have to see if anything &quot;breaks&quot;. For no though, I'm not greeted with a flash bang of white background when I process my email so that's a win.<br />
+#vivaldi</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>I'm testing using Vivaldi as my email client again. I figured out that I can go to the Vivaldi settings and under Appearance I can check &quot;Force a dark theme on all web sites.&quot; This has the desired effect of rendering HTML email as dark mode. It also alters all the sites you visit appear to have a dark mode. So far, so good with that. I don't think you can turn it off site by site though. We'll have to see if anything &quot;breaks&quot;. For no though, I'm not greeted with a flash bang of white background when I process my email so that's a win.<br />
+#vivaldi</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 23 Jul 2026 00:20:58 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-22T232058/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-03T22:44:08.000-07:00</title>
