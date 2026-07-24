@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
+            <lastmod>2026-07-24T05:10:05.377Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
+            <lastmod>2026-07-24T04:47:29.931Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116972856045961264/</loc>
             <lastmod>2026-07-24T03:35:36.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -64,12 +76,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Illinois/</loc>
             <lastmod>2026-07-22T05:06:03.642Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
-            <lastmod>2026-07-22T05:04:34.576Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -784,12 +790,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/Health/</loc>
             <lastmod>2026-06-05T04:51:36.914Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
-            <lastmod>2026-06-04T06:33:14.274Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
