@@ -3,7 +3,13 @@
     
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
-            <lastmod>2026-07-24T05:10:05.377Z</lastmod>
+            <lastmod>2026-07-24T05:37:05.458Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/USA/</loc>
+            <lastmod>2026-07-24T05:37:04.958Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -766,12 +772,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/06/post-2026-06-09T201300/</loc>
             <lastmod>2026-06-10T04:13:00.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/USA/</loc>
-            <lastmod>2026-06-07T06:00:46.966Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
