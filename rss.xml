@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 23 Jul 2026 00:20:58 PDT</pubDate>
-    <lastBuildDate>Thu, 23 Jul 2026 00:20:58 PDT</lastBuildDate>
+    <pubDate>Fri, 24 Jul 2026 09:20:21 PDT</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2026 09:20:21 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-24T09:20:21.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-24T082021/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Handy Windows file watcher utility | JoeJoe's freeware utilities - [NewFileGo] https://www.joejoesoft.com/vcms/170/  'NewFileGo watches files for changes to trigger a command. This is an automation utitlity for advanced users.'<br />
+#windows</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Handy Windows file watcher utility | JoeJoe's freeware utilities - [NewFileGo] https://www.joejoesoft.com/vcms/170/  'NewFileGo watches files for changes to trigger a command. This is an automation utitlity for advanced users.'<br />
+#windows</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 24 Jul 2026 09:20:21 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-24T082021/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-23T00:20:58.000-07:00</title>

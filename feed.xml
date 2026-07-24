@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Thu, 23 Jul 2026 00:20:58 PDT</pubDate>
-      <lastBuildDate>Thu, 23 Jul 2026 00:20:58 PDT</lastBuildDate>
+      <pubDate>Fri, 24 Jul 2026 09:20:21 PDT</pubDate>
+      <lastBuildDate>Fri, 24 Jul 2026 09:20:21 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-24T09:20:21.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-24T082021/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Handy Windows file watcher utility | JoeJoe&#39;s freeware utilities - [NewFileGo] https://www.joejoesoft.com/vcms/170/  &#39;NewFileGo watches files for changes to trigger a command. This is an automation utitlity for advanced users.&#39;&lt;br&gt;
+#windows&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 24 Jul 2026 09:20:21 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-24T082021/</guid>
+    </item>
     <item>
       <title>Note 2026-07-23T20:35:36.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116972856045961264/</link>
       <description>
@@ -1074,45 +1089,6 @@ Visa, Mastercard, Stripe, BlackRock, Coinbase, and 140+ companies join Open Stan
       <pubDate>Fri, 26 Jun 2026 09:02:42 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116817249060074601/</guid>
-    </item>
-    <item>
-      <title>Note 2026-06-24T21:34:33.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116808880837501588/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;PolitiFact | Betsy Ross, Paul Revere and George Washington’s teeth: The real stories behind US history myths &lt;a href=&quot;https://www.politifact.com/article/2026/jun/24/American-history-myths-250-anniversary-debunked/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://www.&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;politifact.com/article/2026/ju&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;n/24/American-history-myths-250-anniversary-debunked/&lt;/span&gt;&lt;/a&gt;  &lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/USHistory&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;USHistory&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 24 Jun 2026 21:34:33 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116808880837501588/</guid>
-    </item>
-    <item>
-      <title>Note 2026-06-24T21:12:33.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116808794361634092/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Back-to-Back 7.2 and 7.5 Earthquakes Strike Venezuela, Damage Caracas Buildings | PBS News &lt;a href=&quot;https://www.pbs.org/newshour/world/back-to-back-powerful-earthquakes-slam-venezuela-collapsing-buildings-in-the-capital-of-caracas&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://www.&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;pbs.org/newshour/world/back-to&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;-back-powerful-earthquakes-slam-venezuela-collapsing-buildings-in-the-capital-of-caracas&lt;/span&gt;&lt;/a&gt;  &lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/Venezuela&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Venezuela&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/EarthQuake&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;EarthQuake&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 24 Jun 2026 21:12:33 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116808794361634092/</guid>
-    </item>
-    <item>
-      <title>Note 2026-06-24T21:05:08.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116808765149444759/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Padres sweep Braves! Sweeptastic! LAD in town starting Friday at 6:45pm PDT&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/Padres&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Padres&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 24 Jun 2026 21:05:08 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116808765149444759/</guid>
     </item>
     <item>
       <title>Note 2026-06-21T17:48:26.000-07:00</title>
