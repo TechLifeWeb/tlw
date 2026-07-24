@@ -2,14 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
-            <lastmod>2026-07-24T06:28:05.865Z</lastmod>
+            <loc>https://techlifeweb.com/garden/travelfiles/Missouri/</loc>
+            <lastmod>2026-07-24T06:39:40.055Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/New%20York/</loc>
+            <lastmod>2026-07-24T06:39:40.044Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Massachusetts/</loc>
+            <lastmod>2026-07-24T06:38:33.601Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Alaska/</loc>
+            <lastmod>2026-07-24T06:37:03.599Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Kansas/</loc>
+            <lastmod>2026-07-24T06:37:03.580Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Illinois/</loc>
+            <lastmod>2026-07-24T06:37:03.558Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/California/</loc>
+            <lastmod>2026-07-24T06:35:34.101Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/USA/</loc>
-            <lastmod>2026-07-24T06:28:05.356Z</lastmod>
+            <lastmod>2026-07-24T06:34:03.580Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/United%20Kingdom/</loc>
+            <lastmod>2026-07-24T06:32:33.560Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Amtrak/</loc>
+            <lastmod>2026-07-24T06:31:04.081Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
+            <lastmod>2026-07-24T06:28:05.865Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -74,30 +128,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Kansas/</loc>
-            <lastmod>2026-07-22T05:06:03.651Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Illinois/</loc>
-            <lastmod>2026-07-22T05:06:03.642Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/California/</loc>
-            <lastmod>2026-07-22T05:04:34.561Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Alaska/</loc>
-            <lastmod>2026-07-22T05:04:34.222Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/SanDiego/</loc>
             <lastmod>2026-07-22T05:03:03.667Z</lastmod>
             <changefreq>daily</changefreq>
@@ -136,18 +166,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Cockroach%20Party,%20Coffee%20Limits,%20and%20Grandma%20Happy%20Hour/</loc>
             <lastmod>2026-07-21T09:04:36.377Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Massachusetts/</loc>
-            <lastmod>2026-07-21T02:18:38.657Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Missouri/</loc>
-            <lastmod>2026-07-21T02:12:37.875Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -794,12 +812,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/United%20Kingdom/</loc>
-            <lastmod>2026-06-04T05:36:12.288Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/obsidiannotes/Templater%20code%20for%20daily%20note%20navigation/</loc>
             <lastmod>2026-06-04T00:10:51.938Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1100,12 +1112,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Amtrak/</loc>
-            <lastmod>2026-03-30T03:26:46.324Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/Mastodon/</loc>
             <lastmod>2026-03-29T01:46:32.635Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1282,12 +1288,6 @@
         <url>
             <loc>https://techlifeweb.com/p/TechLifeWeb/935944867894961791/</loc>
             <lastmod>2026-03-07T17:10:45.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/New%20York/</loc>
-            <lastmod>2026-03-06T06:27:48.769Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
