@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/London/</loc>
+            <lastmod>2026-07-25T04:49:06.850Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
+            <lastmod>2026-07-25T04:49:06.226Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/UnitedKingdom/</loc>
+            <lastmod>2026-07-25T04:43:06.908Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Travel/</loc>
+            <lastmod>2026-07-25T04:43:05.960Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116978727562073238/</loc>
+            <lastmod>2026-07-25T04:28:48.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116978474988052956/</loc>
             <lastmod>2026-07-25T03:24:34.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -98,12 +128,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/United%20Kingdom/</loc>
-            <lastmod>2026-07-24T06:32:33.560Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Amtrak/</loc>
             <lastmod>2026-07-24T06:31:04.081Z</lastmod>
             <changefreq>daily</changefreq>
@@ -112,12 +136,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
             <lastmod>2026-07-24T06:28:05.865Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
-            <lastmod>2026-07-24T04:47:29.931Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -742,12 +760,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116817249060074601/</loc>
             <lastmod>2026-06-26T16:02:42.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Travel/</loc>
-            <lastmod>2026-06-24T21:05:30.955Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
