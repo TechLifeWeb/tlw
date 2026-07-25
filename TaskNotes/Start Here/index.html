@@ -1,0 +1,84 @@
+<h1 id="start-here-with-tasknotes" tabindex="-1">Start Here with TaskNotes <a class="external-link" href="#start-here-with-tasknotes" aria-hidden="true">#</a></h1>
+<p>This note is a small tour of TaskNotes inside your own vault. Work through it in place, then keep it as a reference or delete it when you no longer need it.</p>
+<p>TaskNotes works best when three things feel connected:</p>
+<ol>
+<li>Capture a task quickly.</li>
+<li>Store the task as a normal Markdown note.</li>
+<li>Review tasks through Bases views.</li>
+</ol>
+<h2 id="before-you-start" tabindex="-1">Before You Start <a class="external-link" href="#before-you-start" aria-hidden="true">#</a></h2>
+<ul>
+<li>[x] Enable the Obsidian <strong>Bases</strong> core plugin. ✅ 2026-07-24</li>
+<li>[x] Confirm TaskNotes has created the default <code>.base</code> files in <code>TaskNotes/Views/</code>. ✅ 2026-07-24</li>
+<li>[x] Open the command palette and run <strong>TaskNotes: Open tasks view</strong>. ✅ 2026-07-24</li>
+</ul>
+<p>TaskNotes creates missing default <code>.base</code> files automatically on startup when <strong>Auto-create default files</strong> is enabled. If the files are missing, use <strong>Settings -&gt; TaskNotes -&gt; General -&gt; Views &amp; base files -&gt; Create files</strong>.</p>
+<h2 id="1.-create-a-task-from-the-command-palette" tabindex="-1">1. Create a Task from the Command Palette <a class="external-link" href="#1.-create-a-task-from-the-command-palette" aria-hidden="true">#</a></h2>
+<p>Run <strong>TaskNotes: Create new task</strong> and create a real task you intend to do soon.</p>
+<p>Try a title like:</p>
+<pre><code class="language-text">Review my TaskNotes setup tomorrow #admin
+</code></pre>
+<p>After saving, TaskNotes creates a Markdown note for that task. Open the task note and look at the YAML properties at the top. Those properties are what Bases reads for filtering, sorting, grouping, and calendar placement.</p>
+<h2 id="2.-convert-inline-tasks-into-tasknotes" tabindex="-1">2. Convert Inline Tasks into TaskNotes <a class="external-link" href="#2.-convert-inline-tasks-into-tasknotes" aria-hidden="true">#</a></h2>
+<p>The checkboxes below are ordinary Markdown tasks. Convert each one into a TaskNote from the line's inline action or the command palette.</p>
+<ul>
+<li>[ ] Create a TaskNotes inbox task due tomorrow #admin</li>
+<li>[ ] Schedule a 20 minute planning task for next Monday #planning</li>
+<li>[ ] Make a task linked to an active project note</li>
+</ul>
+<p>After conversion, notice a few things:</p>
+<ul>
+<li>The source line can stay in this note as context.</li>
+<li>The actual task now lives as its own Markdown note, so it can appear in TaskNotes views.</li>
+<li>The converted line links to the TaskNote. Right-click that TaskNote link to open the task menu, then try changing a property such as status, priority, due date, scheduled date, or project.</li>
+</ul>
+<h2 id="3.-review-your-tasks" tabindex="-1">3. Review Your Tasks <a class="external-link" href="#3.-review-your-tasks" aria-hidden="true">#</a></h2>
+<p>The embedded views below use the default TaskNotes Bases files.</p>
+<h3 id="task-list" tabindex="-1">Task List <a class="external-link" href="#task-list" aria-hidden="true">#</a></h3>
+<p>![[TaskNotes/Views/tasks-default.base]]</p>
+<p>Use this when you want a straightforward list of everything open.</p>
+<h3 id="agenda" tabindex="-1">Agenda <a class="external-link" href="#agenda" aria-hidden="true">#</a></h3>
+<p>![[TaskNotes/Views/agenda-default.base]]</p>
+<p>Use this when you care about due dates, scheduled dates, and what needs attention soon.</p>
+<h3 id="mini-calendar" tabindex="-1">Mini Calendar <a class="external-link" href="#mini-calendar" aria-hidden="true">#</a></h3>
+<p>![[TaskNotes/Views/mini-calendar-default.base]]</p>
+<p>Use this when you want a compact calendar alongside your notes.</p>
+<h3 id="calendar" tabindex="-1">Calendar <a class="external-link" href="#calendar" aria-hidden="true">#</a></h3>
+<p>![[TaskNotes/Views/calendar-default.base]]</p>
+<p>Use this when you want a larger calendar for scheduled work, due dates, timeblocks, and calendar events.</p>
+<h3 id="kanban" tabindex="-1">Kanban <a class="external-link" href="#kanban" aria-hidden="true">#</a></h3>
+<p>![[TaskNotes/Views/kanban-default.base]]</p>
+<p>Use this when you want to move work through statuses like open, in progress, and done.</p>
+<h2 id="4.-adjust-only-what-gets-in-your-way" tabindex="-1">4. Adjust only what Gets in Your way <a class="external-link" href="#4.-adjust-only-what-gets-in-your-way" aria-hidden="true">#</a></h2>
+<p>The defaults are enough to start. Visit settings later when you know what you want to change:</p>
+<ul>
+<li>If task files are going to the wrong place, check <strong>Settings -&gt; TaskNotes -&gt; General</strong>.</li>
+<li>If converted inline tasks should be created somewhere else, check <strong>Settings -&gt; TaskNotes -&gt; Inline Task Settings</strong>.</li>
+<li>If the task modal shows too much or too little, check <strong>Settings -&gt; TaskNotes -&gt; Modal Fields</strong>.</li>
+<li>If your vault uses different property names, statuses, priorities, or custom fields, check <strong>Settings -&gt; TaskNotes -&gt; Task Properties</strong>.</li>
+</ul>
+<h2 id="5.-make-it-yours" tabindex="-1">5. Make it Yours <a class="external-link" href="#5.-make-it-yours" aria-hidden="true">#</a></h2>
+<p>Try adding one custom property to a task, such as <code>energy</code>, <code>client</code>, or <code>area</code>. Because tasks are Markdown notes, custom properties can be used in Bases without locking you into a separate task database.</p>
+<h2 id="6.-contextual-views" tabindex="-1">6. Contextual Views <a class="external-link" href="#6.-contextual-views" aria-hidden="true">#</a></h2>
+<p>You can embed Bases views inside daily notes, project notes, meeting notes, or task notes. Advanced Bases filters can use the current note as context, so one view can show tasks related to whatever note it is embedded in.</p>
+<p>TaskNotes uses this pattern for the Relationships widget in task notes. When you are ready to customize views, see the TaskNotes documentation for examples.</p>
+<p>Useful next experiments:</p>
+<ul>
+<li>Duplicate <code>TaskNotes/Views/tasks-default.base</code> and make a view for one project.</li>
+<li>Add a group to a Base view, such as status or priority.</li>
+<li>Add a filter for tasks due this week.</li>
+<li>Link a task to a project note and use backlinks to see where it is mentioned.</li>
+</ul>
+<h2 id="more-help-and-extensions" tabindex="-1">More Help and Extensions <a class="external-link" href="#more-help-and-extensions" aria-hidden="true">#</a></h2>
+<ul>
+<li>Documentation: <a href="https://tasknotes.dev/">tasknotes.dev</a></li>
+<li>Problems or bugs: <a href="https://github.com/callumalpass/tasknotes/issues">open an issue on GitHub</a></li>
+<li>Companion plugins:
+<ul>
+<li><a href="https://tasknotes.dev/companion-plugins/canvas-bases/">Canvas Bases</a> adds canvas-style boards and JSON Canvas snapshots for Bases views, with optional TaskNotes badges, actions, and relationship edges.</li>
+<li><a href="https://tasknotes.dev/companion-plugins/tasknotes-workflows/">TaskNotes Workflows</a> adds Markdown-defined automation for TaskNotes events, schedules, manual commands, and task actions.</li>
+</ul>
+</li>
+</ul>
+<h2 id="finished" tabindex="-1">Finished <a class="external-link" href="#finished" aria-hidden="true">#</a></h2>
+<p>Now you know the core idea: tasks are notes, properties make them queryable, and Bases turns them into views.</p>

@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116981680535911208/</loc>
+            <lastmod>2026-07-25T16:59:47.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/TaskNotes/Tasks/Testing%20in%20the%20phone/</loc>
+            <lastmod>2026-07-25T15:09:54.884Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/TaskNotes/Tasks/TN-YYYYMMddHHmmss/</loc>
+            <lastmod>2026-07-25T15:09:54.882Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Amelia%20Earhart,%20Endangered%20Giraffes,%20and%20Old-School%20Sweet%20Tea/</loc>
+            <lastmod>2026-07-25T09:02:58.183Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/TaskNotes/Start%20Here/</loc>
+            <lastmod>2026-07-25T06:56:39.092Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/New%20York/</loc>
             <lastmod>2026-07-25T05:55:09.217Z</lastmod>
             <changefreq>daily</changefreq>
@@ -340,12 +370,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116941436576378713/</loc>
             <lastmod>2026-07-18T14:25:13.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Warrior%20Princesses,%20Toxic%20Lettuce,%20and%20Brainiac%20Giraffes/</loc>
-            <lastmod>2026-07-18T09:02:53.545Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
