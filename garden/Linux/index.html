@@ -104,7 +104,7 @@
             <article class="h-entry" data-pagefind-body="">
                 <hgroup><h1 class="p-name entry-title">&#127793;Linux Notes</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-03-31T16:31:52.458-07:00">Mar 31, 2026, 4:31 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-25T11:31:57.169-07:00">Jul 25, 2026, 11:31 AM</time>
                     <a href="/garden/Linux/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -143,15 +143,24 @@
 <h1 id="post-install" tabindex="-1"><strong>Post Install</strong> <a class="external-link" href="#post-install" aria-hidden="true">#</a></h1>
 <ul>
 <li>ctrl+alt+t will open up the terminal window</li>
-<li><strong>Update your System</strong>
-<ul>
-<li><code>sudo apt update</code></li>
-<li><code>sudo apt upgrade</code></li>
+<li><strong>Update your System</strong></li>
 </ul>
 </li>
+</ul>
+<pre><code># Update the package list
+sudo apt update
+# Upgrade the installed packages
+sudo apt upgrade
+# Install a package
+sudo apt install &lt;package_name&gt;
+# Remove a package
+sudo apt remove &lt;package_name&gt;
+</code></pre>
+<ul>
 <li><strong>Check Drivers</strong>
 <ul>
-<li>Search the menu for Software &amp; Updates (on Kubuntu, search for Software and click Driver Manager)</li>
+<li>Search the menu for Software &amp; Updates (on Kubuntu, search for Software and click Driver Manager)
+<ul>
 <li>Click the Additional Drivers tab and let the system find any additional divers to install</li>
 <li>Select them (usually says 'tested') and click apply changes</li>
 </ul>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/Linux/</loc>
+            <lastmod>2026-07-25T18:31:57.169Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116982002647622032/</loc>
+            <lastmod>2026-07-25T18:21:42.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116981680535911208/</loc>
             <lastmod>2026-07-25T16:59:47.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1138,12 +1150,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/03/repost-2026-03-31T223852/</loc>
             <lastmod>2026-04-01T06:38:52.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Linux/</loc>
-            <lastmod>2026-03-31T23:31:52.458Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
