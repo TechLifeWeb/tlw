@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116982304685173502/</loc>
+            <lastmod>2026-07-25T19:38:31.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/Linux/</loc>
             <lastmod>2026-07-25T18:31:57.169Z</lastmod>
             <changefreq>daily</changefreq>
