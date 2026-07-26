@@ -14,10 +14,40 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 24 Jul 2026 09:20:21 PDT</pubDate>
-    <lastBuildDate>Fri, 24 Jul 2026 09:20:21 PDT</lastBuildDate>
+    <pubDate>Sun, 26 Jul 2026 16:19:20 PDT</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2026 16:19:20 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-26T16:19:20.000-07:00</title>
+      <title>Repost 2026-07-26T16:19:20.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T151915/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://caneandable.social/@WeirdWriter/116986546487668881">Robert Kingett (@WeirdWriter@caneandable.social)</a> on Mastodon:<br /></p>
+<blockquote>
+For #Blind people looking to make their own websites, I recommend all 3 parts of this podcast series. Part 3 covers Static site generators a
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://caneandable.social/@WeirdWriter/116986546487668881">Robert Kingett (@WeirdWriter@caneandable.social)</a> on Mastodon:<br /></p>
+<blockquote>
+For #Blind people looking to make their own websites, I recommend all 3 parts of this podcast series. Part 3 covers Static site generators a
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 26 Jul 2026 16:19:20 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T151915/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-24T09:20:21.000-07:00</title>
