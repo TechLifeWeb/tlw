@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116984658385064148/</loc>
+            <lastmod>2026-07-26T05:37:05.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
+            <lastmod>2026-07-26T04:49:56.817Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/%F0%9F%8F%A0%20Home/</loc>
+            <lastmod>2026-07-26T04:18:58.940Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/TaskNotes/Tasks/Testing%20in%20the%20phone/</loc>
+            <lastmod>2026-07-26T04:00:59.126Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/TaskNotes/Tasks/TN-YYYYMMddHHmmss/</loc>
+            <lastmod>2026-07-26T04:00:59.119Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116982304685173502/</loc>
             <lastmod>2026-07-25T19:38:31.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -22,18 +52,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116981680535911208/</loc>
             <lastmod>2026-07-25T16:59:47.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/TaskNotes/Tasks/Testing%20in%20the%20phone/</loc>
-            <lastmod>2026-07-25T15:09:54.884Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/TaskNotes/Tasks/TN-YYYYMMddHHmmss/</loc>
-            <lastmod>2026-07-25T15:09:54.882Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -196,12 +214,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Amtrak/</loc>
             <lastmod>2026-07-24T06:31:04.081Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Boston/</loc>
-            <lastmod>2026-07-24T06:28:05.865Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -580,12 +592,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116860002860341761/</loc>
             <lastmod>2026-07-04T05:15:33.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/%F0%9F%8F%A0%20Home/</loc>
-            <lastmod>2026-07-04T04:46:20.317Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
