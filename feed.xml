@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sun, 26 Jul 2026 16:19:20 PDT</pubDate>
-      <lastBuildDate>Sun, 26 Jul 2026 16:19:20 PDT</lastBuildDate>
+      <pubDate>Sun, 26 Jul 2026 17:59:28 PDT</pubDate>
+      <lastBuildDate>Sun, 26 Jul 2026 17:59:28 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-26T17:59:28.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-26T165928/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks https://github.com/Git-Hub-Dangel/obsidian-property-streaks  &#39;Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.&#39;&lt;br&gt;
+#Obsidian&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sun, 26 Jul 2026 17:59:28 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-26T165928/</guid>
+    </item>
     <item>
       <title>Note 2026-07-26T16:19:20.000-07:00</title>
       <title>Repost 2026-07-26T16:19:20.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T151915/</link>
