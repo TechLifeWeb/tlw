@@ -14,10 +14,46 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 26 Jul 2026 17:59:28 PDT</pubDate>
-    <lastBuildDate>Sun, 26 Jul 2026 17:59:28 PDT</lastBuildDate>
+    <pubDate>Sun, 26 Jul 2026 18:35:47 PDT</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2026 18:35:47 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-26T18:35:47.000-07:00</title>
+      <title>Repost 2026-07-26T18:35:47.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T173547/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.world/@paulschoe/116988493296051513">Paul Schoe (@paulschoe@mastodon.world)</a> on Mastodon:<br /></p>
+<blockquote>
+This is interesting news.<p>
+</p><p>Swedish education officials are investing heavily again in traditional printed textbooks.</p><p></p>
+<p>The national strategy aims to phase out digital devices for children under the age of six entirely, following a drop in international reading assessment scores.</p><p></p>
+<p>Research indicates that the physical act of handwriting activates complex neural networks governing motor skills, vision, memory, and language-cognitive benefits that are largely lost on a keyboard.</p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.world/@paulschoe/116988493296051513">Paul Schoe (@paulschoe@mastodon.world)</a> on Mastodon:<br /></p>
+<blockquote>
+This is interesting news.<p>
+</p><p>Swedish education officials are investing heavily again in traditional printed textbooks.</p><p></p>
+<p>The national strategy aims to phase out digital devices for children under the age of six entirely, following a drop in international reading assessment scores.</p><p></p>
+<p>Research indicates that the physical act of handwriting activates complex neural networks governing motor skills, vision, memory, and language-cognitive benefits that are largely lost on a keyboard.</p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 26 Jul 2026 18:35:47 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T173547/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-26T17:59:28.000-07:00</title>
@@ -26,14 +62,14 @@
 
       <!-- Summary / fallback -->
       <description ><![CDATA[
-        <p>Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks https://github.com/Git-Hub-Dangel/obsidian-property-streaks  'Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.'<br />
+        <p>Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks <a href="https://github.com/Git-Hub-Dangel/obsidian-property-streaks">https://github.com/Git-Hub-Dangel/obsidian-property-streaks</a> '' 'Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.'<br />
 #Obsidian</p>
 
       ]]></description>
 
       <!-- Full HTML content -->
       <content:encoded><![CDATA[
-        <p>Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks https://github.com/Git-Hub-Dangel/obsidian-property-streaks  'Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.'<br />
+        <p>Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks <a href="https://github.com/Git-Hub-Dangel/obsidian-property-streaks">https://github.com/Git-Hub-Dangel/obsidian-property-streaks</a> '' 'Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.'<br />
 #Obsidian</p>
 
       ]]></content:encoded>

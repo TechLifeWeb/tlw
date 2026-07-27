@@ -7,18 +7,39 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sun, 26 Jul 2026 17:59:28 PDT</pubDate>
-      <lastBuildDate>Sun, 26 Jul 2026 17:59:28 PDT</lastBuildDate>
+      <pubDate>Sun, 26 Jul 2026 18:35:47 PDT</pubDate>
+      <lastBuildDate>Sun, 26 Jul 2026 18:35:47 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-26T18:35:47.000-07:00</title>
+      <title>Repost 2026-07-26T18:35:47.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T173547/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.world/@paulschoe/116988493296051513&quot;&gt;Paul Schoe (@paulschoe@mastodon.world)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+This is interesting news.&lt;p&gt;
+&lt;p&gt;Swedish education officials are investing heavily again in traditional printed textbooks.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The national strategy aims to phase out digital devices for children under the age of six entirely, following a drop in international reading assessment scores.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Research indicates that the physical act of handwriting activates complex neural networks governing motor skills, vision, memory, and language-cognitive benefits that are largely lost on a keyboard.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Sun, 26 Jul 2026 18:35:47 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T173547/</guid>
+    </item>
     <item>
       <title>Note 2026-07-26T17:59:28.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-26T165928/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
         </div>   
         <div class="e-content e-bridgy-mastodon-content" >              
-            &lt;p&gt;Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks https://github.com/Git-Hub-Dangel/obsidian-property-streaks  &#39;Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.&#39;&lt;br&gt;
+            &lt;p&gt;Interesting new Obsidian Plugin if you are into habit tracking and you are already using Daily Notes: Property Streaks &lt;a href=&#39;https://github.com/Git-Hub-Dangel/obsidian-property-streaks&#39;&gt;https://github.com/Git-Hub-Dangel/obsidian-property-streaks&lt;/a&gt; &#39;&#39; &#39;Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze.&#39;&lt;br&gt;
 #Obsidian&lt;/p&gt;
 
         </div>
@@ -26,6 +47,19 @@
       <pubDate>Sun, 26 Jul 2026 17:59:28 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-26T165928/</guid>
+    </item>
+    <item>
+      <title>Note 2026-07-26T17:26:33.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116989099608403498/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Hey, Mets beat LAD and the Padres won! 🎉 &lt;br&gt;##MLB &lt;a href=&quot;https://indieweb.social/tags/Padres&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Padres&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Sun, 26 Jul 2026 17:26:33 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116989099608403498/</guid>
     </item>
     <item>
       <title>Note 2026-07-26T16:19:20.000-07:00</title>
