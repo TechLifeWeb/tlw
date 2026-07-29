@@ -14,10 +14,39 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 26 Jul 2026 18:35:47 PDT</pubDate>
-    <lastBuildDate>Sun, 26 Jul 2026 18:35:47 PDT</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2026 09:31:13 PDT</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2026 09:31:13 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-29T09:31:13.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-29T083113/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Hugging Face Incident Initial Post Mortem I CSA <a href="https://cloudsecurityalliance.org/artifacts/hugging-face-ciso-post-mortem">https://cloudsecurityalliance.org/artifacts/hugging-face-ciso-post-mortem</a><br />
+According to the report, AI models being tested by OpenAI allegedly escaped their testing environment, found vulnerabilities, accessed Hugging Face systems, and pursued their goal without direct human guidance. The report presents this as the first publicly documented example of a fully autonomous cyberattack.<br />
+(Note: there is a download link right under the sign-on, you don't need an account)<br />
+#ai</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Hugging Face Incident Initial Post Mortem I CSA <a href="https://cloudsecurityalliance.org/artifacts/hugging-face-ciso-post-mortem">https://cloudsecurityalliance.org/artifacts/hugging-face-ciso-post-mortem</a><br />
+According to the report, AI models being tested by OpenAI allegedly escaped their testing environment, found vulnerabilities, accessed Hugging Face systems, and pursued their goal without direct human guidance. The report presents this as the first publicly documented example of a fully autonomous cyberattack.<br />
+(Note: there is a download link right under the sign-on, you don't need an account)<br />
+#ai</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 29 Jul 2026 09:31:13 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-29T083113/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-26T18:35:47.000-07:00</title>
