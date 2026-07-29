@@ -7,11 +7,30 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Wed, 29 Jul 2026 09:31:13 PDT</pubDate>
-      <lastBuildDate>Wed, 29 Jul 2026 09:31:13 PDT</lastBuildDate>
+      <pubDate>Wed, 29 Jul 2026 12:57:33 PDT</pubDate>
+      <lastBuildDate>Wed, 29 Jul 2026 12:57:33 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-29T12:57:33.000-07:00</title>
+      <title>Repost 2026-07-29T12:57:33.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;&quot;&gt;&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+If you don’t want your GitHub repositories in HuggingFace’s data set used for LLM training, unfortunately you need to opt-out.
+&lt;p&gt;Find out if you’re in the crawl  &lt;a href=&quot;https://huggingface.co/spaces/HuggingFaceCode/in-the-stack&quot;&gt;https://huggingface.co/spaces/HuggingFaceCode/in-the-stack&lt;/a&gt; &amp;quot;&amp;quot; and follow the opt-out instructions at the bottom.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Wed, 29 Jul 2026 12:57:33 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/</guid>
+    </item>
     <item>
       <title>Note 2026-07-29T11:33:24.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117004697908142743/</link>
       <description>

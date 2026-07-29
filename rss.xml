@@ -14,10 +14,42 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 29 Jul 2026 09:31:13 PDT</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2026 09:31:13 PDT</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2026 12:57:33 PDT</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2026 12:57:33 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-29T12:57:33.000-07:00</title>
+      <title>Repost 2026-07-29T12:57:33.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/"></a> on Mastodon:<br /></p>
+<blockquote>
+If you don’t want your GitHub repositories in HuggingFace’s data set used for LLM training, unfortunately you need to opt-out.
+<p>Find out if you’re in the crawl  <a href="https://huggingface.co/spaces/HuggingFaceCode/in-the-stack">https://huggingface.co/spaces/HuggingFaceCode/in-the-stack</a> &quot;&quot; and follow the opt-out instructions at the bottom.</p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/"></a> on Mastodon:<br /></p>
+<blockquote>
+If you don’t want your GitHub repositories in HuggingFace’s data set used for LLM training, unfortunately you need to opt-out.
+<p>Find out if you’re in the crawl  <a href="https://huggingface.co/spaces/HuggingFaceCode/in-the-stack">https://huggingface.co/spaces/HuggingFaceCode/in-the-stack</a> &quot;&quot; and follow the opt-out instructions at the bottom.</p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 29 Jul 2026 12:57:33 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/repost-2026-07-29T115733/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-29T09:31:13.000-07:00</title>
