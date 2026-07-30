@@ -8,6 +8,36 @@
         </url>
     
         <url>
+            <loc>https://techlifeweb.com/garden/obsidian/</loc>
+            <lastmod>2026-07-30T04:11:23.891Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/obsidiannotes/Templater%20code%20for%20daily%20note%20navigation/</loc>
+            <lastmod>2026-07-30T04:11:22.923Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/linux/</loc>
+            <lastmod>2026-07-30T04:11:22.735Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/rss%20-%20really%20simple%20syndication/</loc>
+            <lastmod>2026-07-30T04:08:22.082Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/mastodon/</loc>
+            <lastmod>2026-07-30T04:08:22.073Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117006248325085207/</loc>
             <lastmod>2026-07-30T01:07:42.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -232,12 +262,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116982304685173502/</loc>
             <lastmod>2026-07-25T19:38:31.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Linux/</loc>
-            <lastmod>2026-07-25T18:31:57.169Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -532,12 +556,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116942511398147946/</loc>
             <lastmod>2026-07-18T18:58:33.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Obsidian/</loc>
-            <lastmod>2026-07-18T17:57:58.200Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -920,12 +938,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/obsidiannotes/Templater%20code%20for%20daily%20note%20navigation/</loc>
-            <lastmod>2026-06-04T00:10:51.938Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/05/post-2026-05-31T232114/</loc>
             <lastmod>2026-06-01T07:21:14.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1202,12 +1214,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/Mastodon/</loc>
-            <lastmod>2026-03-29T01:46:32.635Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/p/TechLifeWeb/942605649062146891/</loc>
             <lastmod>2026-03-26T02:18:19.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1360,12 +1366,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/windows/Scan%20and%20Repair%20Windows/</loc>
             <lastmod>2026-03-08T06:23:06.865Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/RSS%20-%20Really%20Simple%20Syndication/</loc>
-            <lastmod>2026-03-08T06:18:36.855Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -2582,7 +2582,7 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/blog/2025/05/post-2025-05-30T175849/</loc>
+            <loc>https://techlifeweb.com/blog/2025/05/post-2025-05-30t175849/</loc>
             <lastmod>2025-05-31T01:58:49.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
@@ -2660,7 +2660,7 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/blog/2025/05/post-2025-05-10T095951/</loc>
+            <loc>https://techlifeweb.com/blog/2025/05/post-2025-05-10t095951/</loc>
             <lastmod>2025-05-10T17:59:51.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
@@ -3164,7 +3164,7 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/blog/2025/01/post-2025-01-14T141504/</loc>
+            <loc>https://techlifeweb.com/blog/2025/01/post-2025-01-14t141504/</loc>
             <lastmod>2025-01-14T22:15:04.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
