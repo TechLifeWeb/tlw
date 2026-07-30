@@ -3621,7 +3621,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
     <item>
       <title>Template Vault and How I Use Obsidian</title>
 
-      <link>https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/</link>
+      <link>https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/</link>
 
       <!-- Summary / fallback -->
       <description ><![CDATA[
@@ -3631,13 +3631,13 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 <a href="https://github.com/TechLifeWeb/ObsidianTemplateVault/tree/main" target="_blank" rel="noopener noreferrer">TechLifeWeb/ObsidianTemplateVault</a></p>
 <p>Here's some information about the vault and how I use it. I've also added a section about my personal rules for using it. Your rules don't have to be the same as mine, but I strongly encourage you to take a moment to think about what you're doing with <em>your</em> notes and, even more importantly, <em>why</em> you're making these notes.</p>
 <p>When I was setting up my vault, I believed that being able to find things easily was the most important idea. So, I thought about how to make notes that are quick and simple to create, while also including enough details so I can find them again without any trouble.</p>
-<h1 id="folders" tabindex="-1">Folders <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#folders" aria-hidden="true">#</a></h1>
+<h1 id="folders" tabindex="-1">Folders <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#folders" aria-hidden="true">#</a></h1>
 <ul>
 <li>I avoid folders for content. Every note is stored in the Notes folder with the exception of Daily Notes which are held in the Notes/Daily subfolder.</li>
 <li>Notes that are not content are stored under the Support folder. There are subfolders for the special cases of Navigation notes (some call these MOCs or Maps of Content) and Templates.</li>
 <li>The &quot;Files&quot; folder is where attachments are held.</li>
 </ul>
-<h1 id="bookmarks" tabindex="-1">Bookmarks <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#bookmarks" aria-hidden="true">#</a></h1>
+<h1 id="bookmarks" tabindex="-1">Bookmarks <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#bookmarks" aria-hidden="true">#</a></h1>
 <ul>
 <li>I have all the Navigation notes bookmarked so they appear in the list of Bookmarks. That panel I have open on the upper left and is where I start all my navigation unless I just search.</li>
 <li>I loosely use the ideas of PARA presented by Tiago Forte: <a href="https://fortelabs.com/blog/para/" target="_blank" rel="noopener noreferrer">The PARA Method: The Simple System for Organizing Your Digital Life in Seconds</a>. &quot;Projects&quot; is too work oriented in my brain so I use &quot;Efforts&quot; to mean essentially the same thing for personal stuff.
@@ -3652,11 +3652,11 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 </li>
 <li>Having Bookmarks always handy in the sidebar like this is very helpful for temporarily keeping notes handy. For example, if I'm on a trip I'll bookmark my &quot;Trip to London&quot; (or wherever) note and it is then a click or tap away when I pull up Obsidian while on the road.</li>
 </ul>
-<h1 id="vault-setup-notes" tabindex="-1">Vault Setup Notes <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#vault-setup-notes" aria-hidden="true">#</a></h1>
+<h1 id="vault-setup-notes" tabindex="-1">Vault Setup Notes <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#vault-setup-notes" aria-hidden="true">#</a></h1>
 <ul>
 <li>I store this file at the root level of my folder structure for quick and easy access. Whenever I add or modify a plugin, I update the notes in this document accordingly. Some changes are straightforward, while others are more complex, so maintaining a record ensures clear documentation for future reference.</li>
 </ul>
-<h1 id="templates" tabindex="-1">Templates <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#templates" aria-hidden="true">#</a></h1>
+<h1 id="templates" tabindex="-1">Templates <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#templates" aria-hidden="true">#</a></h1>
 <ul>
 <li>Default Template: Gets applied to all notes except Daily Notes</li>
 <li>Daily Notes: For Daily Notes</li>
@@ -3672,7 +3672,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 </li>
 <li>The &quot;magic&quot; of these code snippets is that the snippet pulls in code when the note is displayed rather than actually living on the note itself. This allows me to change the design of the template ONCE and it is applied to ALL notes where this code is displayed. For example, I could change the design of a Base or add text to the template and now instantly all notes with that code have the changes rather than having to reedit all the notes.</li>
 </ul>
-<h1 id="plugins-i-use" tabindex="-1">Plugins I Use <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#plugins-i-use" aria-hidden="true">#</a></h1>
+<h1 id="plugins-i-use" tabindex="-1">Plugins I Use <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#plugins-i-use" aria-hidden="true">#</a></h1>
 <ul>
 <li>Commander
 <ul>
@@ -3736,7 +3736,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 </ul>
 </li>
 </ul>
-<h1 id="personal-usage-guidelines" tabindex="-1">Personal Usage Guidelines <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#personal-usage-guidelines" aria-hidden="true">#</a></h1>
+<h1 id="personal-usage-guidelines" tabindex="-1">Personal Usage Guidelines <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#personal-usage-guidelines" aria-hidden="true">#</a></h1>
 <p>I usually keep the following in a separate note that I keep in the Root or as a Favorite. It helps to keep handy so you can remember your decisions</p>
 <ul>
 <li>Have a purpose about why you are making the note. This helps you be more focused on noting the details and not copy/pasting things whole cloth.</li>
@@ -3825,13 +3825,13 @@ aliases:
 <a href="https://github.com/TechLifeWeb/ObsidianTemplateVault/tree/main" target="_blank" rel="noopener noreferrer">TechLifeWeb/ObsidianTemplateVault</a></p>
 <p>Here's some information about the vault and how I use it. I've also added a section about my personal rules for using it. Your rules don't have to be the same as mine, but I strongly encourage you to take a moment to think about what you're doing with <em>your</em> notes and, even more importantly, <em>why</em> you're making these notes.</p>
 <p>When I was setting up my vault, I believed that being able to find things easily was the most important idea. So, I thought about how to make notes that are quick and simple to create, while also including enough details so I can find them again without any trouble.</p>
-<h1 id="folders" tabindex="-1">Folders <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#folders" aria-hidden="true">#</a></h1>
+<h1 id="folders" tabindex="-1">Folders <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#folders" aria-hidden="true">#</a></h1>
 <ul>
 <li>I avoid folders for content. Every note is stored in the Notes folder with the exception of Daily Notes which are held in the Notes/Daily subfolder.</li>
 <li>Notes that are not content are stored under the Support folder. There are subfolders for the special cases of Navigation notes (some call these MOCs or Maps of Content) and Templates.</li>
 <li>The &quot;Files&quot; folder is where attachments are held.</li>
 </ul>
-<h1 id="bookmarks" tabindex="-1">Bookmarks <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#bookmarks" aria-hidden="true">#</a></h1>
+<h1 id="bookmarks" tabindex="-1">Bookmarks <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#bookmarks" aria-hidden="true">#</a></h1>
 <ul>
 <li>I have all the Navigation notes bookmarked so they appear in the list of Bookmarks. That panel I have open on the upper left and is where I start all my navigation unless I just search.</li>
 <li>I loosely use the ideas of PARA presented by Tiago Forte: <a href="https://fortelabs.com/blog/para/" target="_blank" rel="noopener noreferrer">The PARA Method: The Simple System for Organizing Your Digital Life in Seconds</a>. &quot;Projects&quot; is too work oriented in my brain so I use &quot;Efforts&quot; to mean essentially the same thing for personal stuff.
@@ -3846,11 +3846,11 @@ aliases:
 </li>
 <li>Having Bookmarks always handy in the sidebar like this is very helpful for temporarily keeping notes handy. For example, if I'm on a trip I'll bookmark my &quot;Trip to London&quot; (or wherever) note and it is then a click or tap away when I pull up Obsidian while on the road.</li>
 </ul>
-<h1 id="vault-setup-notes" tabindex="-1">Vault Setup Notes <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#vault-setup-notes" aria-hidden="true">#</a></h1>
+<h1 id="vault-setup-notes" tabindex="-1">Vault Setup Notes <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#vault-setup-notes" aria-hidden="true">#</a></h1>
 <ul>
 <li>I store this file at the root level of my folder structure for quick and easy access. Whenever I add or modify a plugin, I update the notes in this document accordingly. Some changes are straightforward, while others are more complex, so maintaining a record ensures clear documentation for future reference.</li>
 </ul>
-<h1 id="templates" tabindex="-1">Templates <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#templates" aria-hidden="true">#</a></h1>
+<h1 id="templates" tabindex="-1">Templates <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#templates" aria-hidden="true">#</a></h1>
 <ul>
 <li>Default Template: Gets applied to all notes except Daily Notes</li>
 <li>Daily Notes: For Daily Notes</li>
@@ -3866,7 +3866,7 @@ aliases:
 </li>
 <li>The &quot;magic&quot; of these code snippets is that the snippet pulls in code when the note is displayed rather than actually living on the note itself. This allows me to change the design of the template ONCE and it is applied to ALL notes where this code is displayed. For example, I could change the design of a Base or add text to the template and now instantly all notes with that code have the changes rather than having to reedit all the notes.</li>
 </ul>
-<h1 id="plugins-i-use" tabindex="-1">Plugins I Use <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#plugins-i-use" aria-hidden="true">#</a></h1>
+<h1 id="plugins-i-use" tabindex="-1">Plugins I Use <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#plugins-i-use" aria-hidden="true">#</a></h1>
 <ul>
 <li>Commander
 <ul>
@@ -3930,7 +3930,7 @@ aliases:
 </ul>
 </li>
 </ul>
-<h1 id="personal-usage-guidelines" tabindex="-1">Personal Usage Guidelines <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/#personal-usage-guidelines" aria-hidden="true">#</a></h1>
+<h1 id="personal-usage-guidelines" tabindex="-1">Personal Usage Guidelines <a class="external-link" href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/#personal-usage-guidelines" aria-hidden="true">#</a></h1>
 <p>I usually keep the following in a separate note that I keep in the Root or as a Favorite. It helps to keep handy so you can remember your decisions</p>
 <ul>
 <li>Have a purpose about why you are making the note. This helps you be more focused on noting the details and not copy/pasting things whole cloth.</li>
@@ -4013,7 +4013,7 @@ aliases:
 
       <pubDate>Thu, 13 Nov 2025 17:38:49 PST</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/</guid>
+      <guid>https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/</guid>
 
     </item>
 
