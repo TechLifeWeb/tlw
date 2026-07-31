@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 29 Jul 2026 21:56:46 PDT</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2026 21:56:46 PDT</lastBuildDate>
+    <pubDate>Fri, 31 Jul 2026 08:39:06 PDT</pubDate>
+    <lastBuildDate>Fri, 31 Jul 2026 08:39:06 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-07-31T08:39:06.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/07/post-2026-07-31t073906/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>This is fun. Bingebuster is a 3D experience where you virtually wander around a Blockbuster store looking for movies. Hovering over the title shows you the service it is streaming on and clicking on it gives you more detail about the movie and a link to take you right to that streaming service. Bingebuster — your streaming services, restocked as a video store <a href="https://bingebuster.net/">https://bingebuster.net/</a><br />
+#movies #streaming</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>This is fun. Bingebuster is a 3D experience where you virtually wander around a Blockbuster store looking for movies. Hovering over the title shows you the service it is streaming on and clicking on it gives you more detail about the movie and a link to take you right to that streaming service. Bingebuster — your streaming services, restocked as a video store <a href="https://bingebuster.net/">https://bingebuster.net/</a><br />
+#movies #streaming</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 31 Jul 2026 08:39:06 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-31t073906/</guid>
+
+    </item>
 
     <item>
       <title>Three weeks ago I could have died</title>

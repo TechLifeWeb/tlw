@@ -15,22 +15,19 @@
 <h1 id="recent-notes" tabindex="-1">Recent Notes <a class="external-link" href="#recent-notes" aria-hidden="true">#</a></h1>
 <pre><code class="language-base">views:
   - type: table
-    name: Table
-    filters:
-      and:
-        - '!file.tags.contains(&quot;daily&quot;)'
-        - '!file.path.startsWith(&quot;Support&quot;)'
+    name: Recent file updates
     order:
       - file.name
-      - file.ctime
+      - file.mtime
       - title
     sort:
       - property: file.mtime
         direction: DESC
-    limit: 10
+      - property: file.name
+        direction: ASC
+    limit: 20
     columnSize:
-      file.name: 419
-
+      file.name: 457
 </code></pre>
 <h1 id="tasks-due" tabindex="-1">Tasks Due <a class="external-link" href="#tasks-due" aria-hidden="true">#</a></h1>
 <p>![[tasks-default.base]]</p>

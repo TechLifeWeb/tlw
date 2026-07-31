@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Wed, 29 Jul 2026 21:56:46 PDT</pubDate>
-      <lastBuildDate>Wed, 29 Jul 2026 21:56:46 PDT</lastBuildDate>
+      <pubDate>Fri, 31 Jul 2026 08:39:06 PDT</pubDate>
+      <lastBuildDate>Fri, 31 Jul 2026 08:39:06 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-07-31T08:39:06.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-31t073906/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;This is fun. Bingebuster is a 3D experience where you virtually wander around a Blockbuster store looking for movies. Hovering over the title shows you the service it is streaming on and clicking on it gives you more detail about the movie and a link to take you right to that streaming service. Bingebuster — your streaming services, restocked as a video store &lt;a href=&#39;https://bingebuster.net/&#39;&gt;https://bingebuster.net/&lt;/a&gt;&lt;br&gt;
+#movies #streaming&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 31 Jul 2026 08:39:06 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/07/post-2026-07-31t073906/</guid>
+    </item>
     <item>
       <title>Note 2026-07-30T17:05:33.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117011666299437806/</link>
       <description>
@@ -1147,58 +1162,6 @@ via: &lt;a href=&#39;https://www.bbc.com/news/articles/cgrkl104ly5o?at_bbc_team=
       <pubDate>Thu, 02 Jul 2026 11:51:39 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116851887283351030/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-01T21:41:05.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116848542691447983/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Good thing there is World Cup because my baseball team is 💩&lt;br&gt;##MLB &lt;a href=&quot;https://indieweb.social/tags/Padres&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Padres&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 01 Jul 2026 21:41:05 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116848542691447983/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-01T07:39:37.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116845233922775094/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;TIL about Cooklang – Recipe Markup Language &lt;a href=&quot;https://cooklang.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;&quot;&gt;cooklang.org/&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;&lt;/span&gt;&lt;/a&gt; &amp;#39;Cooklang is a simple, human-readable text format for writing recipes that can be understood by both cooks and computers.&amp;#39;&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/markup&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;markup&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/cooking&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;cooking&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 01 Jul 2026 07:39:37 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116845233922775094/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-01T07:39:37.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116845233899236951/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Trump drops restrictions on Anthropic&amp;#39;s Mythos and Fable models:&lt;/p&gt;&lt;p&gt;&amp;gt; &amp;quot;with Asian AI companies beginning to release their own AI models approaching Mythos-level capabilities — among them Fugu and Tulonfeng — the US government was under pressure to ease its restrictions on Anthropic to ensure that American AI could compete globally.&amp;quot;&lt;/p&gt;&lt;p&gt;via: &lt;a href=&quot;https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;techcrunch.com/2026/06/30/trum&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;p-drops-restrictions-on-anthropics-mythos-and-fable-models/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 01 Jul 2026 07:39:37 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116845233899236951/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-01T07:29:08.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116845192721406800/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;rabbit rabbit&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Wed, 01 Jul 2026 07:29:08 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116845192721406800/</guid>
     </item>
     <item>
       <title>Note 2026-06-30T23:49:08.000-07:00</title><link>https://techlifeweb.com/blog/2026/06/post-2026-06-30T224908/</link>
