@@ -104,7 +104,7 @@
             <article class="h-entry" data-pagefind-body="">
                 <hgroup><h1 class="p-name entry-title">&#127793;Excel Tips and Tricks</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-21T09:08:56.691-07:00">Jul 21, 2026, 9:08 AM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-31T16:32:34.000-07:00">Jul 31, 2026, 4:32 PM</time>
                     <a href="/garden/Excel/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -119,6 +119,22 @@
 </ul>
 </li>
 </ul>
+<h2 id="count" tabindex="-1">Count <a class="external-link" href="#count" aria-hidden="true">#</a></h2>
+<p>This formula will count the number of times the value in cell <code>A1</code> on <code>Sheet2</code> appears in column <code>C</code> of <code>Sheet1</code>.</p>
+<pre><code>=COUNTIF(Sheet1!C:C, Sheet2!A1)
+</code></pre>
+<h2 id="count-distinct" tabindex="-1">Count Distinct <a class="external-link" href="#count-distinct" aria-hidden="true">#</a></h2>
+<p>This will count the distinct values C2 to C1990</p>
+<pre><code>=SUMPRODUCT(1/COUNTIF(C2:C1990,C2:C1990))
+</code></pre>
+<h2 id="get-left-of-or-right-of" tabindex="-1">Get left of or right of <a class="external-link" href="#get-left-of-or-right-of" aria-hidden="true">#</a></h2>
+<p>Get everything to the left of the first space</p>
+<pre><code>=LEFT(A1, FIND(&quot; &quot;, A1) - 1)
+</code></pre>
+<p>To extract everything to the right of the first space in cell A1, you can use this formula:</p>
+<pre><code>=RIGHT(A1, LEN(A1) - FIND(&quot; &quot;, A1))
+</code></pre>
+<p>This formula works by finding the position of the first space in A1 using the <code>FIND</code> function, then using the <code>RIGHT</code> function to extract the text from that position to the end of the string.</p>
 <h2 id="getting-the-file-name-and-extension-from-a-path" tabindex="-1">Getting the file name and extension from a path <a class="external-link" href="#getting-the-file-name-and-extension-from-a-path" aria-hidden="true">#</a></h2>
 <pre><code>Given a path in A2 like: &quot;C:\My\SuperLongPath\to the file\facts and figures.xlsx&quot;
 
