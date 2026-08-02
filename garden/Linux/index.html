@@ -104,7 +104,7 @@
             <article class="h-entry" data-pagefind-body="">
                 <hgroup><h1 class="p-name entry-title">&#127793;Linux Notes</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-07-29T21:11:22.735-07:00">Jul 29, 2026, 9:11 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-01T21:02:41.606-07:00">Aug 1, 2026, 9:02 PM</time>
                     <a href="/garden/linux/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -157,7 +157,8 @@ sudo apt install &lt;package_name&gt;
 sudo apt remove &lt;package_name&gt;
 </code></pre>
 <ul>
-<li><strong>Check Drivers</strong>
+<li>
+<p><strong>Check Drivers</strong></p>
 <ul>
 <li>Search the menu for Software &amp; Updates (on Kubuntu, search for Software and click Driver Manager)
 <ul>
@@ -289,6 +290,37 @@ sudo apt remove &lt;package_name&gt;
 <li><a href="https://help.zorin.com/docs/apps-games/windows-app-support/" target="_blank" rel="noopener noreferrer">Windows App Support - Zorin Help</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<h1 id="enabling-zram" tabindex="-1">Enabling zram <a class="external-link" href="#enabling-zram" aria-hidden="true">#</a></h1>
+<ul>
+<li>To enable Zram, install the necessary tool with:
+<ul>
+<li><code>sudo apt-get install zram-config</code></li>
+</ul>
+</li>
+<li>Then enable Zram with:
+<ul>
+<li><code>sudo systemctl enable --now zram-config</code></li>
+</ul>
+</li>
+<li>Disable the swap file with
+<ul>
+<li><code>sudo nano /etc/fstab</code></li>
+</ul>
+</li>
+<li>In that file, comment out the /swap line like this:
+<ul>
+<li><code>#/swap</code></li>
+</ul>
+</li>
+<li>Disable swap with:
+<ul>
+<li><code>sudo swapoff /swapfile</code></li>
+</ul>
+</li>
+<li>Reboot your system to activate Zram</li>
 </ul>
 </li>
 <li>
