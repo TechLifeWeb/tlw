@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117026559734247235/</loc>
+            <lastmod>2026-08-02T15:13:09.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Mosquitos,%20Earthquakes,%20and%20the%20World&#39;s%20Oldest%20Population/</loc>
+            <lastmod>2026-08-02T12:05:56.866Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/linux/</loc>
             <lastmod>2026-08-02T04:02:41.606Z</lastmod>
             <changefreq>daily</changefreq>
@@ -316,12 +328,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/07/repost-2026-07-26T151915/</loc>
             <lastmod>2026-07-26T23:19:20.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Beatles,%20Nuclear%20Agreement,%20and%20the%20Afterlife%20of%20Einstein&#39;s%20Brain/</loc>
-            <lastmod>2026-07-26T22:25:01.303Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -814,12 +820,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</loc>
             <lastmod>2026-07-04T05:44:08.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116860002860341761/</loc>
-            <lastmod>2026-07-04T05:15:33.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
