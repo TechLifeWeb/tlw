@@ -2,80 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://techlifeweb.com/garden/Networking/</loc>
-            <lastmod>2026-08-03T02:19:24.325Z</lastmod>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117034165356833213/</loc>
+            <lastmod>2026-08-03T23:27:22.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/Windows%20Tips/</loc>
-            <lastmod>2026-08-03T02:17:54.360Z</lastmod>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Truths%20to%20Live%20By/</loc>
+            <lastmod>2026-08-03T16:03:03.867Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/California/</loc>
-            <lastmod>2026-08-03T02:14:54.170Z</lastmod>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/How%20might%20Padres%20add%20to%20rotation%20at%20Deadline-/</loc>
+            <lastmod>2026-08-03T13:04:34.642Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/catholic/booksandarticles/</loc>
-            <lastmod>2026-08-03T02:07:50.891Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/catholic/thegibbetofthecross/</loc>
-            <lastmod>2026-08-03T02:07:50.025Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/france/</loc>
-            <lastmod>2026-08-03T02:07:48.547Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/catholic/mary/</loc>
-            <lastmod>2026-08-03T02:07:48.182Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/catholicfaith/</loc>
-            <lastmod>2026-08-03T02:07:47.517Z</lastmod>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20Deepfake%20Law,%20Lyme%20Test,%20and%20Surfing%20Dogs/</loc>
+            <lastmod>2026-08-03T09:03:04.534Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/garden/catholic/peopleofthefaith/</loc>
-            <lastmod>2026-08-03T02:07:41.357Z</lastmod>
+            <lastmod>2026-08-03T05:21:57.087Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/garden/catholic/catholicpodcasts/</loc>
-            <lastmod>2026-08-03T02:07:39.688Z</lastmod>
+            <lastmod>2026-08-03T05:21:56.778Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholic/mary/</loc>
+            <lastmod>2026-08-03T05:21:56.464Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholic/websites/</loc>
+            <lastmod>2026-08-03T05:21:56.280Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholic/thegibbetofthecross/</loc>
+            <lastmod>2026-08-03T05:21:55.415Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/garden/catholic/glossaryofcatholicterms/</loc>
-            <lastmod>2026-08-03T02:07:38.505Z</lastmod>
+            <lastmod>2026-08-03T05:21:54.582Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/france/</loc>
+            <lastmod>2026-08-03T05:21:54.407Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholic/booksandarticles/</loc>
+            <lastmod>2026-08-03T05:21:54.388Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholicfaith/</loc>
+            <lastmod>2026-08-03T05:21:54.211Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Quotes/</loc>
+            <lastmod>2026-08-03T04:23:56.181Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/Missouri/</loc>
+            <lastmod>2026-08-03T04:20:54.409Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Networking/</loc>
+            <lastmod>2026-08-03T03:58:24.376Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/SanDiego/</loc>
+            <lastmod>2026-08-03T03:53:54.336Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Travel/</loc>
+            <lastmod>2026-08-03T03:35:55.041Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/linux/</loc>
+            <lastmod>2026-08-03T02:55:24.315Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/UnitedKingdom/</loc>
+            <lastmod>2026-08-03T02:47:55.246Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/Windows%20Tips/</loc>
+            <lastmod>2026-08-03T02:41:57.603Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/California/</loc>
+            <lastmod>2026-08-03T02:34:24.125Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/London/</loc>
             <lastmod>2026-08-03T02:07:11.104Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Travel/</loc>
-            <lastmod>2026-08-03T02:06:57.022Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -92,12 +152,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/catholic/websites/</loc>
-            <lastmod>2026-08-03T02:06:32.928Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
             <lastmod>2026-08-03T02:06:27.539Z</lastmod>
             <changefreq>daily</changefreq>
@@ -106,12 +160,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/catholic/Devotions/</loc>
             <lastmod>2026-08-03T02:06:20.817Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/UnitedKingdom/</loc>
-            <lastmod>2026-08-03T02:06:17.735Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -142,12 +190,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Mosquitos,%20Earthquakes,%20and%20the%20World&#39;s%20Oldest%20Population/</loc>
             <lastmod>2026-08-02T12:05:56.866Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/linux/</loc>
-            <lastmod>2026-08-02T04:02:41.606Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -374,24 +416,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/US-Canada%20Bridge,%20Berlin%20Attack,%20and%20Lifeguard%20Dog/</loc>
-            <lastmod>2026-07-27T16:03:05.390Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Miller,%20Morejon%20and%20other%20Deadline%20thoughts/</loc>
-            <lastmod>2026-07-27T16:03:05.294Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Monkey%20Bars/</loc>
-            <lastmod>2026-07-27T16:03:05.242Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116992274199813932/</loc>
             <lastmod>2026-07-27T13:53:53.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -536,12 +560,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/Missouri/</loc>
-            <lastmod>2026-07-25T05:52:07.328Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Kansas/</loc>
             <lastmod>2026-07-25T05:50:36.876Z</lastmod>
             <changefreq>daily</changefreq>
@@ -568,12 +586,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/Chico/</loc>
             <lastmod>2026-07-25T05:46:07.305Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/SanDiego/</loc>
-            <lastmod>2026-07-25T05:44:37.325Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -896,18 +908,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116865197744206295/</loc>
-            <lastmod>2026-07-05T03:16:41.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116862731468811665/</loc>
-            <lastmod>2026-07-04T16:49:28.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</loc>
             <lastmod>2026-07-04T05:44:08.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -940,12 +940,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/06/repost-2026-06-21T164821/</loc>
             <lastmod>2026-06-22T00:48:26.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/Quotes/</loc>
-            <lastmod>2026-06-22T00:32:23.827Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -1312,12 +1306,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/networkingfiles/Wrangling%20DNS%20on%20Your%20Network,%20Part%201%20Pi-hole%201/</loc>
             <lastmod>2026-03-11T00:08:51.342Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/networkingfiles/AdGuard/</loc>
-            <lastmod>2026-03-11T00:00:23.118Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
