@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes on setting and using Linux Zorin OS&nbsp|&nbspTechLifeWeb</title>
+
+    <meta name="description" content="Notes on setting and using Linux Zorin OS">
+    <link rel="canonical" href="https://techlifeweb.com/garden/linux/">
+    <meta name="robots" content="index, follow">
+    <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
+    <meta name="color-scheme" content="light dark">
+
+    <meta property="og:url" content="https://techlifeweb.com/garden/linux/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Linux Notes">
+    <meta property="og:description" content="Notes on setting and using Linux Zorin OS">
+    <meta property="og:site_name" content="techlifeweb.com">
+
+    <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="webmention" href="https://webmention.io/techlifeweb.com/webmention">
+    <link rel="http://webmention.org/" href="https://webmention.io/techlifeweb.com/webmention">
+    <link rel="pingback" href="https://webmention.io/techlifeweb.com/xmlrpc">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href=" /css/pico.cyan.min.css">
+    <link rel="stylesheet" href=" /css/11typico.css?version=6">
+    <!--<link rel="stylesheet" href=" /css/normalize.css">
+    <link rel="stylesheet" href=" /css/skeleton.css">
+    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15"> -->
+    <link rel="stylesheet" href=" /css/webmention.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link id="faviconLink" rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- Feeds –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+    <link rel="alternate" type="text/mf2+html" title="H-Feed" href="/h-feed">
+
+    <!-- JS to display Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/webmention.min.js" async=""></script>
+    <script src="/js/mermaid.min.js" async=""></script>
+
+
+  </head>
+
+<body>
+    <header class="container">
+        <hgroup>
+        <h1 class="p-name site-title">TechLifeWeb</h1>
+            <nav>
+            <ul>
+                <li><div class="p-summary site-description">Exploring the digital life</div></li>
+            </ul>
+            <ul>
+                <li><div class="socialbuttons"><a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.bsky.social"><svg class="bluesky" width="22pt" height="22pt" viewBox="0 0 600 530" fill="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"></path>
+    </svg></a>
+    <a rel="me noopener noreferrer" target="_blank" href="https://github.com/techlifeweb"><svg class="github" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path>
+    </svg></a><a rel="me noopener noreferrer" target="_blank" href=""><svg class="instagram" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/scottkingery/"><svg class="linkedin" width="22pt" height="22pt" viewBox="0 0 448 512">
+      <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://indieweb.social/@techlifeweb"><svg class="mastodon" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://pxlmo.com/techlifeweb"><svg class="pixelfed" width="22pt" height="22pt" viewBox="50 125  1034 1034" fill="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M500 176q-115 0 -215 58q-96 57 -152 153q-58 99 -58 214.5t58 214.5q56 96 152 152q100 58 215 58t215 -58q96 -56 152 -152q58 -99 58 -214.5t-58 -214.5q-56 -96 -152 -153q-100 -58 -215 -58zM432 435h112q36 0 66.5 17.5t48.5 47t18 65t-18 65t-48.5 47t-66.5 17.5
+    h-78l-111 106v-290q0 -31 22.5 -53t54.5 -22z"></path></svg></a>
+  <a rel="me noopener noreferrer" target="_blank" href="/rss.xml"><svg class="feed" width="22pt" height="22pt" viewBox="0 0 448 512">
+      <path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.tiktok.com/@techlifeweb"><svg class="tiktok" fill="#000000" width="22pt" height="22pt" viewBox="0 0 24 24">
+      <path d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2Zm-3.281,8.725h0c-.109.011-.219.016-.328.017A3.571,3.571,0,0,1,14.4,9.129v5.493a4.061,4.061,0,1,1-4.06-4.06c.085,0,.167.008.251.013v2a2.067,2.067,0,1,0-.251,4.119A2.123,2.123,0,0,0,12.5,14.649l.02-9.331h1.914A3.564,3.564,0,0,0,17.719,8.5Z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCZ7NoAPNzRBupCDyojnVt3A"><svg class="youtube" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"></path></svg></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.com"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.indieweb.social.ap.brid.gy"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.bsky.social"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://fed.brid.gy/bsky/techlifeweb.bsky.social"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://fed.brid.gy/ap/@techlifeweb@indieweb.social"></a>
+</div>
+</li>
+            </ul>
+            </nav>
+            <nav>
+            <ul>
+<div class="flexnav">
+<li><a href="/">Home</a></li>
+<li><a href="/hcard/">About</a></li>
+<li><a href="/now/">Now</a></li>
+<li><a href="/garden/">Garden</a></li>
+<div class="mobile-hide">
+<li><a href="/article-archive/">Articles</a></li>
+<li><a href="/photo-archive/">Photos</a></li>
+<li><a href="/note-archive/">Notes</a></li>
+<li><a href="/socialfeed/">Social Posts</a></li>
+<li><a href="/mlb-dashboard/">MLB Dashboard</a></li>
+</div>
+<li><a href="/search/">Search</a></li>
+</div>
+</ul>
+
+            </nav>
+        <hgroup>
+    </hgroup></hgroup></header>
+    <main class="container">
+            <article class="h-entry" data-pagefind-body="">
+                <hgroup><h1 class="p-name entry-title">&#127793;Linux Notes</h1>
+                <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-02T19:55:24.315-07:00">Aug 2, 2026, 7:55 PM</time>
+                    <a href="/garden/linux/" class="url u-url"></a>
+                </small></hgroup>
+                <div class="e-content">
+                <!-- social POSSE -->
+                <!-- End social POSSE -->
+                    <p>I've set up my laptop to dual boot Windows and Linux. My goal here is to document any changes I've made along the way as I get used to this new OS.</p>
+<ul>
+<li>
+<h2 id="installation" tabindex="-1"><strong>Installation</strong> <a class="external-link" href="#installation" aria-hidden="true">#</a></h2>
+<ul>
+<li><strong>Preparing Windows 11 to Dual Boot</strong>
+<ul>
+<li>Used Windows Drive Management to shrink C: by 75GB (76800 MB)</li>
+</ul>
+</li>
+<li><strong>Create USB drive</strong>
+<ul>
+<li>Used <a href="https://rufus.ie/en/" target="_blank" rel="noopener noreferrer">Rufus</a> to create the USB drive for the Linux ISO</li>
+</ul>
+</li>
+<li><strong>Partitions created during install</strong>
+<ul>
+<li>In the empty 75GB partition I created above I set it up this way
+<ul>
+<li>300 MiB fat32 /boot.efi labeled boot flagged boot</li>
+<li>50 GiB ext4 / labeled OS flagged root</li>
+<li>15 GiB linux swap labeled swap flagged swap</li>
+<li>The rest ext4 /home labeled home</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="post-install" tabindex="-1"><strong>Post Install</strong> <a class="external-link" href="#post-install" aria-hidden="true">#</a></h2>
+<ul>
+<li>ctrl+alt+t will open up the terminal window</li>
+<li><strong>Update your System</strong></li>
+</ul>
+</li>
+</ul>
+<pre><code># Update the package list
+sudo apt update
+# Upgrade the installed packages
+sudo apt upgrade
+# Install a package
+sudo apt install &lt;package_name&gt;
+# Remove a package
+sudo apt remove &lt;package_name&gt;
+</code></pre>
+<ul>
+<li>
+<p><strong>Check Drivers</strong></p>
+<ul>
+<li>Search the menu for Software &amp; Updates (on Kubuntu, search for Software and click Driver Manager)
+<ul>
+<li>Click the Additional Drivers tab and let the system find any additional divers to install</li>
+<li>Select them (usually says 'tested') and click apply changes</li>
+</ul>
+</li>
+<li><strong>Enable the Firewall</strong>
+<ul>
+<li><code>sudo ufw enable</code></li>
+</ul>
+</li>
+<li><strong>Install git</strong>
+<ul>
+<li><code>sudo apt install git</code></li>
+</ul>
+</li>
+<li><strong>Install auto-cpufreq</strong>
+<ul>
+<li><a href="https://github.com/AdnanHodzic/auto-cpufreq/?tab=readme-ov-file#install---auto-cpufreq-daemon" target="_blank" rel="noopener noreferrer">auto-cpufreq: Automatic CPU speed &amp; power optimizer for Linux</a></li>
+<li><code>git clone https://github.com/AdnanHodzic/auto-cpufreq.git</code></li>
+<li><code>cd auto-cpufreq &amp;&amp; sudo ./auto-cpufreq-installer</code></li>
+<li><code>sudo auto-cpufreq --install</code></li>
+</ul>
+</li>
+<li><strong>Fix clock on dual boot installations</strong>
+<ul>
+<li>Windows uses local time and Linux uses UTC. This causes the clock to change in Windows if you boot into Windows after booting into Linux</li>
+<li>This video will explain https://www.youtube.com/watch?v=3ieh2zY1qsM</li>
+<li>All you really need to do is set Linux to use Local time instead of UTC with terminal and entering <code>timedatectl set-local-rtc 1 --adjust-system-clock</code></li>
+</ul>
+</li>
+<li><strong>Set Sources to Local Repositories</strong>
+<ul>
+<li>This can help speed up your updates because your computer will be looking for updates from servers closer to you</li>
+<li>Open the main menu and search for Software Sources</li>
+<li>Next to the Main mirror and wait a minute for the list to build. One of the ones closest to you should have a high speed rating. Select on of those.</li>
+<li>Do the same for the Base mirror</li>
+</ul>
+</li>
+<li>Trackpad Mint XFCE
+<ul>
+<li>To enable tap to click on your trackpad in Linux Mint with XFCE, go to System Settings, select Mouse and Touchpad, then navigate to the Touchpad tab and enable the &quot;Tap to Click&quot; option.</li>
+</ul>
+</li>
+<li>Windows shares
+<ul>
+<li>Install Samba <code>sudo apt install samba</code></li>
+<li>in your file manager: <code>smb://computerName.local</code> should let you browse and choose a drive or <code>smb://computerName.local/drive</code> if you know the drive (where computerName is the actual name of the Windows computer you are trying to access)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="zorin-os-notes" tabindex="-1"><strong>Zorin OS Notes</strong> <a class="external-link" href="#zorin-os-notes" aria-hidden="true">#</a></h2>
+<ul>
+<li><strong>Super Key (aka Windows Key)</strong>
+<ul>
+<li>Set this to open the menu by going into Zorin Appearance, click the interface tab</li>
+<li>Then set left super key to Zorin menu</li>
+<li>Note, you can do this and other appearance settings right after install if you go through the tutorial</li>
+</ul>
+</li>
+<li><strong>Display</strong>
+<ul>
+<li>Set scaling to 125% (this is how my Windows was set)
+<ul>
+<li>Settings - Displays - adjust scale by clicking the drop down</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Trackpad</strong>
+<ul>
+<li>Right click doesn't work in Gnome, you have to tap with two fingers to get the same result</li>
+</ul>
+</li>
+<li><strong>Install Gnome Tweaks</strong>
+<ul>
+<li>This is actually supposed to let you fix the right click but the option isn't there for me</li>
+<li>Still worth having</li>
+</ul>
+</li>
+<li><strong>Fonts</strong>
+<ul>
+<li>Install <a href="https://help.zorin.com/docs/system-software/microsoft-fonts/" target="_blank" rel="noopener noreferrer">Microsoft Fonts </a> for compatibility
+<ul>
+<li>The Aptos Fonts were a little trickier to install
+<ul>
+<li>Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=106087" target="_blank" rel="noopener noreferrer">Microsoft Aptos Fonts</a></li>
+<li>Open the Files app and navigate to your “Downloads” folder.</li>
+<li>Right-click on the downloaded “Microsoft Aptos Fonts.zip” file and select “Extract Here”.</li>
+<li>Navigate to the newly-extracted “Microsoft Aptos Fonts” folder.</li>
+<li>Find and empty space and right-click in the “Microsoft Aptos Fonts” folder and choose &quot;Open in Terminal&quot;</li>
+<li>Enter <code>cd /usr/share/fonts/truetype</code> this will let you change directory to this folder</li>
+<li>Create a new aptos-fonts folder by entering <code>sudo mkdir aptos-fonts</code> . Enter your password at the prompt</li>
+<li>Go back to where you downloaded and extracted the fonts by entering <code>cd ~/Downloads/'Microsoft Aptos Fonts'</code> (Make sure you have those single quotes because spaces are bad)</li>
+<li>Next enter <code>sudo mv -v Apto*.ttf /usr/share/fonts/truetype/aptos-fonts</code> which will copy your fonts to the new directory you created above</li>
+<li>Enter <code>sudo fc-cache -f -v</code> to refresh your fonts</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Interface Notes</strong>
+<ul>
+<li>Tapping with 2 fingers on the trackpad is like a right-click of a mouse (this is a Gnome thing)</li>
+<li>To see hidden files in the Files app, click the hamburger menu on the top of the left pane and select the hidden files option</li>
+</ul>
+</li>
+<li><strong>OneDrive Integration</strong>
+<ul>
+<li>To enable this integration, open the Settings app → Online Accounts → “Microsoft 365 + OneDrive” → click “Sign In…” and enter your login details. You’ll then be able to browse and manage your OneDrive files directly from the sidebar in the Files app.</li>
+</ul>
+</li>
+<li><strong>Remote Desktop</strong>
+<ul>
+<li>Zorin OS comes with an app called Remmina that is a Remote Desktop client. If you forget the name, just type 'RDP' into the menu search and you'll find it
+<ul>
+<li>Remmina also works for VNC and SSH</li>
+<li>If you are trying to access a local computer via Remmina, you might need '.local' after the name. For example, I have a computer called Syncserv to access it I enter Syncserv.local</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Windows Apps</strong>
+<ul>
+<li><a href="https://help.zorin.com/docs/apps-games/windows-app-support/" target="_blank" rel="noopener noreferrer">Windows App Support - Zorin Help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="enabling-zram" tabindex="-1">Enabling zram <a class="external-link" href="#enabling-zram" aria-hidden="true">#</a></h2>
+<ul>
+<li>To enable Zram, install the necessary tool with:
+<ul>
+<li><code>sudo apt-get install zram-config</code></li>
+</ul>
+</li>
+<li>Then enable Zram with:
+<ul>
+<li><code>sudo systemctl enable --now zram-config</code></li>
+</ul>
+</li>
+<li>Disable the swap file with
+<ul>
+<li><code>sudo nano /etc/fstab</code></li>
+</ul>
+</li>
+<li>In that file, comment out the /swap line like this:
+<ul>
+<li><code>#/swap</code></li>
+</ul>
+</li>
+<li>Disable swap with:
+<ul>
+<li><code>sudo swapoff /swapfile</code></li>
+</ul>
+</li>
+<li>Reboot your system to activate Zram</li>
+</ul>
+</li>
+<li>
+<h2 id="terminal-commands" tabindex="-1"><strong>Terminal Commands</strong> <a class="external-link" href="#terminal-commands" aria-hidden="true">#</a></h2>
+<ul>
+<li><strong>Quickly open the terminal</strong>
+<ul>
+<li>ctrl+alt+t</li>
+</ul>
+</li>
+<li><strong>Check network settings</strong>
+<ul>
+<li><code>nmcli device show</code>
+<ul>
+<li>To show just the DHCP/DNS details like Windows ipconfig /all you can use grep like this:
+<ul>
+<li><code>nmcli device show | grep IP4</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Show details of your graphics card</strong>
+<ul>
+<li>-<code>sudo lshw -C video</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="app-notes" tabindex="-1"><strong>App Notes</strong> <a class="external-link" href="#app-notes" aria-hidden="true">#</a></h2>
+<ul>
+<li><strong>Vivaldi Browser</strong>
+<ul>
+<li>If you already use Vivaldi on another computer and you have syncing turned on (if you don't already, do that to speed things up)
+<ul>
+<li>Know you account user name and password</li>
+<li>Export your encryption key to a txt file and save it to a flash drive</li>
+<li>Install Vivaldi on Linux</li>
+<li>On first run, click the profile icon</li>
+<li>Enter your username and password</li>
+<li>Click on the link to load your encryption key and navigate to the flash drive and select the text file to load</li>
+<li>Your browser will start to sync all your favorites and extensions</li>
+<li>Set up any extensions that require set up like Bit Warden</li>
+<li>In Settings, set your theme if you like to use dark themes
+<ul>
+<li>You can also choose to have websites appear dark in the Appearance tab</li>
+</ul>
+</li>
+<li>Change search engines to Duck Duck Go</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Syncthing</strong>
+<ul>
+<li>Syncthing was already installed for me so I didn't have to install it</li>
+<li>Open Gnome Tweaks (mentioned above) and add Start Syncthing to the Start Up Applications tab</li>
+<li>On Kubuntu, you can search for Autostart and add Start Syncthing to that</li>
+</ul>
+</li>
+<li><strong>Obsidian</strong>
+<ul>
+<li>For Obsidian to work, you have to enable permissions on the vault folder
+<ul>
+<li>Set it so Owner can &quot;View and modify content&quot; on the top level and all subfolders</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>OnlyOffice Desktop</strong>
+<ul>
+<li>I don't do a lot of Word or Excel work on my personal laptop but I've heard people say they have found OnlyOffice Desktop to be more compatible with MS Office documents</li>
+</ul>
+</li>
+<li><strong>Espanso</strong>
+<ul>
+<li><a href="https://espanso.org/" target="_blank" rel="noopener noreferrer">Espanso</a> is a Privacy-first, Cross-platform Text Expander. It is similar to AutoHotKey on Windows. Here are the details to get it installed on Zorin OS from <a href="https://espanso.org/docs/install/linux/#deb-wayland" target="_blank" rel="noopener noreferrer">Install on Linux | Espanso</a>:
+<ul>
+<li><code>wget https://github.com/espanso/espanso/releases/latest/download/espanso-debian-wayland-amd64.deb</code></li>
+<li><code>sudo apt install ./espanso-debian-wayland-amd64.deb</code></li>
+<li>You can safely ignore any N: Download is performed unsandboxed as root note from apt.</li>
+<li><code>sudo setcap &quot;cap_dac_override+p&quot; $(which espanso)</code></li>
+<li><code>espanso service register</code></li>
+<li><code>espanso start</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Emote</strong>
+<ul>
+<li>Handy emoji picker</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="helpful-pages" tabindex="-1"><strong>Helpful pages</strong> <a class="external-link" href="#helpful-pages" aria-hidden="true">#</a></h2>
+<ul>
+<li><a href="https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678534-essential-and-strongly-recommended-things-to-do-directly-after-a-kubuntu-24-04-lts-installation" target="_blank" rel="noopener noreferrer">Essential and strongly recommended things to do directly after a Kubuntu 24.04 LTS installation - Kubuntu Forums</a>
+<ul>
+<li>Set 1 was unneeded because <strong>/etc/fstab</strong> was already set to 'defaults'</li>
+</ul>
+</li>
+<li><a href="https://www.kubuntuforums.net/forum/currently-supported-releases/kubuntu-24-04-nitpick-noble-lts/post-installation-az/678521-how-to-enable-flatpak-in-kubuntu-24-04-lts" target="_blank" rel="noopener noreferrer">How to enable Flatpak in Kubuntu 24.04 LTS - Kubuntu Forums</a></li>
+<li><a href="https://www.zdnet.com/article/how-to-easily-run-windows-apps-on-linux-with-wine/" target="_blank" rel="noopener noreferrer">How to easily run Windows apps on Linux with Wine | ZDNET</a></li>
+</ul>
+</li>
+<li>
+<h2 id="kubuntu-notes" tabindex="-1"><strong>Kubuntu Notes</strong> <a class="external-link" href="#kubuntu-notes" aria-hidden="true">#</a></h2>
+<ul>
+<li><strong>Touch pad</strong>
+<ul>
+<li>Search for Touchpad settings to be more like Windows
+<ul>
+<li>Set tapping to tap-to-click</li>
+<li>Set Scrolling to &quot;Invert scroll direction&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Display</strong>
+<ul>
+<li>Set global scaling to 125% (this is how Windows is set up on my laptop)
+<ul>
+<li>Search for &quot;Display Configuration&quot; and move the slider or enter the value</li>
+</ul>
+</li>
+<li>Set Theme: Breeze Dark then Colors: Catppuccin.Mocha</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="special-distros" tabindex="-1">Special Distros <a class="external-link" href="#special-distros" aria-hidden="true">#</a></h2>
+<ul>
+<li><a href="https://www.howtogeek.com/ubuntu-studio-is-linuxs-best-kept-secret-for-creators/?user=dGVjaGxpZmVibG9nZ2VkQGdtYWlsLmNvbQ&lctg=2017937f2fb2d980da3058d6c9dda2222bab2e1719987346cffd9c1c28a5bb83" target="_blank" rel="noopener noreferrer">Ubuntu Studio is Linux's best-kept secret for creators</a></li>
+</ul>
+
+                </div>
+            </article>
+            <a class="internal-link" href="/garden">&#127803;Garden Home</a><br>
+            
+
+<div id="syndication">
+  <ul>
+  </ul>
+</div>
+<div class="gosehere">
+
+  
+
+</div>
+
+<iframe src="https://komments.cloud/4b981298a70e544b0cf9d5/noheader" style="width: 100%; height: 600px; border: none;"></iframe>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
