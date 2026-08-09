@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117066239983680637/</loc>
+            <lastmod>2026-08-09T15:24:22.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Manhattan%20Project,%20Moon%20Crash,%20and%20a%20Literature%20Map/</loc>
+            <lastmod>2026-08-09T11:06:32.415Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117063414505716909/</loc>
             <lastmod>2026-08-09T03:25:48.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -310,12 +322,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117026559734247235/</loc>
             <lastmod>2026-08-02T15:13:09.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Mosquitos,%20Earthquakes,%20and%20the%20World&#39;s%20Oldest%20Population/</loc>
-            <lastmod>2026-08-02T12:05:56.866Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
