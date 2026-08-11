@@ -5,18 +5,18 @@
     <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How to remove a string from file names with a batch file&nbsp|&nbspTechLifeWeb</title>
+    <title>Syntax examples for all sorts of batch file work&nbsp|&nbspTechLifeWeb</title>
 
-    <meta name="description" content="How to remove a string from file names with a batch file">
-    <link rel="canonical" href="https://techlifeweb.com/garden/batchfile/batchrenamefiles/">
+    <meta name="description" content="Syntax examples for all sorts of batch file work">
+    <link rel="canonical" href="https://techlifeweb.com/garden/windowsbatchfileexamples/">
     <meta name="robots" content="index, follow">
     <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
     <meta name="color-scheme" content="light dark">
 
-    <meta property="og:url" content="https://techlifeweb.com/garden/batchfile/batchrenamefiles/">
+    <meta property="og:url" content="https://techlifeweb.com/garden/windowsbatchfileexamples/">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="How to remove a string from file names with a batch file">
-    <meta property="og:description" content="How to remove a string from file names with a batch file">
+    <meta property="og:title" content="Windows Batch File Examples">
+    <meta property="og:description" content="Syntax examples for all sorts of batch file work">
     <meta property="og:site_name" content="techlifeweb.com">
 
     <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -102,33 +102,20 @@
     </hgroup></hgroup></header>
     <main class="container">
             <article class="h-entry" data-pagefind-body="">
-                <hgroup><h1 class="p-name entry-title">&#127793;How to remove a string from file names with a batch file</h1>
+                <hgroup><h1 class="p-name entry-title">&#127793;Windows Batch File Examples</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-10T23:08:05.824-07:00">Aug 10, 2026, 11:08 PM</time>
-                    <a href="/garden/batchfile/batchrenamefiles/" class="url u-url"></a>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-10T23:08:07.095-07:00">Aug 10, 2026, 11:08 PM</time>
+                    <a href="/garden/windowsbatchfileexamples/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
                 <!-- social POSSE -->
                 <!-- End social POSSE -->
-                    <p>This example code will remove a string called &quot;mysting&quot; from all the files in <code>C:\Users\thisuser\Downloads</code></p>
-<pre><code>@echo off
-SetLocal ENABLEDELAYEDEXPANSION
-set codepath=%~dp0
-cd &quot;%codepath%&quot;
-
-::Set the folder that you want to loop through
-set foldertocheck=C:\Users\thisuser\Downloads
-::Set the string you want ot remove from the file names
-set stringtoremove=mystring
-
-FOR %%G IN (&quot;%foldertocheck%\*.*&quot;) DO (
-    set filename=&quot;%%~nG%%~xG&quot;
-    set filename=!filename:%stringtoremove%=!
-    REM Rename only if there is a difference between new filename and old filename in %%G
-    IF NOT !filename! == &quot;%%~nG%%~xG&quot; ren &quot;%%~G&quot; !filename!
-)
+                    <ul><div class="article"><li class="p-name entry-title">🌱<a href="/garden/batchfile/batchrenamefiles/" class="url u-url" rel="noopener bookmark" target="_blank">How to remove a string from file names with a batch file</a></li>
+  </div><div class="article"><li class="p-name entry-title">🌱<a href="/garden/batchfile/batchdeletethumbsdb/" class="url u-url" rel="noopener bookmark" target="_blank">How to delete thumbs.db</a></li>
+  </div><div class="article"><li class="p-name entry-title">🌱<a href="/garden/batchfile/batchshutdownandresetonedrive/" class="url u-url" rel="noopener bookmark" target="_blank">Batch script for resetting OneDrive</a></li>
+  </div></ul>
+<pre><code class="language-dataviewjs"> dv.span(await dv.io.load(&quot;/Support/Templates/02 Code - Subcategory List.md&quot;))
 </code></pre>
-<p><a href="/garden/windowsbatchfileexamples/">Windows Batch File Examples</a></p>
 
                 </div>
             </article>
