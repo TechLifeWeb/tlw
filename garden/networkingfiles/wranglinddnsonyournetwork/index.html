@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DNS can be confusing, even more so when you have multiple sources for information. Let’s get that sorted…&nbsp|&nbspTechLifeWeb</title>
+
+    <meta name="description" content="DNS can be confusing, even more so when you have multiple sources for information. Let’s get that sorted…">
+    <link rel="canonical" href="https://techlifeweb.com/garden/networkingfiles/wranglinddnsonyournetwork/">
+    <meta name="robots" content="index, follow">
+    <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
+    <meta name="color-scheme" content="light dark">
+
+    <meta property="og:url" content="https://techlifeweb.com/garden/networkingfiles/wranglinddnsonyournetwork/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Wrangling DNS on Your Network, Part 1: Pi-hole">
+    <meta property="og:description" content="DNS can be confusing, even more so when you have multiple sources for information. Let’s get that sorted…">
+    <meta property="og:site_name" content="techlifeweb.com">
+
+    <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="webmention" href="https://webmention.io/techlifeweb.com/webmention">
+    <link rel="http://webmention.org/" href="https://webmention.io/techlifeweb.com/webmention">
+    <link rel="pingback" href="https://webmention.io/techlifeweb.com/xmlrpc">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href=" /css/pico.cyan.min.css">
+    <link rel="stylesheet" href=" /css/11typico.css?version=6">
+    <!--<link rel="stylesheet" href=" /css/normalize.css">
+    <link rel="stylesheet" href=" /css/skeleton.css">
+    <link rel="stylesheet" href=" /css/11tyskeleton.css?version=15"> -->
+    <link rel="stylesheet" href=" /css/webmention.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link id="faviconLink" rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- Feeds –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+    <link rel="alternate" type="text/mf2+html" title="H-Feed" href="/h-feed">
+
+    <!-- JS to display Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/webmention.min.js" async=""></script>
+    <script src="/js/mermaid.min.js" async=""></script>
+
+
+  </head>
+
+<body>
+    <header class="container">
+        <hgroup>
+        <h1 class="p-name site-title">TechLifeWeb</h1>
+            <nav>
+            <ul>
+                <li><div class="p-summary site-description">Exploring the digital life</div></li>
+            </ul>
+            <ul>
+                <li><div class="socialbuttons"><a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.bsky.social"><svg class="bluesky" width="22pt" height="22pt" viewBox="0 0 600 530" fill="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"></path>
+    </svg></a>
+    <a rel="me noopener noreferrer" target="_blank" href="https://github.com/techlifeweb"><svg class="github" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path>
+    </svg></a><a rel="me noopener noreferrer" target="_blank" href=""><svg class="instagram" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/scottkingery/"><svg class="linkedin" width="22pt" height="22pt" viewBox="0 0 448 512">
+      <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://indieweb.social/@techlifeweb"><svg class="mastodon" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://pxlmo.com/techlifeweb"><svg class="pixelfed" width="22pt" height="22pt" viewBox="50 125  1034 1034" fill="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M500 176q-115 0 -215 58q-96 57 -152 153q-58 99 -58 214.5t58 214.5q56 96 152 152q100 58 215 58t215 -58q96 -56 152 -152q58 -99 58 -214.5t-58 -214.5q-56 -96 -152 -153q-100 -58 -215 -58zM432 435h112q36 0 66.5 17.5t48.5 47t18 65t-18 65t-48.5 47t-66.5 17.5
+    h-78l-111 106v-290q0 -31 22.5 -53t54.5 -22z"></path></svg></a>
+  <a rel="me noopener noreferrer" target="_blank" href="/rss.xml"><svg class="feed" width="22pt" height="22pt" viewBox="0 0 448 512">
+      <path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.tiktok.com/@techlifeweb"><svg class="tiktok" fill="#000000" width="22pt" height="22pt" viewBox="0 0 24 24">
+      <path d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2Zm-3.281,8.725h0c-.109.011-.219.016-.328.017A3.571,3.571,0,0,1,14.4,9.129v5.493a4.061,4.061,0,1,1-4.06-4.06c.085,0,.167.008.251.013v2a2.067,2.067,0,1,0-.251,4.119A2.123,2.123,0,0,0,12.5,14.649l.02-9.331h1.914A3.564,3.564,0,0,0,17.719,8.5Z"></path></svg></a><a rel="me noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCZ7NoAPNzRBupCDyojnVt3A"><svg class="youtube" height="22pt" viewBox="0 0 448 512" width="22pt">
+      <path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"></path></svg></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.com"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.indieweb.social.ap.brid.gy"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://bsky.app/profile/techlifeweb.bsky.social"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://fed.brid.gy/bsky/techlifeweb.bsky.social"></a>
+  <a rel="me noopener noreferrer" target="_blank" href="https://fed.brid.gy/ap/@techlifeweb@indieweb.social"></a>
+</div>
+</li>
+            </ul>
+            </nav>
+            <nav>
+            <ul>
+<div class="flexnav">
+<li><a href="/">Home</a></li>
+<li><a href="/hcard/">About</a></li>
+<li><a href="/now/">Now</a></li>
+<li><a href="/garden/">Garden</a></li>
+<div class="mobile-hide">
+<li><a href="/article-archive/">Articles</a></li>
+<li><a href="/photo-archive/">Photos</a></li>
+<li><a href="/note-archive/">Notes</a></li>
+<li><a href="/socialfeed/">Social Posts</a></li>
+<li><a href="/mlb-dashboard/">MLB Dashboard</a></li>
+</div>
+<li><a href="/search/">Search</a></li>
+</div>
+</ul>
+
+            </nav>
+        <hgroup>
+    </hgroup></hgroup></header>
+    <main class="container">
+            <article class="h-entry" data-pagefind-body="">
+                <hgroup><h1 class="p-name entry-title">&#127793;Wrangling DNS on Your Network, Part 1: Pi-hole</h1>
+                <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>&nbsp;on&nbsp;
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-10T22:56:05.374-07:00">Aug 10, 2026, 10:56 PM</time>
+                    <a href="/garden/networkingfiles/wranglinddnsonyournetwork/" class="url u-url"></a>
+                </small></hgroup>
+                <div class="e-content">
+                <!-- social POSSE -->
+                <!-- End social POSSE -->
+                    <p>NOTE: I didn't write this. It was originally on a site <a href="https://github.com/TechGeek01" target="_blank" rel="noopener noreferrer">Andy Yasger</a> ran that is no longer active. I've grabbed the text from the internet archive and saved it here.<br>
+via <a href="https://web.archive.org/web/20240228135542/https://blog.flippedbits.io/2020/07/wrangling-dns-on-your-network-part-1-pi-hole/" target="_blank" rel="noopener noreferrer">https://web.archive.org/web/20240228135542/https://blog.flippedbits.io/2020/07/wrangling-dns-on-your-network-part-1-pi-hole/</a><br>
+Some of the UI has changed since this was posted back in 2020 but I got value from it so it is worth saving</p>
+<hr>
+<p>So if you’re like me, you hate ads. Your first idea for a solution might be to add a browser-based adblock solution. And if you’re thinking that that would work, you’d be right. But it’s a very localized solution, since you’d need an adblock solution on everything you used. Every browser, every device, you’d need a new adblock extension, since it’s local to that machine. And that doesn’t cover apps on your phone that you can’t install adblock for. Or smart home devices.</p>
+<p>Enter Pi-hole. Pi-hole is a DNS-based solution for handling adblock, and because it’s DNS-based, not only does it work on every device, and every app, but it also makes your internet slightly faster, since it knocks down the ads at a network level before they even load into your app or browser.</p>
+<p>So, set Pi-hole to be the DNS server for all devices on your network, and you should be all set, right? It’ll use your favorite upstream public DNS server, whether that’s Google, Cloudflare’s quad 1, Quad 9, or some other server, and then your devices reference it, and it knocks down the ad domain requests. In most home situations, that would work, and it would work really well, but there’s some more advanced configuration we can do here.</p>
+<h2 id="but-i'm-a-homelabber-what-about-my-local-machines" tabindex="-1">But I’m a Homelabber, what about My Local Machines? <a class="external-link" href="#but-i'm-a-homelabber-what-about-my-local-machines" aria-hidden="true">#</a></h2>
+<p>Okay, so you’re like me, and you’re running a bunch of servers and VMs. That’s okay, we can set those to use Pi-hole as well if you’d like. But what if you don’t want to remember IPs and ports? What if you want to set up a reverse proxy, and instead of typing <code>172.18.24.67:32400</code> or whatever your IP is, what if you just want to remember <code>plex.mydomain.com</code>?</p>
+<p>The solution here is to add your own custom DNS entries to the list. This is certainly doable in Pi-hole, but it’s only really easy if you’re running v5.0, since there was no GUI before then. Should you choose to do this in Pi-hole, you can navigate to “Local DNS records”.</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/lcKebaWEm8-1288.webp 1288w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/lcKebaWEm8-1288.jpeg" alt="Pi-hole's 'Local DNS records' page" width="1288" height="695"></picture> Pi-hole's 'Local DNS records' page</p>
+<p>Using Pi-hole, you can add a domain, or subdomain, and an IP address, and add your own DNS records in this way. As you can tell, I don’t have any in my list at the moment. That’s because I’m using a slightly different solution here.</p>
+<h2 id="local-dns-with-pfsense" tabindex="-1">Local DNS with pfSense <a class="external-link" href="#local-dns-with-pfsense" aria-hidden="true">#</a></h2>
+<p>The second solution to this problem (that is, the one that’s not local DNS with Pi-hole) is to do this local DNS stuff through some other service. The next best thing aside from a separate DNS server here, is to handle this on the router level.</p>
+<p>In my case, I’m using pfSense as my router, and to do this there, we have to enable the DNS resolver. Go to pfSense’s IP, and log in if you haven’t already. Once you’re there, go to Services &gt; DNS Resolver, and at the top, you’ll see a checkbox that lets you enable it. If that’s not already checked, check it, scroll to the bottom, and hit save. This should enable the DNS resolver, and let pfSense respond to DNS queries on port 53.</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/290hc_weqF-1186.webp 1186w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/290hc_weqF-1186.jpeg" alt="pfSense's DNS resolver page" width="1186" height="328"></picture> pfSense's DNS resolver page</p>
+<p>From here, the process is very similar to Pi-hole’s, except we get a few more options. To add an option, from this DNS resolver page, scroll to the bottom of the page, and hit the button for “Add” below the “Host Overrides” section.</p>
+<p>This brings you to a new page, where you can fill in the details of the host you want to add, just like we did with Pi-hole.</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/NTWkOhtf20-1175.webp 1175w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/NTWkOhtf20-1175.jpeg" alt="pfSense DNS resolver's 'Host override' page" width="1175" height="840"></picture> pfSense DNS resolver's 'Host override' page</p>
+<p>In pfSense, instead of just one box for the input domain, this is split between domain, and hostname. If we were to enter <code>desktop.mydomain.com</code> in Pi-hole, in pfSense, we would instead make the domain <code>mydomain.com</code>, and make the hostname <code>desktop</code>, and pfSense will concatenate these together. To just make an alias for a domain, without a subdomain, just leave the hostname blank.</p>
+<p>Once you add a bunch of these entries, it can get confusing as to what these are all for, so pfSense provides a field to enter a description as to what this is for. This isn’t parsed, and you can enter anything you want here. This is nice, and it’s a feature Pi-hole doesn’t seem to have just yet. Hopefully this’ll be coming in the future.</p>
+<p>If you have multiple services on one server, or are using a reverse proxy, where you might otherwise want multiple domains to resolve to the same IP. In this case, instead of maintaining several entries, and in the case of an IP change, having to edit 3,4 or 5, or even more entries, pfSense gives us the option to add an alias to the host override entry. This means if/when the IP changes, if you move a server or service, you only have to edit one IP in one entry.</p>
+<p>To do this, in the bottom under “Additional Names for this Host”, add the additional hostname, domain, and optional description. If you have more than one alias, hit the Add Host Name button near the bottom. When you’re done with everything, hit Save.</p>
+<p>Pi-hole has definitely come a long way here, and their recent addition of a GUI option to add custom DNS records in v5 is a step up over what used to involve manually editing the dnsmasq files, but I really hope they let us add a description, or add aliases. pfSense definitely has the edge here for ease-of-use with configuring this.</p>
+<h2 id="but-wait!-now-i-have-adblock-on-one-dns-server-and-local-dns-names-on-another!-how-can-i-fix-this" tabindex="-1">But Wait! Now I Have Adblock on One DNS Server, and Local DNS Names on Another! How Can I Fix This? <a class="external-link" href="#but-wait!-now-i-have-adblock-on-one-dns-server-and-local-dns-names-on-another!-how-can-i-fix-this" aria-hidden="true">#</a></h2>
+<p>Okay, so if you took my approach, and configured your local DNS names on pfSense, we’ve run into a slight issue. Both pfSense and Pi-hole are configured to route upstream to public DNS. Whatever server you choose there is up to you, but since neither reference the other, we can’t have our cake and eat it too. Anything we connect, assuming we’re using our custom DNS, and not just letting DHCP assign public DNS to our clients, is either going to be using pfSense, and be able to resolve local DNS names for services like Plex, or it’ll be using Pi-hole, and get the benefit of adblock.</p>
+<p>Okay, it’s fine. We can fix this. The solution here is that we need to chain these together, so one of these servers needs to reference the other as upstream. The logical solution here would be to make the pfSense install the master one, and have Pi-hole reference it, as opposed to the other way around. Given that pfSense needs everything to route through it to get to the internet anyway, it’s kind of pointless to make the Pi-hole the upstream, because then pfSense would reference Pi-hole, and then the Pi-hole would have to route back through pfSense to get to public DNS.</p>
+<p>The solution isn’t as difficult as it might seem, but it’s not exactly straightforward. You’ll want to navigate to Settings on the left hand nav menu, and then in the top tabs, click the DNS tab. You’ll see something like this.</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/7WeUnokxNr-1303.webp 1303w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/7WeUnokxNr-1303.jpeg" alt="Pi-hole's DNS settings" width="1303" height="614"></picture> Pi-hole's DNS settings</p>
+<p>I’m using Cloudflare’s DNS here, but you may have chosen a different server, or set of servers during setup. Here, we want to do two things. First, uncheck any DNS servers on the left hand side. Then, we need to add our own DNS server. On the right, under “Upstream DNS Servers”, we want to add our pfSense resolver. In my case, my IP is <code>10.0.10.1</code>, but you’ll use whatever the default gateway for your Pi-hole is. Even if your devices are on a different VLAN, we need this to be the interface the Pi-hole uses, so add whatever interface you need to.</p>
+<p>If you haven’t touched the port settings for the Unbound DNS resolver in pfSense, you’ll be using port 53. If you changed it for some reason, use whatever port it’s running on. To fill this in, we want to check the box next to Custom 1, and add in <code>10.0.10.1#53</code>, substituting your own pfSense IP and DNS port number.</p>
+<p>At this point, you’ll see something like this:</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/Jgbs5hzqaH-1299.webp 1299w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/Jgbs5hzqaH-1299.jpeg" alt="Our new DNS settings" width="1299" height="576"></picture> Our new DNS settings</p>
+<p>While we’re here, we might as well solve one more problem. If you’re in this scenario, since we have pfSense as the “master” sort of DNS with the local entries and all, I’m going to assume you also use pfSense for DHCP, and not the Pi-hole. If that is the case, the Pi-hole won’t know what devices are what, and won’t be able to resolve DHCP hostnames. To fix this, scroll down to the advanced section.</p>
+<p><picture><source type="image/webp" srcset="/garden/networkingfiles/wranglinddnsonyournetwork/P_6DobdklA-1004.webp 1004w"><img class="u-photo" src="/garden/networkingfiles/wranglinddnsonyournetwork/P_6DobdklA-1004.jpeg" alt="Pi-hole's advanced DNS settings" width="1004" height="595"></picture> Pi-hole's advanced DNS settings</p>
+<p>Down here, you want to leave the top two boxes unchecked. The third one is for DNSSEC. We’re not using upstream public DNS anymore, so this setting is dependent on pfSense. If you’ve configured pfSense to use DNSSEC for the Unbound DNS resolver, you can check that box. Otherwise, leave it unchecked.</p>
+<p>The important part is that the Pi-hole needs to know where to get DHCP info, so you want to check the box for conditional forwarding. Then, fill in the pfSense IP and local domain. This IP should be the same as you used in the custom DNS entry up top. From here, you can save, and Pi-hole will be able to forward local queries onto pfSense to be able to resolve those DHCP hostnames.</p>
+<p>At this point, you should be all set! You now have two DNS options. pfSense as the master for the normal DNS queries, and Pi-hole if you want adblock. Personally, I let DHCP hand out Pi-hole to my wireless clients, including IoT, and I use them on my desktop and laptop and all that. For servers, like some of the VMs I run, I set pfSense as upstream DNS, since it eliminates an extra hop, and I don’t need adblock in a server CLI environment, anyway.</p>
+<h2 id="bonus-tip!-fix-that-pesky-pi.hole-default-domain!" tabindex="-1">Bonus Tip! Fix that Pesky pi.hole Default Domain! <a class="external-link" href="#bonus-tip!-fix-that-pesky-pi.hole-default-domain!" aria-hidden="true">#</a></h2>
+<p>Pi-hole by default resolves itself on the network at <code>pi.hole</code>. This is kind of dumb, cause you can’t normally change this. Your first instinct would be to set a DNS host override in pfSense to let <code>pihole.mydomain.com</code> resolve to the Pi-hole IP, but the problem is that it still doesn’t want to play nice on a domain. Your options are either the IP, which warns you about meaning to go to <code>/admin</code> unless you explicitly type in <code>10.0.10.53/admin</code> in your browser, or, you can go to <code>pi.hole</code> and it’ll resolve to the admin page automatically.</p>
+<p>The host override means that <code>pihole.mydomain.com</code> now resolves to the Pi-hole IP, but the Pi-hole still doesn’t like it, and won’t respond properly. The solution here is to <em>also</em> set the hostname of the Pi-hole itself to <code>pihole.mydomain.com</code> as the full domain, as opposed to just calling it <code>pihole</code>.</p>
+<p>Depending on your configuration, this might mean something like <code>hostnamectl</code> on a VM running Pi-hole, or editing a Docker container if you’re going that route. Either way, once that’s done, and you have both the changed hostname on the Pi-hole, <em>and</em> the host override in the pfSense DNS, then you’ll be able to type in <code>pihole.mydomain.com</code> into your browser, and it’ll redirect to <code>/admin</code> just like it did for the default <code>pi.hole</code> domain.</p>
+
+                </div>
+            </article>
+            <a class="internal-link" href="/garden">&#127803;Garden Home</a><br>
+            
+
+<div id="syndication">
+  <ul>
+  </ul>
+</div>
+<div class="gosehere">
+
+  
+
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
