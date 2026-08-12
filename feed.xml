@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 31 Jul 2026 09:39:06 PDT</pubDate>
-      <lastBuildDate>Fri, 31 Jul 2026 09:39:06 PDT</lastBuildDate>
+      <pubDate>Tue, 11 Aug 2026 19:56:44 PDT</pubDate>
+      <lastBuildDate>Tue, 11 Aug 2026 19:56:44 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-11T19:56:44.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-11t185644/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Project N.O.M.A.D.: Your Ultimate Offline Survival Computer - I Have A PC https://ihaveapc.com/2026/03/project-n-o-m-a-d-your-ultimate-offline-survival-computer/  &#39;Project N.O.M.A.D. (Node for Offline Media, Archives, and Data) &#39;&lt;br&gt;
+#linux&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 11 Aug 2026 19:56:44 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-11t185644/</guid>
+    </item>
     <item>
       <title>Note 2026-08-10T07:38:55.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117071723563826536/</link>
       <description>
@@ -1235,32 +1250,6 @@ For #Blind people looking to make their own websites, I recommend all 3 parts of
       <pubDate>Mon, 13 Jul 2026 13:57:55 PDT</pubDate>
       <dc:creator>Scott Kingery</dc:creator>
       <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116914669170990335/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-12T18:33:10.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116910089198720249/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;Padres win the game and series vs Jays. LAD swept by the Snakes. I think I saw a 🌈😀&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Sun, 12 Jul 2026 18:33:10 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116910089198720249/</guid>
-    </item>
-    <item>
-      <title>Note 2026-07-12T09:13:31.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/116907888602047347/</link>
-      <description>
-        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
-        </div>   
-        <div class="e-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;This was intense! Warning: mental health topics. &lt;a href=&quot;https://youtu.be/s_nc1IVoMxc?si=iPKQHY0UX7FJc5PB&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;youtu.be/s_nc1IVoMxc?si=iPKQHY&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;0UX7FJc5PB&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-        </div>
-</description>
-      <pubDate>Sun, 12 Jul 2026 09:13:31 PDT</pubDate>
-      <dc:creator>Scott Kingery</dc:creator>
-      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/116907888602047347/</guid>
     </item>
     <item>
       <title>Note 2026-07-03T22:44:08.000-07:00</title><link>https://techlifeweb.com/blog/2026/07/post-2026-07-03T214408/</link>

@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 31 Jul 2026 09:39:06 PDT</pubDate>
-    <lastBuildDate>Fri, 31 Jul 2026 09:39:06 PDT</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2026 19:56:44 PDT</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2026 19:56:44 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-08-11T19:56:44.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-11t185644/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Project N.O.M.A.D.: Your Ultimate Offline Survival Computer - I Have A PC https://ihaveapc.com/2026/03/project-n-o-m-a-d-your-ultimate-offline-survival-computer/  'Project N.O.M.A.D. (Node for Offline Media, Archives, and Data) '<br />
+#linux</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Project N.O.M.A.D.: Your Ultimate Offline Survival Computer - I Have A PC https://ihaveapc.com/2026/03/project-n-o-m-a-d-your-ultimate-offline-survival-computer/  'Project N.O.M.A.D. (Node for Offline Media, Archives, and Data) '<br />
+#linux</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 11 Aug 2026 19:56:44 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-11t185644/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-07-31T09:39:06.000-07:00</title>
