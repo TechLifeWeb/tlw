@@ -2,26 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/&#39;Peanut%20Guy&#39;%20finishes%20an%20incredible%20journey/</loc>
-            <lastmod>2026-08-14T03:23:04.976Z</lastmod>
+            <loc>https://techlifeweb.com/postseason/</loc>
+            <lastmod>2026-08-14T03:40:27.944Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/mlb-dashboard/</loc>
+            <lastmod>2026-08-14T03:37:26.343Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/blog/2026/08/post-2026-08-13t191452/</loc>
             <lastmod>2026-08-14T03:14:52.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/postseason/</loc>
-            <lastmod>2026-08-14T01:57:11.223Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/mlb-dashboard/</loc>
-            <lastmod>2026-08-14T01:57:11.219Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
