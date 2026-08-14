@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/catholic/glossaryofcatholicterms/</loc>
+            <lastmod>2026-08-14T14:40:20.499Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Flock%20Cameras,%20Instagram%20Logo,%20and%20Fashion%20Bear/</loc>
+            <lastmod>2026-08-14T09:03:08.450Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/mlb-dashboard/</loc>
             <lastmod>2026-08-14T03:58:28.811Z</lastmod>
             <changefreq>daily</changefreq>
@@ -596,24 +608,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/catholic/glossaryofcatholicterms/</loc>
-            <lastmod>2026-08-08T06:29:18.078Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Summer%20catch-up!/</loc>
-            <lastmod>2026-08-07T13:06:49.121Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Lab-Made%20Viruses,%20Faster%20Flu%20Shot,%20and%20Victorian%20Junk%20Food/</loc>
-            <lastmod>2026-08-07T09:03:07.034Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117052380065417847/</loc>
             <lastmod>2026-08-07T04:39:36.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1186,24 +1180,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/11ty/</loc>
             <lastmod>2026-07-16T05:36:42.588Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116927847080312844/</loc>
-            <lastmod>2026-07-16T04:49:14.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116925511787313537/</loc>
-            <lastmod>2026-07-15T18:55:20.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116924471883913714/</loc>
-            <lastmod>2026-07-15T14:30:52.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
