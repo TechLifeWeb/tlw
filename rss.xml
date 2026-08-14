@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Tue, 11 Aug 2026 19:56:44 PDT</pubDate>
-    <lastBuildDate>Tue, 11 Aug 2026 19:56:44 PDT</lastBuildDate>
+    <pubDate>Thu, 13 Aug 2026 20:14:52 PDT</pubDate>
+    <lastBuildDate>Thu, 13 Aug 2026 20:14:52 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-08-13T20:14:52.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-13t191452/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>TIL about this site to find Flock and other ALPRs around you. | DeFlock <a href="https://deflock.org/">https://deflock.org/</a> 'your go-to resource for understanding and addressing the growing presence of Automated License Plate Readers (ALPRs) in our communities.'<br />
+#flock #alpr #privacy</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>TIL about this site to find Flock and other ALPRs around you. | DeFlock <a href="https://deflock.org/">https://deflock.org/</a> 'your go-to resource for understanding and addressing the growing presence of Automated License Plate Readers (ALPRs) in our communities.'<br />
+#flock #alpr #privacy</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 13 Aug 2026 20:14:52 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-13t191452/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-11T19:56:44.000-07:00</title>
