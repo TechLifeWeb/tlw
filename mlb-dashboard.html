@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MLB Division Dashboard</title>
-  <meta name="description" content="Follow your favorite Major League Baseball Division" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLB Regular Season Dashboard</title>
+  <meta name="description" content="Follow your favorite Major League Baseball Division">
   <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link id="faviconLink" rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | url }}">
+  <link id="faviconLink" rel="shortcut icon" href="https://techlifeweb.com/assets/images/favicon.ico">
   <!-- Tailwind for layout/typography utilities only -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com/"></script>
   <style>
     :root{
       --bg:#f8fafc;--text:#111827;--muted:#6b7280;--card-bg:#ffffff;--border:#e5e7eb;
@@ -49,6 +49,11 @@
     .summary-title{font-weight:600;font-size:1.05rem}
     .summary-right{display:inline-flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.75rem}
     .fold-content{padding:0 var(--pad-card) var(--pad-card)}
+
+    .page-nav{display:inline-flex;align-items:center;gap:.2rem;margin-right:.25rem}
+    .page-nav a{font-size:11px;padding:5px 7px;border-radius:.55rem;color:var(--muted);text-decoration:none}
+    .page-nav a:hover{background:var(--chip-bg);color:var(--text)}
+    .page-nav a[aria-current="page"]{background:var(--chip-bg);border:1px solid var(--chip-border);color:var(--text)}
   </style>
   <script>
     // Apply saved theme/compact ASAP
@@ -66,9 +71,13 @@
 </head>
 <body class="theme-bg">
   <header id="topbar" class="sticky top-0 z-10 backdrop-blur theme-card card">
-    <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <div class="min-w-0"><h1 class="header-title">MLB Division Dashboard</h1></div>
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="min-w-0"><h1 class="header-title">MLB Regular Season Dashboard</h1></div>
       <div class="toolbar">
+        <nav class="page-nav" aria-label="MLB dashboard sections">
+          <a href="mlb-dashboard.html" aria-current="page">Regular Season</a>
+          <a href="postseason.html">Postseason</a>
+        </nav>
         <span id="theme-chip" class="chip chip-sm hide-xs">—</span>
         <button id="theme-toggle" class="icon-btn" title="Toggle Dark/Light">🌗</button>
         <div class="divider hide-xs"></div>
@@ -80,7 +89,7 @@
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-4 space-y-4">
+  <main class="max-w-6xl mx-auto px-4 py-4 space-y-4">
     <!-- Choose Division -->
     <section class="theme-card card pad">
       <div class="flex items-center justify-between mb-2">
@@ -149,8 +158,8 @@
     </details>
 
     <!-- Standings + Wild Card -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 grid-gap">
-      <div class="theme-card card pad lg:col-span-2">
+    <section class="grid grid-cols-1 lg:grid-cols-2 grid-gap">
+      <div class="theme-card card pad">
         <h2 class="text-base font-semibold tracking-tight mb-2">Division Standings</h2>
         <div id="division-standings"></div>
       </div>
@@ -165,7 +174,7 @@
       </div>
     </section>
 
-    <footer class="text-[11px] theme-muted text-center py-4">Season <span id="season-text"></span> · Auto-refresh 30s</footer>
+    <footer class="text-[11px] theme-muted text-center py-4">Season <span id="season-text"></span> · Auto-refresh 30s · <a href='https://techlifeweb.com/' target='_blank' rel='noopener noreferrer'>Created by TechLifeWeb</a></footer>
   </main>
 
   <script>
@@ -266,8 +275,8 @@
             <td class="py-2 pr-2 text-right">${pctToDisplay(r?.pct)}</td>
             <td class="py-2 pr-2 text-right">${r?.gamesBack??"—"}</td>
             ${type==="wildcard"?`<td class="py-2 pr-2 text-right">${r?.wildCardGamesBack??"—"}</td>`:""}
-            <td class="py-2 pr-2 text-right hidden md:table-cell">${r?.runsScored??"—"}</td>
-            <td class="py-2 pr-2 text-right hidden md:table-cell">${r?.runsAllowed??"—"}</td>
+            <td class="py-2 pr-2 text-right hidden xl:table-cell">${r?.runsScored??"—"}</td>
+            <td class="py-2 pr-2 text-right hidden xl:table-cell">${r?.runsAllowed??"—"}</td>
           </tr>`;
       }).join("");
       return `
@@ -282,8 +291,8 @@
                 <th class="py-2 pr-2 text-right">PCT</th>
                 <th class="py-2 pr-2 text-right">GB</th>
                 ${theadExtra}
-                <th class="py-2 pr-2 text-right hidden md:table-cell">RS</th>
-                <th class="py-2 pr-2 text-right hidden md:table-cell">RA</th>
+                <th class="py-2 pr-2 text-right hidden xl:table-cell">RS</th>
+                <th class="py-2 pr-2 text-right hidden xl:table-cell">RA</th>
               </tr>
             </thead>
             <tbody>${body}</tbody>
@@ -461,3 +470,4 @@
   </script>
 </body>
 </html>
+

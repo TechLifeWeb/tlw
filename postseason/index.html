@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLB Postseason Dashboard</title>
+  <meta name="description" content="Follow the MLB postseason race and postseason bracket">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--bg:#f8fafc;--text:#111827;--muted:#6b7280;--card-bg:#ffffff;--border:#e5e7eb;--chip-bg:#ffffff;--chip-border:#d1d5db;--chip-text:#374151;--ring:#e5e7eb;--pad-card:1rem;--gap-grid:1rem;color-scheme:light}
+    html.dark{--bg:#0b0b0f;--text:#e5e7eb;--muted:#a1a1aa;--card-bg:#121218;--border:#27272a;--chip-bg:#18181b;--chip-border:#3f3f46;--chip-text:#e4e4e7;--ring:#3f3f46;color-scheme:dark}
+    html.compact{--pad-card:.5rem;--gap-grid:.5rem}
+    body.theme-bg{background-color:var(--bg);color:var(--text);font-size:16px}
+    .theme-card{background-color:var(--card-bg);border:1px solid var(--border);border-radius:1rem}
+    .theme-muted{color:var(--muted)} .pad{padding:var(--pad-card)} .grid-gap{gap:var(--gap-grid)}
+    .chip{font-size:11px;line-height:1;padding:6px 8px;border-radius:9999px;border:1px solid var(--chip-border);background:var(--chip-bg);color:var(--chip-text)}
+    .chip-sm{font-size:10px;padding:4px 6px}.logo-ring{border:1px solid var(--ring);border-radius:9999px}
+    #topbar{padding:.38rem .75rem;transition:padding .18s ease,box-shadow .18s ease,transform .18s ease}
+    #topbar.collapsed{padding:.15rem .6rem;box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px)}
+    .header-title{font-size:.95rem;font-weight:600;letter-spacing:.1px}.toolbar{display:inline-flex;align-items:center;gap:.4rem}
+    .icon-btn{font-size:12px;padding:.3rem .5rem;line-height:1;border-radius:.6rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text)}
+    .divider{width:1px;height:18px;background:var(--border);margin:0 .25rem}.page-nav{display:inline-flex;align-items:center;gap:.2rem;margin-right:.25rem}
+    .page-nav a{font-size:11px;padding:5px 7px;border-radius:.55rem;color:var(--muted);text-decoration:none}.page-nav a:hover{background:var(--chip-bg);color:var(--text)}
+    .page-nav a[aria-current="page"]{background:var(--chip-bg);border:1px solid var(--chip-border);color:var(--text)}
+    @media(max-width:640px){.hide-xs{display:none!important}.page-nav a{padding:4px 5px}}
+    #topbar.collapsed .chip{display:none}
+    select{background:var(--card-bg);color:var(--text);border:1px solid var(--border);border-radius:.75rem;padding:.5rem .75rem;outline:none}
+    select option{background:var(--card-bg);color:var(--text)}
+    .seed-row{display:grid;grid-template-columns:2rem minmax(0,1fr) auto;align-items:center;gap:.5rem;padding:.5rem .55rem;border-top:1px solid var(--border)}
+    .seed-row:first-child{border-top:0}.seed-num{width:1.65rem;height:1.65rem;display:grid;place-items:center;border:1px solid var(--border);border-radius:.5rem;font-size:.75rem;font-weight:700}
+    .bubble-row{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.45rem .55rem;border-top:1px solid var(--border)}.bubble-row:first-child{border-top:0}
+    .teamline{display:flex;align-items:center;gap:.5rem;min-width:0}.teamline img{width:1.4rem;height:1.4rem}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .status{font-size:.68rem;padding:.12rem .4rem;border:1px solid var(--border);border-radius:999px;color:var(--muted)}
+    .seed-meta{display:flex;align-items:center;justify-content:flex-end;gap:.35rem;flex-wrap:wrap}
+    .magic{font-size:.68rem;padding:.12rem .42rem;border:1px solid var(--border);border-radius:999px;font-weight:700;white-space:nowrap}
+    .bracket-slot{padding:.65rem;border:1px dashed var(--border);border-radius:.75rem;color:var(--muted);font-size:.8rem}
+    .error{color:#dc2626;font-size:.8rem}
+  </style>
+  <script>
+    (function(){try{const d=localStorage.getItem('mlbDarkMode');const prefers=matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;if(d==='true'||(d===null&&prefers))document.documentElement.classList.add('dark');if(localStorage.getItem('mlbCompact')==='true')document.documentElement.classList.add('compact')}catch(e){}})();
+  </script>
+</head>
+<body class="theme-bg">
+  <header id="topbar" class="sticky top-0 z-10 backdrop-blur theme-card">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <h1 class="header-title">MLB Postseason Dashboard</h1>
+      <div class="toolbar">
+        <nav class="page-nav" aria-label="MLB dashboard sections">
+          <a href="mlb-dashboard.html">Regular Season</a>
+          <a href="postseason.html" aria-current="page">Postseason</a>
+        </nav>
+        <div class="divider hide-xs"></div>
+        <span id="theme-chip" class="chip chip-sm hide-xs">—</span><button id="theme-toggle" class="icon-btn" title="Toggle Dark/Light">🌗</button>
+        <div class="divider hide-xs"></div><span id="compact-chip" class="chip chip-sm hide-xs">—</span><button id="compact-toggle" class="icon-btn" title="Toggle Compact layout">▭</button>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 py-4 space-y-4">
+    <section class="theme-card pad">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="flex items-center gap-2"><label for="season-select" class="text-sm">Season</label>
+            <select id="season-select" class="text-sm">
+              <option value="2026" selected="">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option>
+            </select>
+          </div>
+          <div class="flex items-center gap-2"><label for="league-select" class="text-sm">League</label><select id="league-select" class="text-sm"><option value="both">Both</option><option value="103">AL</option><option value="104">NL</option></select></div>
+        </div>
+        <button id="refresh-btn" class="icon-btn">Refresh</button>
+      </div>
+      <div class="text-xs theme-muted mt-2">Before October, this page shows the current postseason field and teams chasing a Wild Card spot.  <a href="https://www.mlb.com/glossary/advanced-stats/magic-number" target="_blank" rel="noopener noreferrer">Magic Number (MN)</a>: Division leaders show DIV MN; current Wild Card qualifiers show WC MN.</div>
+    </section>
+
+    <section class="theme-card pad">
+      <div class="flex items-center justify-between mb-2"><h2 class="text-base font-semibold">Postseason Race</h2><span id="race-updated" class="text-xs theme-muted"></span></div>
+      <div id="race-loading" class="text-sm theme-muted">Loading postseason race…</div><div id="race-error" class="error hidden"></div>
+      <div id="race-grid" class="hidden grid grid-cols-1 lg:grid-cols-2 grid-gap">
+        <div id="al-panel"><h3 class="text-sm font-semibold mb-2">American League</h3><div class="theme-card"><div id="al-seeds"></div></div><h4 class="text-xs font-semibold mt-3 mb-1">Wild Card Bubble</h4><div class="theme-card"><div id="al-bubble"></div></div></div>
+        <div id="nl-panel"><h3 class="text-sm font-semibold mb-2">National League</h3><div class="theme-card"><div id="nl-seeds"></div></div><h4 class="text-xs font-semibold mt-3 mb-1">Wild Card Bubble</h4><div class="theme-card"><div id="nl-bubble"></div></div></div>
+      </div>
+      <div class="text-[11px] theme-muted mt-2">Magic numbers use the conventional win/loss clinch calculation. Official MLB tiebreakers can cause a team to clinch before the displayed number reaches zero.</div>
+    </section>
+
+    <section class="theme-card pad">
+      <div class="flex items-center justify-between mb-2"><h2 class="text-base font-semibold">Postseason Bracket</h2><span class="text-xs theme-muted">activates as matchups become official</span></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 grid-gap">
+        <div><div class="text-xs font-semibold mb-2">AL</div><div class="bracket-slot">Wild Card → Division Series → ALCS</div></div>
+        <div><div class="text-xs font-semibold mb-2 text-center">World Series</div><div class="bracket-slot text-center">AL Champion vs NL Champion</div></div>
+        <div><div class="text-xs font-semibold mb-2">NL</div><div class="bracket-slot">Wild Card → Division Series → NLCS</div></div>
+      </div>
+    </section>
+
+    <footer class="text-[11px] theme-muted text-center py-4">Postseason race · MLB Stats API · Auto-refresh 30s · <a href="https://techlifeweb.com/" target="_blank" rel="noopener noreferrer">Created by TechLifeWeb</a></footer>
+  </main>
+<script>
+const MLB='https://statsapi.mlb.com/api/v1', LEAGUES={AL:103,NL:104}, POLL_MS=30000;
+const $=id=>document.getElementById(id); const state={season:2026,league:'both',teams:{},timer:null};
+const logo=id=>`https://www.mlbstatic.com/team-logos/${id}.svg`;
+function winPct(r){const w=Number(r?.wins||0),l=Number(r?.losses||0),g=w+l;return g?w/g:0}
+function seasonGames(season){return Number(season)===2020?60:162}
+function magicNumber(team,competitor){if(!team||!competitor)return null;const n=seasonGames(state.season)+1-Number(team?.wins||0)-Number(competitor?.losses||0);return Math.max(0,n)}
+function teamInfo(r){const t=r?.team||{};return state.teams[t.id]||{name:t.name||'',abbr:'',logo:logo(t.id)}}
+async function fetchTeams(){const r=await fetch(`${MLB}/teams?sportId=1&season=${state.season}`);if(!r.ok)throw new Error('Failed to fetch teams');const d=await r.json();state.teams={};(d.teams||[]).forEach(t=>state.teams[t.id]={name:t.name||'',abbr:t.abbreviation||t.teamCode||'',logo:logo(t.id)})}
+async function fetchByDivision(leagueId){const r=await fetch(`${MLB}/standings?leagueId=${leagueId}&season=${state.season}&standingsTypes=byDivision`);if(!r.ok)throw new Error('Failed to fetch division standings');return (await r.json()).records||[]}
+async function fetchWC(leagueId){const r=await fetch(`${MLB}/standings?leagueId=${leagueId}&season=${state.season}&standingsTypes=wildCard`);if(!r.ok)throw new Error('Failed to fetch Wild Card standings');const d=await r.json();return d?.records?.[0]?.teamRecords||[]}
+function divisionLeaderEntries(records){
+  return records.map(rec=>{
+    const rows=(rec.teamRecords||[]).slice();
+    const leader=rows.slice().sort((a,b)=>Number(a?.divisionRank||99)-Number(b?.divisionRank||99))[0];
+    if(!leader)return null;
+    const competitor=rows.filter(r=>r?.team?.id!==leader?.team?.id).sort((a,b)=>Number(a?.losses||999)-Number(b?.losses||999)||winPct(b)-winPct(a))[0]||null;
+    leader._divisionCompetitor=competitor;
+    return leader;
+  }).filter(Boolean)
+}
+function seedField(records,wcRows){
+  const leaders=divisionLeaderEntries(records).sort((a,b)=>winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999));
+  const leaderIds=new Set(leaders.map(r=>r.team?.id));
+  const wc=wcRows.filter(r=>!leaderIds.has(r.team?.id)).sort((a,b)=>{
+    const ar=Number(a?.wildCardRank||999),br=Number(b?.wildCardRank||999);
+    return ar-br||winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999)
+  });
+  return {seeds:[...leaders.slice(0,3),...wc.slice(0,3)],bubble:wc.slice(3,7),leaderIds,wcChaser:wc[3]||null}
+}
+function magicBadge(r,field){
+  const isDivision=field.leaderIds.has(r?.team?.id);
+  const competitor=isDivision?r?._divisionCompetitor:field.wcChaser;
+  const mn=magicNumber(r,competitor);
+  if(mn===null)return '';
+  const label=isDivision?'DIV':'WC';
+  return `<span class="magic" title="${label} magic number">${mn===0?`${label} CLINCHED`:`${label} MN ${mn}`}</span>`
+}
+function seedRow(r,i,field){
+  const t=teamInfo(r),isDivision=field.leaderIds.has(r.team?.id),kind=isDivision?'Division':'Wild Card';
+  return `<div class="seed-row"><div class="seed-num">${i+1}</div><div class="teamline">${t.logo?`<img src="${t.logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<div class="truncate"><span class="font-medium">${t.name}</span><span class="text-xs theme-muted"> · ${r.wins}-${r.losses} · ${(winPct(r)*100).toFixed(1)}%</span></div></div><div class="seed-meta">${magicBadge(r,field)}<span class="status">${kind}</span></div></div>`
+}
+function bubbleRow(r){const t=teamInfo(r);const gb=r.wildCardGamesBack??'—';return `<div class="bubble-row"><div class="teamline">${t.logo?`<img src="${t.logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<div class="truncate"><span class="font-medium">${t.name}</span><span class="text-xs theme-muted"> · ${r.wins}-${r.losses} · ${(winPct(r)*100).toFixed(1)}%</span></div></div><span class="text-xs theme-muted">WCGB ${gb}</span></div>`}
+function renderSide(prefix,field){$(`${prefix}-seeds`).innerHTML=field.seeds.map((r,i)=>seedRow(r,i,field)).join('')||'<div class="p-3 text-sm theme-muted">No standings available.</div>';$(`${prefix}-bubble`).innerHTML=field.bubble.map(bubbleRow).join('')||'<div class="p-3 text-sm theme-muted">No bubble teams available.</div>'}
+function applyLeagueVisibility(){const v=state.league;$('al-panel').classList.toggle('hidden',v==='104');$('nl-panel').classList.toggle('hidden',v==='103');const grid=$('race-grid');grid.classList.toggle('lg:grid-cols-2',v==='both');grid.classList.toggle('lg:grid-cols-1',v!=='both')}
+async function refreshRace(){ $('race-loading').classList.remove('hidden');$('race-error').classList.add('hidden');try{await fetchTeams();const [alR,alW,nlR,nlW]=await Promise.all([fetchByDivision(103),fetchWC(103),fetchByDivision(104),fetchWC(104)]);renderSide('al',seedField(alR,alW));renderSide('nl',seedField(nlR,nlW));applyLeagueVisibility();$('race-grid').classList.remove('hidden');$('race-updated').textContent=`Updated ${new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}`;}catch(e){$('race-error').textContent=e?.message||String(e);$('race-error').classList.remove('hidden')}finally{$('race-loading').classList.add('hidden')}}
+function save(){try{localStorage.setItem('mlbPostseasonPrefs:v2',JSON.stringify({season:state.season,league:state.league}))}catch{}}
+function load(){try{return JSON.parse(localStorage.getItem('mlbPostseasonPrefs:v2'))||{}}catch{return {}}}
+function initHeader(){const dark=()=>document.documentElement.classList.contains('dark'),compact=()=>document.documentElement.classList.contains('compact');const chips=()=>{$('theme-chip').textContent=dark()?'Dark':'Light';$('compact-chip').textContent=compact()?'Compact On':'Compact Off'};chips();$('theme-toggle').onclick=()=>{document.documentElement.classList.toggle('dark');localStorage.setItem('mlbDarkMode',String(dark()));chips()};$('compact-toggle').onclick=()=>{document.documentElement.classList.toggle('compact');localStorage.setItem('mlbCompact',String(compact()));chips()}}
+document.addEventListener('DOMContentLoaded',()=>{const p=load();state.season=Number(p.season)||2026;state.league=p.league||'both';if(!$('season-select').querySelector(`option[value="${state.season}"]`))state.season=2026;$('season-select').value=String(state.season);$('league-select').value=state.league;initHeader();$('season-select').addEventListener('change',e=>{state.season=Number(e.target.value)||2026;save();refreshRace()});$('league-select').addEventListener('change',e=>{state.league=e.target.value;save();applyLeagueVisibility()});$('refresh-btn').addEventListener('click',refreshRace);refreshRace();state.timer=setInterval(refreshRace,POLL_MS)});
+</script>
+</body></html>
