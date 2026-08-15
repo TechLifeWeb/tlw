@@ -7,11 +7,32 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 14 Aug 2026 17:39:00 PDT</pubDate>
-      <lastBuildDate>Fri, 14 Aug 2026 17:39:00 PDT</lastBuildDate>
+      <pubDate>Fri, 14 Aug 2026 21:53:56 PDT</pubDate>
+      <lastBuildDate>Fri, 14 Aug 2026 21:53:56 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-14T21:53:56.000-07:00</title>
+      <title>Repost 2026-08-14T21:53:56.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/repost-2026-08-14T205355/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.social/@iabdullahahmad/117084068005612783&quot;&gt;Abdullah Ahmad (@iabdullahahmad@mastodon.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+AI coding agents are amazing, but their context collapse is real. Stop re-explaining your entire codebase every session. 🔁
+&lt;p&gt;I open-sourced Vibe Coding OS to give Claude &amp;amp; Cursor persistent memory using Obsidian and MCP. It structures your markdown vault as a project brain, letting your agents read your architecture and write their own dev logs so they never forget. 🧠💻️&lt;/p&gt;
+&lt;p&gt;Grab the repo here:&lt;br&gt;
+iabdullahahmad/VibeCodingOS: A fully wikilinked, Dataview-powered Vibe Coding OS for Obsidian. &lt;a href=&#39;https://github.com/iabdullahahmad/VibeCodingOS&#39;&gt;https://github.com/iabdullahahmad/VibeCodingOS&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 14 Aug 2026 21:53:56 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/repost-2026-08-14T205355/</guid>
+    </item>
     <item>
       <title>I built a dashboard for keeping track of Major League Baseball</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-14t163900/</link>
       <description>
