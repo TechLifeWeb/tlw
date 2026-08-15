@@ -7,11 +7,50 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Thu, 13 Aug 2026 20:14:52 PDT</pubDate>
-      <lastBuildDate>Thu, 13 Aug 2026 20:14:52 PDT</lastBuildDate>
+      <pubDate>Fri, 14 Aug 2026 17:39:00 PDT</pubDate>
+      <lastBuildDate>Fri, 14 Aug 2026 17:39:00 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>I built a dashboard for keeping track of Major League Baseball</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-14t163900/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;As a baseball fan, I want to quickly find the answers to 5 everyday questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What are today&#39;s divisional games?&lt;/li&gt;
+&lt;li&gt;What were yesterday&#39;s divisional results?&lt;/li&gt;
+&lt;li&gt;What&#39;s on the schedule for tomorrow&#39;s divisional games?&lt;/li&gt;
+&lt;li&gt;What are the current divisional standings?&lt;/li&gt;
+&lt;li&gt;What do the league wildcard standings look like?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find this info on MLB.com or your team&#39;s page, but it’s not all in one easy spot—there&#39;s usually a lot of clicking around. Plus, if your team isn’t in the AL East, you end up scrolling way more.&lt;/p&gt;
+&lt;p&gt;That’s why I’ve been working on this MLB Dashboard &lt;a href=&#39;https://techlifeweb.com/mlb-dashboard&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://techlifeweb.com/mlb-dashboard&lt;/a&gt;&lt;br&gt;
+I can choose NL West and it should &amp;quot;stick&amp;quot; so next time I visit that page in the same browser it I&#39;ll quickly see that same division and know what games are in progress, to be played or completed for the day.  I save a link to my phone&#39;s home screen and the information is at my finger tips.&lt;/p&gt;
+&lt;p&gt;Fun hobby project. ⚾&lt;br&gt;
+#mlb&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 14 Aug 2026 17:39:00 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-14t163900/</guid>
+    </item>
+    <item>
+      <title>Note 2026-08-14T17:02:31.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117096588971867814/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Super Bowl 2027 is on Valentine&amp;#39;s day in Los Angeles. That&amp;#39;s also President&amp;#39;s day weekend so Monday is a holiday for most. Plan accordingly.&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/NFL&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;NFL&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/SBLXI&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;SBLXI&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/SB61&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;SB61&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Fri, 14 Aug 2026 17:02:31 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117096588971867814/</guid>
+    </item>
     <item>
       <title>Note 2026-08-13T20:26:17.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117091727914183423/</link>
       <description>

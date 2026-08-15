@@ -14,10 +14,57 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 13 Aug 2026 20:14:52 PDT</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2026 20:14:52 PDT</lastBuildDate>
+    <pubDate>Fri, 14 Aug 2026 17:39:00 PDT</pubDate>
+    <lastBuildDate>Fri, 14 Aug 2026 17:39:00 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>I built a dashboard for keeping track of Major League Baseball</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-14t163900/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>As a baseball fan, I want to quickly find the answers to 5 everyday questions:</p>
+<ul>
+<li>What are today's divisional games?</li>
+<li>What were yesterday's divisional results?</li>
+<li>What's on the schedule for tomorrow's divisional games?</li>
+<li>What are the current divisional standings?</li>
+<li>What do the league wildcard standings look like?</li>
+</ul>
+<p>You can find this info on MLB.com or your team's page, but it’s not all in one easy spot—there's usually a lot of clicking around. Plus, if your team isn’t in the AL East, you end up scrolling way more.</p>
+<p>That’s why I’ve been working on this MLB Dashboard <a href="https://techlifeweb.com/mlb-dashboard" target="_blank" rel="noopener noreferrer">https://techlifeweb.com/mlb-dashboard</a><br />
+I can choose NL West and it should &quot;stick&quot; so next time I visit that page in the same browser it I'll quickly see that same division and know what games are in progress, to be played or completed for the day.  I save a link to my phone's home screen and the information is at my finger tips.</p>
+<p>Fun hobby project. ⚾<br />
+#mlb</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>As a baseball fan, I want to quickly find the answers to 5 everyday questions:</p>
+<ul>
+<li>What are today's divisional games?</li>
+<li>What were yesterday's divisional results?</li>
+<li>What's on the schedule for tomorrow's divisional games?</li>
+<li>What are the current divisional standings?</li>
+<li>What do the league wildcard standings look like?</li>
+</ul>
+<p>You can find this info on MLB.com or your team's page, but it’s not all in one easy spot—there's usually a lot of clicking around. Plus, if your team isn’t in the AL East, you end up scrolling way more.</p>
+<p>That’s why I’ve been working on this MLB Dashboard <a href="https://techlifeweb.com/mlb-dashboard" target="_blank" rel="noopener noreferrer">https://techlifeweb.com/mlb-dashboard</a><br />
+I can choose NL West and it should &quot;stick&quot; so next time I visit that page in the same browser it I'll quickly see that same division and know what games are in progress, to be played or completed for the day.  I save a link to my phone's home screen and the information is at my finger tips.</p>
+<p>Fun hobby project. ⚾<br />
+#mlb</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 14 Aug 2026 17:39:00 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-14t163900/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-13T20:14:52.000-07:00</title>
