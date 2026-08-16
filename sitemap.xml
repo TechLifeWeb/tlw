@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117103349753875249/</loc>
+            <lastmod>2026-08-16T04:41:52.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/california/</loc>
+            <lastmod>2026-08-16T03:27:25.779Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/sandiego/</loc>
+            <lastmod>2026-08-16T03:22:55.942Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/catholic/booksandarticles/</loc>
+            <lastmod>2026-08-16T03:00:26.015Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117100034364830867/</loc>
             <lastmod>2026-08-15T14:38:43.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -16,12 +40,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/redbluff/</loc>
             <lastmod>2026-08-15T06:39:06.326Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/sandiego/</loc>
-            <lastmod>2026-08-15T05:05:25.277Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -440,12 +458,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/california/</loc>
-            <lastmod>2026-08-11T05:44:05.853Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/ojainotes/</loc>
             <lastmod>2026-08-11T05:44:05.743Z</lastmod>
             <changefreq>daily</changefreq>
@@ -700,12 +712,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/travelfiles/france/</loc>
             <lastmod>2026-08-03T05:21:54.407Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/catholic/booksandarticles/</loc>
-            <lastmod>2026-08-03T05:21:54.388Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
