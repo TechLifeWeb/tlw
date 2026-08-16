@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117106211698596266/</loc>
+            <lastmod>2026-08-16T16:49:42.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117106193697596424/</loc>
+            <lastmod>2026-08-16T16:45:07.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Napa%20Valley,%20Shipwrecks,%20and%20Nostalgia%20Tech/</loc>
+            <lastmod>2026-08-16T10:03:17.487Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117103788921194807/</loc>
             <lastmod>2026-08-16T06:33:33.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -626,12 +644,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Manhattan%20Project,%20Moon%20Crash,%20and%20a%20Literature%20Map/</loc>
-            <lastmod>2026-08-09T11:06:32.415Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117063414505716909/</loc>
             <lastmod>2026-08-09T03:25:48.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1156,24 +1168,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/productivity/</loc>
             <lastmod>2026-07-18T04:08:21.820Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116938800924561918/</loc>
-            <lastmod>2026-07-18T03:14:56.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116938704903702480/</loc>
-            <lastmod>2026-07-18T02:50:31.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116938659793794003/</loc>
-            <lastmod>2026-07-18T02:39:03.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
