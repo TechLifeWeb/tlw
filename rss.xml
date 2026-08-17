@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 14 Aug 2026 21:53:56 PDT</pubDate>
-    <lastBuildDate>Fri, 14 Aug 2026 21:53:56 PDT</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2026 00:32:43 PDT</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2026 00:32:43 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-08-17T00:32:43.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Are mass layoffs coming? Most states let you check – here’s how | FOX 5 San Diego &amp; KUSI News https://fox5sandiego.com/news/are-mass-layoffs-coming-most-states-let-you-check-heres-how/  'A federal law called the WARN Act, which stands for Worker Adjustment and Retraining Notification Act, requires medium-sized and large companies give notice before they slash staff. Those notices, in most cases, are publicly available – if you know where to look.'<br />
+#work #employment</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Are mass layoffs coming? Most states let you check – here’s how | FOX 5 San Diego &amp; KUSI News https://fox5sandiego.com/news/are-mass-layoffs-coming-most-states-let-you-check-heres-how/  'A federal law called the WARN Act, which stands for Worker Adjustment and Retraining Notification Act, requires medium-sized and large companies give notice before they slash staff. Those notices, in most cases, are publicly available – if you know where to look.'<br />
+#work #employment</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Mon, 17 Aug 2026 00:32:43 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-14T21:53:56.000-07:00</title>

@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 14 Aug 2026 21:53:56 PDT</pubDate>
-      <lastBuildDate>Fri, 14 Aug 2026 21:53:56 PDT</lastBuildDate>
+      <pubDate>Mon, 17 Aug 2026 00:32:43 PDT</pubDate>
+      <lastBuildDate>Mon, 17 Aug 2026 00:32:43 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-17T00:32:43.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Are mass layoffs coming? Most states let you check – here’s how | FOX 5 San Diego &amp;amp; KUSI News https://fox5sandiego.com/news/are-mass-layoffs-coming-most-states-let-you-check-heres-how/  &#39;A federal law called the WARN Act, which stands for Worker Adjustment and Retraining Notification Act, requires medium-sized and large companies give notice before they slash staff. Those notices, in most cases, are publicly available – if you know where to look.&#39;&lt;br&gt;
+#work #employment&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 17 Aug 2026 00:32:43 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</guid>
+    </item>
     <item>
       <title>Note 2026-08-16T19:00:42.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117108378354926814/</link>
       <description>
