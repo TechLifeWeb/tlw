@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/USS%20Lincoln,%20Cambridge%20Death,%20and%20Detectives%20in%20Space/</loc>
+            <lastmod>2026-08-17T09:03:11.630Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</loc>
             <lastmod>2026-08-17T07:32:43.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20220%20%C2%B7%20On%20the%20benefits%20of%20judicious%20app-switching,%20and%20saying%20no%20to%20plain%20text%20todos/</loc>
+            <lastmod>2026-08-17T07:03:12.181Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -596,32 +608,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20219%20%C2%B7%20Do%20what%20works,%20drop%20the%20rest.%20Fit%20it%20all%20on%20one%20page./</loc>
-            <lastmod>2026-08-11T04:03:09.298Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Big%20Three/</loc>
-            <lastmod>2026-08-10T16:03:07.210Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5%20thoughts%20heading%20into%20crucial%20series/</loc>
-            <lastmod>2026-08-10T15:07:31.778Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/travelfiles/London/</loc>
             <lastmod>2026-08-10T15:02:39.043Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Ancient%20Shipwreck,%20Myspace%20Relaunch,%20and%20Fat%20Marmot%20Week/</loc>
-            <lastmod>2026-08-10T14:43:53.630Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -1150,42 +1138,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116947067797096249/</loc>
             <lastmod>2026-07-19T14:17:18.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116945225089054020/</loc>
-            <lastmod>2026-07-19T06:28:41.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116943123520102087/</loc>
-            <lastmod>2026-07-18T21:34:14.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116943078108428578/</loc>
-            <lastmod>2026-07-18T21:22:41.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116942511398147946/</loc>
-            <lastmod>2026-07-18T18:58:33.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116941465102763423/</loc>
-            <lastmod>2026-07-18T14:32:28.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/116941436576378713/</loc>
-            <lastmod>2026-07-18T14:25:13.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
