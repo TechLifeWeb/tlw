@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117113940402513227/</loc>
+            <lastmod>2026-08-18T01:35:12.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/mlb-dashboard/</loc>
+            <lastmod>2026-08-18T01:32:38.578Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20220%20%C2%B7%20On%20the%20benefits%20of%20judicious%20app-switching,%20and%20saying%20no%20to%20plain%20text%20todos/</loc>
+            <lastmod>2026-08-18T01:17:33.072Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Unexpected%20impact%20fueling%20Wild%20Card%20push/</loc>
+            <lastmod>2026-08-17T22:46:45.260Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Miserable%20People/</loc>
+            <lastmod>2026-08-17T22:45:05.248Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117111217716085987/</loc>
             <lastmod>2026-08-17T14:02:47.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -16,12 +46,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/08/post-2026-08-16t233243/</loc>
             <lastmod>2026-08-17T07:32:43.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20220%20%C2%B7%20On%20the%20benefits%20of%20judicious%20app-switching,%20and%20saying%20no%20to%20plain%20text%20todos/</loc>
-            <lastmod>2026-08-17T07:03:12.181Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -142,12 +166,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Flock%20Cameras,%20Instagram%20Logo,%20and%20Fashion%20Bear/</loc>
             <lastmod>2026-08-14T09:03:08.450Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/mlb-dashboard/</loc>
-            <lastmod>2026-08-14T03:58:28.811Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

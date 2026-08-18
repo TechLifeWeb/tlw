@@ -131,6 +131,23 @@
       </div>
     </section>
 
+    <!-- WILD CARD WATCH (foldable) -->
+    <details id="wc-watch-sec" class="theme-card card">
+      <summary>
+        <span class="flex items-center gap-2"><span class="chev">▶</span><span id="wc-watch-title" class="summary-title">Wild Card Watch (0)</span></span>
+        <span class="summary-right"><span id="wc-watch-badge">Top 3 + bubble</span></span>
+      </summary>
+      <div class="fold-content">
+        <div class="text-xs theme-muted mb-3">Today’s games for the league’s current WC1–WC3 teams plus the next three teams on the bubble. Games already shown above for your selected division are omitted.</div>
+        <div id="wc-watch-empty" class="hidden text-sm theme-muted">No additional Wild Card Watch games today.</div>
+        <div id="wc-watch-wrap" class="grid grid-cols-1 md:grid-cols-3 grid-gap">
+          <div><h3 class="text-xs font-semibold mb-2">In-Progress</h3><div id="wc-watch-live"></div></div>
+          <div><h3 class="text-xs font-semibold mb-2">Final</h3><div id="wc-watch-final"></div></div>
+          <div><h3 class="text-xs font-semibold mb-2">Upcoming</h3><div id="wc-watch-upcoming"></div></div>
+        </div>
+      </div>
+    </details>
+
     <!-- YESTERDAY (foldable) -->
     <details id="yday-sec" class="theme-card card">
       <summary>
@@ -174,7 +191,7 @@
       </div>
     </section>
 
-    <footer class="text-[11px] theme-muted text-center py-4">Season <span id="season-text"></span> · Auto-refresh 30s · <a href="https://techlifeweb.com/" target="_blank" rel="noopener noreferrer">Created by TechLifeWeb</a></footer>
+    <footer class="text-[11px] theme-muted text-center py-4">Season <span id="season-text"></span> · Auto-refresh 30s</footer>
   </main>
 
   <script>
@@ -190,6 +207,7 @@
       teamsById:{}, selectedDivisionId:null, selectedLeagueId:null,
       divisionRows:[], wildcardRows:[],
       yday:{finals:[]}, today:{live:[],finals:[],upcoming:[]}, tmr:{upcoming:[]},
+      wcWatch:{live:[],finals:[],upcoming:[],teamMeta:new Map()},
       pollHandle:null
     };
 
@@ -350,18 +368,64 @@
       $("today-final").innerHTML= state.today.finals.length?state.today.finals.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No finals.</div>';
       $("today-upcoming").innerHTML= state.today.upcoming.length?state.today.upcoming.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No upcoming games.</div>';
     }
+
+    function wcWatchMeta(){
+      const rows=(state.wildcardRows||[]).slice(0,6);
+      const meta=new Map();
+      rows.forEach((r,i)=>{
+        const teamId=r?.team?.id; if(!teamId) return;
+        const rank=Number(r?.wildCardRank||i+1);
+        const gb=r?.wildCardGamesBack;
+        meta.set(teamId,{
+          rank,
+          label:rank<=3?`WC${rank}`:(gb!=null&&gb!==""?`${gb} GB`:`Bubble`),
+          row:r
+        });
+      });
+      return meta;
+    }
+
+    function wcWatchGameRow(g){
+      const base=gameRow(g);
+      const awayId=g?.teams?.away?.team?.id, homeId=g?.teams?.home?.team?.id;
+      const labels=[];
+      [awayId,homeId].forEach(id=>{
+        const m=state.wcWatch.teamMeta.get(id);
+        if(!m) return;
+        const info=state.teamsById[id]||{};
+        labels.push(`<span class="chip chip-sm">${info.abbr||g?.teams?.away?.team?.name||""} ${m.label}</span>`);
+      });
+      if(!labels.length) return base;
+      return `<div class="space-y-1">${base}<div class="flex flex-wrap gap-1 px-1">${labels.join("")}</div></div>`;
+    }
+
+    function renderWildCardWatch(){
+      const total=state.wcWatch.live.length+state.wcWatch.finals.length+state.wcWatch.upcoming.length;
+      $("wc-watch-title").textContent=`Wild Card Watch (${total})`;
+      const lg=state.selectedLeagueId===LEAGUE_IDS.AL?"AL":state.selectedLeagueId===LEAGUE_IDS.NL?"NL":"League";
+      $("wc-watch-badge").textContent=`${lg} · Top 3 + bubble`;
+      const empty=total===0;
+      $("wc-watch-empty").classList.toggle("hidden",!empty);
+      $("wc-watch-wrap").classList.toggle("hidden",empty);
+      if(empty) return;
+      $("wc-watch-live").innerHTML=state.wcWatch.live.length?state.wcWatch.live.map(wcWatchGameRow).join(""):'<div class="text-sm theme-muted">No live games.</div>';
+      $("wc-watch-final").innerHTML=state.wcWatch.finals.length?state.wcWatch.finals.map(wcWatchGameRow).join(""):'<div class="text-sm theme-muted">No finals.</div>';
+      $("wc-watch-upcoming").innerHTML=state.wcWatch.upcoming.length?state.wcWatch.upcoming.map(wcWatchGameRow).join(""):'<div class="text-sm theme-muted">No upcoming games.</div>';
+    }
     function renderYesterday(){ $("yday-final").innerHTML = state.yday.finals.length?state.yday.finals.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No finals yesterday.</div>'; }
     function renderTomorrow(){ $("tmr-upcoming").innerHTML = state.tmr.upcoming.length?state.tmr.upcoming.map(gameRow).join(""):'<div class="text-sm" style="color:var(--muted);">No upcoming games.</div>'; }
     function renderGamesLoading(b){ $("games-loading").classList.toggle("hidden",!b) }
     function renderGamesError(msg){ const el=$("games-error"); if(msg){el.textContent=msg;el.classList.remove("hidden")}else{el.classList.add("hidden")} }
 
-    function onDivisionChange(newId){
+    async function onDivisionChange(newId){
       state.selectedDivisionId=Number(newId);
       savePrefs({divisionId:state.selectedDivisionId});
       const rec=state.recordsByDivision.find(r=>r?.division?.id===state.selectedDivisionId);
       const leagueId=rec?.league?.id; if(leagueId) state.selectedLeagueId=leagueId;
       state.divisionRows=(rec?.teamRecords||[]).slice().sort((a,b)=>Number(a?.divisionRank)-Number(b?.divisionRank));
-      renderDivisionStandings(); refreshWildcard(); refreshSchedules();
+      renderDivisionStandings();
+      await refreshWildcard();
+      await refreshSchedules();
     }
 
     async function refreshWildcard(){
@@ -390,8 +454,8 @@
     }
 
     async function refreshSchedules(){
-      const teamIds=new Set((state.divisionRows||[]).map(r=>r?.team?.id));
-      if(teamIds.size===0) return;
+      const divisionTeamIds=new Set((state.divisionRows||[]).map(r=>r?.team?.id));
+      if(divisionTeamIds.size===0) return;
       renderGamesLoading(true); renderGamesError("");
       try{
         const now=new Date();
@@ -401,26 +465,47 @@
           fetchSchedule(ymdLocal(addDays(now,1)))
         ]);
         setDateBadges();
-        const yCat=catByTeam(gY,teamIds), tCat=catByTeam(gT,teamIds), nCat=catByTeam(gN,teamIds);
+        const yCat=catByTeam(gY,divisionTeamIds), tCat=catByTeam(gT,divisionTeamIds), nCat=catByTeam(gN,divisionTeamIds);
         state.yday.finals=yCat.finals;
         state.today=tCat;
         state.tmr.upcoming=nCat.upcoming;
-        renderYesterday(); renderToday(); renderTomorrow(); updateSummaryCounts();
+
+        // Wild Card Watch: WC1-WC3 + next three bubble teams, excluding games already
+        // represented by the selected division above.
+        const watchMeta=wcWatchMeta();
+        const watchIds=new Set(watchMeta.keys());
+        const extraToday=gT.filter(g=>{
+          const a=g?.teams?.away?.team?.id, h=g?.teams?.home?.team?.id;
+          const isWatch=watchIds.has(a)||watchIds.has(h);
+          const alreadyShown=divisionTeamIds.has(a)||divisionTeamIds.has(h);
+          return isWatch&&!alreadyShown;
+        });
+        state.wcWatch={...catByTeam(extraToday,watchIds),teamMeta:watchMeta};
+
+        renderYesterday(); renderToday(); renderTomorrow(); renderWildCardWatch(); updateSummaryCounts();
       }catch(err){ renderGamesError(err?.message||String(err)); }
       finally{ renderGamesLoading(false); }
     }
 
-    function startPolling(){ if(state.pollHandle) clearInterval(state.pollHandle); state.pollHandle=setInterval(refreshSchedules,POLL_MS); }
+    async function refreshAll(){
+      await refreshWildcard();
+      await refreshSchedules();
+    }
+
+    function startPolling(){ if(state.pollHandle) clearInterval(state.pollHandle); state.pollHandle=setInterval(refreshAll,POLL_MS); }
     function initFolding(){
-      const ySec=$("yday-sec"), tSec=$("tmr-sec");
+      const ySec=$("yday-sec"), tSec=$("tmr-sec"), wSec=$("wc-watch-sec");
       try{
         const yOpen=localStorage.getItem('mlbFoldYesterday');
         const tOpen=localStorage.getItem('mlbFoldTomorrow');
+        const wOpen=localStorage.getItem('mlbFoldWCWatch');
         if(yOpen==='true') ySec.open=true;
         if(tOpen==='true') tSec.open=true;
+        if(wOpen===null||wOpen==='true') wSec.open=true;
       }catch{}
       ySec.addEventListener('toggle',()=>{ try{localStorage.setItem('mlbFoldYesterday',String(ySec.open))}catch{} });
       tSec.addEventListener('toggle',()=>{ try{localStorage.setItem('mlbFoldTomorrow',String(tSec.open))}catch{} });
+      wSec.addEventListener('toggle',()=>{ try{localStorage.setItem('mlbFoldWCWatch',String(wSec.open))}catch{} });
     }
     function initAutoCollapseHeader(){
       const bar=$("topbar"); let lastY=window.scrollY||0; let collapsed=false; let ticking=false;
@@ -443,7 +528,7 @@
       $("compact-toggle").addEventListener("click",()=>{document.documentElement.classList.toggle("compact"); localStorage.setItem('mlbCompact',String(isCompact())); $("compact-chip").textContent=isCompact()?"Compact On":"Compact Off";});
       $("division-select").addEventListener("change",(e)=>onDivisionChange(e.target.value));
       $("reset-btn").addEventListener("click",()=>{ localStorage.removeItem(LS_KEY); location.reload(); });
-      $("refresh-games").addEventListener("click",refreshSchedules);
+      $("refresh-games").addEventListener("click",refreshAll);
       initFolding(); initAutoCollapseHeader(); updateSummaryCounts(); // initial zeros
     });
 
@@ -459,7 +544,7 @@
         const picker=$("division-picker"); const select=$("division-select");
         select.innerHTML=state.divisions.map(d=>`<option value="${d.id}">${d.label}</option>`).join("");
         $("divisions-loading").classList.add("hidden"); $("divisions-error").classList.add("hidden"); picker.classList.remove("hidden");
-        if(state.selectedDivisionId){ select.value=String(state.selectedDivisionId); onDivisionChange(state.selectedDivisionId); } else { renderDivisionStandings(); }
+        if(state.selectedDivisionId){ select.value=String(state.selectedDivisionId); await onDivisionChange(state.selectedDivisionId); } else { renderDivisionStandings(); }
       }catch(err){
         $("divisions-loading").classList.add("hidden");
         const el=$("divisions-error"); el.textContent=err?.message||String(err); el.classList.remove("hidden");
