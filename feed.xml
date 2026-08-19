@@ -7,11 +7,59 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Mon, 17 Aug 2026 00:32:43 PDT</pubDate>
-      <lastBuildDate>Mon, 17 Aug 2026 00:32:43 PDT</lastBuildDate>
+      <pubDate>Mon, 17 Aug 2026 22:55:32 PDT</pubDate>
+      <lastBuildDate>Mon, 17 Aug 2026 22:55:32 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-18T19:44:08.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117119873753621478/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Arrest made in connection with last weekend&amp;#39;s Sorrento Fire &lt;a href=&quot;https://fox5sandiego.com/weather/california-wildfires/arrest-sorrento-fire-san-diego/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;fox5sandiego.com/weather/calif&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;ornia-wildfires/arrest-sorrento-fire-san-diego/&lt;/span&gt;&lt;/a&gt; &lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/SanDiego&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;SanDiego&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/SorrentoFire&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;SorrentoFire&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/arson&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;arson&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Tue, 18 Aug 2026 19:44:08 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117119873753621478/</guid>
+    </item>
+    <item>
+      <title>Note 2026-08-18T19:37:21.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117119847053597527/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Padres take game 2. Tatis completely robbed Lindor of a Grand Slam (don&amp;#39;t look if you are a Met&amp;#39;s fan). Rubber game tomorrow, 10:10am PDT (aka Breakfast Baseball)&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/Padres&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Padres&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Tue, 18 Aug 2026 19:37:21 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117119847053597527/</guid>
+    </item>
+    <item>
+      <title>Note 2026-08-17T22:55:32.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-17t215532/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Interesting article explaining what data centers are and their impact on the community they are built in. | Did you know most of your daily online activities rely on data centers? Here’s how it works – PolitiFact https://politifact.com/article/2026/aug/17/what-is-ai-data-centers-electricity-water/ #ai&lt;br&gt;
+Key numbers from the article:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Typical AI data center electricity use: up to as much as 100,000 households per year&lt;/li&gt;
+&lt;li&gt;Largest data centers under construction: about 20× that amount (per the International Energy Agency estimate in 2025)&lt;/li&gt;
+&lt;li&gt;Data centers worldwide electricity use (2024): about 415 terawatt-hours, roughly 1.5% of total world electricity&lt;/li&gt;
+&lt;li&gt;U.S. data center power demand (by 2030): 9.5% to 15.3% of total U.S. electricity consumption&lt;/li&gt;
+&lt;li&gt;Water used: relies on freshwater (usually from local municipal water systems) for cooling&lt;/li&gt;
+&lt;/ul&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 17 Aug 2026 22:55:32 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-17t215532/</guid>
+    </item>
     <item>
       <title>Note 2026-08-17T19:01:46.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117114044839410448/</link>
       <description>
@@ -13094,7 +13142,7 @@ The Getty Villa in Los Angeles ran this event a few weeks ago. I really enjoyed 
 &lt;p&gt;Here&#39;s the non-markdown view of the above:&lt;/p&gt;
 &lt;img class=&quot;u-photo&quot; alt=&quot;Screenshot of Obsidian packing list checklist&quot; src=&quot;/assets/images/Packing_List.png&quot; /&gt;
 &lt;p&gt;Happy list making in Obsidian!&lt;br&gt;
-&lt;a href=&quot;Obsidian%20old.md&quot;&gt;Obsidian old&lt;/a&gt; Notes&lt;/p&gt;
+&lt;a href=&quot;Local%20Obsidian.md&quot;&gt;Local Obsidian&lt;/a&gt; Notes&lt;/p&gt;
 &lt;/p&gt;
 
         </div>
