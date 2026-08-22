@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</loc>
+            <lastmod>2026-08-22T18:48:22.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/photographyandvideo/</loc>
+            <lastmod>2026-08-22T17:53:27.715Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117140132826208478/</loc>
             <lastmod>2026-08-22T16:36:17.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -406,12 +418,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/miscellanea/</loc>
             <lastmod>2026-08-11T06:11:10.337Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/photographyandvideo/</loc>
-            <lastmod>2026-08-11T06:11:10.332Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

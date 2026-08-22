@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Mon, 17 Aug 2026 22:55:32 PDT</pubDate>
-      <lastBuildDate>Mon, 17 Aug 2026 22:55:32 PDT</lastBuildDate>
+      <pubDate>Sat, 22 Aug 2026 11:48:22 PDT</pubDate>
+      <lastBuildDate>Sat, 22 Aug 2026 11:48:22 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-22T11:48:22.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Really nice tutorial on Darktable | 10 Step Darktable Workflow (Start to Finish) - YouTube https://www.youtube.com/watch?v=0RLv8NeJc2Q  &#39;If you&#39;re looking for a free alternative to Lightroom but feel overwhelmed by darktable’s interface — this video will show you a structured, repeatable workflow that actually works.&#39;&lt;br&gt;
+#photography&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sat, 22 Aug 2026 11:48:22 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</guid>
+    </item>
     <item>
       <title>Note 2026-08-22T09:36:17.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117140132826208478/</link>
       <description>

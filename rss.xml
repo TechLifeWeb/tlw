@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 17 Aug 2026 22:55:32 PDT</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2026 22:55:32 PDT</lastBuildDate>
+    <pubDate>Sat, 22 Aug 2026 11:48:22 PDT</pubDate>
+    <lastBuildDate>Sat, 22 Aug 2026 11:48:22 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-08-22T11:48:22.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Really nice tutorial on Darktable | 10 Step Darktable Workflow (Start to Finish) - YouTube https://www.youtube.com/watch?v=0RLv8NeJc2Q  'If you're looking for a free alternative to Lightroom but feel overwhelmed by darktable’s interface — this video will show you a structured, repeatable workflow that actually works.'<br />
+#photography</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Really nice tutorial on Darktable | 10 Step Darktable Workflow (Start to Finish) - YouTube https://www.youtube.com/watch?v=0RLv8NeJc2Q  'If you're looking for a free alternative to Lightroom but feel overwhelmed by darktable’s interface — this video will show you a structured, repeatable workflow that actually works.'<br />
+#photography</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Sat, 22 Aug 2026 11:48:22 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-17T22:55:32.000-07:00</title>
