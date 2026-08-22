@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117139918317002037/</loc>
+            <lastmod>2026-08-22T15:41:44.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Longevity%20Cells,%20World%20Cup%20Fallout,%20and%20a%20Squidpocalypse/</loc>
+            <lastmod>2026-08-22T09:03:12.022Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117136744207541778/</loc>
             <lastmod>2026-08-22T02:14:31.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -244,12 +256,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117100034364830867/</loc>
             <lastmod>2026-08-15T14:38:43.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Mangione&#39;s%20Plea,%20Bezos&#39;%20Soccer%20Team,%20and%20Mystery%20Vacations/</loc>
-            <lastmod>2026-08-15T09:03:10.627Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
