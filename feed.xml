@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sat, 22 Aug 2026 19:27:10 PDT</pubDate>
-      <lastBuildDate>Sat, 22 Aug 2026 19:27:10 PDT</lastBuildDate>
+      <pubDate>Sun, 23 Aug 2026 12:15:22 PDT</pubDate>
+      <lastBuildDate>Sun, 23 Aug 2026 12:15:22 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-23T12:15:22.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-23t111522/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;I am planning a self-hosting build and am currently trying to decide between a full Docker setup (I&#39;m comfortable installing the OS, but Docker is still relatively new to me) or exploring options with a bit more user-friendliness, such as Yunohost or CasaOS. I don&#39;t mind working at the command line, but additional helpful interfaces might make the experience feel less like a second IT job. If anyone has experience with this and would be willing to share their insights, I would greatly appreciate it.&lt;br&gt;
+#Docker #SelfHosting #YunoHost #CasaOS&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sun, 23 Aug 2026 12:15:22 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-23t111522/</guid>
+    </item>
     <item>
       <title>Note 2026-08-23T09:02:16.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117145661378687514/</link>
       <description>

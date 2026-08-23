@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sat, 22 Aug 2026 19:27:10 PDT</pubDate>
-    <lastBuildDate>Sat, 22 Aug 2026 19:27:10 PDT</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2026 12:15:22 PDT</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2026 12:15:22 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-08-23T12:15:22.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/08/post-2026-08-23t111522/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>I am planning a self-hosting build and am currently trying to decide between a full Docker setup (I'm comfortable installing the OS, but Docker is still relatively new to me) or exploring options with a bit more user-friendliness, such as Yunohost or CasaOS. I don't mind working at the command line, but additional helpful interfaces might make the experience feel less like a second IT job. If anyone has experience with this and would be willing to share their insights, I would greatly appreciate it.<br />
+#Docker #SelfHosting #YunoHost #CasaOS</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>I am planning a self-hosting build and am currently trying to decide between a full Docker setup (I'm comfortable installing the OS, but Docker is still relatively new to me) or exploring options with a bit more user-friendliness, such as Yunohost or CasaOS. I don't mind working at the command line, but additional helpful interfaces might make the experience feel less like a second IT job. If anyone has experience with this and would be willing to share their insights, I would greatly appreciate it.<br />
+#Docker #SelfHosting #YunoHost #CasaOS</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 23 Aug 2026 12:15:22 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-23t111522/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-22T19:27:10.000-07:00</title>
