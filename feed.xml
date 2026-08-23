@@ -7,11 +7,30 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sat, 22 Aug 2026 11:48:22 PDT</pubDate>
-      <lastBuildDate>Sat, 22 Aug 2026 11:48:22 PDT</lastBuildDate>
+      <pubDate>Sat, 22 Aug 2026 19:27:10 PDT</pubDate>
+      <lastBuildDate>Sat, 22 Aug 2026 19:27:10 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-22T19:27:10.000-07:00</title>
+      <title>Repost 2026-08-22T19:27:10.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/repost-2026-08-22T182710/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://researchbuzz.masto.host/@researchbuzz/117142093517305604&quot;&gt;Calishat (@researchbuzz@researchbuzz.masto.host)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+WHOA. #HTML #ASCII #stunting https://www.youtube.com/watch?v=3YtygAx_C6A
+A Walkable ASCII Cyberpunk City in One HTML File - YouTube &lt;a href=&#39;https://www.youtube.com/watch?v=3YtygAx_C6A&#39;&gt;https://www.youtube.com/watch?v=3YtygAx_C6A&lt;/a&gt; 
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Sat, 22 Aug 2026 19:27:10 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/repost-2026-08-22T182710/</guid>
+    </item>
     <item>
       <title>Note 2026-08-22T11:48:22.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-22t104822/</link>
       <description>
