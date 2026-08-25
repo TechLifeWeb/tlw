@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Acquired%20Taste/</loc>
+            <lastmod>2026-08-24T17:03:15.428Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20era%20in%20Padres%20baseball%20begins%20today/</loc>
+            <lastmod>2026-08-24T15:03:17.557Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/EmailToObsidian/DeepSeek%20Flash%20Vision%20%F0%9F%91%80,%20Claude%20Mythos%20security%20%F0%9F%9B%A1%EF%B8%8F,%20inside%20Grok%20Bot%20%F0%9F%A4%96/</loc>
+            <lastmod>2026-08-24T15:03:15.460Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Canada%20Tariffs,%20Robot%20Games,%20and%20Meemers%20the%20Cat/</loc>
+            <lastmod>2026-08-24T09:03:13.821Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20221%20%C2%B7%20Would%20you%20rather-%20generative%20AI,%20or%20Comic%20Sans-%20(Poll%20results%20from%20677%20people)/</loc>
-            <lastmod>2026-08-24T02:03:13.630Z</lastmod>
+            <lastmod>2026-08-24T02:24:50.434Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -236,32 +260,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20220%20%C2%B7%20On%20the%20benefits%20of%20judicious%20app-switching,%20and%20saying%20no%20to%20plain%20text%20todos/</loc>
-            <lastmod>2026-08-18T01:17:33.072Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Unexpected%20impact%20fueling%20Wild%20Card%20push/</loc>
-            <lastmod>2026-08-17T22:46:45.260Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Miserable%20People/</loc>
-            <lastmod>2026-08-17T22:45:05.248Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117111217716085987/</loc>
             <lastmod>2026-08-17T14:02:47.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/USS%20Lincoln,%20Cambridge%20Death,%20and%20Detectives%20in%20Space/</loc>
-            <lastmod>2026-08-17T09:03:11.630Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
