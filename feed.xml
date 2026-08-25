@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sun, 23 Aug 2026 12:15:22 PDT</pubDate>
-      <lastBuildDate>Sun, 23 Aug 2026 12:15:22 PDT</lastBuildDate>
+      <pubDate>Mon, 24 Aug 2026 23:41:15 PDT</pubDate>
+      <lastBuildDate>Mon, 24 Aug 2026 23:41:15 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-08-24T23:41:15.000-07:00</title><link>https://techlifeweb.com/blog/2026/08/post-2026-08-24t224115/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Sensitive Info Goes Into ‘No Reply’ Emails Constantly. This Guy Sees It All | WIRED &lt;a href=&#39;https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/&#39;&gt;https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/&lt;/a&gt; &#39;Two security researchers bought cheap domains—including noreply.net and deleteduser.com—and set up email listening services. Hundreds of companies are sending them corporate secrets.&#39;&lt;br&gt;
+#infosec&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 24 Aug 2026 23:41:15 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/08/post-2026-08-24t224115/</guid>
+    </item>
     <item>
       <title>Note 2026-08-23T18:20:32.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117147856580911066/</link>
       <description>
