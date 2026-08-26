@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117157344506320210/</loc>
-            <lastmod>2026-08-25T17:33:26.000Z</lastmod>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117162748304410653/</loc>
+            <lastmod>2026-08-26T16:27:42.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/EmailToObsidian/OpenAI%20Jalape%C3%B1o%20%F0%9F%8C%B6%EF%B8%8F,%20Perplexity%20Portable%20Computer%20%20%F0%9F%92%BB,%20Claude%20combines%20memory%20%F0%9F%A7%A0/</loc>
+            <lastmod>2026-08-26T14:03:17.422Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Dolly%20Parton,%20Football%20CTE%20Risk,%20and%20Subway%20Riders/</loc>
+            <lastmod>2026-08-26T09:05:35.904Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Nvidia%E2%80%99s%20Groq%20chip%20%E2%9A%A1,%20frontier%20economics%20%F0%9F%92%B0,%20Ox%20Alpha%20mystery%20%F0%9F%95%B5%EF%B8%8F/</loc>
-            <lastmod>2026-08-25T16:03:14.230Z</lastmod>
+            <lastmod>2026-08-25T23:50:55.001Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117157344506320210/</loc>
+            <lastmod>2026-08-25T17:33:26.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -226,12 +244,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117122558478720973/</loc>
             <lastmod>2026-08-19T14:06:54.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Ukraine,%20Penn%20State%20Drug%20Ring,%20and%20a%20Mouth-Birthing%20Frog/</loc>
-            <lastmod>2026-08-19T09:03:11.678Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
