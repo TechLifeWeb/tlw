@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117185296448937030/</loc>
+            <lastmod>2026-08-30T16:01:59.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/College%20Football,%20Dolly&#39;s%20Legacy,%20and%20Dream%20Vacations/</loc>
+            <lastmod>2026-08-30T10:03:16.988Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Keep%201440%20in%20your%20Primary%20inbox%20(takes%205%20seconds)/</loc>
+            <lastmod>2026-08-30T00:03:20.060Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117179583202938359/</loc>
             <lastmod>2026-08-29T15:49:02.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -194,12 +212,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20221%20%C2%B7%20Would%20you%20rather-%20generative%20AI,%20or%20Comic%20Sans-%20(Poll%20results%20from%20677%20people)/</loc>
-            <lastmod>2026-08-24T02:24:50.434Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117147856580911066/</loc>
             <lastmod>2026-08-24T01:20:32.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -214,12 +226,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117146360039876003/</loc>
             <lastmod>2026-08-23T18:59:57.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Ice%20Cream%20History,%20Art%20Heists,%20and%20Airdropped%20Beavers/</loc>
-            <lastmod>2026-08-23T16:43:41.697Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
