@@ -26,15 +26,15 @@
 
       <!-- Summary / fallback -->
       <description ><![CDATA[
-        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router.  Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
-#SelfHosting #networking</p>
+        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router. Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
+<a href="https://indieweb.social/tags/SelfHosting">#SelfHosting</a> <a href="https://indieweb.social/tags/networking">#networking</a></p>
 
       ]]></description>
 
       <!-- Full HTML content -->
       <content:encoded><![CDATA[
-        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router.  Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
-#SelfHosting #networking</p>
+        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router. Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
+<a href="https://indieweb.social/tags/SelfHosting">#SelfHosting</a> <a href="https://indieweb.social/tags/networking">#networking</a></p>
 
       ]]></content:encoded>
 
