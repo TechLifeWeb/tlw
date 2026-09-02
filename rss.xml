@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 24 Aug 2026 23:41:15 PDT</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2026 23:41:15 PDT</lastBuildDate>
+    <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2026 12:10:40 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-09-02T12:10:40.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/post-2026-09-02t111040/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router.  Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
+#SelfHosting #networking</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>TIL about &quot;.home.arpa&quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router.  Giving this a try to help name resolution. There are arguments for using a real domain that you've purchased doing something like .lan.myrealdomainname.com so the you don't have to worry about certs and browsing just &quot;works&quot; but I'll give this a try first just to test the waters. FAFO as they say.<br />
+#SelfHosting #networking</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/post-2026-09-02t111040/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-08-24T23:41:15.000-07:00</title>

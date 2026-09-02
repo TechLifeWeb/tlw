@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Mon, 24 Aug 2026 23:41:15 PDT</pubDate>
-      <lastBuildDate>Mon, 24 Aug 2026 23:41:15 PDT</lastBuildDate>
+      <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
+      <lastBuildDate>Wed, 02 Sep 2026 12:10:40 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-02T12:10:40.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/post-2026-09-02t111040/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;TIL about &amp;quot;.home.arpa&amp;quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router.  Giving this a try to help name resolution. There are arguments for using a real domain that you&#39;ve purchased doing something like .lan.myrealdomainname.com so the you don&#39;t have to worry about certs and browsing just &amp;quot;works&amp;quot; but I&#39;ll give this a try first just to test the waters. FAFO as they say.&lt;br&gt;
+#SelfHosting #networking&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/post-2026-09-02t111040/</guid>
+    </item>
     <item>
       <title>Note 2026-08-30T19:15:45.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117187709880875503/</link>
       <description>
