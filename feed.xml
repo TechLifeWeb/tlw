@@ -13,6 +13,19 @@
       <generator>11ty</generator>
     
     <item>
+      <title>Note 2026-09-02T13:07:34.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117203249046421831/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;TIL about &amp;quot;.home.arpa&amp;quot; top-level domain (RFC 8375) for you home LAN domain. I never bothered setting up a domain on my home router. Giving this a try to help name resolution. There are arguments for using a real domain that you&amp;#39;ve purchased doing something like .lan.myrealdomainname.com so the you don&amp;#39;t have to worry about certs and browsing just &amp;quot;works&amp;quot; but I&amp;#39;ll give this a try first just to test the waters. FAFO as they say.&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/SelfHosting&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;SelfHosting&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/networking&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;networking&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Wed, 02 Sep 2026 13:07:34 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117203249046421831/</guid>
+    </item>
+    <item>
       <title>Note 2026-09-02T12:10:40.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/post-2026-09-02t111040/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
