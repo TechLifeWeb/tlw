@@ -105,7 +105,7 @@
                 <hgroup><h1 class="p-name entry-title">&#127793;Docker HomeLab Notes</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T13:59:21.425-07:00">Sep 3, 2026, 1:59 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T16:30:02.690-07:00">Sep 3, 2026, 4:30 PM</time>
                     <a href="/garden/dockerhomelab/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -275,7 +275,7 @@ sudo chown -R &quot;$USER&quot;:&quot;$USER&quot; /srv/docker
 <pre><code>sudo docker exec -it &lt;container name&gt; bash
 npm run reset-password
 </code></pre>
-<h2 id="monitoring-syncthing-with-uptime-kuma" tabindex="-1">Monitoring Syncthing with Uptime Kuma <a class="external-link" href="#monitoring-syncthing-with-uptime-kuma" aria-hidden="true">#</a></h2>
+<h3 id="monitoring-syncthing-with-uptime-kuma" tabindex="-1">Monitoring Syncthing with Uptime Kuma <a class="external-link" href="#monitoring-syncthing-with-uptime-kuma" aria-hidden="true">#</a></h3>
 <p>I have a central Syncthing server that all the PCs and my phone connect to. I want to be sure it is running.</p>
 <ul>
 <li>First you need to be sure you can access the GUI via a machine other than the on Syncthing is on.  By default you access Syncthing at localhost:port. You can set the UI to be available from the LAN by following these instructions:  <a href="https://docs.syncthing.net/v2.0.0/users/guilisten" target="_blank" rel="noopener noreferrer">The GUI Listen Address — Syncthing v2.0.0 documentation</a></li>
