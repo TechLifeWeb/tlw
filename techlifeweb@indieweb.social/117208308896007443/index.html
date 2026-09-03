@@ -5,18 +5,18 @@
     <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How I&#39;m setting up my Docker HomeLab&nbsp|&nbspTechLifeWeb</title>
+    <title>September 3, 2026 at 10:34:21 AM PDT&nbsp|&nbspTechLifeWeb</title>
 
-    <meta name="description" content="How I&#39;m setting up my Docker HomeLab">
-    <link rel="canonical" href="https://techlifeweb.com/garden/dockerhomelab/">
+    <meta name="description" content="September 3, 2026 at 10:34:21 AM PDT">
+    <link rel="canonical" href="https://techlifeweb.com/techlifeweb@indieweb.social/117208308896007443/">
     <meta name="robots" content="index, follow">
     <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
     <meta name="color-scheme" content="light dark">
 
-    <meta property="og:url" content="https://techlifeweb.com/garden/dockerhomelab/">
+    <meta property="og:url" content="https://techlifeweb.com/techlifeweb@indieweb.social/117208308896007443/">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Docker HomeLab Notes">
-    <meta property="og:description" content="How I&#39;m setting up my Docker HomeLab">
+    <meta property="og:title" content="September 3, 2026 at 10:34:21 AM PDT">
+    <meta property="og:description" content="September 3, 2026 at 10:34:21 AM PDT">
     <meta property="og:site_name" content="techlifeweb.com">
 
     <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -102,193 +102,32 @@
     </hgroup></hgroup></header>
     <main class="container">
             <article class="h-entry" data-pagefind-body="">
-                <hgroup><h1 class="p-name entry-title">&#127793;Docker HomeLab Notes</h1>
-                <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
+                <hgroup>
+<svg class="note" width="22pt" height="22pt" viewBox="0 0 448 512"><path d="M312 320h136V56c0-13.3-10.7-24-24-24H24C10.7 32 0 42.7 0 56v400c0 13.3 10.7 24 24 24h264V344c0-13.2 10.8-24 24-24zm129 55l-98 98c-4.5 4.5-10.6 7-17 7h-6V352h128v6.1c0 6.3-2.5 12.4-7 16.9z"></path></svg>
+                <h1 class="p-name entry-title" data-pagefind-meta="title">Note 2026-09-03T10:34:21.000-07:00</h1><br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T07:46:16.299-07:00">Sep 3, 2026, 7:46 AM</time>
-                    <a href="/garden/dockerhomelab/" class="url u-url"></a>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T10:34:21.000-07:00">Sep 3, 2026, 10:34 AM</time>
+                    <a href="/techlifeweb@indieweb.social/117208308896007443/" class="url u-url"></a>
                 </small></hgroup>
-                <div class="e-content">
                 <!-- social POSSE -->
+                <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="">
+                </data></div>
                 <!-- End social POSSE -->
-                    <h1 id="about" tabindex="-1">About <a class="external-link" href="#about" aria-hidden="true">#</a></h1>
-<p>I have a Windows 11 mini PC that I am repurposing as a HomeLab to run Docker Containers on.  I'll use this page to keep track of how things go.</p>
-<h1 id="pre-ubuntu-server-install" tabindex="-1">Pre Ubuntu Server Install <a class="external-link" href="#pre-ubuntu-server-install" aria-hidden="true">#</a></h1>
-<ul>
-<li>Make sure your PC is connected to a Wired port on the router</li>
-<li>Boot Windows and make sure the BIOS is up to date
-<ul>
-<li>Make notes about the current Windows set up
-<ul>
-<li>Go to Start and type About, copy all the details into a note you'll be able to find later</li>
-<li>Get the Windows Key by opening PowerShell as Administrator and type: <code>get key: powershell &quot;(Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey&quot;</code></li>
-</ul>
-</li>
-<li>Get anything you may need later OFF of this PC because it's going away</li>
-</ul>
-</li>
-<li>Download Ubuntu Server
-<ul>
-<li><a href="https://ubuntu.com/download/server#how-to-install-tab-lts" target="_blank" rel="noopener noreferrer">Get Ubuntu Server | Download | Ubuntu</a></li>
-<li>Burn it onto a USB flash drive with  <a href="https://etcher.balena.io/" target="_blank" rel="noopener noreferrer">balenaEtcher - Flash OS images to SD cards &amp; USB drives</a></li>
-</ul>
-</li>
-<li>Boot to Windows, put the flash drive in an open USB slot and open a command prompt at Administrator
-<ul>
-<li>type <code>shutdown /r /fw</code>
-<ul>
-<li>This lets you boot back up into the BIOS so you can set it to boot from the flash drive</li>
-</ul>
-</li>
-<li>Make your adjustments in the BIOS and save them</li>
-</ul>
-</li>
-</ul>
-<h1 id="set-up-your-network" tabindex="-1">Set up your network <a class="external-link" href="#set-up-your-network" aria-hidden="true">#</a></h1>
-<p>You will help yourself out a lot if you have your network set up ahead of time. All routers are different so I can't tell you exactly where these setting are on yours but you'll want to have these set up before you move on.</p>
-<ul>
-<li>Now that you have Windows working on your server, reserve an IP address for it in you router's DHCP settings
-<ul>
-<li>I set these up above my DHCP address range. That is, I have 192.168.1.2 through 200 availabe in DHCP and anything more than 200 is what I use for reservations like this one</li>
-</ul>
-</li>
-<li>Set up home.arpa as your network domain name. Here are some resources about why I recommend this
-<ul>
-<li><a href="https://nameocean.net/article/why-your-smart-home-needs-homearpa-the-dns-standard-that-makes-local-networks-smarter/" target="_blank" rel="noopener noreferrer">Why Your Smart Home Needs home.arpa: The DNS Standard That Makes Local Networks Smarter | NameOcean</a></li>
-<li><a href="https://www.ctrl.blog/entry/homenet-domain-name/" target="_blank" rel="noopener noreferrer">What domain name to use for your home network</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="install-ubuntu-server" tabindex="-1">Install Ubuntu Server <a class="external-link" href="#install-ubuntu-server" aria-hidden="true">#</a></h1>
-<ul>
-<li>When the computer boots, select the install option</li>
-<li>Choose full Ubuntu Server</li>
-<li>Use the full disk</li>
-<li>Note your username and password somewhere</li>
-<li>Install OpenSSH Server.</li>
-<li>Do not install extra server packages yet.</li>
-<li>Do not install Docker from Ubuntu’s optional package selection.</li>
-<li>Reboot when done</li>
-</ul>
-<p>After the first boot:</p>
-<pre><code class="language-bash">sudo apt update
-sudo apt full-upgrade
-sudo reboot
-</code></pre>
-<ul>
-<li>Connect to your new server via SSH (I use Putty on Windows) at its IP address</li>
-</ul>
-<h1 id="basic-server-setup" tabindex="-1">Basic Server Setup <a class="external-link" href="#basic-server-setup" aria-hidden="true">#</a></h1>
-<ul>
-<li>Set correct time zone</li>
-</ul>
-<pre><code class="language-bash">sudo timedatectl set-timezone America/Los_Angeles
-timedatectl
-</code></pre>
-<ul>
-<li>Here's how to find your time zone <a href="https://linuxize.com/cheatsheet/timedatectl/" target="_blank" rel="noopener noreferrer">timedatectl Cheatsheet | Linuxize</a></li>
-<li>Ensure a few things are installed</li>
-</ul>
-<pre><code class="language-bash">sudo apt install curl ca-certificates git nano htop unattended-upgrades
-</code></pre>
-<ul>
-<li>Enable automatic security updates:</li>
-</ul>
-<pre><code class="language-bash">sudo dpkg-reconfigure unattended-upgrades
-</code></pre>
-<h1 id="install-docker" tabindex="-1">Install Docker <a class="external-link" href="#install-docker" aria-hidden="true">#</a></h1>
-<p>Use Docker’s official APT repository</p>
-<pre><code class="language-bash">sudo apt update
-sudo apt install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-</code></pre>
-<p>Add the Docker repository:</p>
-<pre><code class="language-bash">sudo tee /etc/apt/sources.list.d/docker.sources &gt; /dev/null &lt;&lt;EOF
-Types: deb
-URIs: https://download.docker.com/linux/ubuntu
-Suites: $(. /etc/os-release &amp;&amp; echo &quot;${UBUNTU_CODENAME:-$VERSION_CODENAME}&quot;)
-Components: stable
-Architectures: $(dpkg --print-architecture)
-Signed-By: /etc/apt/keyrings/docker.asc
-EOF
-</code></pre>
-<p>Install Docker and Compose:</p>
-<pre><code class="language-bash">sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io \
-  docker-buildx-plugin docker-compose-plugin
-</code></pre>
-<p>Test it:</p>
-<pre><code class="language-bash">sudo docker run hello-world
-sudo docker compose version
-sudo systemctl status docker
-</code></pre>
-<h1 id="create-an-organized-application-structure" tabindex="-1">Create an Organized Application Structure <a class="external-link" href="#create-an-organized-application-structure" aria-hidden="true">#</a></h1>
-<p>A consistent directory layout will make backup, troubleshooting, and migration much easier:</p>
-<pre><code class="language-text">/srv/docker/
-├── compose/
-│   ├── dockge/
-│   ├── uptime-kuma/
-│   └── app-name/
-├── appdata/
-│   ├── dockge/
-│   ├── uptime-kuma/
-│   └── app-name/
-└── backups/
-</code></pre>
-<p>Create the top-level directories:</p>
-<pre><code class="language-bash">sudo mkdir -p /srv/docker/{compose,appdata,backups}
-sudo chown -R &quot;$USER&quot;:&quot;$USER&quot; /srv/docker
-</code></pre>
-<h1 id="setup-dockge" tabindex="-1">Setup Dockge <a class="external-link" href="#setup-dockge" aria-hidden="true">#</a></h1>
-<p>Here is the Compose YAML</p>
-<pre><code class="language-yaml">services:
-  dockge:
-    image: louislam/dockge:1
-    container_name: dockge
-    restart: unless-stopped
-    ports:
-      - 5001:5001
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /srv/docker/compose:/opt/stacks
-      - /srv/docker/appdata/dockge:/app/data
-    environment:
-      - DOCKGE_STACKS_DIR=/opt/stacks
-</code></pre>
-<h1 id="setup-uptime-kuma" tabindex="-1">Setup Uptime Kuma <a class="external-link" href="#setup-uptime-kuma" aria-hidden="true">#</a></h1>
-<ul>
-<li>Super useful because you can set it up to monitor other services on your network. For example, I have a pi-hole running on another computer and I can monitor it with Uptime Kuma.</li>
-</ul>
-<pre><code class="language-yaml">services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:2
-    container_name: uptime-kuma
-    restart: unless-stopped
-    ports:
-      - 3001:3001
-    volumes:
-      - /srv/docker/appdata/uptime-kuma:/app/data
-</code></pre>
-<p>I forgot my password once, don't do that! Here's how to reset it:</p>
-<pre><code>sudo docker exec -it &lt;container name&gt; bash
-npm run reset-password
-</code></pre>
-<h2 id="monitoring-syncthing-with-uptime-kuma" tabindex="-1">Monitoring Syncthing with Uptime Kuma <a class="external-link" href="#monitoring-syncthing-with-uptime-kuma" aria-hidden="true">#</a></h2>
-<p>I have a central Syncthing server that all the PCs and my phone connect to. I want to be sure it is running.</p>
-<ul>
-<li>First you need to be sure you can access the GUI via a machine other than the on Syncthing is on.  By default you access Syncthing at localhost:port. You can set the UI to be available from the LAN by following these instructions:  <a href="https://docs.syncthing.net/v2.0.0/users/guilisten" target="_blank" rel="noopener noreferrer">The GUI Listen Address — Syncthing v2.0.0 documentation</a></li>
-<li>Then you can use Syncthing's built-in health REST API URL by simply putting http://yoursyncthing:port/rest/noauth/health (not YOUR Syncthing address and port)</li>
-</ul>
+                <div class="e-content e-bridgy-bluesky-content e-bridgy-bluesky-content">
 
+                    <p>TIL &quot;idempotent&quot; meaning: &quot;(computing) Describing an action which, when performed multiple times, has no further effect on its subject after the first time it is performed&quot;</p>
                 </div>
-            </article>
-            <a class="internal-link" href="/garden">&#127803;Garden Home</a><br>
-            
 
-<div id="syndication">
+
+        </article>
+		
+
+<div id="syndication"><h4>Posted on:</h4>
   <ul>
+    <li><a rel="syndication" class="u-syndication" href="https://indieweb.social/@techlifeweb/117208308896007443"><svg class="mastodon" height="22pt" viewBox="0 0 448 512" width="22pt">
+          <path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z">
+          </path>
+        </svg></a></li>
   </ul>
 </div>
 <div class="gosehere">
