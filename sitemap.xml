@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/dockerhomelab/</loc>
+            <lastmod>2026-09-03T20:59:21.425Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117208308896007443/</loc>
             <lastmod>2026-09-03T17:34:21.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -10,12 +16,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Sopranos%20take%20over%20the%20ballpark%20in%20Jersey/</loc>
             <lastmod>2026-09-03T16:07:50.190Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/dockerhomelab/</loc>
-            <lastmod>2026-09-03T14:46:16.299Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
