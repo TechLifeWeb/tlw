@@ -105,7 +105,7 @@
                 <hgroup><h1 class="p-name entry-title">&#127793;Docker HomeLab Notes</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T16:30:02.690-07:00">Sep 3, 2026, 4:30 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T23:32:14.228-07:00">Sep 3, 2026, 11:32 PM</time>
                     <a href="/garden/dockerhomelab/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -196,6 +196,13 @@ timedatectl
 </ul>
 <pre><code class="language-bash">sudo dpkg-reconfigure unattended-upgrades
 </code></pre>
+<h1 id="decide-if-you-want-to-configure-cpu-frequency-scaling" tabindex="-1">Decide if you want to configure CPU Frequency Scaling <a class="external-link" href="#decide-if-you-want-to-configure-cpu-frequency-scaling" aria-hidden="true">#</a></h1>
+<p><a href="https://oneuptime.com/blog/post/2026-03-02-how-to-configure-cpu-frequency-scaling-on-ubuntu-server/view" target="_blank" rel="noopener noreferrer">How to Configure CPU Frequency Scaling on Ubuntu Server</a></p>
+<h1 id="install-samba" tabindex="-1">Install SAMBA <a class="external-link" href="#install-samba" aria-hidden="true">#</a></h1>
+<p>Samba lets you connect to your Linux shares from Windows. You may not be ready to actually share anything because you could add drives later but getting it installed will be helpful for the future. SAMBA isn't necessary for Docker so you could safely save this for later.</p>
+<ul>
+<li><a href="/garden/dockerserverfiles/samba/">samba</a></li>
+</ul>
 <h1 id="install-docker" tabindex="-1">Install Docker <a class="external-link" href="#install-docker" aria-hidden="true">#</a></h1>
 <p>Use Docker’s official APT repository</p>
 <pre><code class="language-bash">sudo apt update

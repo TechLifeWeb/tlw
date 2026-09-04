@@ -5,18 +5,18 @@
     <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Random notes and links&nbsp|&nbspTechLifeWeb</title>
+    <title>&nbsp|&nbspTechLifeWeb</title>
 
-    <meta name="description" content="Random notes and links">
-    <link rel="canonical" href="https://techlifeweb.com/garden/miscellanea/">
+    <meta name="description" content="Exploring the digital life">
+    <link rel="canonical" href="https://techlifeweb.com/garden/dockerserverfiles/samba/">
     <meta name="robots" content="index, follow">
     <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
     <meta name="color-scheme" content="light dark">
 
-    <meta property="og:url" content="https://techlifeweb.com/garden/miscellanea/">
+    <meta property="og:url" content="https://techlifeweb.com/garden/dockerserverfiles/samba/">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Miscellanea">
-    <meta property="og:description" content="Random notes and links">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Exploring the digital life">
     <meta property="og:site_name" content="techlifeweb.com">
 
     <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -102,26 +102,155 @@
     </hgroup></hgroup></header>
     <main class="container">
             <article class="h-entry" data-pagefind-body="">
-                <hgroup><h1 class="p-name entry-title">&#127793;Miscellanea</h1>
+                <hgroup><h1 class="p-name entry-title">&#127793;</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T23:27:44.228-07:00">Sep 3, 2026, 11:27 PM</time>
-                    <a href="/garden/miscellanea/" class="url u-url"></a>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T23:33:44.228-07:00">Sep 3, 2026, 11:33 PM</time>
+                    <a href="/garden/dockerserverfiles/samba/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
                 <!-- social POSSE -->
                 <!-- End social POSSE -->
-                    <h6 id="movie-notes-(warning:-spoilers)" tabindex="-1">Movie Notes (warning: spoilers) <a class="external-link" href="#movie-notes-(warning:-spoilers)" aria-hidden="true">#</a></h6>
-<ul>
-<li><strong>The Hundred-Foot Journey</strong> (2014) - IMDB 'The Kadam family leaves India for France where they open a restaurant directly across the road from Madame Mallory's Michelin-starred eatery.' Here is a list of <a href="https://techlifeweb.com/blog/2023/05/2023-05-06-post-224128/" target="_blank" rel="noopener noreferrer">how many times the Journey was made</a></li>
-<li><strong>Waitress</strong> (2007) - IMDb 'Jenna is a pregnant, unhappily married waitress in the deep south. She meets a newcomer to her town and falls into an unlikely relationship as a last attempt at happiness.' Here is a list of <a href="https://techlifeweb.com/blog/2023/02/2022-02-12-post-631/" target="_blank" rel="noopener noreferrer">all the pies of the movie waitress</a></li>
-</ul>
-<h6 id="other-random-sites" tabindex="-1">Other Random Sites <a class="external-link" href="#other-random-sites" aria-hidden="true">#</a></h6>
-<ul>
-<li><a href="/garden/misc/mybookmarklets/">Bookmarklets I use all the time</a></li>
-<li><a href="/garden/uniquewebsites/">Unique Websites and Directories</a></li>
-<li><a href="/garden/misc/yourmobilephonesemailaddress/">Your Mobile Phone&apos;s Email Address</a></li>
-</ul>
+                    <pre><code>title: Configuring SAMBA
+description: Enable connection to your Linux Shares from Windows
+tags: samba
+date: Last Modified
+</code></pre>
+<h1 id="installing-samba-on-ubuntu-server" tabindex="-1">Installing Samba on Ubuntu Server <a class="external-link" href="#installing-samba-on-ubuntu-server" aria-hidden="true">#</a></h1>
+<p>This guide installs Samba on an Ubuntu server and creates a Windows-accessible network share.</p>
+<h2 id="1.-install-samba" tabindex="-1">1. Install Samba <a class="external-link" href="#1.-install-samba" aria-hidden="true">#</a></h2>
+<p>Update the package list and install Samba:</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt install samba
+</code></pre>
+<p>Verify the installation:</p>
+<pre><code class="language-bash">smbd --version
+</code></pre>
+<h2 id="2.-create-a-directory-to-share" tabindex="-1">2. Create a Directory to Share <a class="external-link" href="#2.-create-a-directory-to-share" aria-hidden="true">#</a></h2>
+<p>For this setup, the shared directory is:</p>
+<pre><code class="language-text">/srv/share
+</code></pre>
+<p>Create it:</p>
+<pre><code class="language-bash">sudo mkdir -p /srv/share
+</code></pre>
+<p>Set the directory owner to your Ubuntu user. In this example, the user is <code>jsmith</code>:</p>
+<pre><code class="language-bash">sudo chown jsmith:jsmith /srv/share
+</code></pre>
+<p>Check the permissions:</p>
+<pre><code class="language-bash">ls -ld /srv/share
+</code></pre>
+<p>The result should look similar to:</p>
+<pre><code class="language-text">drwxr-xr-x 2 jsmith jsmith 4096 Sep 3 21:28 /srv/share
+</code></pre>
+<h2 id="3.-create-a-samba-user" tabindex="-1">3. Create a Samba User <a class="external-link" href="#3.-create-a-samba-user" aria-hidden="true">#</a></h2>
+<p>Samba has its own password database.</p>
+<p>Add the existing Ubuntu user to Samba:</p>
+<pre><code class="language-bash">sudo smbpasswd -a jsmith
+</code></pre>
+<p>Enter a Samba password when prompted.</p>
+<p>Enable the Samba account:</p>
+<pre><code class="language-bash">sudo smbpasswd -e jsmith
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> The Samba password does not necessarily have to be the same as the Ubuntu login password.</p>
+</blockquote>
+<h2 id="4.-configure-the-samba-share" tabindex="-1">4. Configure the Samba Share <a class="external-link" href="#4.-configure-the-samba-share" aria-hidden="true">#</a></h2>
+<p>Edit the Samba configuration:</p>
+<pre><code class="language-bash">sudo nano /etc/samba/smb.conf
+</code></pre>
+<p>Add the following to the bottom of the file:</p>
+<pre><code class="language-ini">[Share]
+    path = /srv/share
+    browseable = yes
+    read only = no
+    writable = yes
+    valid users = jsmith
+</code></pre>
+<p>Save the file and exit Nano.</p>
+<h2 id="5.-check-the-samba-configuration" tabindex="-1">5. Check the Samba Configuration <a class="external-link" href="#5.-check-the-samba-configuration" aria-hidden="true">#</a></h2>
+<p>Always test the configuration before restarting Samba:</p>
+<pre><code class="language-bash">testparm
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-text">Loaded services file OK.
+</code></pre>
+<p>To see the active configuration:</p>
+<pre><code class="language-bash">testparm -s
+</code></pre>
+<p>The share should appear as:</p>
+<pre><code class="language-ini">[Share]
+    path = /srv/share
+    read only = No
+    valid users = jsmith
+</code></pre>
+<h2 id="6.-start-and-enable-samba" tabindex="-1">6. Start and Enable Samba <a class="external-link" href="#6.-start-and-enable-samba" aria-hidden="true">#</a></h2>
+<p>Restart Samba:</p>
+<pre><code class="language-bash">sudo systemctl restart smbd
+</code></pre>
+<p>Enable Samba to start automatically after reboot:</p>
+<pre><code class="language-bash">sudo systemctl enable smbd
+</code></pre>
+<p>Check its status:</p>
+<pre><code class="language-bash">sudo systemctl status smbd
+</code></pre>
+<p>Look for:</p>
+<pre><code class="language-text">Active: active (running)
+</code></pre>
+<h2 id="7.-verify-samba-is-listening" tabindex="-1">7. Verify Samba Is Listening <a class="external-link" href="#7.-verify-samba-is-listening" aria-hidden="true">#</a></h2>
+<p>Check that Samba is listening on the standard SMB ports:</p>
+<pre><code class="language-bash">sudo ss -tulpn | grep -E ':(139|445)'
+</code></pre>
+<p>You should see Samba listening on port <code>445</code> and usually port <code>139</code>.</p>
+<p>For example:</p>
+<pre><code class="language-text">tcp LISTEN ... 0.0.0.0:139 ... smbd
+tcp LISTEN ... 0.0.0.0:445 ... smbd
+</code></pre>
+<p>Port <strong>445</strong> is the important SMB port.</p>
+<h2 id="8.-check-the-ubuntu-firewall" tabindex="-1">8. Check the Ubuntu Firewall <a class="external-link" href="#8.-check-the-ubuntu-firewall" aria-hidden="true">#</a></h2>
+<p>Check UFW:</p>
+<pre><code class="language-bash">sudo ufw status
+</code></pre>
+<p>If UFW is active, allow Samba:</p>
+<pre><code class="language-bash">sudo ufw allow samba
+</code></pre>
+<p>If UFW is inactive, no firewall change is necessary.</p>
+<h2 id="9.-test-samba-locally" tabindex="-1">9. Test Samba Locally <a class="external-link" href="#9.-test-samba-locally" aria-hidden="true">#</a></h2>
+<p>Install the Samba client tools:</p>
+<pre><code class="language-bash">sudo apt install smbclient
+</code></pre>
+<p>Test the share locally:</p>
+<pre><code class="language-bash">smbclient //localhost/Share -U jsmith
+</code></pre>
+<p>Enter the Samba password.</p>
+<p>A successful connection will give you:</p>
+<pre><code class="language-text">smb: \&gt;
+</code></pre>
+<p>You can then test the contents with:</p>
+<pre><code class="language-text">ls
+</code></pre>
+<p>Exit with:</p>
+<pre><code class="language-text">quit
+</code></pre>
+<h2 id="10.-connect-from-windows" tabindex="-1">10. Connect from Windows <a class="external-link" href="#10.-connect-from-windows" aria-hidden="true">#</a></h2>
+<p>Find the Ubuntu server's IP address:</p>
+<pre><code class="language-bash">hostname -I
+</code></pre>
+<p>For example:</p>
+<pre><code class="language-text">192.168.1.221
+</code></pre>
+<p>From Windows File Explorer, enter:</p>
+<pre><code class="language-text">\\192.168.1.221\Share
+</code></pre>
+<p>When prompted for credentials, use:</p>
+<pre><code class="language-text">Username: jsmith
+Password: &lt;Samba password&gt;
+</code></pre>
+<h3 id="if-you-have-problems-connecting-from-windows-11" tabindex="-1">If you have problems connecting from Windows 11 <a class="external-link" href="#if-you-have-problems-connecting-from-windows-11" aria-hidden="true">#</a></h3>
+<p>Run the following commands in Windows PowerShell as Administrator:</p>
+<p><code>Set-SmbClientConfiguration -RequireSecuritySignature $false</code></p>
+<p><code>Set-ItemProperty -Path &quot;HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&quot; RequireSecureNegotiate -Value 0 -Force</code></p>
+<p>Restart the computer and try connecting again</p>
+<p>[[dockerhomelab]]</p>
 
                 </div>
             </article>

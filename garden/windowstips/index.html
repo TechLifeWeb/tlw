@@ -105,7 +105,7 @@
                 <hgroup><h1 class="p-name entry-title">&#127793;Windows Tips</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-08-10T23:08:07.085-07:00">Aug 10, 2026, 11:08 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T23:06:18.542-07:00">Sep 3, 2026, 11:06 PM</time>
                     <a href="/garden/windowstips/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
@@ -156,6 +156,11 @@
 <ul>
 <li><a href="https://archive.org/details/dosdrivers" target="_blank" rel="noopener noreferrer">Collection of Useful DOS Drivers : Free Download, Borrow, and Streaming : Internet Archive</a></li>
 </ul>
+<h1 id="enabling-connection-to-samba-shares-from-windows-11-(works-as-of-2026-09-03)" tabindex="-1">Enabling connection to SAMBA shares from Windows 11 (works as of 2026-09-03) <a class="external-link" href="#enabling-connection-to-samba-shares-from-windows-11-(works-as-of-2026-09-03)" aria-hidden="true">#</a></h1>
+<p>Run the following commands in Windows PowerShell as Administrator:</p>
+<p><code>Set-SmbClientConfiguration -RequireSecuritySignature $false</code></p>
+<p><code>Set-ItemProperty -Path &quot;HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&quot; RequireSecureNegotiate -Value 0 -Force</code></p>
+<p>Restart the computer and Try</p>
 
                 </div>
             </article>

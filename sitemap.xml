@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/dockerserverfiles/samba/</loc>
+            <lastmod>2026-09-04T06:33:44.228Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/dockerhomelab/</loc>
-            <lastmod>2026-09-03T23:30:02.690Z</lastmod>
+            <lastmod>2026-09-04T06:32:14.228Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/miscellanea/</loc>
+            <lastmod>2026-09-04T06:27:44.228Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/windowstips/</loc>
+            <lastmod>2026-09-04T06:06:18.542Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -692,12 +710,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/garden/miscellanea/</loc>
-            <lastmod>2026-08-11T06:11:10.337Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/garden/photography/notesontheperfectphotographyworkflow/</loc>
             <lastmod>2026-08-11T06:11:08.388Z</lastmod>
             <changefreq>daily</changefreq>
@@ -742,12 +754,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/excel/</loc>
             <lastmod>2026-08-11T06:08:07.087Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/windowstips/</loc>
-            <lastmod>2026-08-11T06:08:07.085Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
