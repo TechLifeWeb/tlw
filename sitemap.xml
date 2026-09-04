@@ -3,7 +3,7 @@
     
         <url>
             <loc>https://techlifeweb.com/garden/dockerserverfiles/samba/</loc>
-            <lastmod>2026-09-04T06:33:44.228Z</lastmod>
+            <lastmod>2026-09-04T07:39:45.996Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -244,24 +244,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Gemini%20Omni%201.1%20%F0%9F%8E%AC,%20Cohere%20Parse%20%F0%9F%93%84,%20Codex%20persistent%20mode%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB/</loc>
             <lastmod>2026-08-28T14:11:39.432Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Everything%20is%20a%20song/</loc>
-            <lastmod>2026-08-28T13:03:21.965Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20My%20Fave%20Headphones,%20Creativity%20Boosters,%20Cannibalism,%20Seeing%20Silence,%20and%20More/</loc>
-            <lastmod>2026-08-28T12:03:19.803Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Lindsay%20Clancy,%20Art%20Heist,%20and%20the%20Best%20of%20August/</loc>
-            <lastmod>2026-08-28T09:03:16.345Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

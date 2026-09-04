@@ -5,9 +5,9 @@
     <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>&nbsp|&nbspTechLifeWeb</title>
+    <title>Enable connection to your Linux Shares from Windows&nbsp|&nbspTechLifeWeb</title>
 
-    <meta name="description" content="Exploring the digital life">
+    <meta name="description" content="Enable connection to your Linux Shares from Windows">
     <link rel="canonical" href="https://techlifeweb.com/garden/dockerserverfiles/samba/">
     <meta name="robots" content="index, follow">
     <meta name="fediverse:creator" content="@techlifeweb@indieweb.social">
@@ -15,8 +15,8 @@
 
     <meta property="og:url" content="https://techlifeweb.com/garden/dockerserverfiles/samba/">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="Exploring the digital life">
+    <meta property="og:title" content="Configuring SAMBA">
+    <meta property="og:description" content="Enable connection to your Linux Shares from Windows">
     <meta property="og:site_name" content="techlifeweb.com">
 
     <!-- Webmentions –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -102,21 +102,16 @@
     </hgroup></hgroup></header>
     <main class="container">
             <article class="h-entry" data-pagefind-body="">
-                <hgroup><h1 class="p-name entry-title">&#127793;</h1>
+                <hgroup><h1 class="p-name entry-title">&#127793;Configuring SAMBA</h1>
                 <br><small>Published by&nbsp;<address class="p-author author h-card vcard"><a rel="author" href="/hcard/" class="u-url url p-name fn">Scott Kingery</a><span style="display: none"><picture><source type="image/webp" srcset="/img/MYHC-uSYOi-200.webp 200w"><img class="u-photo photo" src="/img/MYHC-uSYOi-200.jpeg" decoding="async" alt="Scott Kingery" width="200" height="200"></picture></span></address>
 &nbsp;on&nbsp;
-                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-03T23:33:44.228-07:00">Sep 3, 2026, 11:33 PM</time>
+                    <time class="entry-date updated published dt-updated dt-published" datetime="2026-09-04T00:39:45.996-07:00">Sep 4, 2026, 12:39 AM</time>
                     <a href="/garden/dockerserverfiles/samba/" class="url u-url"></a>
                 </small></hgroup>
                 <div class="e-content">
                 <!-- social POSSE -->
                 <!-- End social POSSE -->
-                    <pre><code>title: Configuring SAMBA
-description: Enable connection to your Linux Shares from Windows
-tags: samba
-date: Last Modified
-</code></pre>
-<h1 id="installing-samba-on-ubuntu-server" tabindex="-1">Installing Samba on Ubuntu Server <a class="external-link" href="#installing-samba-on-ubuntu-server" aria-hidden="true">#</a></h1>
+                    <h1 id="installing-samba-on-ubuntu-server" tabindex="-1">Installing Samba on Ubuntu Server <a class="external-link" href="#installing-samba-on-ubuntu-server" aria-hidden="true">#</a></h1>
 <p>This guide installs Samba on an Ubuntu server and creates a Windows-accessible network share.</p>
 <h2 id="1.-install-samba" tabindex="-1">1. Install Samba <a class="external-link" href="#1.-install-samba" aria-hidden="true">#</a></h2>
 <p>Update the package list and install Samba:</p>
@@ -250,7 +245,7 @@ Password: &lt;Samba password&gt;
 <p><code>Set-SmbClientConfiguration -RequireSecuritySignature $false</code></p>
 <p><code>Set-ItemProperty -Path &quot;HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters&quot; RequireSecureNegotiate -Value 0 -Force</code></p>
 <p>Restart the computer and try connecting again</p>
-<p>[[dockerhomelab]]</p>
+<p><a href="/garden/dockerhomelab/">Docker HomeLab Notes</a></p>
 
                 </div>
             </article>
