@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117225078672340440/</loc>
+            <lastmod>2026-09-06T16:39:08.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/EmailToObsidian/Which%20TLDR%20should%20we%20send%20you%20next-/</loc>
+            <lastmod>2026-09-06T15:53:55.713Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Labor%20Unions,%20Public%20Schools,%20and%20Why%20We%20Love%20Chocolate/</loc>
+            <lastmod>2026-09-06T09:54:03.430Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117222741809952653/</loc>
             <lastmod>2026-09-06T06:44:50.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -256,12 +274,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117185296448937030/</loc>
             <lastmod>2026-08-30T16:01:59.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/College%20Football,%20Dolly&#39;s%20Legacy,%20and%20Dream%20Vacations/</loc>
-            <lastmod>2026-08-30T10:03:16.988Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
