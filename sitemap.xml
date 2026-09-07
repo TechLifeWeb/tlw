@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117227653612628361/</loc>
+            <lastmod>2026-09-07T03:33:58.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117227613612676044/</loc>
+            <lastmod>2026-09-07T03:23:48.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Midterms%20Mail,%20Dark%20Matter,%20and%20the%20Loudest%20States/</loc>
+            <lastmod>2026-09-07T00:40:13.523Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117225149802449762/</loc>
             <lastmod>2026-09-06T16:57:13.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -154,12 +172,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Fable%205.1%20%F0%9F%A7%A0,%20World%20Labs%20Atlas%20%F0%9F%8C%8D,%20Cognition%20$47B%20%F0%9F%92%B0/</loc>
             <lastmod>2026-09-02T16:03:18.706Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Midterms%20Mail,%20Dark%20Matter,%20and%20the%20Loudest%20States/</loc>
-            <lastmod>2026-09-02T09:03:21.303Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
