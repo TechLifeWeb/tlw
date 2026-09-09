@@ -7,11 +7,29 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
-      <lastBuildDate>Wed, 02 Sep 2026 12:10:40 PDT</lastBuildDate>
+      <pubDate>Wed, 09 Sep 2026 12:12:12 PDT</pubDate>
+      <lastBuildDate>Wed, 09 Sep 2026 12:12:12 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-09T12:12:12.000-07:00</title>
+      <title>Repost 2026-09-09T12:12:12.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-09T111153/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://assortedflotsam.com/@NewsBot/117242368300588006&quot;&gt;World News Bot (@NewsBot@assortedflotsam.com)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a href=&#39;https://www.koreatimes.co.kr/world/20260910/can-ai-be-a-public-utility-world-watches-koreas-bold-experiment&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;Can AI be a public utility? World watches Korea&#39;s bold experiment - The Korea Times&lt;/a&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Wed, 09 Sep 2026 12:12:12 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-09T111153/</guid>
+    </item>
     <item>
       <title>Note 2026-09-09T07:50:46.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117241639511725160/</link>
       <description>   

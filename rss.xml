@@ -14,10 +14,40 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 02 Sep 2026 12:10:40 PDT</pubDate>
-    <lastBuildDate>Wed, 02 Sep 2026 12:10:40 PDT</lastBuildDate>
+    <pubDate>Wed, 09 Sep 2026 12:12:12 PDT</pubDate>
+    <lastBuildDate>Wed, 09 Sep 2026 12:12:12 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-09-09T12:12:12.000-07:00</title>
+      <title>Repost 2026-09-09T12:12:12.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/repost-2026-09-09T111153/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://assortedflotsam.com/@NewsBot/117242368300588006">World News Bot (@NewsBot@assortedflotsam.com)</a> on Mastodon:<br /></p>
+<blockquote>
+<a href="https://www.koreatimes.co.kr/world/20260910/can-ai-be-a-public-utility-world-watches-koreas-bold-experiment" target="_blank" rel="noopener noreferrer">Can AI be a public utility? World watches Korea's bold experiment - The Korea Times</a>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://assortedflotsam.com/@NewsBot/117242368300588006">World News Bot (@NewsBot@assortedflotsam.com)</a> on Mastodon:<br /></p>
+<blockquote>
+<a href="https://www.koreatimes.co.kr/world/20260910/can-ai-be-a-public-utility-world-watches-koreas-bold-experiment" target="_blank" rel="noopener noreferrer">Can AI be a public utility? World watches Korea's bold experiment - The Korea Times</a>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 09 Sep 2026 12:12:12 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-09T111153/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-09-02T12:10:40.000-07:00</title>
