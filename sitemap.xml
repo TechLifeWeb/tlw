@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Creeping%20Cats,%20Superhuman%20Nepalis,%20Using%20Mice%20to%20Beat%20Ticks,%20AI%20Design,%20and%20More/</loc>
+            <lastmod>2026-09-09T22:02:12.978Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-Tales%20of%20Overcoming%20the%20Odds,%20and%20How%20to%20Turn%20Losses%20Into%20Wins%20%E2%80%94%20Tim%20McGraw,%20Terry%20Crews,%20Dax%20Shepard,%20and%20More-/</loc>
+            <lastmod>2026-09-09T21:53:57.507Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/blog/2026/09/repost-2026-09-09T111153/</loc>
             <lastmod>2026-09-09T19:12:12.000Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
         <url>
+            <loc>https://techlifeweb.com/RSS/EmailToObsidian/Claude%20proves%20Fermat%20%F0%9F%A7%AE,%20automated%20AI%20researcher%20%F0%9F%94%AC,%20Z1%20efficiency%20chip%20%E2%9A%A1/</loc>
+            <lastmod>2026-09-09T18:17:35.216Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Images%202.5%20%F0%9F%8E%A8,%20OpenAI%20solves%20Navier-Stokes%20%F0%9F%A7%AE,%20AlphaGenome%20Atlas%20%F0%9F%A7%AC/</loc>
-            <lastmod>2026-09-09T14:53:57.466Z</lastmod>
+            <lastmod>2026-09-09T18:16:05.204Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -46,12 +64,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Could%20final%20series%20decide%203rd%20Wild%20Card%20spot-/</loc>
             <lastmod>2026-09-07T14:53:57.158Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/EmailToObsidian/Claude%20proves%20Fermat%20%F0%9F%A7%AE,%20automated%20AI%20researcher%20%F0%9F%94%AC,%20Z1%20efficiency%20chip%20%E2%9A%A1/</loc>
-            <lastmod>2026-09-07T14:53:55.896Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -130,12 +142,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117219284629804408/</loc>
             <lastmod>2026-09-05T16:05:38.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Creeping%20Cats,%20Superhuman%20Nepalis,%20Using%20Mice%20to%20Beat%20Ticks,%20AI%20Design,%20and%20More/</loc>
-            <lastmod>2026-09-05T03:03:26.557Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
