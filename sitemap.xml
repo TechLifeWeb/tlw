@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117249462012280470/</loc>
+            <lastmod>2026-09-11T00:00:08.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Charlie%20Kirk%20Anniversary,%20America%E2%80%99s%20Nobel,%20and%20Fat%20Bear%20Week/</loc>
+            <lastmod>2026-09-10T08:53:58.986Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117244608324787129/</loc>
             <lastmod>2026-09-10T03:25:47.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -236,26 +248,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Sopranos%20take%20over%20the%20ballpark%20in%20Jersey/</loc>
-            <lastmod>2026-09-03T16:07:50.190Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Why%20the%20time%20was%20right%20for%20Salas%E2%80%99%20callup/</loc>
-            <lastmod>2026-09-03T14:11:01.536Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Muse%20Spark%201.3%20%E2%9C%A8,%20Gemini%203.8%20Flash%20%E2%9A%A1,%20intelligence%20vs%20cost%20%F0%9F%93%8A/</loc>
             <lastmod>2026-09-03T14:08:11.901Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Iran%20Strikes,%20Quantum%20Gravity,%20and%20the%20Keys%20to%20Romance/</loc>
-            <lastmod>2026-09-03T09:03:18.635Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
