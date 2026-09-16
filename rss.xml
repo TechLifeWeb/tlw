@@ -14,10 +14,41 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 09 Sep 2026 12:12:12 PDT</pubDate>
-    <lastBuildDate>Wed, 09 Sep 2026 12:12:12 PDT</lastBuildDate>
+    <pubDate>Tue, 15 Sep 2026 23:28:04 PDT</pubDate>
+    <lastBuildDate>Tue, 15 Sep 2026 23:28:04 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-09-15T23:28:04.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/post-2026-09-15T222803/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Study shows marvels of the Roman Empire's road network:</p>
+<blockquote>
+"The study showed the ‌old adage "all roads lead to Rome" was not exactly true, and the empire's later imperial capital Constantinople — present-day Istanbul — was a better fit for that maxim."
+</blockquote>
+via: <a href="https://www.yahoo.com/news/science/articles/study-shows-marvels-roman-empires-150345817.html" target="_blank" rel="noopener noreferrer">https://www.yahoo.com/news/science/articles/study-shows-marvels-roman-empires-150345817.html</a>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Study shows marvels of the Roman Empire's road network:</p>
+<blockquote>
+"The study showed the ‌old adage "all roads lead to Rome" was not exactly true, and the empire's later imperial capital Constantinople — present-day Istanbul — was a better fit for that maxim."
+</blockquote>
+via: <a href="https://www.yahoo.com/news/science/articles/study-shows-marvels-roman-empires-150345817.html" target="_blank" rel="noopener noreferrer">https://www.yahoo.com/news/science/articles/study-shows-marvels-roman-empires-150345817.html</a>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 15 Sep 2026 23:28:04 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/post-2026-09-15T222803/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-09-09T12:12:12.000-07:00</title>
