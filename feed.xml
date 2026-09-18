@@ -7,11 +7,32 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 15 Sep 2026 23:28:04 PDT</pubDate>
-      <lastBuildDate>Tue, 15 Sep 2026 23:28:04 PDT</lastBuildDate>
+      <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
+      <lastBuildDate>Thu, 17 Sep 2026 23:01:11 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-17T23:01:11.000-07:00</title>
+      <title>Repost 2026-09-17T23:01:11.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-17T220111/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.social/@lukenstine/117290192259625928&quot;&gt;lukenstine (@lukenstine@mastodon.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+I built a social network with no comment sections.
+&lt;p&gt;Your posts are public. Every reply is a private conversation with you — nobody else sees it. The post shows how many people replied, never who.&lt;/p&gt;
+&lt;p&gt;Chronological feed, no algorithm, no ads. One small server, plain PHP.&lt;/p&gt;
+&lt;p&gt;Read it without an account:  &lt;a href=&#39;https://woseapp.com/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://woseapp.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-17T220111/</guid>
+    </item>
     <item>
       <title>Note 2026-09-16T22:58:54.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117284846628185120/</link>
       <description>   

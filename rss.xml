@@ -14,10 +14,46 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Tue, 15 Sep 2026 23:28:04 PDT</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2026 23:28:04 PDT</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2026 23:01:11 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-09-17T23:01:11.000-07:00</title>
+      <title>Repost 2026-09-17T23:01:11.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/repost-2026-09-17T220111/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@lukenstine/117290192259625928">lukenstine (@lukenstine@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+I built a social network with no comment sections.
+<p>Your posts are public. Every reply is a private conversation with you — nobody else sees it. The post shows how many people replied, never who.</p>
+<p>Chronological feed, no algorithm, no ads. One small server, plain PHP.</p>
+<p>Read it without an account:  <a href="https://woseapp.com/" target="_blank" rel="noopener noreferrer">https://woseapp.com/</a></p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@lukenstine/117290192259625928">lukenstine (@lukenstine@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+I built a social network with no comment sections.
+<p>Your posts are public. Every reply is a private conversation with you — nobody else sees it. The post shows how many people replied, never who.</p>
+<p>Chronological feed, no algorithm, no ads. One small server, plain PHP.</p>
+<p>Read it without an account:  <a href="https://woseapp.com/" target="_blank" rel="noopener noreferrer">https://woseapp.com/</a></p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-17T220111/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-09-15T23:28:04.000-07:00</title>
