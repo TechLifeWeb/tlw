@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
-      <lastBuildDate>Thu, 17 Sep 2026 23:01:11 PDT</lastBuildDate>
+      <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
+      <lastBuildDate>Fri, 18 Sep 2026 12:03:58 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-18T12:03:58.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/post-2026-09-18t110357/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;Somewhere along the line I broke my RSS feed and it stopped validating correctly. I probably wouldn&#39;t have noticed but then I tried to add the feed to FreshRSS and it barked at me. Note to self: recheck everything, especially after late night coding.&lt;br&gt;
+#indieweb&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/post-2026-09-18t110357/</guid>
+    </item>
     <item>
       <title>Note 2026-09-17T23:01:11.000-07:00</title>
       <title>Repost 2026-09-17T23:01:11.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-17T220111/</link>

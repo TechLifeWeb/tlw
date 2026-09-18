@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 17 Sep 2026 23:01:11 PDT</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2026 23:01:11 PDT</lastBuildDate>
+    <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
+    <lastBuildDate>Fri, 18 Sep 2026 12:03:58 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-09-18T12:03:58.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/post-2026-09-18t110357/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Somewhere along the line I broke my RSS feed and it stopped validating correctly. I probably wouldn't have noticed but then I tried to add the feed to FreshRSS and it barked at me. Note to self: recheck everything, especially after late night coding.<br />
+#indieweb</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Somewhere along the line I broke my RSS feed and it stopped validating correctly. I probably wouldn't have noticed but then I tried to add the feed to FreshRSS and it barked at me. Note to self: recheck everything, especially after late night coding.<br />
+#indieweb</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/09/post-2026-09-18t110357/</guid>
+
+    </item>
 
     <item>
       <title>Repost 2026-09-17T23:01:11.000-07:00</title>
