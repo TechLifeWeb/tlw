@@ -7,11 +7,30 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
-      <lastBuildDate>Fri, 18 Sep 2026 12:03:58 PDT</lastBuildDate>
+      <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
+      <lastBuildDate>Fri, 18 Sep 2026 17:04:40 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-18T17:04:40.000-07:00</title>
+      <title>Repost 2026-09-18T17:04:40.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-18T160440/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.sdf.org/@rtw/117294263215524824&quot;&gt;Robo (@rtw@mastodon.sdf.org)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+This website renders live baseball games as pixel art. This is my favorite recent thing on the internet and it’s why I think the indie web is so important. I’ve had 8bit games like this up on my second monitor most nights while I game or do other things.
+ &lt;a href=&#39;https://ribbie.tv/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;Ribbie: 8-bit baseball&lt;/a&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-18T160440/</guid>
+    </item>
     <item>
       <title>Note 2026-09-18T12:13:16.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117293632480735590/</link>
       <description>   

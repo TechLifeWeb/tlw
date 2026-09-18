@@ -14,10 +14,41 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 18 Sep 2026 12:03:58 PDT</pubDate>
-    <lastBuildDate>Fri, 18 Sep 2026 12:03:58 PDT</lastBuildDate>
+    <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
+    <lastBuildDate>Fri, 18 Sep 2026 17:04:40 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Repost 2026-09-18T17:04:40.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/repost-2026-09-18T160440/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.sdf.org/@rtw/117294263215524824">Robo (@rtw@mastodon.sdf.org)</a> on Mastodon:<br /></p>
+<blockquote>
+This website renders live baseball games as pixel art. This is my favorite recent thing on the internet and it’s why I think the indie web is so important. I’ve had 8bit games like this up on my second monitor most nights while I game or do other things.
+ <a href="https://ribbie.tv/" target="_blank" rel="noopener noreferrer">Ribbie: 8-bit baseball</a>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.sdf.org/@rtw/117294263215524824">Robo (@rtw@mastodon.sdf.org)</a> on Mastodon:<br /></p>
+<blockquote>
+This website renders live baseball games as pixel art. This is my favorite recent thing on the internet and it’s why I think the indie web is so important. I’ve had 8bit games like this up on my second monitor most nights while I game or do other things.
+ <a href="https://ribbie.tv/" target="_blank" rel="noopener noreferrer">Ribbie: 8-bit baseball</a>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/09/repost-2026-09-18T160440/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-09-18T12:03:58.000-07:00</title>
