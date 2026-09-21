@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/obsidian/</loc>
+            <lastmod>2026-09-21T23:09:06.761Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117310701953972807/</loc>
             <lastmod>2026-09-21T19:34:15.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1738,12 +1744,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117007016484427033/</loc>
             <lastmod>2026-07-30T04:23:03.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/obsidian/</loc>
-            <lastmod>2026-07-30T04:11:23.891Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

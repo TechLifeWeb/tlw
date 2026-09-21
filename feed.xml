@@ -4774,7 +4774,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
         </div>   
         <div class="e-content e-bridgy-mastodon-content e-bridgy-bluesky-content" >              
-            &lt;p&gt;My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I&#39;m using it and a link to my template vault. &lt;a href=&#39;https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/&#39;&gt;https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/&lt;/a&gt; #Obsidian&lt;/p&gt;
+            &lt;p&gt;My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I&#39;m using it and a link to my template vault. &lt;a href=&#39;https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/&#39;&gt;https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/&lt;/a&gt; #Obsidian&lt;/p&gt;
 
         </div>
 </description>
@@ -4787,7 +4787,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
       <description>   
         <div class="e-content" >              
             &lt;p&gt;Obsidian is the notes app I use the most. Over the past few years, my collection of notes has changed a lot. I try out different ways of organizing my notes, then I watch videos or read about how other people use the app, and I adjust my setup accordingly. There’s no single correct way to use it. The way I use Obsidian might be very different from how you do. Heck, my online friend Lou Plummer (@amerpie on Mastodon) maintains a whole list of &lt;a href=&#39;https://amerpie.lol/2024/05/13/example-obsidian-vaults.html&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;Example Obsidian Vaults from Around the Internet&lt;/a&gt; for you to see the different ways this wonderful app can be used.&lt;/p&gt;
-&lt;p&gt;My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it&#39;s the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and also to have a place to send people who ask me about it.&lt;/p&gt;
+&lt;p&gt;My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it&#39;s the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and to have a place to send people who ask me about it.&lt;/p&gt;
 &lt;p&gt;Here is a link to my Template Vault for Obsidian on github:&lt;br&gt;
 &lt;a href=&#39;https://github.com/TechLifeWeb/ObsidianTemplateVault/tree/main&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;TechLifeWeb/ObsidianTemplateVault&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&#39;s some information about the vault and how I use it. I&#39;ve also added a section about my personal rules for using it. Your rules don&#39;t have to be the same as mine, but I strongly encourage you to take a moment to think about what you&#39;re doing with &lt;em&gt;your&lt;/em&gt; notes and, even more importantly, &lt;em&gt;why&lt;/em&gt; you&#39;re making these notes.&lt;/p&gt;
@@ -4907,10 +4907,11 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 &lt;li&gt;My default note template is very minimal and works for all my content.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;---
-date: 2025-11-13
-category: 
-subcategory: 
-tags: 
+title:
+created: 
+category:
+subcategory:
+tags:
 aliases:
 ---
 # Details

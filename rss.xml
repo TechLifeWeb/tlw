@@ -4090,13 +4090,13 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 
       <!-- Summary / fallback -->
       <description ><![CDATA[
-        <p>My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I'm using it and a link to my template vault. <a href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/">https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/</a> #Obsidian</p>
+        <p>My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I'm using it and a link to my template vault. <a href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/">https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/</a> #Obsidian</p>
 
       ]]></description>
 
       <!-- Full HTML content -->
       <content:encoded><![CDATA[
-        <p>My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I'm using it and a link to my template vault. <a href="https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/">https://techlifeweb.com/blog/2025/11/post-2025-11-13T172839/</a> #Obsidian</p>
+        <p>My current way of organizing and working in Obsidian is finally stable and working well for me. Here is how I'm using it and a link to my template vault. <a href="https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/">https://techlifeweb.com/blog/2025/11/post-2025-11-13t172839/</a> #Obsidian</p>
 
       ]]></content:encoded>
 
@@ -4114,7 +4114,7 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
       <!-- Summary / fallback -->
       <description ><![CDATA[
         <p>Obsidian is the notes app I use the most. Over the past few years, my collection of notes has changed a lot. I try out different ways of organizing my notes, then I watch videos or read about how other people use the app, and I adjust my setup accordingly. There’s no single correct way to use it. The way I use Obsidian might be very different from how you do. Heck, my online friend Lou Plummer (@amerpie on Mastodon) maintains a whole list of <a href="https://amerpie.lol/2024/05/13/example-obsidian-vaults.html" target="_blank" rel="noopener noreferrer">Example Obsidian Vaults from Around the Internet</a> for you to see the different ways this wonderful app can be used.</p>
-<p>My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it's the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and also to have a place to send people who ask me about it.</p>
+<p>My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it's the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and to have a place to send people who ask me about it.</p>
 <p>Here is a link to my Template Vault for Obsidian on github:<br />
 <a href="https://github.com/TechLifeWeb/ObsidianTemplateVault/tree/main" target="_blank" rel="noopener noreferrer">TechLifeWeb/ObsidianTemplateVault</a></p>
 <p>Here's some information about the vault and how I use it. I've also added a section about my personal rules for using it. Your rules don't have to be the same as mine, but I strongly encourage you to take a moment to think about what you're doing with <em>your</em> notes and, even more importantly, <em>why</em> you're making these notes.</p>
@@ -4234,10 +4234,11 @@ Happy 55th Oregon Blew Up A Whale Day for those who celebrate!
 <li>My default note template is very minimal and works for all my content.</li>
 </ul>
 <pre><code>---
-date: 2025-11-13
-category: 
-subcategory: 
-tags: 
+title:
+created: 
+category:
+subcategory:
+tags:
 aliases:
 ---
 # Details
@@ -4308,7 +4309,7 @@ aliases:
       <!-- Full HTML content -->
       <content:encoded><![CDATA[
         <p>Obsidian is the notes app I use the most. Over the past few years, my collection of notes has changed a lot. I try out different ways of organizing my notes, then I watch videos or read about how other people use the app, and I adjust my setup accordingly. There’s no single correct way to use it. The way I use Obsidian might be very different from how you do. Heck, my online friend Lou Plummer (@amerpie on Mastodon) maintains a whole list of <a href="https://amerpie.lol/2024/05/13/example-obsidian-vaults.html" target="_blank" rel="noopener noreferrer">Example Obsidian Vaults from Around the Internet</a> for you to see the different ways this wonderful app can be used.</p>
-<p>My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it's the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and also to have a place to send people who ask me about it.</p>
+<p>My current way of organizing and working in Obsidian is finally stable and working well for me. I’ve decided it's the right time to share my setup and write about how I use it. Like everything else here, I do this so I can remember what I did and why, and to have a place to send people who ask me about it.</p>
 <p>Here is a link to my Template Vault for Obsidian on github:<br />
 <a href="https://github.com/TechLifeWeb/ObsidianTemplateVault/tree/main" target="_blank" rel="noopener noreferrer">TechLifeWeb/ObsidianTemplateVault</a></p>
 <p>Here's some information about the vault and how I use it. I've also added a section about my personal rules for using it. Your rules don't have to be the same as mine, but I strongly encourage you to take a moment to think about what you're doing with <em>your</em> notes and, even more importantly, <em>why</em> you're making these notes.</p>
@@ -4428,10 +4429,11 @@ aliases:
 <li>My default note template is very minimal and works for all my content.</li>
 </ul>
 <pre><code>---
-date: 2025-11-13
-category: 
-subcategory: 
-tags: 
+title:
+created: 
+category:
+subcategory:
+tags:
 aliases:
 ---
 # Details
