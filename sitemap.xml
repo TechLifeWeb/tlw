@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Greenland%20Deal,%20Moscow%20Attacks,%20and%20Gen%20Alpha%20Slang/</loc>
+            <lastmod>2026-09-21T09:37:00.749Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117306833535809075/</loc>
             <lastmod>2026-09-21T03:10:28.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -314,12 +320,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Padres&#39;%20surge%20not%20just%20fueled%20by%20stars/</loc>
-            <lastmod>2026-09-15T06:13:27.824Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117273245247974676/</loc>
             <lastmod>2026-09-15T04:48:31.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -340,12 +340,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Amodei%20slows%20frontier%20%F0%9F%9B%91,%20ARC-AGI-4%20%F0%9F%A7%A0,%20Cursor%20Projects%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB/</loc>
             <lastmod>2026-09-14T15:07:39.234Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/AI%20Pacing,%20Diesel%20Prices,%20and%20America&#39;s%20Best%20Colleges/</loc>
-            <lastmod>2026-09-14T09:07:40.306Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

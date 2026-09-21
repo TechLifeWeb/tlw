@@ -43,9 +43,6 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
-User-agent: CCBot
-Disallow: /
-
 User-agent: omgilibot
 Disallow: /
 
