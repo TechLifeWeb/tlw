@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117310701953972807/</loc>
+            <lastmod>2026-09-21T19:34:15.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Context/</loc>
+            <lastmod>2026-09-21T18:18:50.066Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Vive%20la%20France-%20Inside%20Ty&#39;s%20resurgent%20season/</loc>
+            <lastmod>2026-09-21T14:37:15.183Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Greenland%20Deal,%20Moscow%20Attacks,%20and%20Gen%20Alpha%20Slang/</loc>
             <lastmod>2026-09-21T09:37:00.749Z</lastmod>
             <changefreq>daily</changefreq>
