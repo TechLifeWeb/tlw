@@ -7,11 +7,31 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
-      <lastBuildDate>Fri, 18 Sep 2026 17:04:40 PDT</lastBuildDate>
+      <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
+      <lastBuildDate>Tue, 22 Sep 2026 15:43:48 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-22T15:43:48.000-07:00</title>
+      <title>Repost 2026-09-22T15:43:48.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-22T144348/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://infosec.exchange/@agreenberg/117314865219881254&quot;&gt;Andy Greenberg (@agreenberg@infosec.exchange)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+Using AI in many cases means sending your most sensitive and intimate thoughts to a server where they can be exploited as training data, sold to ad brokers, or even handed to law enforcement.
+&lt;p&gt;So I assembled this guide to using AI with your privacy intact.&lt;br&gt;
+&lt;a href=&#39;https://www.wired.com/story/how-to-use-ai-with-your-privacy-intact/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;How to Use AI With Your Privacy Intact | WIRED&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-22T144348/</guid>
+    </item>
     <item>
       <title>Note 2026-09-21T21:22:04.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117312777390118981/</link>
       <description>   

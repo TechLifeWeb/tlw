@@ -14,10 +14,43 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 18 Sep 2026 17:04:40 PDT</pubDate>
-    <lastBuildDate>Fri, 18 Sep 2026 17:04:40 PDT</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2026 15:43:48 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Repost 2026-09-22T15:43:48.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/repost-2026-09-22T144348/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://infosec.exchange/@agreenberg/117314865219881254">Andy Greenberg (@agreenberg@infosec.exchange)</a> on Mastodon:<br /></p>
+<blockquote>
+Using AI in many cases means sending your most sensitive and intimate thoughts to a server where they can be exploited as training data, sold to ad brokers, or even handed to law enforcement.
+<p>So I assembled this guide to using AI with your privacy intact.<br />
+<a href="https://www.wired.com/story/how-to-use-ai-with-your-privacy-intact/" target="_blank" rel="noopener noreferrer">How to Use AI With Your Privacy Intact | WIRED</a></p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://infosec.exchange/@agreenberg/117314865219881254">Andy Greenberg (@agreenberg@infosec.exchange)</a> on Mastodon:<br /></p>
+<blockquote>
+Using AI in many cases means sending your most sensitive and intimate thoughts to a server where they can be exploited as training data, sold to ad brokers, or even handed to law enforcement.
+<p>So I assembled this guide to using AI with your privacy intact.<br />
+<a href="https://www.wired.com/story/how-to-use-ai-with-your-privacy-intact/" target="_blank" rel="noopener noreferrer">How to Use AI With Your Privacy Intact | WIRED</a></p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/09/repost-2026-09-22T144348/</guid>
+
+    </item>
 
     <item>
       <title>Repost 2026-09-18T17:04:40.000-07:00</title>
