@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117311942230190917/</loc>
+            <lastmod>2026-09-22T00:49:41.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/obsidian/</loc>
             <lastmod>2026-09-21T23:09:06.761Z</lastmod>
             <changefreq>daily</changefreq>
