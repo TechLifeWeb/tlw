@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117332776315564872/</loc>
+            <lastmod>2026-09-25T17:08:03.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Still%20summer/</loc>
+            <lastmod>2026-09-25T13:19:12.163Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Trump-Xi%20Summit,%20Self-Medicating%20Elephants,%20and%20Hairy%20Questions/</loc>
+            <lastmod>2026-09-25T10:19:12.286Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117329953614723516/</loc>
             <lastmod>2026-09-25T05:10:12.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -290,18 +308,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/All%20the%20details%20on%20the%20Padres&#39;%20playoff%20push/</loc>
-            <lastmod>2026-09-19T03:11:15.900Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Dream%20Engineering,%20Seaweed%20Soup,%20Personal%20Renewal,%20Mary%20Oliver,%20and%20More/</loc>
-            <lastmod>2026-09-19T01:07:55.505Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/RSS/EmailToObsidian/Which%20TLDR%20should%20we%20send%20you%20next-/</loc>
             <lastmod>2026-09-19T00:07:28.810Z</lastmod>
             <changefreq>daily</changefreq>
@@ -322,12 +328,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/09/post-2026-09-18t110357/</loc>
             <lastmod>2026-09-18T19:03:58.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20birds%20are%20in%20misery/</loc>
-            <lastmod>2026-09-18T14:07:56.214Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
