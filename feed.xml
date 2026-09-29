@@ -7,11 +7,32 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
-      <lastBuildDate>Tue, 22 Sep 2026 15:43:48 PDT</lastBuildDate>
+      <pubDate>Mon, 28 Sep 2026 19:37:19 PDT</pubDate>
+      <lastBuildDate>Mon, 28 Sep 2026 19:37:19 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-09-28T19:37:19.000-07:00</title>
+      <title>Repost 2026-09-28T19:37:19.000-07:00</title><link>https://techlifeweb.com/blog/2026/09/repost-2026-09-28T183718/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.social/@HobbyBuilder/117351502530829400&quot;&gt;Hobby Builder (@HobbyBuilder@mastodon.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+i missed the old internet, so i built a 1996 chat room.
+not servers. not channels. a room. you walk in, strangers are mid-conversation about a tape deck, somebody says &quot;a/s/l&quot; unironically.
+no account, no app, no algorithm. just pick a screen name and go. Late Night is best after eleven.
+ &lt;a href=&#39;https://lolchat.rip/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;lolchat.rip - a 1996 chat room&lt;/a&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Mon, 28 Sep 2026 19:37:19 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/09/repost-2026-09-28T183718/</guid>
+    </item>
     <item>
       <title>Note 2026-09-28T17:01:34.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117351389203654639/</link>
       <description>   

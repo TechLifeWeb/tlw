@@ -14,10 +14,45 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Tue, 22 Sep 2026 15:43:48 PDT</pubDate>
-    <lastBuildDate>Tue, 22 Sep 2026 15:43:48 PDT</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2026 19:37:19 PDT</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2026 19:37:19 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Repost 2026-09-28T19:37:19.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/09/repost-2026-09-28T183718/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@HobbyBuilder/117351502530829400">Hobby Builder (@HobbyBuilder@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+i missed the old internet, so i built a 1996 chat room.
+not servers. not channels. a room. you walk in, strangers are mid-conversation about a tape deck, somebody says "a/s/l" unironically.
+no account, no app, no algorithm. just pick a screen name and go. Late Night is best after eleven.
+ <a href="https://lolchat.rip/" target="_blank" rel="noopener noreferrer">lolchat.rip - a 1996 chat room</a>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@HobbyBuilder/117351502530829400">Hobby Builder (@HobbyBuilder@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+i missed the old internet, so i built a 1996 chat room.
+not servers. not channels. a room. you walk in, strangers are mid-conversation about a tape deck, somebody says "a/s/l" unironically.
+no account, no app, no algorithm. just pick a screen name and go. Late Night is best after eleven.
+ <a href="https://lolchat.rip/" target="_blank" rel="noopener noreferrer">lolchat.rip - a 1996 chat room</a>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Mon, 28 Sep 2026 19:37:19 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/09/repost-2026-09-28T183718/</guid>
+
+    </item>
 
     <item>
       <title>Repost 2026-09-22T15:43:48.000-07:00</title>
