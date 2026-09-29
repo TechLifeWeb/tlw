@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/postseason/</loc>
+            <lastmod>2026-09-29T00:37:37.043Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117351389203654639/</loc>
             <lastmod>2026-09-29T00:01:34.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1276,12 +1282,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/catholic/glossaryofcatholicterms/</loc>
             <lastmod>2026-08-14T14:40:20.499Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/postseason/</loc>
-            <lastmod>2026-08-14T03:58:28.707Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
