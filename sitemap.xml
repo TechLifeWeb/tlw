@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
+            <lastmod>2026-09-30T04:26:13.881Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117356997809130289/</loc>
             <lastmod>2026-09-29T23:47:54.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -1840,12 +1846,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/linux/</loc>
             <lastmod>2026-08-03T02:55:24.315Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/garden/travelfiles/England/</loc>
-            <lastmod>2026-08-03T02:06:27.539Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
