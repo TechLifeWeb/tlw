@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117363924087078253/</loc>
+            <lastmod>2026-10-01T05:09:21.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117363921645310751/</loc>
+            <lastmod>2026-10-01T05:08:43.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-How%20to%20Spot%2010-Year%20Trends%20and%20Build%20Billion-Dollar%20Companies-/</loc>
+            <lastmod>2026-09-30T14:44:38.390Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Hacker%20Arrest,%20Oura%20IPO,%20and%20a%20&#39;Nav%20Friend&#39;/</loc>
+            <lastmod>2026-09-30T09:44:38.287Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/garden/catholic/glossaryofcatholicterms/</loc>
             <lastmod>2026-09-30T05:42:26.463Z</lastmod>
             <changefreq>daily</changefreq>
@@ -274,12 +298,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117320872162140525/</loc>
             <lastmod>2026-09-23T14:40:40.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Fire%20Amoeba,%20College%20Rankings,%20and%20the%20Best%201990s%20Songs/</loc>
-            <lastmod>2026-09-23T09:19:12.283Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
