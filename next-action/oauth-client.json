@@ -1,0 +1,12 @@
+{
+  "client_id": "https://techlifeweb.com/next-action/oauth-client.json",
+  "client_name": "Next Action Connection Test",
+  "client_uri": "https://techlifeweb.com/next-action/index.html",
+  "redirect_uris": [
+    "https://techlifeweb.com/next-action/index.html"
+  ],
+  "grant_types": ["authorization_code"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none",
+  "scope": "data:read_write"
+}
