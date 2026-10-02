@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/next-action/</loc>
+            <lastmod>2026-10-02T22:38:35.986Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Death%20Penalty%20Pause,%20Speech%20Clock,%20and%20the%20Best%20of%20September/</loc>
             <lastmod>2026-10-02T21:58:37.516Z</lastmod>
             <changefreq>daily</changefreq>
@@ -10,12 +16,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117373490000934264/</loc>
             <lastmod>2026-10-02T21:42:05.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/next-action/</loc>
-            <lastmod>2026-10-02T21:30:37.445Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
