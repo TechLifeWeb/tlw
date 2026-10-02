@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/next-action/</loc>
+            <lastmod>2026-10-02T21:30:37.445Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Once%20upon%20a%20cruddy%20time.../</loc>
+            <lastmod>2026-10-02T13:44:39.225Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Death%20Penalty%20Pause,%20Speech%20Clock,%20and%20the%20Best%20of%20September/</loc>
+            <lastmod>2026-10-02T09:44:39.258Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/postseason/</loc>
             <lastmod>2026-10-02T05:54:57.968Z</lastmod>
             <changefreq>daily</changefreq>
@@ -236,12 +254,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Speaking%20with%20the%20Mind,%20The%20Critical%20Top%20Idea,%20Aerolamps,%20and%20More/</loc>
-            <lastmod>2026-09-26T00:19:12.165Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117334355609873515/</loc>
             <lastmod>2026-09-25T23:49:42.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -256,18 +268,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117332776315564872/</loc>
             <lastmod>2026-09-25T17:08:03.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Still%20summer/</loc>
-            <lastmod>2026-09-25T13:19:12.163Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Trump-Xi%20Summit,%20Self-Medicating%20Elephants,%20and%20Hairy%20Questions/</loc>
-            <lastmod>2026-09-25T10:19:12.286Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

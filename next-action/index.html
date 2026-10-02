@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Next Action · Todoist connection test</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#21372e;background:#f2f5f1;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:860px;margin:48px auto;padding:0 22px}header{margin-bottom:26px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#52745f}h1{font-size:34px;letter-spacing:-.04em;margin:10px 0}h2{font-size:19px;margin-top:0}p{line-height:1.6;color:#526258}.card{background:white;border:1px solid #dbe3da;border-radius:15px;padding:24px;margin:18px 0;box-shadow:0 3px 10px #21372e05}label{display:block;font-weight:600;margin:14px 0 7px}input{width:100%;padding:12px;border:1px solid #aebfb1;border-radius:7px;font:inherit}button,.button{font:inherit;font-weight:600;border:1px solid #ccd6ce;border-radius:8px;background:#fff;color:#234632;padding:11px 16px;cursor:pointer;text-decoration:none;display:inline-block}button.primary{background:#275b3c;color:white;border-color:#275b3c}button:disabled{opacity:.45;cursor:default}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}small{display:block;line-height:1.5;color:#617266;margin-top:9px}summary{cursor:pointer;font-weight:650}#status{border-left:4px solid #547861;background:#e6eee5;padding:14px 18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5}#status.error{border-color:#aa4038;background:#fff0eb}#tasks{padding:0;list-style:none}#tasks li{padding:13px 0;border-bottom:1px solid #e7ece7;overflow-wrap:anywhere}#tasks li:last-child{border:0}.muted{color:#657469;font-size:14px}code{overflow-wrap:anywhere}footer{font-size:12px;line-height:1.6;color:#69776c;margin:25px 0}a{color:#275b3c}[hidden]{display:none!important}@media(max-width:600px){main{margin:25px auto}.card{padding:18px}h1{font-size:28px}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">Next Action / connection test</div><h1>Your tasks. A simpler front end.</h1><p>Test Todoist sign-in, read your tasks, and create one clearly named test task. This page uses plain HTML, CSS, and JavaScript.</p></header>
+<div id="status" role="status" aria-live="polite">Not connected.</div>
+<section class="card"><h2>1. Connect your account</h2><p>Sign in on Todoist and return here. Each visitor connects their own account.</p><div class="buttons"><button id="connect" class="primary">Connect Todoist</button><button id="logout" disabled="">Disconnect locally</button></div><small>The access token stays in this page’s memory. Reloading or closing the page disconnects it. No task data or tokens are saved to disk by this app.</small></section>
+<details class="card" id="setup"><summary>Hosting setup — site owner, once</summary><p>Upload this file as <code>index.html</code> on an HTTPS website. Enter its exact public address below and download the configuration. Upload that JSON file beside this HTML file, then open the public page and connect.</p><label for="address">Public page address</label><input id="address" type="url" placeholder="https://your-site.example/next-action/index.html" autocomplete="off"><div class="buttons"><button id="download">Download oauth-client.json</button></div><small>The JSON contains public addresses only. It contains no password, API key, or client secret. The JSON URL must be publicly accessible, even if you protect the app page.</small></details>
+<section class="card"><h2>2. Read and refresh</h2><p>Read up to 20 active tasks. Change a task in Todoist, then refresh here to check incoming changes.</p><button id="read" disabled="">Refresh tasks</button><ul id="tasks"></ul><div id="readInfo" class="muted">Tasks will appear after connecting.</div></section>
+<section class="card"><h2>3. Test writing</h2><p>Create one task in your Todoist Inbox. You can then edit and complete that test task here, checking the changes in Todoist.</p><div class="buttons"><button id="create" disabled="">Create test task</button><button id="edit" disabled="">Edit test task</button><button id="complete" disabled="">Complete test task</button></div><p id="testInfo" class="muted">Existing tasks are read-only in this test.</p></section>
+<details class="card"><summary>Optional local-file connection test</summary><p>If opening this file directly from your computer, use a personal API token to test task access only. This does not test the hosted sign-in flow. Enter the token here, never in chat.</p><label for="personal">Personal API token</label><input id="personal" type="password" autocomplete="off" spellcheck="false"><div class="buttons"><button id="useToken">Connect with token</button></div></details>
+<footer>Independent prototype, not created by, affiliated with, or supported by Todoist. <a href="https://developer.todoist.com/api/v1/" target="_blank" rel="noopener noreferrer">Todoist API documentation</a>. Disconnect clears this page’s session; it does not revoke the authorization in Todoist settings.</footer>
+</main><script>
+'use strict';
+const $=id=>document.getElementById(id);
+const API='https://api.todoist.com/api/v1/';
+const TOKEN='https://api.todoist.com/oauth/access_token';
+const PENDING='next-action-todoist-test-pkce';
+let accessToken='',testTaskId='',createAttempted=false,busy=false,epoch=0;
+const pageURL=()=>{const u=new URL(location.href);u.search='';u.hash='';return u;};
+function say(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
+function controls(){for(const id of ['connect','useToken','download'])$(id).disabled=busy; $('logout').disabled=busy||!accessToken; $('read').disabled=busy||!accessToken; $('create').disabled=busy||!accessToken||createAttempted;for(const id of ['edit','complete'])$(id).disabled=busy||!accessToken||!testTaskId;}
+function clearSession(){epoch++;accessToken='';testTaskId='';createAttempted=false;$('personal').value='';$('tasks').replaceChildren();$('readInfo').textContent='Tasks will appear after connecting.';$('testInfo').textContent='Existing tasks are read-only in this test.';try{sessionStorage.removeItem(PENDING);}catch{}controls();}
+async function run(fn){if(busy)return;busy=true;controls();try{await fn();}catch(e){say(e.message||'The operation failed.',true);}finally{busy=false;controls();}}
+async function request(url,options={},label='Request'){
+ let r;try{r=await fetch(url,{...options,credentials:'omit',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(25000)});}catch{throw Error(label+' could not reach Todoist. The browser may have blocked the request, or the network timed out. If this was a write, check Todoist before trying again.');}
+ if(!r.ok){if(r.status===401){clearSession();throw Error('Authorization expired or was rejected. Please connect again.');}throw Error(label+' failed (HTTP '+r.status+'). '+(r.status===429?'Wait before retrying.':'Check the connection and configuration.'));}
+ if(r.status===204)return null;const text=await r.text();return text?JSON.parse(text):null;
+}
+function api(route,method='GET',body){return request(API+route,{method,headers:{Authorization:'Bearer '+accessToken,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})},'Task request');}
+function publicAddress(){const u=new URL($('address').value.trim());if(u.protocol!=='https:'||u.username||u.password||u.search||u.hash)throw Error('Use an HTTPS page address without a query, fragment, or embedded credentials.');return u;}
+function metadata(u){return {client_id:new URL('oauth-client.json',u).href,client_name:'Next Action Connection Test',client_uri:u.href,redirect_uris:[u.href],grant_types:['authorization_code'],response_types:['code'],token_endpoint_auth_method:'none',scope:'data:read_write'};}
+function randomHex(){return Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toString(16).padStart(2,'0')).join('');}
+async function challenge(verifier){const bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(verifier)));return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+async function connect(){
+ if(location.protocol!=='https:'){$('setup').open=true;throw Error('Hosted sign-in needs an HTTPS page address. Upload this file and its public configuration first. The optional token test below can run from a local file.');}
+ const u=pageURL(),configURL=new URL('oauth-client.json',u);let config;
+ try{const r=await fetch(configURL,{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error();config=await r.json();}catch{$('setup').open=true;throw Error('Upload oauth-client.json beside index.html first. Use Hosting setup below to generate it.');}
+ if(config.client_id!==configURL.href||config.token_endpoint_auth_method!=='none'||!Array.isArray(config.redirect_uris)||!config.redirect_uris.includes(u.href))throw Error('The public configuration does not match this page address. Generate it again using the exact address currently open.');
+ clearSession();const verifier=randomHex(),state=randomHex(),codeChallenge=await challenge(verifier);
+ sessionStorage.setItem(PENDING,JSON.stringify({verifier,state,clientId:configURL.href,redirect:u.href,created:Date.now()}));
+ const auth=new URL('https://app.todoist.com/oauth/authorize');auth.search=new URLSearchParams({client_id:configURL.href,redirect_uri:u.href,response_type:'code',scope:'data:read_write',state,code_challenge:codeChallenge,code_challenge_method:'S256'}).toString();
+ say('Opening Todoist sign-in…');location.assign(auth.href);
+}
+async function read(){const generation=epoch;const data=await api('tasks?limit=20');if(generation!==epoch)return;if(!Array.isArray(data?.results))throw Error('Unexpected task response from Todoist.');$('tasks').replaceChildren();for(const t of data.results){const li=document.createElement('li');li.textContent=t.content; if(t.due){const sub=document.createElement('small');sub.textContent='Due: '+(t.due.datetime||t.due.date||t.due.string||'');li.append(sub);}$('tasks').append(li);}$('readInfo').textContent='Showing '+data.results.length+' active tasks'+(data.next_cursor?' (more exist in Todoist)':'')+'. Refreshed '+new Date().toLocaleTimeString()+'.';say('Read succeeded. Change a task in Todoist and refresh to check incoming changes.');}
+async function callback(){
+ const q=new URLSearchParams(location.search);if(!q.has('code')&&!q.has('error'))return;
+ const code=q.get('code'),returnedState=q.get('state'),error=q.get('error');history.replaceState(null,'',pageURL().href);
+ let pending;try{pending=JSON.parse(sessionStorage.getItem(PENDING));}catch{}sessionStorage.removeItem(PENDING);
+ if(!pending||!returnedState||pending.state!==returnedState||Date.now()-pending.created>15*60*1000||pending.redirect!==pageURL().href)throw Error('Sign-in could not be verified or has expired. Start again with Connect Todoist.');
+ if(error)throw Error('Todoist did not authorize this connection. Start again to retry.');if(!code)throw Error('Todoist did not return an authorization code.');
+ say('Exchanging the sign-in code securely…');const data=await request(TOKEN,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({grant_type:'authorization_code',client_id:pending.clientId,code,redirect_uri:pending.redirect,code_verifier:pending.verifier})},'Sign-in token exchange');
+ if(!data?.access_token)throw Error('Todoist did not return an access token.');accessToken=data.access_token;await read();
+}
+$('connect').onclick=()=>run(connect);
+$('download').onclick=()=>run(async()=>{const blob=new Blob([JSON.stringify(metadata(publicAddress()),null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='oauth-client.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);say('Configuration downloaded. Upload it beside index.html, then open the public page.');});
+$('logout').onclick=()=>{clearSession();say('Disconnected. This page’s token and task data have been cleared.');};
+$('read').onclick=()=>run(read);
+$('useToken').onclick=()=>run(async()=>{const value=$('personal').value.trim();clearSession();if(!value)throw Error('Enter a personal token in the password field first.');accessToken=value;try{await read();}catch(e){clearSession();throw e;}});
+$('create').onclick=()=>run(async()=>{createAttempted=true;const task=await api('tasks','POST',{content:'Next Action connection test — '+new Date().toISOString(),description:'Temporary task created by the Next Action browser connection test.'});if(!task?.id)throw Error('Create response did not include a task ID. Check Todoist before retrying.');testTaskId=String(task.id);$('testInfo').textContent='Created: '+task.content;await read();say('Write succeeded. The test task is in your Todoist Inbox. You can now edit or complete it.');});
+$('edit').onclick=()=>run(async()=>{await api('tasks/'+encodeURIComponent(testTaskId),'POST',{content:'Next Action connection test — edited successfully'});$('testInfo').textContent='Test task renamed successfully.';await read();say('Edit succeeded. Check the updated title in Todoist.');});
+$('complete').onclick=()=>run(async()=>{await api('tasks/'+encodeURIComponent(testTaskId)+'/close','POST');testTaskId='';$('testInfo').textContent='Test task completed. You can find it in Todoist’s completed tasks.';await read();say('Completion succeeded. Read, create, edit, and complete are ready for verification in Todoist.');});
+if(location.protocol==='https:')$('address').value=pageURL().href;else $('setup').open=true;
+controls();run(callback);
+</script></body></html>
