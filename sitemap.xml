@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/postseason/</loc>
+            <lastmod>2026-10-02T05:54:57.968Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/FlyDubai%20Attack,%20FTC%20Probe,%20and%20Fattest%20Bear/</loc>
+            <lastmod>2026-10-02T05:23:26.379Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20best%20--%20and%20weirdest%20--%20moments%20of%202026/</loc>
+            <lastmod>2026-10-02T05:17:26.370Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117368218724053723/</loc>
             <lastmod>2026-10-01T23:21:32.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -26,20 +44,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20best%20--%20and%20weirdest%20--%20moments%20of%202026/</loc>
-            <lastmod>2026-10-01T16:44:39.403Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Ness%20Labs-%20The%20Future-Self%20Fallacy%20%F0%9F%94%AE/</loc>
             <lastmod>2026-10-01T14:44:39.388Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/FlyDubai%20Attack,%20FTC%20Probe,%20and%20Fattest%20Bear/</loc>
-            <lastmod>2026-10-01T08:44:39.275Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
@@ -124,12 +130,6 @@
         <url>
             <loc>https://techlifeweb.com/blog/2026/09/repost-2026-09-28T183718/</loc>
             <lastmod>2026-09-29T02:37:19.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/postseason/</loc>
-            <lastmod>2026-09-29T00:37:37.043Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

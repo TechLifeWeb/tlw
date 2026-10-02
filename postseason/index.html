@@ -34,6 +34,18 @@
     .seed-meta{display:flex;align-items:center;justify-content:flex-end;gap:.35rem;flex-wrap:wrap}
     .magic{font-size:.68rem;padding:.12rem .42rem;border:1px solid var(--border);border-radius:999px;font-weight:700;white-space:nowrap}
     .bracket-slot{padding:.65rem;border:1px dashed var(--border);border-radius:.75rem;color:var(--muted);font-size:.8rem}
+    .bracket-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(9rem,.65fr) minmax(0,1fr);gap:var(--gap-grid);align-items:start}
+    .bracket-league{min-width:0}.bracket-center{display:flex;flex-direction:column;justify-content:center;min-width:0;padding-top:2rem}
+    .bracket-champion{border:1px solid var(--border);border-radius:.75rem;padding:.65rem;background:var(--card-bg);font-size:.8rem}
+    .bracket-champion strong{display:block;text-align:center;font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:.3rem}
+    .series-card{border:1px solid var(--border);border-radius:.75rem;overflow:hidden;background:var(--card-bg);margin-bottom:.55rem;min-width:0}
+    .series-head{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding:.4rem .55rem;border-bottom:1px solid var(--border);font-size:.68rem;color:var(--muted)}
+    .series-team{display:grid;grid-template-columns:1.5rem minmax(0,1fr) auto;gap:.45rem;align-items:center;padding:.45rem .55rem;font-size:.78rem}
+    .series-team+.series-team{border-top:1px solid var(--border)}.series-team.winner{font-weight:700;background:color-mix(in srgb,#16a34a 8%,var(--card-bg))}
+    .series-seed{color:var(--muted);font-size:.68rem;text-align:center}.series-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .series-score{font-variant-numeric:tabular-nums;font-weight:700;min-width:1.2rem;text-align:right}.series-foot{padding:.35rem .55rem;border-top:1px solid var(--border);font-size:.66rem;color:var(--muted)}
+    .bracket-note{font-size:.72rem;color:var(--muted);margin-top:.65rem}
+    @media(max-width:760px){.bracket-layout{grid-template-columns:minmax(0,1fr)}.bracket-center{padding-top:0;order:3}.bracket-league.nl-bracket{order:2}.bracket-league.al-bracket{order:1}}
     .bracket-wrap{overflow-x:auto;padding-bottom:.25rem}
     .bracket{display:grid;grid-template-columns:minmax(150px,1fr) minmax(150px,1fr) minmax(150px,1fr);gap:1rem;align-items:stretch;min-width:620px}
     .bracket-round{display:flex;flex-direction:column;justify-content:space-around;gap:.75rem;min-width:0}
@@ -79,7 +91,7 @@
         </div>
         <button id="refresh-btn" class="icon-btn">Refresh</button>
       </div>
-      <div class="text-xs theme-muted mt-2">Before October, this page shows the current postseason field and teams chasing a Wild Card spot.  <a href="https://www.mlb.com/glossary/advanced-stats/magic-number" target="_blank" rel="noopener noreferrer">Magic Number (MN)</a>: Division leaders show DIV MN; current Wild Card qualifiers show WC MN.</div>
+      <div class="text-xs theme-muted mt-2">The race panel shows the current six-team postseason field and teams just outside it.  <a href="https://www.mlb.com/glossary/advanced-stats/magic-number" target="_blank" rel="noopener noreferrer">Magic Number (MN)</a>: Division leaders show DIV MN; current Wild Card qualifiers show WC MN.</div>
     </section>
 
     <section class="theme-card pad">
@@ -93,182 +105,60 @@
     </section>
 
     <section class="theme-card pad">
-      <div class="flex items-center justify-between mb-2"><h2 class="text-base font-semibold">Postseason Bracket</h2><span id="bracket-updated" class="text-xs theme-muted"></span></div>
-      <div id="bracket-loading" class="text-sm theme-muted">Loading postseason bracket…</div>
-      <div id="bracket-error" class="error hidden"></div>
-      <div id="bracket-grid" class="hidden grid grid-cols-1 xl:grid-cols-2 grid-gap">
-        <div id="al-bracket-panel"><div class="text-xs font-semibold mb-2">American League</div><div id="al-bracket" class="bracket-wrap"></div></div>
-        <div id="nl-bracket-panel"><div class="text-xs font-semibold mb-2">National League</div><div id="nl-bracket" class="bracket-wrap"></div></div>
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-3"><h2 class="text-base font-semibold">Postseason Bracket</h2><span id="bracket-updated" class="text-xs theme-muted">Loading bracket…</span></div>
+      <div id="bracket-error" class="error hidden mb-2"></div>
+      <div id="bracket-content" class="bracket-layout">
+        <div class="bracket-league al-bracket"><div class="text-sm font-semibold mb-2">American League</div><div class="bracket-slot">Loading AL bracket…</div></div>
+        <div class="bracket-center"><div class="bracket-champion"><strong>World Series</strong><div>AL Champion</div><div class="theme-muted my-1">vs</div><div>NL Champion</div></div></div>
+        <div class="bracket-league nl-bracket"><div class="text-sm font-semibold mb-2">National League</div><div class="bracket-slot">Loading NL bracket…</div></div>
       </div>
-      <div id="ws-bracket" class="hidden mt-4 pt-4 border-t" style="border-color:var(--border)"></div>
-      <div class="bracket-note">Series results come from the MLB Stats API. Unscheduled or not-yet-official matchups remain TBD; completed series advance automatically when the API publishes the next round.</div>
+      <div class="bracket-note">Series results and winners are read from the MLB Stats API. The bracket follows MLB’s fixed 12-team format for 2022 onward; older seasons use their historical series list.</div>
     </section>
 
     <footer class="text-[11px] theme-muted text-center py-4">Postseason race · MLB Stats API · Auto-refresh 30s · <a href="https://techlifeweb.com/" target="_blank" rel="noopener noreferrer">Created by TechLifeWeb</a></footer>
   </main>
 <script>
-const MLB='https://statsapi.mlb.com/api/v1', LEAGUES={AL:103,NL:104}, POLL_MS=30000;
-const $=id=>document.getElementById(id); const state={season:2026,league:'both',teams:{},timer:null,bracket:[]};
+const MLB='https://statsapi.mlb.com/api/v1', POLL_MS=30000;
+const $=id=>document.getElementById(id);
+const state={season:2026,league:'both',teams:{},timer:null};
 const logo=id=>`https://www.mlbstatic.com/team-logos/${id}.svg`;
 function winPct(r){const w=Number(r?.wins||0),l=Number(r?.losses||0),g=w+l;return g?w/g:0}
 function seasonGames(season){return Number(season)===2020?60:162}
 function magicNumber(team,competitor){if(!team||!competitor)return null;const n=seasonGames(state.season)+1-Number(team?.wins||0)-Number(competitor?.losses||0);return Math.max(0,n)}
 function teamInfo(r){const t=r?.team||{};return state.teams[t.id]||{name:t.name||'',abbr:'',logo:logo(t.id)}}
-async function fetchTeams(){const r=await fetch(`${MLB}/teams?sportId=1&season=${state.season}`);if(!r.ok)throw new Error('Failed to fetch teams');const d=await r.json();state.teams={};(d.teams||[]).forEach(t=>state.teams[t.id]={name:t.name||'',abbr:t.abbreviation||t.teamCode||'',logo:logo(t.id),leagueId:t?.league?.id||null})}
+async function fetchTeams(){const r=await fetch(`${MLB}/teams?sportId=1&season=${state.season}`);if(!r.ok)throw new Error('Failed to fetch teams');const d=await r.json();state.teams={};(d.teams||[]).forEach(t=>state.teams[t.id]={name:t.name||'',abbr:t.abbreviation||t.teamCode||'',logo:logo(t.id)})}
 async function fetchByDivision(leagueId){const r=await fetch(`${MLB}/standings?leagueId=${leagueId}&season=${state.season}&standingsTypes=byDivision`);if(!r.ok)throw new Error('Failed to fetch division standings');return (await r.json()).records||[]}
 async function fetchWC(leagueId){const r=await fetch(`${MLB}/standings?leagueId=${leagueId}&season=${state.season}&standingsTypes=wildCard`);if(!r.ok)throw new Error('Failed to fetch Wild Card standings');const d=await r.json();return d?.records?.[0]?.teamRecords||[]}
-async function fetchPostseason(){
-  const r=await fetch(`${MLB}/schedule?season=${state.season}&sportId=1&gameType=P&hydrate=team`);
-  if(!r.ok)throw new Error('Failed to fetch postseason schedule');
-  const d=await r.json();
-  return (d.dates||[]).flatMap(day=>day.games||[]);
-}
-function stageFor(desc){
-  const s=String(desc||'').toLowerCase();
-  if(s.includes('wild card'))return 'wc';
-  if(s.includes('division'))return 'ds';
-  if(s.includes('championship'))return s.includes('american')||s.includes('alcs')?'alcs':s.includes('national')||s.includes('nlcs')?'nlcs':'cs';
-  if(s.includes('world series'))return 'ws';
-  return '';
-}
-function leagueForGame(g){
-  const s=String(g?.seriesDescription||'').toLowerCase();
-  if(s.includes('american')||s.includes('al ' )||s.includes('alcs'))return 'AL';
-  if(s.includes('national')||s.includes('nl ' )||s.includes('nlcs'))return 'NL';
-  const ids=[g?.teams?.away?.team?.id,g?.teams?.home?.team?.id].filter(Boolean);
-  const leagues=ids.map(id=>Object.values(state.teams).find(t=>t.id===id)?.leagueId).filter(Boolean);
-  return '';
-}
-function gameCompleted(g){return g?.status?.abstractGameState==='Final' || g?.status?.codedGameState==='F'}
-function seriesFromGames(games){
-  const map=new Map();
-  games.forEach(g=>{
-    if(!gameCompleted(g))return;
-    const stage=stageFor(g.seriesDescription);
-    if(!stage)return;
-    const a=g?.teams?.away?.team?.id,h=g?.teams?.home?.team?.id;
-    if(!a||!h)return;
-    const ids=[a,h].sort((x,y)=>x-y);
-    const key=`${stage}:${ids.join('-')}`;
-    if(!map.has(key))map.set(key,{stage,ids,games:[]});
-    map.get(key).games.push(g);
-  });
-  return [...map.values()].map(s=>{
-    const wins=new Map(s.ids.map(id=>[id,0]));
-    s.games.forEach(g=>{
-      const a=g.teams.away.team.id,h=g.teams.home.team.id;
-      const as=Number(g.teams.away.score),hs=Number(g.teams.home.score);
-      if(as>hs)wins.set(a,(wins.get(a)||0)+1);
-      else if(hs>as)wins.set(h,(wins.get(h)||0)+1);
-    });
-    const winner=[...wins.entries()].sort((a,b)=>b[1]-a[1])[0];
-    return {...s,wins:Object.fromEntries(wins),winner:winner&&winner[1]>0&&winner[1]>=Math.ceil((s.stage==='wc'?3:s.stage==='ds'?5:7)/2)?winner[0]:null};
-  });
-}
-function bracketTeam(r,seed){
-  if(!r)return {name:'TBD',seed:'',id:null,tbd:true};
-  const t=teamInfo(r);
-  return {name:t.name||'TBD',seed:seed||'',id:r.team?.id||null,tbd:false};
-}
-function teamById(id){return id?{team:{id}}:null}
-function findSeries(series,stage,a,b){
-  if(!a||!b)return null;
-  const ids=[a,b].sort((x,y)=>x-y);
-  return series.find(s=>s.stage===stage&&s.ids[0]===ids[0]&&s.ids[1]===ids[1])||null;
-}
-function seriesCard(label,a,b,series){
-  const sa=series?.wins?.[a.id]??null,sb=series?.wins?.[b.id]??null;
-  const winner=series?.winner||null;
-  const row=t=>`<div class="team-slot ${t.tbd?'tbd':''} ${winner&&winner===t.id?'winner':''}"><span class="seed">${t.seed||'—'}</span><span class="teamline truncate">${t.id?`<img src="${teamInfo({team:{id:t.id}}).logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<span class="truncate">${t.name}</span></span><span class="score">${t.id&&series?(sa!==null&&a.id===t.id?sa:sb):''}</span></div>`;
-  return `<div class="series"><div class="series-head"><span>${label}</span><span>${winner?'Final':series?.games?.length?'In progress':'Upcoming'}</span></div>${row(a)}${row(b)}</div>`;
-}
-function renderLeagueBracket(prefix,field,series,league){
-  const s=field.seeds;
-  const seeds=s.map((r,i)=>({r,seed:i+1}));
-  const bySeed=n=>seeds.find(x=>x.seed===n)?.r||null;
-  const wc36=findSeries(series,'wc',bySeed(3)?.team?.id,bySeed(6)?.team?.id);
-  const wc45=findSeries(series,'wc',bySeed(4)?.team?.id,bySeed(5)?.team?.id);
-  const w36=wc36?.winner?teamById(wc36.winner):null,w45=wc45?.winner?teamById(wc45.winner):null;
-  const ds2=findSeries(series,'ds',bySeed(2)?.team?.id,w36?.team?.id);
-  const ds1=findSeries(series,'ds',bySeed(1)?.team?.id,w45?.team?.id);
-  const c1=ds1?.winner?teamById(ds1.winner):null,c2=ds2?.winner?teamById(ds2.winner):null;
-  const csStage=league==='AL'?'alcs':'nlcs';
-  const cs=findSeries(series,csStage,c1?.team?.id,c2?.team?.id);
-  const champ=cs?.winner?teamById(cs.winner):null;
-  const t=n=>bracketTeam(bySeed(n),n);
-  const wc36a=t(3),wc36b=t(6),wc45a=t(4),wc45b=t(5);
-  const ds2a=bracketTeam(bySeed(2),2),ds2b=w36?bracketTeam(w36):{name:'Winner of 3/6',seed:'',id:null,tbd:true};
-  const ds1a=bracketTeam(bySeed(1),1),ds1b=w45?bracketTeam(w45):{name:'Winner of 4/5',seed:'',id:null,tbd:true};
-  const csA=c1?bracketTeam(c1):{name:'Winner of #1 / 4-5',seed:'',id:null,tbd:true};
-  const csB=c2?bracketTeam(c2):{name:'Winner of #2 / 3-6',seed:'',id:null,tbd:true};
-  const html=`<div class="bracket"><div class="bracket-round"><div class="bracket-round-title">Wild Card</div>${seriesCard('#3 vs #6',wc36a,wc36b,wc36)}${seriesCard('#4 vs #5',wc45a,wc45b,wc45)}</div><div class="bracket-round"><div class="bracket-round-title">Division Series</div>${seriesCard('#2 vs 3/6',ds2a,ds2b,ds2)}${seriesCard('#1 vs 4/5',ds1a,ds1b,ds1)}</div><div class="bracket-round"><div class="bracket-round-title">${league} Championship</div>${seriesCard('League Championship',csA,csB,cs)}</div></div><div class="bracket-note">${champ?`Champion: <strong>${teamInfo(champ).name}</strong>`:'League champion TBD'}</div>`;
-  $(`${prefix}-bracket`).innerHTML=html;
-  return champ;
-}
-function renderWorldSeries(series,alChamp,nlChamp){
-  const a=alChamp?bracketTeam(alChamp):{name:'AL Champion',seed:'',id:null,tbd:true};
-  const n=nlChamp?bracketTeam(nlChamp):{name:'NL Champion',seed:'',id:null,tbd:true};
-  const ws=findSeries(series,'ws',a.id,n.id);
-  const winner=ws?.winner?teamById(ws.winner):null;
-  $('ws-bracket').innerHTML=`<div class="text-xs font-semibold text-center mb-2">World Series</div><div class="ws-card">${seriesCard('Best of 7',a,n,ws)}</div><div class="bracket-note text-center">${winner?`World Series champion: <strong>${teamInfo(winner).name}</strong>`:'World Series matchup will populate when the league champions are known.'}</div>`;
-  $('ws-bracket').classList.remove('hidden');
-}
-async function refreshBracket(alField,nlField){
-  $('bracket-loading').classList.remove('hidden');$('bracket-error').classList.add('hidden');
-  try{
-    if(Number(state.season)<2021){
-      $('bracket-grid').classList.add('hidden');$('ws-bracket').classList.add('hidden');
-      $('bracket-error').textContent='The historical postseason format changed before 2021. The bracket display currently supports the 2021–2026 12-team format.';
-      $('bracket-error').classList.remove('hidden');
-      return;
-    }
-    const games=await fetchPostseason();
-    const series=seriesFromGames(games);
-    const alChamp=renderLeagueBracket('al',alField,series,'AL');
-    const nlChamp=renderLeagueBracket('nl',nlField,series,'NL');
-    renderWorldSeries(series,alChamp,nlChamp);
-    $('bracket-grid').classList.remove('hidden');
-    $('bracket-updated').textContent=`Updated ${new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}`;
-  }catch(e){$('bracket-error').textContent=e?.message||String(e);$('bracket-error').classList.remove('hidden')}finally{$('bracket-loading').classList.add('hidden')}
-}
-function divisionLeaderEntries(records){
-  return records.map(rec=>{
-    const rows=(rec.teamRecords||[]).slice();
-    const leader=rows.slice().sort((a,b)=>Number(a?.divisionRank||99)-Number(b?.divisionRank||99))[0];
-    if(!leader)return null;
-    const competitor=rows.filter(r=>r?.team?.id!==leader?.team?.id).sort((a,b)=>Number(a?.losses||999)-Number(b?.losses||999)||winPct(b)-winPct(a))[0]||null;
-    leader._divisionCompetitor=competitor;
-    return leader;
-  }).filter(Boolean)
-}
-function seedField(records,wcRows){
-  const leaders=divisionLeaderEntries(records).sort((a,b)=>winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999));
-  const leaderIds=new Set(leaders.map(r=>r.team?.id));
-  const wc=wcRows.filter(r=>!leaderIds.has(r.team?.id)).sort((a,b)=>{
-    const ar=Number(a?.wildCardRank||999),br=Number(b?.wildCardRank||999);
-    return ar-br||winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999)
-  });
-  return {seeds:[...leaders.slice(0,3),...wc.slice(0,3)],bubble:wc.slice(3,7),leaderIds,wcChaser:wc[3]||null}
-}
-function magicBadge(r,field){
-  const isDivision=field.leaderIds.has(r?.team?.id);
-  const competitor=isDivision?r?._divisionCompetitor:field.wcChaser;
-  const mn=magicNumber(r,competitor);
-  if(mn===null)return '';
-  const label=isDivision?'DIV':'WC';
-  return `<span class="magic" title="${label} magic number">${mn===0?`${label} CLINCHED`:`${label} MN ${mn}`}</span>`
-}
-function seedRow(r,i,field){
-  const t=teamInfo(r),isDivision=field.leaderIds.has(r.team?.id),kind=isDivision?'Division':'Wild Card';
-  return `<div class="seed-row"><div class="seed-num">${i+1}</div><div class="teamline">${t.logo?`<img src="${t.logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<div class="truncate"><span class="font-medium">${t.name}</span><span class="text-xs theme-muted"> · ${r.wins}-${r.losses} · ${(winPct(r)*100).toFixed(1)}%</span></div></div><div class="seed-meta">${magicBadge(r,field)}<span class="status">${kind}</span></div></div>`
-}
+function divisionLeaderEntries(records){return records.map(rec=>{const rows=(rec.teamRecords||[]).slice();const leader=rows.slice().sort((a,b)=>Number(a?.divisionRank||99)-Number(b?.divisionRank||99))[0];if(!leader)return null;const competitor=rows.filter(r=>r?.team?.id!==leader?.team?.id).sort((a,b)=>Number(a?.losses||999)-Number(b?.losses||999)||winPct(b)-winPct(a))[0]||null;leader._divisionCompetitor=competitor;return leader}).filter(Boolean)}
+function seedField(records,wcRows){const leaders=divisionLeaderEntries(records).sort((a,b)=>winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999));const leaderIds=new Set(leaders.map(r=>r.team?.id));const wc=wcRows.filter(r=>!leaderIds.has(r.team?.id)).sort((a,b)=>{const ar=Number(a?.wildCardRank||999),br=Number(b?.wildCardRank||999);return ar-br||winPct(b)-winPct(a)||Number(a?.leagueRank||999)-Number(b?.leagueRank||999)});return {seeds:[...leaders.slice(0,3),...wc.slice(0,3)],bubble:wc.slice(3,7),leaderIds,wcChaser:wc[3]||null}}
+function magicBadge(r,field){const isDivision=field.leaderIds.has(r?.team?.id);const competitor=isDivision?r?._divisionCompetitor:field.wcChaser;const mn=magicNumber(r,competitor);if(mn===null)return '';const label=isDivision?'DIV':'WC';return `<span class="magic" title="${label} magic number">${mn===0?`${label} CLINCHED`:`${label} MN ${mn}`}</span>`}
+function seedRow(r,i,field){const t=teamInfo(r),isDivision=field.leaderIds.has(r.team?.id),kind=isDivision?'Division':'Wild Card';return `<div class="seed-row"><div class="seed-num">${i+1}</div><div class="teamline">${t.logo?`<img src="${t.logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<div class="truncate"><span class="font-medium">${t.name}</span><span class="text-xs theme-muted"> · ${r.wins}-${r.losses} · ${(winPct(r)*100).toFixed(1)}%</span></div></div><div class="seed-meta">${magicBadge(r,field)}<span class="status">${kind}</span></div></div>`}
 function bubbleRow(r){const t=teamInfo(r);const gb=r.wildCardGamesBack??'—';return `<div class="bubble-row"><div class="teamline">${t.logo?`<img src="${t.logo}" alt="" class="logo-ring bg-white" onerror="this.style.display='none'">`:''}<div class="truncate"><span class="font-medium">${t.name}</span><span class="text-xs theme-muted"> · ${r.wins}-${r.losses} · ${(winPct(r)*100).toFixed(1)}%</span></div></div><span class="text-xs theme-muted">WCGB ${gb}</span></div>`}
 function renderSide(prefix,field){$(`${prefix}-seeds`).innerHTML=field.seeds.map((r,i)=>seedRow(r,i,field)).join('')||'<div class="p-3 text-sm theme-muted">No standings available.</div>';$(`${prefix}-bubble`).innerHTML=field.bubble.map(bubbleRow).join('')||'<div class="p-3 text-sm theme-muted">No bubble teams available.</div>'}
-function applyLeagueVisibility(){const v=state.league;$('al-panel').classList.toggle('hidden',v==='104');$('nl-panel').classList.toggle('hidden',v==='103');$('al-bracket-panel').classList.toggle('hidden',v==='104');$('nl-bracket-panel').classList.toggle('hidden',v==='103');const grid=$('race-grid');grid.classList.toggle('lg:grid-cols-2',v==='both');grid.classList.toggle('lg:grid-cols-1',v!=='both');const bg=$('bracket-grid');bg.classList.toggle('xl:grid-cols-2',v==='both');bg.classList.toggle('xl:grid-cols-1',v!=='both')}
-async function refreshRace(){ $('race-loading').classList.remove('hidden');$('race-error').classList.add('hidden');try{await fetchTeams();const [alR,alW,nlR,nlW]=await Promise.all([fetchByDivision(103),fetchWC(103),fetchByDivision(104),fetchWC(104)]);const alField=seedField(alR,alW),nlField=seedField(nlR,nlW);state.bracket={al:alField,nl:nlField};renderSide('al',alField);renderSide('nl',nlField);applyLeagueVisibility();$('race-grid').classList.remove('hidden');$('race-updated').textContent=`Updated ${new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}`;await refreshBracket(alField,nlField);}catch(e){$('race-error').textContent=e?.message||String(e);$('race-error').classList.remove('hidden')}finally{$('race-loading').classList.add('hidden')}}
+function applyLeagueVisibility(){const v=state.league;$('al-panel').classList.toggle('hidden',v==='104');$('nl-panel').classList.toggle('hidden',v==='103');const grid=$('race-grid');grid.classList.toggle('lg:grid-cols-2',v==='both');grid.classList.toggle('lg:grid-cols-1',v!=='both');$('al-bracket-panel')?.classList.toggle('hidden',v==='104');$('nl-bracket-panel')?.classList.toggle('hidden',v==='103');}
+async function fetchPostseasonGames(){const r=await fetch(`${MLB}/schedule/postseason?season=${state.season}&sportId=1&hydrate=team,linescore`);if(!r.ok)throw new Error('Failed to fetch postseason schedule');const d=await r.json();return (d.dates||[]).flatMap(day=>day.games||[])}
+function gameIsFinal(g){const s=g?.status||{};return s.abstractGameState==='Final'||s.codedGameState==='F'||s.detailedState==='Final'}
+function teamId(side){return Number(side?.team?.id)||null}
+function seriesKey(type,a,b){return `${type}:${[Number(a),Number(b)].sort((x,y)=>x-y).join('-')}`}
+function buildSeriesIndex(games){const index=new Map();for(const g of games){const a=teamId(g.teams?.away),b=teamId(g.teams?.home);if(!a||!b)continue;const key=seriesKey(g.gameType,a,b);let s=index.get(key);if(!s){s={type:g.gameType,teamIds:[a,b],wins:{[a]:0,[b]:0},games:[],finals:0};index.set(key,s)}s.games.push(g);if(gameIsFinal(g)){s.finals++;let winnerId=null;if(g.teams?.away?.isWinner===true)winnerId=a;else if(g.teams?.home?.isWinner===true)winnerId=b;else if(Number(g.teams?.away?.score)>Number(g.teams?.home?.score))winnerId=a;else if(Number(g.teams?.home?.score)>Number(g.teams?.away?.score))winnerId=b;if(winnerId)s.wins[winnerId]=(s.wins[winnerId]||0)+1}}
+  for(const s of index.values()){s.games.sort((a,b)=>new Date(a.gameDate)-new Date(b.gameDate));const need=s.type==='F'?2:s.type==='D'?3:4;s.winnerId=s.teamIds.find(id=>(s.wins[id]||0)>=need)||null;s.inProgress=s.finals>0&&!s.winnerId;s.scheduled=s.games.some(g=>!gameIsFinal(g))}return index}
+function getSeries(index,type,a,b){if(!a||!b)return null;return index.get(seriesKey(type,a,b))||null}
+function teamLabel(id,seed){if(!id)return {name:'TBD',abbr:'',logo:'',id:null,seed};const t=state.teams[id]||{};return {id,name:t.name||'TBD',abbr:t.abbr||'',logo:t.logo||logo(id),seed}}
+function seriesStatus(s){if(!s)return 'Not started';if(s.winnerId)return 'Final';if(s.inProgress)return 'In progress';if(s.scheduled)return 'Scheduled';return s.finals?'In progress':'Awaiting schedule'}
+function seriesScore(s,t){return s?Number(s.wins[t.id]||0):''}
+function teamRow(t,score,winner){const name=t.name||'TBD';const img=t.logo?`<img src="${t.logo}" alt="" class="w-5 h-5 object-contain" onerror="this.style.display='none'">`:'';return `<div class="series-team ${winner?'winner':''}"><span class="series-seed">${t.seed??'—'}</span><div class="flex items-center gap-2 min-w-0">${img}<span class="series-name">${name}</span></div><span class="series-score">${score===''?'—':score}</span></div>`}
+function renderSeriesCard(title,t1,t2,s){const w=s?.winnerId||null,oneWon=!!w&&w===t1.id,twoWon=!!w&&w===t2.id;const score1=seriesScore(s,t1),score2=seriesScore(s,t2);let note=seriesStatus(s);if(s?.finals&&!w)note+=` · ${s.finals} game${s.finals===1?'':'s'} played`;return `<div class="series-card"><div class="series-head"><span>${title}</span><span>${note}</span></div>${teamRow(t1,score1,oneWon)}${teamRow(t2,score2,twoWon)}${s?.winnerId?`<div class="series-foot">Series winner: ${teamLabel(s.winnerId).name}</div>`:''}</div>`}
+function renderRound(title,items){return `<div class="bracket-round"><div class="bracket-round-title">${title}</div>${items.join('')}</div>`}
+function leagueBracket(prefix,field,index){const seeds=(field?.seeds||[]).map((r,i)=>({...teamLabel(r.team?.id,i+1),record:r}));if(seeds.length<6)return `<div class="text-sm theme-muted">Not enough standings data to build this bracket.</div>`;const [s1,s2,s3,s4,s5,s6]=seeds;const wc36=getSeries(index,'F',s3.id,s6.id),wc45=getSeries(index,'F',s4.id,s5.id);const win36=wc36?.winnerId?teamLabel(wc36.winnerId, wc36.winnerId===s3.id?3:6):null,win45=wc45?.winnerId?teamLabel(wc45.winnerId, wc45.winnerId===s4.id?4:5):null;const ds2a=win36||teamLabel(null);if(!win36)ds2a.name='Winner of #3 / #6';const ds1a=win45||teamLabel(null);if(!win45)ds1a.name='Winner of #4 / #5';const ds2=getSeries(index,'D',s2.id,win36?.id),ds1=getSeries(index,'D',s1.id,win45?.id);const ds2Winner=ds2?.winnerId?teamLabel(ds2.winnerId):null,ds1Winner=ds1?.winnerId?teamLabel(ds1.winnerId):null;const leagueName=prefix==='al'?'AL':'NL';const lcs=getSeries(index,'L',ds1Winner?.id,ds2Winner?.id);return `<div class="text-sm font-semibold mb-2">${leagueName} Bracket</div>${renderRound('Wild Card Series',[renderSeriesCard('#3 vs #6',s3,s6,wc36),renderSeriesCard('#4 vs #5',s4,s5,wc45)])}${renderRound('Division Series',[renderSeriesCard('#2 seed vs #3/#6 winner',s2,ds2a,ds2),renderSeriesCard('#1 seed vs #4/#5 winner',s1,ds1a,ds1)])}${renderRound(`${leagueName} Championship Series`,[renderSeriesCard('Division Series winners',ds1Winner||teamLabel(null),ds2Winner||teamLabel(null),lcs)])}`}
+function renderHistoricalBracket(games,index){const types=['F','D','L','W'],labels={F:'Wild Card',D:'Division Series',L:'League Championship Series',W:'World Series'};const byType=Object.fromEntries(types.map(t=>[t,[]]));for(const s of index.values())if(byType[s.type])byType[s.type].push(s);return `<div class="text-sm theme-muted mb-3">This season used a different postseason format. Showing the actual series returned by MLB for that season.</div><div class="grid grid-cols-1 md:grid-cols-2 grid-gap">${types.filter(t=>byType[t].length).map(type=>`<div class="bracket-round"><div class="bracket-round-title">${labels[type]}</div>${byType[type].map(s=>{const a=teamLabel(s.teamIds[0]),b=teamLabel(s.teamIds[1]);return renderSeriesCard(`${a.name} vs ${b.name}`,a,b,s)}).join('')}</div>`).join('')||'<div class="bracket-slot">No postseason schedule is available for this season yet.</div>'}</div>`}
+function leagueChampion(field,index){const f=field?.seeds||[];if(f.length<6)return null;const s=f.map((r,i)=>({...teamLabel(r.team?.id,i+1)}));const a=getSeries(index,'F',s[2].id,s[5].id)?.winnerId,b=getSeries(index,'F',s[3].id,s[4].id)?.winnerId;const dsA=a?getSeries(index,'D',s[1].id,a)?.winnerId:null,dsB=b?getSeries(index,'D',s[0].id,b)?.winnerId:null;return dsA&&dsB?getSeries(index,'L',dsB,dsA)?.winnerId:null}
+function renderBracket(alField,nlField,games,errorText=''){const index=buildSeriesIndex(games||[]);$('bracket-error').textContent=errorText;$('bracket-error').classList.toggle('hidden',!errorText);if(state.season<2022){$('bracket-content').className='grid grid-cols-1';$('bracket-content').innerHTML=renderHistoricalBracket(games||[],index)}else{$('bracket-content').className='bracket-layout';const alWinner=leagueChampion(alField,index),nlWinner=leagueChampion(nlField,index);$('bracket-content').innerHTML=`<div id="al-bracket-panel" class="bracket-league al-bracket">${leagueBracket('al',alField,index)}</div><div class="bracket-center"><div class="bracket-champion"><strong>World Series</strong>${renderSeriesCard('Championship matchup',teamLabel(alWinner),teamLabel(nlWinner),getSeries(index,'W',alWinner,nlWinner))}</div></div><div id="nl-bracket-panel" class="bracket-league nl-bracket">${leagueBracket('nl',nlField,index)}</div>`;applyBracketLeagueVisibility()}$('bracket-updated').textContent=`${games?.length?`${games.length} postseason games loaded`:'No postseason games loaded'} · ${new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}`}
+function applyBracketLeagueVisibility(){const v=state.league;$('al-bracket-panel')?.classList.toggle('hidden',v==='104');$('nl-bracket-panel')?.classList.toggle('hidden',v==='103')}
+async function refreshRace(){$('race-loading').classList.remove('hidden');$('race-error').classList.add('hidden');try{await fetchTeams();const [alR,alW,nlR,nlW]=await Promise.all([fetchByDivision(103),fetchWC(103),fetchByDivision(104),fetchWC(104)]);const alField=seedField(alR,alW),nlField=seedField(nlR,nlW);renderSide('al',alField);renderSide('nl',nlField);applyLeagueVisibility();$('race-grid').classList.remove('hidden');$('race-updated').textContent=`Updated ${new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}`;try{const games=await fetchPostseasonGames();renderBracket(alField,nlField,games)}catch(e){renderBracket(alField,nlField,[],e?.message||'Could not load postseason schedule from MLB Stats API.')}}catch(e){$('race-error').textContent=e?.message||String(e);$('race-error').classList.remove('hidden')}finally{$('race-loading').classList.add('hidden')}}
 function save(){try{localStorage.setItem('mlbPostseasonPrefs:v2',JSON.stringify({season:state.season,league:state.league}))}catch{}}
 function load(){try{return JSON.parse(localStorage.getItem('mlbPostseasonPrefs:v2'))||{}}catch{return {}}}
 function initHeader(){const dark=()=>document.documentElement.classList.contains('dark'),compact=()=>document.documentElement.classList.contains('compact');const chips=()=>{$('theme-chip').textContent=dark()?'Dark':'Light';$('compact-chip').textContent=compact()?'Compact On':'Compact Off'};chips();$('theme-toggle').onclick=()=>{document.documentElement.classList.toggle('dark');localStorage.setItem('mlbDarkMode',String(dark()));chips()};$('compact-toggle').onclick=()=>{document.documentElement.classList.toggle('compact');localStorage.setItem('mlbCompact',String(compact()));chips()}}
-document.addEventListener('DOMContentLoaded',()=>{const p=load();state.season=Number(p.season)||2026;state.league=p.league||'both';if(!$('season-select').querySelector(`option[value="${state.season}"]`))state.season=2026;$('season-select').value=String(state.season);$('league-select').value=state.league;initHeader();$('season-select').addEventListener('change',e=>{state.season=Number(e.target.value)||2026;save();refreshRace()});$('league-select').addEventListener('change',e=>{state.league=e.target.value;save();applyLeagueVisibility()});$('refresh-btn').addEventListener('click',refreshRace);refreshRace();state.timer=setInterval(refreshRace,POLL_MS)});
+document.addEventListener('DOMContentLoaded',()=>{const p=load();state.season=Number(p.season)||2026;state.league=p.league||'both';if(!$('season-select').querySelector(`option[value="${state.season}"]`))state.season=2026;$('season-select').value=String(state.season);$('league-select').value=state.league;initHeader();$('season-select').addEventListener('change',e=>{state.season=Number(e.target.value)||2026;save();refreshRace()});$('league-select').addEventListener('change',e=>{state.league=e.target.value;save();applyLeagueVisibility();applyBracketLeagueVisibility()});$('refresh-btn').addEventListener('click',refreshRace);refreshRace();state.timer=setInterval(refreshRace,POLL_MS)});
+
 </script>
 </body></html>
