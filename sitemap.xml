@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117377335468580160/</loc>
+            <lastmod>2026-10-03T14:00:02.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117375116472817795/</loc>
             <lastmod>2026-10-03T04:35:43.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -268,12 +274,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117338151929129034/</loc>
             <lastmod>2026-09-26T15:55:09.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Rainforest%20Radar,%20Voter%20Screening,%20and%20Parisian%20Butter/</loc>
-            <lastmod>2026-09-26T09:19:13.663Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
