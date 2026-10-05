@@ -14,10 +14,37 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 28 Sep 2026 19:37:19 PDT</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2026 19:37:19 PDT</lastBuildDate>
+    <pubDate>Mon, 05 Oct 2026 11:13:56 PDT</pubDate>
+    <lastBuildDate>Mon, 05 Oct 2026 11:13:56 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-10-05T11:13:56.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-05t101356/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Is it stealing to use your work-issued Excel to manage your car shopping? Just a simple spreadsheet of pluses and minuses of each brand and model. Now, how about using your work issued AI of choice to do the comparisons for you? Or, use it to vibe-code the next car shopping app.<br />
+The ethics here seem like big issues to me that aren't being thought through. Then again, I'm nowhere near CIO level so maybe they are? I suppose the answer is in monitoring token use since that is easier to monitor that what is being tracked in Excel.<br />
+#ai #ethics</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Is it stealing to use your work-issued Excel to manage your car shopping? Just a simple spreadsheet of pluses and minuses of each brand and model. Now, how about using your work issued AI of choice to do the comparisons for you? Or, use it to vibe-code the next car shopping app.<br />
+The ethics here seem like big issues to me that aren't being thought through. Then again, I'm nowhere near CIO level so maybe they are? I suppose the answer is in monitoring token use since that is easier to monitor that what is being tracked in Excel.<br />
+#ai #ethics</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Mon, 05 Oct 2026 11:13:56 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-05t101356/</guid>
+
+    </item>
 
     <item>
       <title>Repost 2026-09-28T19:37:19.000-07:00</title>
