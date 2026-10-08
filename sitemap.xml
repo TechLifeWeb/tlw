@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117405791060166650/</loc>
+            <lastmod>2026-10-08T14:36:40.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Ness%20Labs-%20Curiosity%20Before%20Consensus%20%F0%9F%A6%9C/</loc>
+            <lastmod>2026-10-08T13:44:42.159Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/Assisted%20Dying%20Law,%20Math%20Advances,%20and%20the%20Heaviest%20Insect/</loc>
             <lastmod>2026-10-08T08:44:42.128Z</lastmod>
             <changefreq>daily</changefreq>
