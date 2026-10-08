@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117403580020071816/</loc>
+            <lastmod>2026-10-08T05:14:22.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Plague%20Probe,%20French%20Protests,%20and%20Bathroom%20Scares/</loc>
+            <lastmod>2026-10-07T09:44:42.233Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/SCOTUS%20Returns,%20Book%20Bans,%20and%20Bukangi%20the%20Shark/</loc>
             <lastmod>2026-10-06T09:44:41.411Z</lastmod>
             <changefreq>daily</changefreq>
@@ -274,18 +286,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117363921645310751/</loc>
             <lastmod>2026-10-01T05:08:43.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-How%20to%20Spot%2010-Year%20Trends%20and%20Build%20Billion-Dollar%20Companies-/</loc>
-            <lastmod>2026-09-30T14:44:38.390Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Hacker%20Arrest,%20Oura%20IPO,%20and%20a%20&#39;Nav%20Friend&#39;/</loc>
-            <lastmod>2026-09-30T09:44:38.287Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
