@@ -14,10 +14,41 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Mon, 05 Oct 2026 11:13:56 PDT</pubDate>
-    <lastBuildDate>Mon, 05 Oct 2026 11:13:56 PDT</lastBuildDate>
+    <pubDate>Fri, 09 Oct 2026 17:04:33 PDT</pubDate>
+    <lastBuildDate>Fri, 09 Oct 2026 17:04:33 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-10-09T17:04:33.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-09T160433/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Senate Unanimously Passes the Health Care Cybersecurity and Resiliency Act:</p>
+<blockquote>
+"The Health Care Cybersecurity and Resiliency Act requires certain cybersecurity measures to be adopted, such as encryption of electronic protected health information, implementation of multifactor authentication, ongoing monitoring for cyber events, and penetration tests. The bill also requires the adoption of cybersecurity best practices in line with national cybersecurity frameworks such as the NIST Cybersecurity Framework."
+</blockquote>
+via: <a href="https://www.hipaajournal.com/senate-unanimously-passes-the-health-care-cybersecurity-and-resiliency-act/?is=7954b7f440cecfd9b9243ddbaab5414f1d380add504b8c010e47738f0c1bfbda" target="_blank" rel="noopener noreferrer">https://www.hipaajournal.com/senate-unanimously-passes-the-health-care-cybersecurity-and-resiliency-act/?is=7954b7f440cecfd9b9243ddbaab5414f1d380add504b8c010e47738f0c1bfbda</a>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Senate Unanimously Passes the Health Care Cybersecurity and Resiliency Act:</p>
+<blockquote>
+"The Health Care Cybersecurity and Resiliency Act requires certain cybersecurity measures to be adopted, such as encryption of electronic protected health information, implementation of multifactor authentication, ongoing monitoring for cyber events, and penetration tests. The bill also requires the adoption of cybersecurity best practices in line with national cybersecurity frameworks such as the NIST Cybersecurity Framework."
+</blockquote>
+via: <a href="https://www.hipaajournal.com/senate-unanimously-passes-the-health-care-cybersecurity-and-resiliency-act/?is=7954b7f440cecfd9b9243ddbaab5414f1d380add504b8c010e47738f0c1bfbda" target="_blank" rel="noopener noreferrer">https://www.hipaajournal.com/senate-unanimously-passes-the-health-care-cybersecurity-and-resiliency-act/?is=7954b7f440cecfd9b9243ddbaab5414f1d380add504b8c010e47738f0c1bfbda</a>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 09 Oct 2026 17:04:33 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-09T160433/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-10-05T11:13:56.000-07:00</title>
