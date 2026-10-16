@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/blog/2026/10/post-2026-10-16t070123/</loc>
+            <lastmod>2026-10-16T15:01:23.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Baseball%20on%20the%20brain%20%E2%9A%BE%EF%B8%8F/</loc>
+            <lastmod>2026-10-16T13:44:46.128Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Ukraine%20Attacks%20Resume,%20Elizabeth%20Holmes,%20and%20&#39;Dog%20Week&#39;/</loc>
+            <lastmod>2026-10-16T09:44:45.858Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/blog/2026/10/post-2026-10-15T215142/</loc>
+            <lastmod>2026-10-16T05:51:42.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117448471949057190/</loc>
             <lastmod>2026-10-16T03:30:59.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -302,12 +326,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20Frank%20Miller%20Unleashed,%20Elegant%20Gadgets,%20Scando%20Slippers,%20and%20More/</loc>
-            <lastmod>2026-10-09T22:44:43.630Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117412672565769892/</loc>
             <lastmod>2026-10-09T19:46:43.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -316,18 +334,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117411404433284969/</loc>
             <lastmod>2026-10-09T14:24:13.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Are%20we%20a%20teardown%20or%20a%20fixer-upper-/</loc>
-            <lastmod>2026-10-09T13:44:43.925Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Hurricane%20Isaias,%20Oldest%20Tortoise,%20and%20the%20End%20of%20Dining%20Out/</loc>
-            <lastmod>2026-10-09T08:44:43.435Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     

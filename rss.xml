@@ -14,10 +14,68 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Thu, 15 Oct 2026 19:11:07 PDT</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2026 19:11:07 PDT</lastBuildDate>
+    <pubDate>Fri, 16 Oct 2026 08:01:23 PDT</pubDate>
+    <lastBuildDate>Fri, 16 Oct 2026 08:01:23 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-10-16T08:01:23.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-16t070123/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Watched 'The Menu' last night. One of those movies you can't really talk about without giving things away. I'll be thinking about this one for a while.<br />
+The Menu (2022) - IMDb https://www.imdb.com/title/tt9764362/  'A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.'<br />
+#movies</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Watched 'The Menu' last night. One of those movies you can't really talk about without giving things away. I'll be thinking about this one for a while.<br />
+The Menu (2022) - IMDb https://www.imdb.com/title/tt9764362/  'A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.'<br />
+#movies</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Fri, 16 Oct 2026 08:01:23 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-16t070123/</guid>
+
+    </item>
+
+    <item>
+      <title>Note 2026-10-15T22:51:42.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-15T215142/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>How Soon Will AI Dramatically Change the Economy?:</p>
+<blockquote>
+Dwarkesh Patel, in an interview with Tyler Cowen, argues that by the end of the decade, AI minds will surpass human minds in intelligence and speed, and will vastly outnumber humans. He warns that these advanced AI systems—especially those capable of self-improvement—could rapidly outpace human development, potentially leading to a loss of human control over key institutions and decision-making.
+</blockquote>
+via: <a href="https://hotair.com/john-s-2/2026/10/15/how-soon-will-ai-dramatically-change-the-economy-n3819982" target="_blank" rel="noopener noreferrer">https://hotair.com/john-s-2/2026/10/15/how-soon-will-ai-dramatically-change-the-economy-n3819982</a>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>How Soon Will AI Dramatically Change the Economy?:</p>
+<blockquote>
+Dwarkesh Patel, in an interview with Tyler Cowen, argues that by the end of the decade, AI minds will surpass human minds in intelligence and speed, and will vastly outnumber humans. He warns that these advanced AI systems—especially those capable of self-improvement—could rapidly outpace human development, potentially leading to a loss of human control over key institutions and decision-making.
+</blockquote>
+via: <a href="https://hotair.com/john-s-2/2026/10/15/how-soon-will-ai-dramatically-change-the-economy-n3819982" target="_blank" rel="noopener noreferrer">https://hotair.com/john-s-2/2026/10/15/how-soon-will-ai-dramatically-change-the-economy-n3819982</a>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 15 Oct 2026 22:51:42 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-15T215142/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-10-15T19:11:07.000-07:00</title>
