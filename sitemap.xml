@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117447839836883559/</loc>
+            <lastmod>2026-10-16T00:50:13.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117447832282565946/</loc>
+            <lastmod>2026-10-16T00:48:18.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Inflation%20Ticks%20Up,%20Oldest%20Shipwreck,%20and%20a%20Cat%20Tour/</loc>
+            <lastmod>2026-10-16T00:44:45.876Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117447746957011281/</loc>
             <lastmod>2026-10-16T00:26:36.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -40,12 +58,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117442035705599029/</loc>
             <lastmod>2026-10-15T00:14:09.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Musk%20Midterms%20Spend,%20AI%20Unicorn%20Fails,%20and%20a%20Lamb%20Mower/</loc>
-            <lastmod>2026-10-14T09:44:45.737Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
