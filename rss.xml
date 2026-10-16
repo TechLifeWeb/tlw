@@ -14,10 +14,41 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Fri, 09 Oct 2026 17:04:33 PDT</pubDate>
-    <lastBuildDate>Fri, 09 Oct 2026 17:04:33 PDT</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2026 19:11:07 PDT</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2026 19:11:07 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-10-15T19:11:07.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-15T181107/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Linus Torvalds has started using AI to develop the Linux kernel:</p>
+<blockquote>
+"“The code, the test programs, the review that forms the basis of the list above, and the first draft of this text were produced with the help of an LLM coding assistant (Claude Code) under my supervision,” Linus Torvalds writes in the documentation."
+</blockquote>
+via: <a href="https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html" target="_blank" rel="noopener noreferrer">https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html</a>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Linus Torvalds has started using AI to develop the Linux kernel:</p>
+<blockquote>
+"“The code, the test programs, the review that forms the basis of the list above, and the first draft of this text were produced with the help of an LLM coding assistant (Claude Code) under my supervision,” Linus Torvalds writes in the documentation."
+</blockquote>
+via: <a href="https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html" target="_blank" rel="noopener noreferrer">https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html</a>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 15 Oct 2026 19:11:07 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-15T181107/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-10-09T17:04:33.000-07:00</title>

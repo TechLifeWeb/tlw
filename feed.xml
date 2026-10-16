@@ -7,11 +7,51 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 09 Oct 2026 17:04:33 PDT</pubDate>
-      <lastBuildDate>Fri, 09 Oct 2026 17:04:33 PDT</lastBuildDate>
+      <pubDate>Thu, 15 Oct 2026 19:11:07 PDT</pubDate>
+      <lastBuildDate>Thu, 15 Oct 2026 19:11:07 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-10-15T19:11:07.000-07:00</title><link>https://techlifeweb.com/blog/2026/10/post-2026-10-15T181107/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Linus Torvalds has started using AI to develop the Linux kernel:&lt;/p&gt;
+&lt;blockquote&gt;
+&quot;“The code, the test programs, the review that forms the basis of the list above, and the first draft of this text were produced with the help of an LLM coding assistant (Claude Code) under my supervision,” Linus Torvalds writes in the documentation.&quot;
+&lt;/blockquote&gt;
+via: &lt;a href=&#39;https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://www.computerworld.com/article/4235401/linus-torvalds-has-started-using-ai-to-develop-the-linux-kernel.html&lt;/a&gt;
+
+        </div>
+</description>
+      <pubDate>Thu, 15 Oct 2026 19:11:07 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/10/post-2026-10-15T181107/</guid>
+    </item>
+    <item>
+      <title>Note 2026-10-15T18:15:34.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117447939457297843/</link>
+      <description>   
+        <div class="e-content" >              
+            &lt;p&gt;Bauers with a double of his own. Now 2-4 in the 4th.&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/Brewers&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Brewers&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/NLCS&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;NLCS&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Thu, 15 Oct 2026 18:15:34 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117447939457297843/</guid>
+    </item>
+    <item>
+      <title>Note 2026-10-15T18:13:12.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117447930189916472/</link>
+      <description>   
+        <div class="e-content" >              
+            &lt;p&gt;No-hitter gone. Contreras with a ground rule double. top 4&lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/MLB&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;MLB&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/Brewers&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;Brewers&lt;/span&gt;&lt;/a&gt; &lt;a href=&quot;https://indieweb.social/tags/NLCS&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;NLCS&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Thu, 15 Oct 2026 18:13:12 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117447930189916472/</guid>
+    </item>
     <item>
       <title>Note 2026-10-15T17:59:55.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117447877925166416/</link>
       <description>   
