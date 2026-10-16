@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117447746957011281/</loc>
+            <lastmod>2026-10-16T00:26:36.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/These%20two%20teams%20just%20busted%20a%20long%20trend/</loc>
+            <lastmod>2026-10-15T16:44:45.782Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Ness%20Labs-%20Outsourcing%20Discovery%20%F0%9F%8D%8E/</loc>
+            <lastmod>2026-10-15T13:44:45.844Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117442740459329471/</loc>
             <lastmod>2026-10-15T03:13:23.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -248,26 +266,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20largest%20come-from-behind%20win%20in%2016%20years/</loc>
-            <lastmod>2026-10-08T16:44:42.335Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117405791060166650/</loc>
             <lastmod>2026-10-08T14:36:40.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Ness%20Labs-%20Curiosity%20Before%20Consensus%20%F0%9F%A6%9C/</loc>
-            <lastmod>2026-10-08T13:44:42.159Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Assisted%20Dying%20Law,%20Math%20Advances,%20and%20the%20Heaviest%20Insect/</loc>
-            <lastmod>2026-10-08T08:44:42.128Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
