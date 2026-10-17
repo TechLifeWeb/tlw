@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/blog/2026/10/post-2026-10-17t094113/</loc>
+            <lastmod>2026-10-17T17:41:13.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Flying%20Car,%20Oregon%20School%20Shooting,%20and%20Grown-up%20Happy%20Meals/</loc>
+            <lastmod>2026-10-17T14:44:47.283Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/[Notes/Areas/Health/</loc>
+            <lastmod>2026-10-17T06:23:10.769Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117454739445235385/</loc>
             <lastmod>2026-10-17T06:04:53.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -340,12 +358,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117420672028245837/</loc>
             <lastmod>2026-10-11T05:41:06.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Nobel%20Peace%20Prize,%20Wine%20Heist,%20and%20a%20Rumpelstiltskin%20Meme/</loc>
-            <lastmod>2026-10-10T11:44:43.667Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
