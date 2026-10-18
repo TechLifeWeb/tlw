@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Elizabeth%20Holmes,%20National%20Parks,%20and%20the%20Best%20Documentary%20Films/</loc>
+            <lastmod>2026-10-18T10:44:47.031Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117459362354004630/</loc>
             <lastmod>2026-10-18T01:40:33.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -370,12 +376,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117424033676433362/</loc>
             <lastmod>2026-10-11T19:56:00.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Shipwrecks,%20Satellite%20Explosion,%20and%20the%20World&#39;s%20Best%20Bridges/</loc>
-            <lastmod>2026-10-11T09:44:44.709Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
