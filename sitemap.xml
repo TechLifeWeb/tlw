@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117471027827470897/</loc>
+            <lastmod>2026-10-20T03:07:14.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Dumb%20Question/</loc>
+            <lastmod>2026-10-19T15:44:19.731Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/France%20Unrest,%20Sanctions%20Waived,%20and%20Best%20Culinary%20Resorts/</loc>
+            <lastmod>2026-10-19T09:44:48.092Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20229%20%C2%B7%20Pencil%20is%20more%20permanant%20than%20ink%20and%20appending%20really%20is%20the%20better%20way/</loc>
+            <lastmod>2026-10-19T05:44:48.067Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117465086343020870/</loc>
             <lastmod>2026-10-19T01:56:14.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -292,18 +316,6 @@
         <url>
             <loc>https://techlifeweb.com/garden/obsidian/</loc>
             <lastmod>2026-10-12T18:45:21.469Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/The%20Relief%20of%20Disappointment/</loc>
-            <lastmod>2026-10-12T17:44:44.351Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Riyadh%20Attacks,%20Russia-Ukraine%20Energy,%20and%20the%20Voice%20of%20Bigfoot/</loc>
-            <lastmod>2026-10-12T16:20:26.412Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
