@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Voter%20Fraud%20Arrests,%20OpenAI%20Spy,%20and%20Leap%20Hours/</loc>
+            <lastmod>2026-10-20T09:44:48.072Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/garden/windows/savingbatterypower/</loc>
+            <lastmod>2026-10-20T03:51:36.053Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117471027827470897/</loc>
             <lastmod>2026-10-20T03:07:14.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -292,18 +304,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/New%20from%20Tim%20%E2%80%94%20-The%20Random%20Show%20%E2%80%94%20AI%20Super%20Assistants,%20Boner%20Pills,%20Dream%20Engineering,%20Wizards,%20Supplements,%20Books,%20and%20More-/</loc>
             <lastmod>2026-10-14T01:44:44.267Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Lawmaker%20Home%20Search,%20Food%20Market%20Fire,%20and%20a%20Fishy%20Forecast/</loc>
-            <lastmod>2026-10-13T12:44:44.750Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20227%E2%80%93228%20%C2%B7%20Daily%20note%20sanity,%20plus%20calendars%20and%20todos%20relationship%20advice/</loc>
-            <lastmod>2026-10-13T10:44:44.442Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
