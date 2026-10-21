@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sat, 17 Oct 2026 10:41:13 PDT</pubDate>
-      <lastBuildDate>Sat, 17 Oct 2026 10:41:13 PDT</lastBuildDate>
+      <pubDate>Tue, 20 Oct 2026 21:54:16 PDT</pubDate>
+      <lastBuildDate>Tue, 20 Oct 2026 21:54:16 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-10-20T21:54:16.000-07:00</title><link>https://techlifeweb.com/blog/2026/10/post-2026-10-20t205416/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Handy Windows utility for keeping things up to date | UniGetUI by Devolutions | Windows package manager GUI https://devolutions.net/unigetui/  &#39;One GUI for WinGet, Scoop, Snap, Chocolatey, Pip, Npm, and more&#39;&lt;br&gt;
+#Windows&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Tue, 20 Oct 2026 21:54:16 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/10/post-2026-10-20t205416/</guid>
+    </item>
     <item>
       <title>Note 2026-10-20T16:38:48.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117475870524414641/</link>
       <description>   

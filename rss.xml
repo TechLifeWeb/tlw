@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sat, 17 Oct 2026 10:41:13 PDT</pubDate>
-    <lastBuildDate>Sat, 17 Oct 2026 10:41:13 PDT</lastBuildDate>
+    <pubDate>Tue, 20 Oct 2026 21:54:16 PDT</pubDate>
+    <lastBuildDate>Tue, 20 Oct 2026 21:54:16 PDT</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-10-20T21:54:16.000-07:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/10/post-2026-10-20t205416/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Handy Windows utility for keeping things up to date | UniGetUI by Devolutions | Windows package manager GUI https://devolutions.net/unigetui/  'One GUI for WinGet, Scoop, Snap, Chocolatey, Pip, Npm, and more'<br />
+#Windows</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Handy Windows utility for keeping things up to date | UniGetUI by Devolutions | Windows package manager GUI https://devolutions.net/unigetui/  'One GUI for WinGet, Scoop, Snap, Chocolatey, Pip, Npm, and more'<br />
+#Windows</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Tue, 20 Oct 2026 21:54:16 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/10/post-2026-10-20t205416/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-10-17T10:41:13.000-07:00</title>
