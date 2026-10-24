@@ -7,11 +7,25 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Tue, 20 Oct 2026 21:54:16 PDT</pubDate>
-      <lastBuildDate>Tue, 20 Oct 2026 21:54:16 PDT</lastBuildDate>
+      <pubDate>Sat, 24 Oct 2026 13:08:40 PDT</pubDate>
+      <lastBuildDate>Sat, 24 Oct 2026 13:08:40 PDT</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-10-24T13:08:40.000-07:00</title><link>https://techlifeweb.com/blog/2026/10/post-2026-10-24t120840/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;I don&#39;t think I have any spare M.2 slots but this is interesting | That spare M.2 slot in your PC isn&#39;t just for storage, here are 4 clever things you can do with it &lt;a href=&#39;https://www.howtogeek.com/that-spare-m2-slot-in-your-pc-isnt-just-for-storage-here-are-clever-things-you-can-do-with-it/&#39;&gt;https://www.howtogeek.com/that-spare-m2-slot-in-your-pc-isnt-just-for-storage-here-are-clever-things-you-can-do-with-it/&lt;/a&gt;&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sat, 24 Oct 2026 13:08:40 PDT</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/10/post-2026-10-24t120840/</guid>
+    </item>
     <item>
       <title>Note 2026-10-24T09:54:53.000-07:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117496931525740836/</link>
       <description>   
