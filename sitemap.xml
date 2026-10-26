@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117504518302592698/</loc>
+            <lastmod>2026-10-26T01:04:18.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117504514483841593/</loc>
+            <lastmod>2026-10-26T01:03:20.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Ghosts,%20Hackers,%20and%20Creepy%20Science%20Images/</loc>
+            <lastmod>2026-10-25T10:53:14.916Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/blog/2026/10/post-2026-10-24t120840/</loc>
             <lastmod>2026-10-24T20:08:40.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -158,12 +176,6 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20229%20%C2%B7%20Pencil%20is%20more%20permanant%20than%20ink%20and%20appending%20really%20is%20the%20better%20way/</loc>
-            <lastmod>2026-10-19T05:44:48.067Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117465086343020870/</loc>
             <lastmod>2026-10-19T01:56:14.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -178,12 +190,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117462809196920274/</loc>
             <lastmod>2026-10-18T16:17:08.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Elizabeth%20Holmes,%20National%20Parks,%20and%20the%20Best%20Documentary%20Films/</loc>
-            <lastmod>2026-10-18T10:44:47.031Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
