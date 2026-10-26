@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117509861823458718/</loc>
+            <lastmod>2026-10-26T23:43:14.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Want%20the%20Wanting/</loc>
+            <lastmod>2026-10-26T15:53:15.867Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Brazil%20Election,%20Starlink%20Returns,%20and%20the%20Science%20of%20Smiling/</loc>
+            <lastmod>2026-10-26T10:53:15.940Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20230%20%C2%B7%20I%20drew%20a%20paper%20ruler%20in%20my%20notebook;%20and%20raw%20plain%20text%20calendars%20are%20still%20pretty%20darn%20great/</loc>
+            <lastmod>2026-10-26T04:53:15.887Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117505047488042322/</loc>
             <lastmod>2026-10-26T03:18:53.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -196,18 +220,6 @@
         <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117471027827470897/</loc>
             <lastmod>2026-10-20T03:07:14.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Dumb%20Question/</loc>
-            <lastmod>2026-10-19T15:44:19.731Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/France%20Unrest,%20Sanctions%20Waived,%20and%20Best%20Culinary%20Resorts/</loc>
-            <lastmod>2026-10-19T09:44:48.092Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
