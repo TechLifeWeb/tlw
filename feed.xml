@@ -7,11 +7,27 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sat, 07 Nov 2026 09:33:49 PST</pubDate>
-      <lastBuildDate>Sat, 07 Nov 2026 09:33:49 PST</lastBuildDate>
+      <pubDate>Sat, 07 Nov 2026 21:53:53 PST</pubDate>
+      <lastBuildDate>Sat, 07 Nov 2026 21:53:53 PST</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-11-07T21:53:53.000-08:00</title><link>https://techlifeweb.com/blog/2026/11/post-2026-11-07T215353/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Robot successfully builds space structure in first autonomous construction demo:&lt;br&gt;
+This breakthrough could enable future applications such as space telescopes, radio antennas, and solar arrays, offering a new way to deploy large structures beyond the limits of current launch technology. The project confirms that autonomous in-space construction is viable and opens new research avenues for building large-scale space infrastructure.&lt;br&gt;
+via: &lt;a href=&#39;https://phys.org/news/2026-11-robot-successfully-space-autonomous-demo.html&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;https://phys.org/news/2026-11-robot-successfully-space-autonomous-demo.html&lt;/a&gt;&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sat, 07 Nov 2026 21:53:53 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/11/post-2026-11-07T215353/</guid>
+    </item>
     <item>
       <title>Note 2026-11-07T20:22:27.000-08:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117578907478437936/</link>
       <description>   
