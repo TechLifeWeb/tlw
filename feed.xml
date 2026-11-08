@@ -7,11 +7,52 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Sat, 07 Nov 2026 21:53:53 PST</pubDate>
-      <lastBuildDate>Sat, 07 Nov 2026 21:53:53 PST</lastBuildDate>
+      <pubDate>Sun, 08 Nov 2026 15:08:13 PST</pubDate>
+      <lastBuildDate>Sun, 08 Nov 2026 15:08:13 PST</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-11-08T15:08:13.000-08:00</title>
+      <title>Repost 2026-11-08T15:08:13.000-08:00</title><link>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150812/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.social/@ChrisPirillo/117583247081263261&quot;&gt;Chris Pirillo (@ChrisPirillo@mastodon.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+Somebody dressed Hacker News up as the front page of The New York Times...
+&lt;p&gt;Hacker Times takes the front page of Hacker News and lays it out like a newspaper, with a masthead, columns and a lead story up top. The site calls itself &amp;quot;An independent, AI-edited front page from Hacker News, updated hourly,&amp;quot; and adds, in case anybody&#39;s lawyers are reading, that it&#39;s &amp;quot;Not affiliated with The New York Times or Hacker News.&amp;quot;&lt;/p&gt;
+&lt;p&gt;There&#39;s real editing behind the costume.&lt;/p&gt;
+&lt;/blockquote&gt;
+ &lt;a href=&#39;https://hackertimes.ca/&#39; target=&#39;_blank&#39; rel=&#39;noopener noreferrer&#39;&gt;Hacker Times&lt;/a&gt; 
+
+        </div>
+</description>
+      <pubDate>Sun, 08 Nov 2026 15:08:13 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150812/</guid>
+    </item>
+    <item>
+      <title>Note 2026-11-08T15:04:11.000-08:00</title>
+      <title>Repost 2026-11-08T15:04:11.000-08:00</title><link>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150409/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Via &lt;a class=&quot;u-repost-of&quot; href=&quot;https://mastodon.social/@CuratedHackerNews/117582252259571109&quot;&gt;Curated Hacker News (@CuratedHackerNews@mastodon.social)&lt;/a&gt; on Mastodon:&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+A Little Snitch for Windows
+&lt;p&gt;PacketHound · Free outbound firewall for Windows 10 &amp;amp; 11 &lt;a href=&#39;https://packethound.app/&#39;&gt;https://packethound.app/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#windows&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </div>
+</description>
+      <pubDate>Sun, 08 Nov 2026 15:04:11 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150409/</guid>
+    </item>
     <item>
       <title>Note 2026-11-08T15:00:10.000-08:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117583302542994556/</link>
       <description>   

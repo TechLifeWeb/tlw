@@ -14,10 +14,78 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sat, 07 Nov 2026 21:53:53 PST</pubDate>
-    <lastBuildDate>Sat, 07 Nov 2026 21:53:53 PST</lastBuildDate>
+    <pubDate>Sun, 08 Nov 2026 15:08:13 PST</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2026 15:08:13 PST</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Repost 2026-11-08T15:08:13.000-08:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150812/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@ChrisPirillo/117583247081263261">Chris Pirillo (@ChrisPirillo@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+Somebody dressed Hacker News up as the front page of The New York Times...
+<p>Hacker Times takes the front page of Hacker News and lays it out like a newspaper, with a masthead, columns and a lead story up top. The site calls itself &quot;An independent, AI-edited front page from Hacker News, updated hourly,&quot; and adds, in case anybody's lawyers are reading, that it's &quot;Not affiliated with The New York Times or Hacker News.&quot;</p>
+<p>There's real editing behind the costume.</p>
+</blockquote>
+ <a href="https://hackertimes.ca/" target="_blank" rel="noopener noreferrer">Hacker Times</a> 
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@ChrisPirillo/117583247081263261">Chris Pirillo (@ChrisPirillo@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+Somebody dressed Hacker News up as the front page of The New York Times...
+<p>Hacker Times takes the front page of Hacker News and lays it out like a newspaper, with a masthead, columns and a lead story up top. The site calls itself &quot;An independent, AI-edited front page from Hacker News, updated hourly,&quot; and adds, in case anybody's lawyers are reading, that it's &quot;Not affiliated with The New York Times or Hacker News.&quot;</p>
+<p>There's real editing behind the costume.</p>
+</blockquote>
+ <a href="https://hackertimes.ca/" target="_blank" rel="noopener noreferrer">Hacker Times</a> 
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 08 Nov 2026 15:08:13 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150812/</guid>
+
+    </item>
+
+    <item>
+      <title>Repost 2026-11-08T15:04:11.000-08:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150409/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@CuratedHackerNews/117582252259571109">Curated Hacker News (@CuratedHackerNews@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+A Little Snitch for Windows
+<p>PacketHound · Free outbound firewall for Windows 10 &amp; 11 <a href="https://packethound.app/">https://packethound.app/</a></p>
+<p>#windows</p>
+</blockquote>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Via <a class="u-repost-of" href="https://mastodon.social/@CuratedHackerNews/117582252259571109">Curated Hacker News (@CuratedHackerNews@mastodon.social)</a> on Mastodon:<br /></p>
+<blockquote>
+A Little Snitch for Windows
+<p>PacketHound · Free outbound firewall for Windows 10 &amp; 11 <a href="https://packethound.app/">https://packethound.app/</a></p>
+<p>#windows</p>
+</blockquote>
+
+      ]]></content:encoded>
+
+      <pubDate>Sun, 08 Nov 2026 15:04:11 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/11/repost-2026-11-08T150409/</guid>
+
+    </item>
 
     <item>
       <title>Note 2026-11-07T21:53:53.000-08:00</title>
