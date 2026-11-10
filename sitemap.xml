@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Congress%20Resumes,%20Schools%20Close,%20and%20Elizabeth%20Holmes%20Clones/</loc>
+            <lastmod>2026-11-10T14:37:51.842Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117590178687488401/</loc>
             <lastmod>2026-11-10T04:08:52.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -358,12 +364,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20231%20%C2%B7%20Tiny%20Little%20Office,%20and%20paper%20vs%20digital%20planning/</loc>
             <lastmod>2026-11-04T09:37:22.697Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Election%20Day,%20HIV%20Drug,%20and%20New%20Holiday%20Movies/</loc>
-            <lastmod>2026-11-03T12:37:22.789Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
