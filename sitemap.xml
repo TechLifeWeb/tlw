@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/RSS/NewsLetters/Both%20Sides/</loc>
+            <lastmod>2026-11-12T01:43:43.232Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117600888427311839/</loc>
             <lastmod>2026-11-12T01:32:30.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -46,12 +52,6 @@
         <url>
             <loc>https://techlifeweb.com/RSS/NewsLetters/PTPL%20232%C2%B7%20AI%20and%20autism-%20be%20careful%20policing%20those%20quaint%20turns%20of%20phrases/</loc>
             <lastmod>2026-11-09T20:57:35.616Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Both%20Sides/</loc>
-            <lastmod>2026-11-09T16:57:35.491Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
