@@ -14,10 +14,37 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 08 Nov 2026 15:08:13 PST</pubDate>
-    <lastBuildDate>Sun, 08 Nov 2026 15:08:13 PST</lastBuildDate>
+    <pubDate>Wed, 11 Nov 2026 17:15:03 PST</pubDate>
+    <lastBuildDate>Wed, 11 Nov 2026 17:15:03 PST</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Portable RSS App</title>
+
+      <link>https://techlifeweb.com/blog/2026/11/post-2026-11-11t171503/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>I created a little app this week, with the help of Codex, that I'm calling &quot;Portable RSS&quot;. There is no server, it is simply a html file you open locally on your PC or phone, make a quick note and save. There aren't a bunch of files, saving actually just adds a new entry to the top of an RSS feed. In fact the whole thing can be contained to two files, the editor, and the feed.xml file. There is a third file called index.html that isn't necessary but if you put it and the feed.xml file on a web server it will render a page with all your notes.<br />
+I haven't been using it long but it seems to work fine on my laptop and my android phone. I keep the directories in sync with Syncthing. I have no idea if it will work on iOS. I use the app Material Files to keep a shortcut to the editor.html file on my home screen. Tapping that lets me open the file in my phones browser (Vivaldi or Chrome). Sometimes you do have to relink it to the feed.xml file but it isn't a dealbreaker.<br />
+Why build it? Mostly proof of concept and it seemed like a fun project. I haven't figured out my exact use case for it. It currently doesn't include media and the text field is really only for text, not html or markdown. Still, there are other tools that can consume RSS so it might prove useful as I start to use it more. If anyone is interested, maybe I'll make the zip file available.</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>I created a little app this week, with the help of Codex, that I'm calling &quot;Portable RSS&quot;. There is no server, it is simply a html file you open locally on your PC or phone, make a quick note and save. There aren't a bunch of files, saving actually just adds a new entry to the top of an RSS feed. In fact the whole thing can be contained to two files, the editor, and the feed.xml file. There is a third file called index.html that isn't necessary but if you put it and the feed.xml file on a web server it will render a page with all your notes.<br />
+I haven't been using it long but it seems to work fine on my laptop and my android phone. I keep the directories in sync with Syncthing. I have no idea if it will work on iOS. I use the app Material Files to keep a shortcut to the editor.html file on my home screen. Tapping that lets me open the file in my phones browser (Vivaldi or Chrome). Sometimes you do have to relink it to the feed.xml file but it isn't a dealbreaker.<br />
+Why build it? Mostly proof of concept and it seemed like a fun project. I haven't figured out my exact use case for it. It currently doesn't include media and the text field is really only for text, not html or markdown. Still, there are other tools that can consume RSS so it might prove useful as I start to use it more. If anyone is interested, maybe I'll make the zip file available.</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 11 Nov 2026 17:15:03 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/11/post-2026-11-11t171503/</guid>
+
+    </item>
 
     <item>
       <title>Repost 2026-11-08T15:08:13.000-08:00</title>
