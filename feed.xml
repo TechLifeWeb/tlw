@@ -13,14 +13,25 @@
       <generator>11ty</generator>
     
     <item>
+      <title>Note 2026-11-11T17:28:20.000-08:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117600872076045990/</link>
+      <description>   
+        <div class="e-content" >              
+            &lt;p&gt;I created a simple app the saves your notes as an RSS feed. | TechLifeWeb &lt;a href=&quot;https://techlifeweb.com/blog/2026/11/post-2026-11-11t171503/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener&quot; translate=&quot;no&quot;&gt;&lt;span class=&quot;invisible&quot;&gt;https://&lt;/span&gt;&lt;span class=&quot;ellipsis&quot;&gt;techlifeweb.com/blog/2026/11/p&lt;/span&gt;&lt;span class=&quot;invisible&quot;&gt;ost-2026-11-11t171503/&lt;/span&gt;&lt;/a&gt;  &lt;br&gt;&lt;a href=&quot;https://indieweb.social/tags/rss&quot; class=&quot;mention hashtag&quot; rel=&quot;tag&quot;&gt;#&lt;span&gt;rss&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+        </div>
+</description>
+      <pubDate>Wed, 11 Nov 2026 17:28:20 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/techlifeweb@indieweb.social/117600872076045990/</guid>
+    </item>
+    <item>
       <title>Portable RSS App</title><link>https://techlifeweb.com/blog/2026/11/post-2026-11-11t171503/</link>
       <description>
         <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
         </div>   
         <div class="e-content e-bridgy-mastodon-content" >              
-            &lt;p&gt;I created a little app this week, with the help of Codex, that I&#39;m calling &amp;quot;Portable RSS&amp;quot;. There is no server, it is simply a html file you open locally on your PC or phone, make a quick note and save. There aren&#39;t a bunch of files, saving actually just adds a new entry to the top of an RSS feed. In fact the whole thing can be contained to two files, the editor, and the feed.xml file. There is a third file called index.html that isn&#39;t necessary but if you put it and the feed.xml file on a web server it will render a page with all your notes.&lt;br&gt;
-I haven&#39;t been using it long but it seems to work fine on my laptop and my android phone. I keep the directories in sync with Syncthing. I have no idea if it will work on iOS. I use the app Material Files to keep a shortcut to the editor.html file on my home screen. Tapping that lets me open the file in my phones browser (Vivaldi or Chrome). Sometimes you do have to relink it to the feed.xml file but it isn&#39;t a dealbreaker.&lt;br&gt;
-Why build it? Mostly proof of concept and it seemed like a fun project. I haven&#39;t figured out my exact use case for it. It currently doesn&#39;t include media and the text field is really only for text, not html or markdown. Still, there are other tools that can consume RSS so it might prove useful as I start to use it more. If anyone is interested, maybe I&#39;ll make the zip file available.&lt;/p&gt;
+            &lt;p&gt;I created a little app this week, with the help of Codex, that I&#39;m calling &amp;quot;Portable RSS&amp;quot;. There is no server, it is simply a html file you open locally on your PC or phone, make a quick note and save. There aren&#39;t a bunch of files, saving actually just adds a new entry to the top of an RSS feed. In fact the whole thing can be contained to two files, the editor, and the feed.xml file. There is a third file called index.html that isn&#39;t necessary but if you put it and the feed.xml file on a web server it will render a page with all your notes.&lt;/p&gt;
+&lt;p&gt;I haven&#39;t been using it long but it seems to work fine on my laptop and my android phone. I keep the directories in sync with Syncthing. I have no idea if it will work on iOS. I use the app Material Files to keep a shortcut to the editor.html file on my home screen. Tapping that lets me open the file in my phones browser (Vivaldi or Chrome). Sometimes you do have to relink it to the feed.xml file but it isn&#39;t a dealbreaker.&lt;/p&gt;
+&lt;p&gt;Why build it? Mostly proof of concept and it seemed like a fun project. I haven&#39;t figured out my exact use case for it. It currently doesn&#39;t include media and the text field is really only for text, not html or markdown. Still, there are other tools that can consume RSS so it might prove useful as I start to use it more. If anyone is interested, maybe I&#39;ll make the zip file available.&lt;/p&gt;
 
         </div>
 </description>
