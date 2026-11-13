@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117608251326326804/</loc>
+            <lastmod>2026-11-13T08:44:59.000Z</lastmod>
+            <changefreq>daily</changefreq>
+        </url>
+    
+        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117607754023711915/</loc>
             <lastmod>2026-11-13T06:38:30.000Z</lastmod>
             <changefreq>daily</changefreq>
@@ -380,32 +386,8 @@
         </url>
     
         <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/5-Bullet%20Friday%20%E2%80%94%20The%20Real-Life%20Willy%20Wonka,%20Hypergrowth%20Formulas,%20and%20Bizarre%20Films%20That%20Inspire/</loc>
-            <lastmod>2026-11-07T01:37:24.512Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/European%20Flights,%20California%20Death%20Row,%20and%20a%20Shower%20Bear/</loc>
-            <lastmod>2026-11-06T21:37:24.121Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
             <loc>https://techlifeweb.com/techlifeweb@indieweb.social/117570705955295530/</loc>
             <lastmod>2026-11-06T17:36:42.000Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/This%20is%20how%20we%20do%20it/</loc>
-            <lastmod>2026-11-06T14:37:24.308Z</lastmod>
-            <changefreq>daily</changefreq>
-        </url>
-    
-        <url>
-            <loc>https://techlifeweb.com/RSS/NewsLetters/Evaluating%20Craig%20Stammen%20after%20Year%201/</loc>
-            <lastmod>2026-11-06T14:37:24.130Z</lastmod>
             <changefreq>daily</changefreq>
         </url>
     
