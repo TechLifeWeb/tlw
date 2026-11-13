@@ -14,10 +14,35 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Wed, 11 Nov 2026 17:15:03 PST</pubDate>
-    <lastBuildDate>Wed, 11 Nov 2026 17:15:03 PST</lastBuildDate>
+    <pubDate>Thu, 12 Nov 2026 17:07:59 PST</pubDate>
+    <lastBuildDate>Thu, 12 Nov 2026 17:07:59 PST</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>Note 2026-11-12T17:07:59.000-08:00</title>
+
+      <link>https://techlifeweb.com/blog/2026/11/post-2026-11-12t170759/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>Trying a new (to me) browser cookie manager for chrome-based browsers: CookieMaid — auto-delete cookies when tabs close. Free, open-source MV3 replacement for Cookie AutoDelete: whitelist, greylist, scheduled sweep, no telemetry. · GitHub https://github.com/moeatsy/cookiemaid<br />
+Also has options to allow clean up of LocalStorage, IndexedDB, Service Workers and Cache &amp; Storage.</p>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>Trying a new (to me) browser cookie manager for chrome-based browsers: CookieMaid — auto-delete cookies when tabs close. Free, open-source MV3 replacement for Cookie AutoDelete: whitelist, greylist, scheduled sweep, no telemetry. · GitHub https://github.com/moeatsy/cookiemaid<br />
+Also has options to allow clean up of LocalStorage, IndexedDB, Service Workers and Cache &amp; Storage.</p>
+
+      ]]></content:encoded>
+
+      <pubDate>Thu, 12 Nov 2026 17:07:59 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/11/post-2026-11-12t170759/</guid>
+
+    </item>
 
     <item>
       <title>Portable RSS App</title>

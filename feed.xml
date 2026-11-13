@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Wed, 11 Nov 2026 17:15:03 PST</pubDate>
-      <lastBuildDate>Wed, 11 Nov 2026 17:15:03 PST</lastBuildDate>
+      <pubDate>Thu, 12 Nov 2026 17:07:59 PST</pubDate>
+      <lastBuildDate>Thu, 12 Nov 2026 17:07:59 PST</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Note 2026-11-12T17:07:59.000-08:00</title><link>https://techlifeweb.com/blog/2026/11/post-2026-11-12t170759/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content" >              
+            &lt;p&gt;Trying a new (to me) browser cookie manager for chrome-based browsers: CookieMaid — auto-delete cookies when tabs close. Free, open-source MV3 replacement for Cookie AutoDelete: whitelist, greylist, scheduled sweep, no telemetry. · GitHub https://github.com/moeatsy/cookiemaid&lt;br&gt;
+Also has options to allow clean up of LocalStorage, IndexedDB, Service Workers and Cache &amp;amp; Storage.&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Thu, 12 Nov 2026 17:07:59 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/blog/2026/11/post-2026-11-12t170759/</guid>
+    </item>
     <item>
       <title>Note 2026-11-12T17:02:53.000-08:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117606434324273379/</link>
       <description>   
