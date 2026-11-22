@@ -7,11 +7,26 @@
     <atom:link href="https://techlifeweb.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Exploring the digital life</description>
     <language>en-us</language>
-      <pubDate>Fri, 13 Nov 2026 17:24:56 PST</pubDate>
-      <lastBuildDate>Fri, 13 Nov 2026 17:24:56 PST</lastBuildDate>
+      <pubDate>Sun, 22 Nov 2026 08:58:11 PST</pubDate>
+      <lastBuildDate>Sun, 22 Nov 2026 08:58:11 PST</lastBuildDate>
       <docs>https://www.rssboard.org/rss-specification</docs>
       <generator>11ty</generator>
     
+    <item>
+      <title>Photo 2026-11-22T08:58:11.000-08:00</title><link>https://techlifeweb.com/p/TechLifeWeb/1030162549081650252/</link>
+      <description>
+        <div class="bridgy"><a aria-hidden="true" href="https://brid.gy/publish/mastodon"></a><a aria-hidden="true" href="https://brid.gy/publish/bluesky"></a><data class="p-bridgy-omit-link" value="" />
+        </div>   
+        <div class="e-content e-bridgy-mastodon-content e-bridgy-bluesky-content" >              
+            &lt;p&gt;&lt;img src=&quot;/assets/4aKtJrzcbmD2wziQFmehngi47hA9gN-jcu042u1zlfN.jpg&quot; alt=&quot;A glass of amber cyder sits on a wooden counter beside black “Cards Against Humanity” cards.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Last night&#39;s shenanigans&lt;/p&gt;
+
+        </div>
+</description>
+      <pubDate>Sun, 22 Nov 2026 08:58:11 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid>https://techlifeweb.com/p/TechLifeWeb/1030162549081650252/</guid>
+    </item>
     <item>
       <title>Note 2026-11-21T16:18:32.000-08:00</title><link>https://techlifeweb.com/techlifeweb@indieweb.social/117657220710430225/</link>
       <description>   
