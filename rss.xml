@@ -14,10 +14,51 @@
     <description>Exploring the digital life</description>
     <language>en-us</language>
 
-    <pubDate>Sun, 22 Nov 2026 08:58:11 PST</pubDate>
-    <lastBuildDate>Sun, 22 Nov 2026 08:58:11 PST</lastBuildDate>
+    <pubDate>Wed, 25 Nov 2026 11:19:08 PST</pubDate>
+    <lastBuildDate>Wed, 25 Nov 2026 11:19:08 PST</lastBuildDate>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>11ty</generator>
+
+    <item>
+      <title>2 Bookmarklets for Cleaner, Easier Link Sharing</title>
+
+      <link>https://techlifeweb.com/blog/2026/11/post-2026-11-25t111908/</link>
+
+      <!-- Summary / fallback -->
+      <description ><![CDATA[
+        <p>These bookmarklets help you create a link to the page you're on, including any text you highlight. They also remove any tracking information from the URL. Stripping tracking parameters can keep campaign and click-source details from being shared with people you send links to, and makes links cleaner and easier to save.</p>
+<p>The main difference is what the link shows. CopyLinkTitle makes a link that uses the page title as the clickable text, while CopyLinkURL makes a link that uses the web address (URL) as the clickable text. The second one works better when you want to share links on social media.</p>
+<p>Drag this to your browser's bookmark bar: <a href="javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Ddocument.title%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B">CopyLinkTitle</a></p>
+<p>Drag this to your browser's bookmark bar: <a href="javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Dbase%2Bhash%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B">CopyLinkURL</a></p>
+<p>CopyLinkTitle code:</p>
+<pre><code class="language-javascript">javascript:(function(){var raw=location.href,h=raw.indexOf(&quot;#&quot;),hash=h&lt;0?&quot;&quot;:raw.slice(h),base=h&lt;0?raw:raw.slice(0,h),q=base.indexOf(&quot;?&quot;);if(q&gt;=0){var kept=base.slice(q+1).split(&quot;&amp;&quot;).filter(function(part){var key=new URLSearchParams(part).keys().next().value||&quot;&quot;;return !/^(utm_.*|fbclid|gclid|dclid|msclkid|gbraid|wbraid|mc_cid|mc_eid|igshid|_ga|_gl)$/i.test(key);});base=base.slice(0,q)+(kept.length?&quot;?&quot;+kept.join(&quot;&amp;&quot;):&quot;&quot;);}var a=document.createElement(&quot;a&quot;);a.href=base+hash;a.target=&quot;_blank&quot;;a.rel=&quot;noopener noreferrer&quot;;a.textContent=document.title;void prompt(&quot;Copy the HTML link and selected text:&quot;,a.outerHTML+&quot; '&quot;+window.getSelection().toString()+&quot;'&quot;);})();
+</code></pre>
+<p>CopyLinkURL code:</p>
+<pre><code class="language-javascript">javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Dbase%2Bhash%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B
+</code></pre>
+
+      ]]></description>
+
+      <!-- Full HTML content -->
+      <content:encoded><![CDATA[
+        <p>These bookmarklets help you create a link to the page you're on, including any text you highlight. They also remove any tracking information from the URL. Stripping tracking parameters can keep campaign and click-source details from being shared with people you send links to, and makes links cleaner and easier to save.</p>
+<p>The main difference is what the link shows. CopyLinkTitle makes a link that uses the page title as the clickable text, while CopyLinkURL makes a link that uses the web address (URL) as the clickable text. The second one works better when you want to share links on social media.</p>
+<p>Drag this to your browser's bookmark bar: <a href="javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Ddocument.title%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B">CopyLinkTitle</a></p>
+<p>Drag this to your browser's bookmark bar: <a href="javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Dbase%2Bhash%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B">CopyLinkURL</a></p>
+<p>CopyLinkTitle code:</p>
+<pre><code class="language-javascript">javascript:(function(){var raw=location.href,h=raw.indexOf(&quot;#&quot;),hash=h&lt;0?&quot;&quot;:raw.slice(h),base=h&lt;0?raw:raw.slice(0,h),q=base.indexOf(&quot;?&quot;);if(q&gt;=0){var kept=base.slice(q+1).split(&quot;&amp;&quot;).filter(function(part){var key=new URLSearchParams(part).keys().next().value||&quot;&quot;;return !/^(utm_.*|fbclid|gclid|dclid|msclkid|gbraid|wbraid|mc_cid|mc_eid|igshid|_ga|_gl)$/i.test(key);});base=base.slice(0,q)+(kept.length?&quot;?&quot;+kept.join(&quot;&amp;&quot;):&quot;&quot;);}var a=document.createElement(&quot;a&quot;);a.href=base+hash;a.target=&quot;_blank&quot;;a.rel=&quot;noopener noreferrer&quot;;a.textContent=document.title;void prompt(&quot;Copy the HTML link and selected text:&quot;,a.outerHTML+&quot; '&quot;+window.getSelection().toString()+&quot;'&quot;);})();
+</code></pre>
+<p>CopyLinkURL code:</p>
+<pre><code class="language-javascript">javascript:(function()%7B(function()%7Bvar%20raw%3Dlocation.href%2Ch%3Draw.indexOf(%22%23%22)%2Chash%3Dh%3C0%3F%22%22%3Araw.slice(h)%2Cbase%3Dh%3C0%3Fraw%3Araw.slice(0%2Ch)%2Cq%3Dbase.indexOf(%22%3F%22)%3Bif(q%3E%3D0)%7Bvar%20kept%3Dbase.slice(q%2B1).split(%22%26%22).filter(function(part)%7Bvar%20key%3Dnew%20URLSearchParams(part).keys().next().value%7C%7C%22%22%3Breturn!%2F%5E(utm_.*%7Cfbclid%7Cgclid%7Cdclid%7Cmsclkid%7Cgbraid%7Cwbraid%7Cmc_cid%7Cmc_eid%7Cigshid%7C_ga%7C_gl)%24%2Fi.test(key)%7D)%3Bbase%3Dbase.slice(0%2Cq)%2B(kept.length%3F%22%3F%22%2Bkept.join(%22%26%22)%3A%22%22)%7Dvar%20a%3Ddocument.createElement(%22a%22)%3Ba.href%3Dbase%2Bhash%3Ba.target%3D%22_blank%22%3Ba.rel%3D%22noopener%20noreferrer%22%3Ba.textContent%3Dbase%2Bhash%3Bvoid%20prompt(%22Copy%20the%20HTML%20link%20and%20selected%20text%3A%22%2Ca.outerHTML%2B%22%20'%22%2Bwindow.getSelection().toString()%2B%22'%22)%7D)()%7D)()%3B
+</code></pre>
+
+      ]]></content:encoded>
+
+      <pubDate>Wed, 25 Nov 2026 11:19:08 PST</pubDate>
+      <dc:creator>Scott Kingery</dc:creator>
+      <guid isPermaLink="true">https://techlifeweb.com/blog/2026/11/post-2026-11-25t111908/</guid>
+
+    </item>
 
     <item>
       <title>Photo 2026-11-22T08:58:11.000-08:00</title>
