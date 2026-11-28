@@ -31,3 +31,20 @@
       file.name: 1%
 
 </code></pre>
+<h1 id="newsletters" tabindex="-1">Newsletters <a class="external-link" href="#newsletters" aria-hidden="true">#</a></h1>
+<pre><code class="language-base">views:
+  - type: table
+    name: View
+    filters:
+      and:
+        - file.path.contains(&quot;RSS/NewsLetters&quot;)
+    order:
+      - created
+      - file.name
+    sort:
+      - property: created
+        direction: DESC
+    columnSize:
+      note.created: 188
+
+</code></pre>
